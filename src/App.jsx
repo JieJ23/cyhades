@@ -16,8 +16,10 @@ export default function App() {
 
         <div className="hero-content text-neutral-content text-center flex flex-col h-full">
           <div className="max-w-2xl">
-            <h1 className="mb-5 text-5xl font-bold font-serif">CapriceYuri</h1>
-            <p className="mb-5">
+            <h1 className="mb-5 text-5xl font-bold font-serif text-gray-300">
+              CapriceYuri
+            </h1>
+            <p className="mb-5 text-gray-400">
               A community hub dedicated to tracking high-level gameplay within
               the Hades community.
             </p>

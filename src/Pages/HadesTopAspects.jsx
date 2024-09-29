@@ -70,12 +70,12 @@ export default function HadesTopAspect() {
             Current Top Players
           </div>
           <div className="h-[800px] overflow-x-auto rounded-md mb-5">
-            <table className="table table-xs  table-pin-rows select-none min-w-[700px] max-w-[1400px] mx-auto">
+            <table className="table table-xs  table-pin-rows select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
               {finalizedData.map((arr) => (
                 <>
                   <thead>
-                    <tr className="font-serif bg-[#181a19] text-white">
-                      <th className="text-center">Name</th>
+                    <tr className="font-serif bg-[#181a19] text-gray-400">
+                      <th></th>
                       <th></th>
                       <th>Weapon</th>
                       <th>Aspect</th>

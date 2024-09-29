@@ -95,13 +95,13 @@ export default function Hades() {
           <section>
             <div className="flex justify-center my-2 gap-0.5">
               <button
-                className="btn shadow-[inset_0_0_15px_black]"
+                className="btn shadow-[inset_0_0_15px_black] text-gray-300"
                 onClick={() => handleDataChange(0)}
               >
                 All
               </button>
               <button
-                className="btn shadow-[inset_0_0_15px_black]"
+                className="btn shadow-[inset_0_0_15px_black] text-gray-300"
                 onClick={() => handleDataChange(1)}
               >
                 Rank
@@ -110,7 +110,7 @@ export default function Hades() {
             <div className="my-2 mx-auto flex flex-wrap justify-center gap-1">
               {allWeaponType.map((obj, index) => (
                 <button
-                  className="btn shadow-[inset_0_0_15px_black]"
+                  className="btn shadow-[inset_0_0_15px_black] text-gray-300"
                   onClick={() => handleDataChange(index + 2)}
                 >
                   {obj}
@@ -140,9 +140,9 @@ export default function Hades() {
           </Link>
           {/*  */}
           <div className="overflow-x-auto rounded-md my-4">
-            <table className="table table-xs select-none min-w-[700px] max-w-[1400px] mx-auto">
+            <table className="table table-xs select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
               <thead>
-                <tr className="font-serif">
+                <tr className="font-serif text-gray-400">
                   <th className="text-center">Name</th>
                   <th>Weapon</th>
                   <th>Aspect</th>

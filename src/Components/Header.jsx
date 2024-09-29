@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="navbar w-[95%] mx-auto my-4 rounded-lg bg-base-300 max-w-[800px] font-serif">
       <div className="flex-1">
-        <Link className="btn btn-ghost text-xl" to={`/`}>
+        <Link className="btn btn-ghost text-xl text-gray-100" to={`/`}>
           Home
         </Link>
       </div>
@@ -14,12 +14,13 @@ export default function Header() {
             <Link
               to={`https://docs.google.com/forms/d/e/1FAIpQLSdgJUEQirVM1Dwzd3_rJ8wy5wXxbv8n2SYIrVyJ8et1uWXY-g/viewform`}
               target="_blank"
+              className="text-gray-100"
             >
               Submit
             </Link>
           </li>
           <li>
-            <details className="z-40">
+            <details className="z-40 text-gray-100">
               <summary>Games</summary>
               <ul className="bg-base-100 p-2 rounded-md">
                 <li>

@@ -22,12 +22,17 @@ export const weaponColor = (type) => {
   }
 };
 
+import { hades_WeaponOrder } from "../Logic/Method";
+
 export default function TopPlayers({ objData, level }) {
   const LevelNumbers = [...new Set(objData.map((obj) => +obj.Level))];
   const highestLevel = Math.max(...LevelNumbers);
 
   const highestEntries = removeDup(
     objData.filter((obj) => obj.Level == +highestLevel)
+  ).sort(
+    (a, b) =>
+      hades_WeaponOrder.indexOf(a.Aspect) - hades_WeaponOrder.indexOf(b.Aspect)
   );
 
   return (
@@ -35,17 +40,19 @@ export default function TopPlayers({ objData, level }) {
       {highestEntries.map((obj) => (
         <div
           className="w-full min-h-[125px] relative bg-transparent shadow-[0_0_30px_black] border-[1px] border-[black] rounded-xl"
-          style={{ backgroundColor: `${weaponColor(obj.Weapon)}66` }}
+          style={{ backgroundColor: `${weaponColor(obj.Weapon)}99` }}
         >
-          <div className="absolute bg-[#17171766] h-full w-full top-0 left-0 object-cover rounded-xl" />
+          <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
           <div
             className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl opacity-60 bg-center bg-contain bg-no-repeat"
             style={{ backgroundImage: `url("/${obj.Weapon}.png")` }}
           />
           <div className="h-full flex flex-col items-center justify-center gap-1 font-serif">
-            <div className="text-[10px] uppercase z-20">{obj.Weapon}</div>
+            <div className="text-[10px] uppercase text-gray-300 z-20">
+              {obj.Weapon}
+            </div>
             <div className="text-error z-20">{obj.Name}</div>
-            <div className="text-white text-[12px] z-20">
+            <div className="text-gray-300 text-[12px] z-20">
               {level} {obj.Level}
             </div>
             <div className="avatar">
