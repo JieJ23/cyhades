@@ -23,8 +23,13 @@ export default function App() {
             </p>
             <div className="flex justify-center items-center gap-1.5">
               <Link to={`/Hades`} className="group">
+                <button className="btn btn-error hover:scale-105 duration-100 ease-in transition-all">
+                  Hades
+                </button>
+              </Link>
+              <Link to={`/Hades2`} className="group">
                 <button className="btn btn-success hover:scale-105 duration-100 ease-in transition-all">
-                  Begin Exploring
+                  Hades II
                 </button>
               </Link>
             </div>

@@ -3,29 +3,34 @@ import { removeDup } from "../Logic/Method";
 export const weaponColor = (type) => {
   switch (type) {
     case "Sword":
+    case "Argent Skull":
       return `#990000`;
     case "Spear":
+    case "Witch's Staff":
       return `#5C4033`;
     case "Fists":
+    case "Umbral Flames":
       return `#301934`;
     case "Bow":
+    case "Moonstone Axe":
       return `#013220`;
     case "Rail":
+    case "Sister Blades":
       return "#003366";
     case "Shield":
       return "#131111";
   }
 };
 
-export default function TopPlayers({ objData }) {
-  const heatNumbers = [...new Set(objData.map((obj) => +obj.Heat))];
-  const highestHeat = Math.max(...heatNumbers);
+export default function TopPlayers({ objData, level }) {
+  const LevelNumbers = [...new Set(objData.map((obj) => +obj.Level))];
+  const highestLevel = Math.max(...LevelNumbers);
 
   const highestEntries = removeDup(
-    objData.filter((obj) => obj.Heat == +highestHeat)
+    objData.filter((obj) => obj.Level == +highestLevel)
   );
 
-  console.log(highestHeat);
+  console.log(highestLevel);
 
   return (
     <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 justify-evenly gap-0.5 select-none w-[95%] max-w-[1200px] mx-auto px-2">
@@ -41,9 +46,11 @@ export default function TopPlayers({ objData }) {
           />
           <div className="h-full flex flex-col items-center justify-center font-serif">
             <div className="text-[10px] uppercase z-20">{obj.Weapon}</div>
-            <div className="text-white z-20">{obj.Name}</div>
-            <div className="text-[white] text-[12px] z-20">Heat {obj.Heat}</div>
-            <div className="text-[10px] z-20">{obj.Aspect}</div>
+            <div className="text-error z-20">{obj.Name}</div>
+            <div className="text-white text-[12px] z-20">
+              {level} {obj.Level}
+            </div>
+            <div className="text-[10px] uppercase z-20">{obj.Aspect}</div>
           </div>
         </div>
       ))}

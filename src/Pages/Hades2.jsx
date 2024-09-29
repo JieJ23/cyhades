@@ -12,7 +12,7 @@ import Footer from "../Components/Footer";
 
 import { useState, useEffect } from "react";
 
-export default function Hades() {
+export default function Hades2() {
   const [data, setData] = useState(1);
   const [selectedAspect, setSelectedAspect] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState("");
@@ -39,7 +39,7 @@ export default function Hades() {
   };
   //
 
-  const gameDate = testing.filter((obj) => obj.Game === `Hades`);
+  const gameDate = testing.filter((obj) => obj.Game === `Hades2`);
 
   const rawData = gameDate.slice().sort((a, b) => b.Level - a.Level);
   const testingdata = removeDup(
@@ -77,7 +77,7 @@ export default function Hades() {
       <Header />
 
       <div className="w-full">
-        <TopPlayers objData={testingdata} level={`Heat`} />
+        <TopPlayers objData={testingdata} level={`Fear`} />
         <section>
           <div className="flex justify-center my-2 gap-0.5">
             <button
@@ -128,7 +128,7 @@ export default function Hades() {
                 <th>Name</th>
                 <th>Weapon</th>
                 <th>Aspect</th>
-                <th>Heat</th>
+                <th>Fear</th>
                 <th>Modded</th>
                 <th>Category</th>
                 <th>Link</th>

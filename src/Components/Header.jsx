@@ -27,10 +27,13 @@ export default function Header() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-[#3e5ed4] mt-1 rounded-lg z-[1] w-52 p-2 text-white"
+            className="menu menu-sm dropdown-content bg-primary mt-1 rounded-lg z-40 w-52 p-2 text-black"
           >
             <li>
               <Link to={`/Hades`}>Hades</Link>
+            </li>
+            <li>
+              <Link to={`/Hades2`}>Hades2</Link>
             </li>
           </ul>
         </div>
