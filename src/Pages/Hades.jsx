@@ -139,7 +139,6 @@ export default function Hades() {
                   <th>Weapon</th>
                   <th>Aspect</th>
                   <th>Heat</th>
-                  <th>Modded</th>
                   <th>Category</th>
                   <th>Link</th>
                   <th>Patch</th>
@@ -151,7 +150,15 @@ export default function Hades() {
                     <th className="font-serif">{index + 1}.</th>
                     <td>{obj.Name}</td>
                     <td>{obj.Weapon}</td>
-                    <td>{obj.Aspect}</td>
+                    <td>
+                      <div className="avatar">
+                        <div className="mask mask-heart w-7">
+                          <img
+                            src={`/Aspects/${obj.Weapon}-${obj.Aspect}.png`}
+                          />
+                        </div>
+                      </div>
+                    </td>
                     <td
                       className={`${
                         obj.Level == 64
@@ -165,14 +172,13 @@ export default function Hades() {
                     >
                       {obj.Level}
                     </td>
-                    <td className={obj.Modded === "yes" ? `text-success` : ``}>
-                      {obj.Modded === "yes" ? `Enabled` : `Disabled`}
-                    </td>
                     <td
                       className={
                         obj.Category === `Unseeded`
-                          ? `text-warning`
-                          : `text-primary`
+                          ? `text-[#e3ac6d]`
+                          : obj.Category === `Modded`
+                          ? `text-[#39bb5c]`
+                          : `text-[#4f80d5]`
                       }
                     >
                       {obj.Category}

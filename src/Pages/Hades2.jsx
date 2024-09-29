@@ -140,7 +140,6 @@ export default function Hades2() {
                   <th>Aspect</th>
                   <th>Direction</th>
                   <th>Fear</th>
-                  <th>Modded</th>
                   <th>Category</th>
                   <th>Link</th>
                   <th>Patch</th>
@@ -152,8 +151,22 @@ export default function Hades2() {
                     <th className="font-serif">{index + 1}.</th>
                     <td>{obj.Name}</td>
                     <td>{obj.Weapon}</td>
-                    <td>{obj.Aspect}</td>
-                    <td>{obj.Direction}</td>
+                    <td>
+                      <div className="avatar">
+                        <div className="mask mask-hexagon-2 w-7">
+                          <img src={`/Aspects/${obj.Aspect}.png`} />
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      className={
+                        obj.Direction == `Underworld`
+                          ? `text-teal-500`
+                          : ` text-yellow-400`
+                      }
+                    >
+                      {obj.Direction}
+                    </td>
 
                     <td
                       className={`${
@@ -168,14 +181,13 @@ export default function Hades2() {
                     >
                       {obj.Level}
                     </td>
-                    <td className={obj.Modded === "yes" ? `text-success` : ``}>
-                      {obj.Modded === "yes" ? `Enabled` : `Disabled`}
-                    </td>
                     <td
                       className={
                         obj.Category === `Unseeded`
-                          ? `text-warning`
-                          : `text-primary`
+                          ? `text-[#e3ac6d]`
+                          : obj.Category === `Modded`
+                          ? `text-[#39bb5c]`
+                          : `text-[#4f80d5]`
                       }
                     >
                       {obj.Category}

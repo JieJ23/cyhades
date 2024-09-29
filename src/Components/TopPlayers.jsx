@@ -34,21 +34,29 @@ export default function TopPlayers({ objData, level }) {
     <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 justify-evenly gap-0.5 select-none w-[95%] max-w-[1200px] mx-auto px-2">
       {highestEntries.map((obj) => (
         <div
-          className="w-full min-h-[125px] relative bg-transparent shadow-[0_0_15px_black] border-[1px] border-[black] rounded-xl"
+          className="w-full min-h-[125px] relative bg-transparent shadow-[0_0_30px_black] border-[1px] border-[black] rounded-xl"
           style={{ backgroundColor: `${weaponColor(obj.Weapon)}66` }}
         >
-          <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
+          <div className="absolute bg-[#17171766] h-full w-full top-0 left-0 object-cover rounded-xl" />
           <div
-            className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl opacity-60 bg-top bg-cover"
+            className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl opacity-60 bg-center bg-contain bg-no-repeat"
             style={{ backgroundImage: `url("/${obj.Weapon}.png")` }}
           />
-          <div className="h-full flex flex-col items-center justify-center font-serif">
+          <div className="h-full flex flex-col items-center justify-center gap-1 font-serif">
             <div className="text-[10px] uppercase z-20">{obj.Weapon}</div>
             <div className="text-error z-20">{obj.Name}</div>
             <div className="text-white text-[12px] z-20">
               {level} {obj.Level}
             </div>
-            <div className="text-[10px] uppercase z-20">{obj.Aspect}</div>
+            <div className="avatar">
+              <div className="mask mask-decagon w-8">
+                {obj.Game == `Hades2` ? (
+                  <img src={`/Aspects/${obj.Aspect}.png`} />
+                ) : (
+                  <img src={`/Aspects/${obj.Weapon}-${obj.Aspect}.png`} />
+                )}
+              </div>
+            </div>
           </div>
         </div>
       ))}
