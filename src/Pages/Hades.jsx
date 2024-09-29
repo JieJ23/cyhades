@@ -12,11 +12,18 @@ import Footer from "../Components/Footer";
 
 import { useState, useEffect } from "react";
 
+import { useData } from "../Hook/DataFetch";
+import Loading from "../Hook/Loading";
+
 export default function Hades() {
   const [data, setData] = useState(1);
   const [selectedAspect, setSelectedAspect] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState("");
   const [visibleRows, setVisibleRows] = useState(100);
+
+  const { posts, loader } = useData();
+
+  const gameData = posts.filter((obj) => obj.Game == `Hades`);
 
   useEffect(() => {
     setVisibleRows(100);
@@ -39,11 +46,11 @@ export default function Hades() {
   };
   //
 
-  const gameDate = testing.filter((obj) => obj.Game === `Hades`);
+  // const gameDate = testing.filter((obj) => obj.Game === `Hades`);
 
-  const rawData = gameDate.slice().sort((a, b) => b.Level - a.Level);
+  const rawData = gameData.slice().sort((a, b) => b.Level - a.Level);
   const testingdata = removeDup(
-    gameDate.slice().sort((a, b) => b.Level - a.Level)
+    gameData.slice().sort((a, b) => b.Level - a.Level)
   );
 
   const allAvailableData = [rawData, testingdata];
@@ -76,125 +83,127 @@ export default function Hades() {
       {/*  */}
       <Header />
 
-      <div className="w-full">
-        <TopPlayers objData={testingdata} level={`Heat`} />
-        <section>
-          <div className="flex justify-center my-2 gap-0.5">
-            <button
-              className="btn shadow-[inset_0_0_15px_black]"
-              onClick={() => handleDataChange(0)}
-            >
-              All
-            </button>
-            <button
-              className="btn shadow-[inset_0_0_15px_black]"
-              onClick={() => handleDataChange(1)}
-            >
-              Rank
-            </button>
-          </div>
-          <div className="my-2 mx-auto flex justify-center gap-0.5">
-            {allWeaponType.map((obj, index) => (
+      {loader ? (
+        <Loading />
+      ) : (
+        <div className="w-full">
+          <TopPlayers objData={testingdata} level={`Heat`} />
+          <section>
+            <div className="flex justify-center my-2 gap-0.5">
               <button
                 className="btn shadow-[inset_0_0_15px_black]"
-                onClick={() => handleDataChange(index + 2)}
+                onClick={() => handleDataChange(0)}
               >
-                {obj}
+                All
               </button>
-            ))}
-          </div>
-        </section>
-        {/*  */}
-        <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
-          <PlayerSelection
-            watch={data}
-            fulldata={allAvailableData}
-            onPlayerChange={handlePlayerChange}
-            allPlayers={testingdata}
-          />
-          <AspectSelection
-            watch={data}
-            fulldata={allAvailableData}
-            onAspectChange={handleAspectChange}
-            allAspect={testingdata}
-          />
-        </section>
-        {/*  */}
-        <div className="overflow-x-auto rounded-md my-4">
-          <table className="table table-xs select-none min-w-[700px] max-w-[1400px] mx-auto">
-            <thead>
-              <tr className="font-serif">
-                <th></th>
-                <th>Name</th>
-                <th>Weapon</th>
-                <th>Aspect</th>
-                <th>Heat</th>
-                <th>Modded</th>
-                <th>Category</th>
-                <th>Link</th>
-                <th>Patch</th>
-              </tr>
-            </thead>
-            <tbody>
-              {displayData.slice(0, visibleRows).map((obj, index) => (
-                <tr className="font-serif">
-                  <th className="font-serif">{index + 1}.</th>
-                  <td>{obj.Name}</td>
-                  <td>{obj.Weapon}</td>
-                  <td>{obj.Aspect}</td>
-                  <td
-                    className={`${
-                      obj.Level == 64
-                        ? `text-error`
-                        : obj.Level >= 60
-                        ? `text-warning`
-                        : obj.Level >= 50
-                        ? `text-success`
-                        : ``
-                    }`}
-                  >
-                    {obj.Level}
-                  </td>
-                  <td
-                    className={
-                      obj.Modded === "yes" ? `text-success` : `text-error`
-                    }
-                  >
-                    {obj.Modded === "yes" ? `Enabled` : `Disabled`}
-                  </td>
-                  <td
-                    className={
-                      obj.Category === `Unseeded`
-                        ? `text-warning`
-                        : `text-primary`
-                    }
-                  >
-                    {obj.Category}
-                  </td>
-                  <td>
-                    <Link
-                      to={obj["Run Video"]}
-                      target="_blank"
-                      className="text-[#4651d1]"
-                    >
-                      Video
-                    </Link>
-                  </td>
-                  <td>{obj.Patch}</td>
-                </tr>
+              <button
+                className="btn shadow-[inset_0_0_15px_black]"
+                onClick={() => handleDataChange(1)}
+              >
+                Rank
+              </button>
+            </div>
+            <div className="my-2 mx-auto flex flex-wrap justify-center gap-1">
+              {allWeaponType.map((obj, index) => (
+                <button
+                  className="btn shadow-[inset_0_0_15px_black]"
+                  onClick={() => handleDataChange(index + 2)}
+                >
+                  {obj}
+                </button>
               ))}
-            </tbody>
-          </table>
-        </div>
-        {visibleRows < displayData.length && (
-          <div className="flex justify-center my-2">
-            <button onClick={loadMore} className="btn btn-primary">
-              Load More
-            </button>
+            </div>
+          </section>
+          {/*  */}
+          <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
+            <PlayerSelection
+              watch={data}
+              fulldata={allAvailableData}
+              onPlayerChange={handlePlayerChange}
+              allPlayers={testingdata}
+            />
+            <AspectSelection
+              watch={data}
+              fulldata={allAvailableData}
+              onAspectChange={handleAspectChange}
+              allAspect={testingdata}
+            />
+          </section>
+          {/*  */}
+          <div className="overflow-x-auto rounded-md my-4">
+            <table className="table table-xs select-none min-w-[700px] max-w-[1400px] mx-auto">
+              <thead>
+                <tr className="font-serif">
+                  <th></th>
+                  <th>Name</th>
+                  <th>Weapon</th>
+                  <th>Aspect</th>
+                  <th>Heat</th>
+                  <th>Modded</th>
+                  <th>Category</th>
+                  <th>Link</th>
+                  <th>Patch</th>
+                </tr>
+              </thead>
+              <tbody>
+                {displayData.slice(0, visibleRows).map((obj, index) => (
+                  <tr className="font-serif">
+                    <th className="font-serif">{index + 1}.</th>
+                    <td>{obj.Name}</td>
+                    <td>{obj.Weapon}</td>
+                    <td>{obj.Aspect}</td>
+                    <td
+                      className={`${
+                        obj.Level == 64
+                          ? `text-error`
+                          : obj.Level >= 60
+                          ? `text-warning`
+                          : obj.Level >= 50
+                          ? `text-success`
+                          : ``
+                      }`}
+                    >
+                      {obj.Level}
+                    </td>
+                    <td className={obj.Modded === "yes" ? `text-success` : ``}>
+                      {obj.Modded === "yes" ? `Enabled` : `Disabled`}
+                    </td>
+                    <td
+                      className={
+                        obj.Category === `Unseeded`
+                          ? `text-warning`
+                          : `text-primary`
+                      }
+                    >
+                      {obj.Category}
+                    </td>
+                    <td>
+                      <Link
+                        to={obj["Run Video"]}
+                        target="_blank"
+                        className="text-[#4651d1]"
+                      >
+                        Video
+                      </Link>
+                    </td>
+                    <td>{obj.Patch}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-        )}
-      </div>
-      <Footer />
+          {visibleRows < displayData.length && (
+            <div className="flex justify-center my-2">
+              <button onClick={loadMore} className="btn btn-primary">
+                Load More
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+
+      {!loader && <Footer />}
+
       {/*  */}
     </div>
   );

@@ -46,7 +46,7 @@ export default function Header() {
       <div className="navbar-end">
         <Link
           to={
-            "https://docs.google.com/forms/d/e/1FAIpQLSfcN4HRTXNrljkxWR4QVKG-nk4cuDSfPV7YGmA6C_OZb6SPJQ/viewform"
+            "https://docs.google.com/forms/d/e/1FAIpQLSdgJUEQirVM1Dwzd3_rJ8wy5wXxbv8n2SYIrVyJ8et1uWXY-g/viewform"
           }
           target="_blank"
           className="btn bg-[#3e5ed4] text-xl text-white"

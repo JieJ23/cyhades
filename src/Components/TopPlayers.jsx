@@ -30,8 +30,6 @@ export default function TopPlayers({ objData, level }) {
     objData.filter((obj) => obj.Level == +highestLevel)
   );
 
-  console.log(highestLevel);
-
   return (
     <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 justify-evenly gap-0.5 select-none w-[95%] max-w-[1200px] mx-auto px-2">
       {highestEntries.map((obj) => (
