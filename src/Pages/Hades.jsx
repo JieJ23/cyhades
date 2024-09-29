@@ -187,7 +187,7 @@ export default function Hades() {
                     </td>
                     <td>
                       <Link
-                        to={obj["Run Video"]}
+                        to={obj["Src"]}
                         target="_blank"
                         className="text-[#4651d1]"
                       >
