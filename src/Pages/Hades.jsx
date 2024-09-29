@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { testing } from "../Logic/Test";
-import { removeDup } from "../Logic/Method";
+import { removeDup, removeDupCate } from "../Logic/Method";
 
 import Header from "../Components/Header";
 import TopPlayers from "../Components/TopPlayers";
@@ -49,7 +49,7 @@ export default function Hades() {
   // const gameDate = testing.filter((obj) => obj.Game === `Hades`);
 
   const rawData = gameData.slice().sort((a, b) => b.Level - a.Level);
-  const testingdata = removeDup(
+  const testingdata = removeDupCate(
     gameData.slice().sort((a, b) => b.Level - a.Level)
   );
 
