@@ -52,14 +52,15 @@ export default function Hades2() {
   const testingdata = removeDupCate(
     gameData
       .slice()
-      // .sort(
-      //   (a, b) =>
-      //     customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
-      // )
-      .sort((a, b) =>
-        calculateTime(a["Clear Time"]) > calculateTime(b["Clear Time"]) ? 1 : -1
+      .sort(
+        (a, b) =>
+          customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
       )
-      .sort((a, b) => (a.Level > b.Level ? -1 : 1))
+      .sort(
+        (a, b) =>
+          calculateTime(a["Clear Time"]) - calculateTime(b["Clear Time"])
+      )
+      .sort((a, b) => b.Level - a.Level)
   );
 
   const allAvailableData = [rawData, testingdata];
