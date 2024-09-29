@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { testing } from "../Logic/Test";
 import { removeDup, removeDupCate } from "../Logic/Method";
+import { customOrder } from "../Logic/Method";
 
 import Header from "../Components/Header";
 import TopPlayers from "../Components/TopPlayers";
@@ -50,7 +50,13 @@ export default function Hades() {
 
   const rawData = gameData.slice().sort((a, b) => b.Level - a.Level);
   const testingdata = removeDupCate(
-    gameData.slice().sort((a, b) => b.Level - a.Level)
+    gameData
+      .slice()
+      .sort(
+        (a, b) =>
+          customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
+      )
+      .sort((a, b) => b.Level - a.Level)
   );
 
   const allAvailableData = [rawData, testingdata];

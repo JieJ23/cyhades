@@ -25,3 +25,5 @@ export function removeDupCate(obj) {
   });
   return result;
 }
+
+export const customOrder = ["Unseeded", "Seeded", "Modded"];
