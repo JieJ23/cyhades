@@ -144,9 +144,10 @@ export default function Hades2() {
                   <th>Aspect</th>
                   <th>Direction</th>
                   <th>Fear</th>
+                  <th>Time</th>
                   <th>Category</th>
                   <th>Link</th>
-                  <th>Patch</th>
+                  {/* <th>Patch</th> */}
                 </tr>
               </thead>
               <tbody>
@@ -185,6 +186,8 @@ export default function Hades2() {
                     >
                       {obj.Level}
                     </td>
+                    <td>{obj["Clear Time"]}</td>
+
                     <td
                       className={
                         obj.Category === `Unseeded`
@@ -205,7 +208,7 @@ export default function Hades2() {
                         Video
                       </Link>
                     </td>
-                    <td>{obj.Patch}</td>
+                    {/* <td>{obj.Patch}</td> */}
                   </tr>
                 ))}
               </tbody>
