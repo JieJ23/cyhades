@@ -37,3 +37,30 @@ export function calculateTime(num) {
   let total = +minToMS + +secToMS + ms;
   return total;
 }
+
+export const hades_WeaponOrder = [
+  `Zagreus Sword`,
+  `Nemesis`,
+  `Poseidon`,
+  `Arthur`,
+  `Zagreus Spear`,
+  `Achilles`,
+  `Hades`,
+  `Guan Yu`,
+  `Zagreus Shield`,
+  `Chaos`,
+  `Zeus`,
+  `Beowulf`,
+  `Zagreus Bow`,
+  `Chiron`,
+  `Hera`,
+  `Rama`,
+  `Zagreus Fists`,
+  `Talos`,
+  `Demeter`,
+  `Gilgamesh`,
+  `Zagreus Rail`,
+  `Eris`,
+  `Hestia`,
+  `Lucifer`,
+];
