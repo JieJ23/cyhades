@@ -138,8 +138,7 @@ export default function Hades() {
             <table className="table table-xs select-none min-w-[700px] max-w-[1400px] mx-auto">
               <thead>
                 <tr className="font-serif">
-                  <th></th>
-                  <th>Name</th>
+                  <th className="text-center">Name</th>
                   <th>Weapon</th>
                   <th>Aspect</th>
                   <th>Heat</th>
@@ -151,8 +150,7 @@ export default function Hades() {
               <tbody>
                 {displayData.slice(0, visibleRows).map((obj, index) => (
                   <tr className="font-serif">
-                    <th className="font-serif">{index + 1}.</th>
-                    <td>{obj.Name}</td>
+                    <td className="text-center">{obj.Name}</td>
                     <td>{obj.Weapon}</td>
                     <td>
                       <div className="avatar">

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { removeDup, removeDupCate } from "../Logic/Method";
-import { customOrder } from "../Logic/Method";
+import { customOrder, calculateTime } from "../Logic/Method";
 
 import Header from "../Components/Header";
 import TopPlayers from "../Components/TopPlayers";
@@ -20,6 +20,8 @@ export default function Hades2() {
   const [selectedAspect, setSelectedAspect] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState("");
   const [visibleRows, setVisibleRows] = useState(100);
+
+  // console.log(calculateTime(`17:46.02`) < calculateTime(`20:04.65`));
 
   const { posts, loader } = useData();
 
@@ -50,11 +52,14 @@ export default function Hades2() {
   const testingdata = removeDupCate(
     gameData
       .slice()
-      .sort(
-        (a, b) =>
-          customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
+      // .sort(
+      //   (a, b) =>
+      //     customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
+      // )
+      .sort((a, b) =>
+        calculateTime(a["Clear Time"]) > calculateTime(b["Clear Time"]) ? 1 : -1
       )
-      .sort((a, b) => b.Level - a.Level)
+      .sort((a, b) => (a.Level > b.Level ? -1 : 1))
   );
 
   const allAvailableData = [rawData, testingdata];

@@ -27,3 +27,13 @@ export function removeDupCate(obj) {
 }
 
 export const customOrder = ["Unseeded", "Seeded", "Modded"];
+
+export function calculateTime(num) {
+  let [min, rest] = num.split(":");
+  let [sec, ms] = rest.split(".");
+
+  let minToMS = +min * 60 * 100;
+  let secToMS = +sec * 100;
+  let total = +minToMS + +secToMS + ms;
+  return total;
+}
