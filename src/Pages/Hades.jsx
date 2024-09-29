@@ -149,7 +149,7 @@ export default function Hades() {
                   <th>Heat</th>
                   <th>Category</th>
                   <th>Link</th>
-                  <th>Patch</th>
+                  <th>Date</th>
                 </tr>
               </thead>
               <tbody>
@@ -199,7 +199,7 @@ export default function Hades() {
                         Video
                       </Link>
                     </td>
-                    <td>{obj.Patch}</td>
+                    <td>{obj.Date ? obj.Date.slice(0, 10) : `-`}</td>
                   </tr>
                 ))}
               </tbody>
