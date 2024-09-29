@@ -46,8 +46,6 @@ export default function Hades() {
   };
   //
 
-  // const gameDate = testing.filter((obj) => obj.Game === `Hades`);
-
   const rawData = gameData.slice().sort((a, b) => b.Level - a.Level);
   const testingdata = removeDupCate(
     gameData
