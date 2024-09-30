@@ -23,8 +23,8 @@ export default function App() {
               A community hub dedicated to tracking high-level gameplay within
               the Hades community.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <Link to={`/Hades`} className="group w-full overflow-hidden">
+            <div className="grid grid-cols-1 gap-2">
+              {/* <Link to={`/Hades`} className="group w-full overflow-hidden">
                 <div className="w-full min-h-[220px] relative bg-transparent shadow-[0_0_15px_black] border-[1px] border-[black] rounded-xl">
                   <div
                     className="absolute bg-[#f0444499] h-full w-full top-0 opacity-20 left-0 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-40 transition-all ease-in duration-200"
@@ -41,7 +41,7 @@ export default function App() {
                     Zagreus
                   </div>
                 </div>
-              </Link>
+              </Link> */}
               <Link
                 to={`/Hades2`}
                 className="group w-full relative group overflow-hidden"
@@ -66,7 +66,7 @@ export default function App() {
             </div>
           </div>
           {/*  */}
-          <div className="flex flex-wrap w-full justify-center gap-1">
+          {/* <div className="flex flex-wrap w-full justify-center gap-1">
             <kbd className="kbd">q</kbd>
             <kbd className="kbd">w</kbd>
             <kbd className="kbd bg-error text-black">e</kbd>
@@ -97,7 +97,7 @@ export default function App() {
             <kbd className="kbd">b</kbd>
             <kbd className="kbd">n</kbd>
             <kbd className="kbd">m</kbd>
-          </div>
+          </div> */}
           {/*  */}
           <div className="flex flex-wrap w-full justify-center gap-1">
             <kbd className="kbd">q</kbd>

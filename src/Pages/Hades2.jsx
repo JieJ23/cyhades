@@ -15,20 +15,20 @@ import Loading from "../Hook/Loading";
 
 import { useState, useEffect } from "react";
 
+import { ReturnBoonList } from "../Logic/Method";
+
 export default function Hades2() {
   const [data, setData] = useState(1);
   const [selectedAspect, setSelectedAspect] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState("");
-  const [visibleRows, setVisibleRows] = useState(100);
+  const [visibleRows, setVisibleRows] = useState(50);
 
   // console.log(calculateTime(`17:46.02`) < calculateTime(`20:04.65`));
 
   const { posts, loader } = useData();
 
-  const gameData = posts.filter((obj) => obj.Game == `Hades2`);
-
   useEffect(() => {
-    setVisibleRows(100);
+    setVisibleRows(50);
   }, [data]);
 
   //
@@ -36,7 +36,7 @@ export default function Hades2() {
     setData(num);
   };
   const loadMore = () => {
-    setVisibleRows((prevVisibleRows) => prevVisibleRows + 100);
+    setVisibleRows((prevVisibleRows) => prevVisibleRows + 50);
   };
   const handleAspectChange = (newValue) => {
     setSelectedAspect(newValue);
@@ -48,9 +48,9 @@ export default function Hades2() {
   };
   //
 
-  const rawData = gameData.slice().sort((a, b) => b.Level - a.Level);
+  const rawData = posts.slice().sort((a, b) => b.Fear - a.Fear);
   const testingdata = removeDupCate(
-    gameData
+    posts
       .slice()
       .sort(
         (a, b) =>
@@ -60,7 +60,7 @@ export default function Hades2() {
         (a, b) =>
           calculateTime(a["Clear Time"]) - calculateTime(b["Clear Time"])
       )
-      .sort((a, b) => b.Level - a.Level)
+      .sort((a, b) => b.Fear - a.Fear)
   );
 
   const allAvailableData = [rawData, testingdata];
@@ -149,6 +149,7 @@ export default function Hades2() {
                   <th>Weapon</th>
                   <th>Aspect</th>
                   <th>Direction</th>
+                  <th>Boons</th>
                   <th>Fear</th>
                   <th>Time</th>
                   <th>Category</th>
@@ -178,19 +179,29 @@ export default function Hades2() {
                     >
                       {obj.Direction}
                     </td>
-
+                    <td>
+                      {ReturnBoonList(obj.Boons_Picked)
+                        .slice(0, 8)
+                        .map((item) => (
+                          <div className="avatar">
+                            <div className="mask mask-hexagon-2 w-7">
+                              <img src={`/Boon/${item}.png`} />
+                            </div>
+                          </div>
+                        ))}
+                    </td>
                     <td
                       className={`${
-                        obj.Level == 55
+                        obj.Fear == 55
                           ? `text-error`
-                          : obj.Level >= 50
+                          : obj.Fear >= 50
                           ? `text-warning`
-                          : obj.Level >= 40
+                          : obj.Fear >= 40
                           ? `text-success`
                           : ``
                       }`}
                     >
-                      {obj.Level}
+                      {obj.Fear}
                     </td>
                     <td>{obj["Clear Time"]}</td>
 

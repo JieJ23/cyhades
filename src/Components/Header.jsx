@@ -23,9 +23,9 @@ export default function Header() {
             <details className="z-40 text-gray-100">
               <summary>Games</summary>
               <ul className="bg-base-100 p-2 rounded-md">
-                <li>
+                {/* <li>
                   <Link to={`/Hades`}>Hades</Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to={`/Hades2`}>Hades2</Link>
                 </li>

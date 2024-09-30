@@ -1,3 +1,5 @@
+import { boonOrder } from "./Boons";
+
 export function removeDup(obj) {
   const seen = new Set();
   const result = obj.filter((item) => {
@@ -36,6 +38,15 @@ export function calculateTime(num) {
   let secToMS = +sec * 100;
   let total = +minToMS + +secToMS + ms;
   return total;
+}
+
+export function ReturnBoonList(str) {
+  let boonArr = str.split(",");
+  let finalized = boonArr.map((item) => item.trim());
+  let orderFinalized = finalized.sort(
+    (a, b) => boonOrder.indexOf(a) - boonOrder.indexOf(b)
+  );
+  return orderFinalized;
 }
 
 export const hades_WeaponOrder = [
