@@ -10,7 +10,7 @@ export default function Header() {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-          <li>
+          {/* <li>
             <Link
               to={`https://docs.google.com/forms/d/e/1FAIpQLSdgJUEQirVM1Dwzd3_rJ8wy5wXxbv8n2SYIrVyJ8et1uWXY-g/viewform`}
               target="_blank"
@@ -18,7 +18,7 @@ export default function Header() {
             >
               Submit
             </Link>
-          </li>
+          </li> */}
           <li>
             <details className="z-40 text-gray-100">
               <summary>Games</summary>

@@ -97,7 +97,7 @@ export default function Hades2() {
         <Loading />
       ) : (
         <div className="w-full">
-          <TopPlayers objData={testingdata} level={`Fear`} />
+          {/* <TopPlayers objData={testingdata} level={`Fear`} /> */}
           <section>
             <div className="flex justify-center my-2 gap-0.5">
               <button
