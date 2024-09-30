@@ -2,6 +2,7 @@ import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 
 import { Link } from "react-router-dom";
+import { ReturnBoonList } from "../Logic/Method";
 
 import { useData } from "../Hook/DataFetch";
 import Loading from "../Hook/Loading";
@@ -15,17 +16,17 @@ function findAspectAndRecords(targetAspect, rawData, destination) {
   const targetData = rawData.filter((obj) => obj.Aspect === targetAspect);
 
   const unseed_data = targetData.filter((obj) => obj.Category === `Unseeded`);
-  const seed_data = targetData.filter((obj) => obj.Category === `Seeded`);
-  const mod_data = targetData.filter((obj) => obj.Category === `Modded`);
+  // const seed_data = targetData.filter((obj) => obj.Category === `Seeded`);
+  // const mod_data = targetData.filter((obj) => obj.Category === `Modded`);
 
-  const readyArr = [unseed_data, seed_data, mod_data];
+  const readyArr = [unseed_data];
 
   for (let i = 0; i < readyArr.length; i++) {
-    const sortFindHighest = readyArr[i].sort((a, b) => b.Level - a.Level);
-    const allLevelNum = [...new Set(sortFindHighest.map((obj) => obj.Level))];
-    const highestNum = Math.max(...allLevelNum);
+    const sortFindHighest = readyArr[i].sort((a, b) => b.Fear - a.Fear);
+    const allFearNum = [...new Set(sortFindHighest.map((obj) => obj.Fear))];
+    const highestNum = Math.max(...allFearNum);
 
-    const finalArr = readyArr[i].filter((obj) => obj.Level == highestNum);
+    const finalArr = readyArr[i].filter((obj) => obj.Fear == highestNum);
     const finalized = removeDup(finalArr);
     tempArr = [...tempArr, ...finalized];
   }
@@ -36,7 +37,7 @@ function findAspectAndRecords(targetAspect, rawData, destination) {
 export default function HadesTopAspect() {
   const { posts, loader } = useData();
 
-  const targetData = posts.filter((obj) => obj.Game === `Hades`);
+  const targetData = posts.slice();
   const allAspects = [...new Set(targetData.map((obj) => obj.Aspect))].sort(
     (a, b) => hades_WeaponOrder.indexOf(a) - hades_WeaponOrder.indexOf(b)
   );
@@ -48,8 +49,6 @@ export default function HadesTopAspect() {
       findAspectAndRecords(allAspects[i], targetData, finalizedData);
     }
   }
-
-  console.log(finalizedData);
 
   return (
     <div className="h-lvh overflow-x-hidden select-none">
@@ -77,8 +76,9 @@ export default function HadesTopAspect() {
                     <tr className="font-serif bg-[#181a19] text-gray-400">
                       <th></th>
                       <th></th>
-                      <th>Weapon</th>
+                      <th></th>
                       <th>Aspect</th>
+                      <th>Boons</th>
                       <th>Heat</th>
                       <th>Category</th>
                       <th>Link</th>
@@ -90,27 +90,39 @@ export default function HadesTopAspect() {
                         <td className="text-center">{obj.Name}</td>
                         <td>
                           <div className="avatar">
-                            <div className="mask mask-heart w-7">
-                              <img
-                                src={`/Aspects/${obj.Weapon}-${obj.Aspect}.png`}
-                              />
+                            <div className="mask mask-decagon w-7">
+                              <img src={`/Aspects/${obj.Aspect}.png`} />
                             </div>
                           </div>
                         </td>
                         <td>{obj.Weapon}</td>
                         <td>{obj.Aspect}</td>
+
+                        <td>
+                          <div className="flex">
+                            {ReturnBoonList(obj.Boons_Picked)
+                              .slice(0, 8)
+                              .map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-decagon w-7">
+                                    <img src={`/Boon/${item}.png`} />
+                                  </div>
+                                </div>
+                              ))}
+                          </div>
+                        </td>
                         <td
                           className={`${
-                            obj.Level == 64
+                            obj.Fear == 64
                               ? `text-error`
-                              : obj.Level >= 60
+                              : obj.Fear >= 60
                               ? `text-warning`
-                              : obj.Level >= 50
+                              : obj.Fear >= 50
                               ? `text-success`
                               : ``
                           }`}
                         >
-                          {obj.Level}
+                          {obj.Fear}
                         </td>
                         <td
                           className={

@@ -139,6 +139,11 @@ export default function Hades2() {
               allAspect={testingdata}
             />
           </section>
+          <Link to={`/HadesTopAspect`} className="flex justify-center my-2">
+            <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
+              Top Aspects
+            </button>
+          </Link>
           {/*  */}
           <div className="overflow-x-auto rounded-md my-4">
             <table className="table table-xs select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
