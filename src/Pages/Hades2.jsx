@@ -165,7 +165,7 @@ export default function Hades2() {
                     <td>{obj.Weapon}</td>
                     <td>
                       <div className="avatar">
-                        <div className="mask mask-hexagon-2 w-7">
+                        <div className="mask mask-decagon w-7">
                           <img src={`/Aspects/${obj.Aspect}.png`} />
                         </div>
                       </div>
@@ -180,15 +180,17 @@ export default function Hades2() {
                       {obj.Direction}
                     </td>
                     <td>
-                      {ReturnBoonList(obj.Boons_Picked)
-                        .slice(0, 8)
-                        .map((item) => (
-                          <div className="avatar">
-                            <div className="mask mask-hexagon-2 w-7">
-                              <img src={`/Boon/${item}.png`} />
+                      <div className="flex">
+                        {ReturnBoonList(obj.Boons_Picked)
+                          .slice(0, 8)
+                          .map((item) => (
+                            <div className="avatar">
+                              <div className="mask mask-decagon w-7">
+                                <img src={`/Boon/${item}.png`} />
+                              </div>
                             </div>
-                          </div>
-                        ))}
+                          ))}
+                      </div>
                     </td>
                     <td
                       className={`${
