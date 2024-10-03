@@ -10,7 +10,7 @@ export default function FormSubmission() {
 
     try {
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbw1AlGLB366AvpG659vREeoe0lSBMokJpw-LhPZU1yb_tXNKs2WyM4quH26YltnDFV_/exec",
+        "https://script.google.com/macros/s/AKfycbzzQU1BWg9qM7_jidAomTxZbjYrdvrDeJrRx0Y5tmOKO8mnISw0QYDGLM_FtPOkOMCD/exec",
         {
           method: "POST",
           body: formDatab,
@@ -36,17 +36,84 @@ export default function FormSubmission() {
       <div className="fixed bg-[#0e0d0d] h-lvh w-full object-cover -z-20" />
       <Header />
       <div className="flex flex-col gap-2 items-center">
-        <h1>Contact Me form</h1>
-        <h2>
-          This demonstrates how to send data from a website form to Google
-          Sheets in React or Vanilla JS
-        </h2>
+        <h2 className="font-customDress text-[24px] my-5">Entry Submission</h2>
         <div>
-          <form className="form" onSubmit={Submit}>
+          <form
+            className="form flex flex-col gap-2 font-serif"
+            onSubmit={Submit}
+          >
             {/* Directly using Submit here */}
-            <input placeholder="Your Name" name="Name" type="text" />
-            <input placeholder="Your Aspect" name="Aspect" type="text" />
-            <button name="submit" type="submit" className="btn">
+            <input
+              placeholder="Today Date"
+              name="Date"
+              type="date"
+              className="input"
+            />
+            <input
+              placeholder="Direction"
+              name="Direction"
+              type="text"
+              className="input"
+            />
+            <input
+              placeholder="Category"
+              name="Category"
+              type="text"
+              className="input"
+            />
+            <input
+              placeholder="Your Name"
+              name="Name"
+              type="text"
+              className="input"
+            />
+            <input
+              placeholder="Fear Level"
+              name="Fear"
+              type="text"
+              className="input"
+            />
+            <input
+              placeholder="Your Weapon"
+              name="Weapon"
+              type="text"
+              className="input"
+            />
+            <input
+              placeholder="Your Aspect"
+              name="Aspect"
+              type="text"
+              className="input"
+            />
+            <input
+              placeholder="Gameplay Src"
+              name="Src"
+              type="text"
+              className="input"
+            />
+            <input
+              placeholder="Patch"
+              name="Patch"
+              type="text"
+              className="input"
+            />
+            <input
+              placeholder="Clear Time"
+              name="Clear Time"
+              type="text"
+              className="input"
+            />
+            <input
+              placeholder="Boons"
+              name="Boons_Picked"
+              type="text"
+              className="input"
+            />
+            <button
+              name="submit"
+              type="submit"
+              className="btn btn-success text-[16px]"
+            >
               Button
             </button>
           </form>
