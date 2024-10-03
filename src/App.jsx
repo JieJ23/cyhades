@@ -23,7 +23,7 @@ export default function App() {
               A community hub dedicated to tracking high-level gameplay within
               the Hades community.
             </p>
-            <div className="grid grid-cols-1 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-1 gap-2">
               {/* <Link to={`/Hades`} className="group w-full overflow-hidden">
                 <div className="w-full min-h-[220px] relative bg-transparent shadow-[0_0_15px_black] border-[1px] border-[black] rounded-xl">
                   <div
@@ -65,6 +65,9 @@ export default function App() {
               </Link>
             </div>
           </div>
+          <Link to={`/FormSubmission`}>
+            <button className="btn btn-success">Submission Form</button>
+          </Link>
           {/*  */}
           {/* <div className="flex flex-wrap w-full justify-center gap-1">
             <kbd className="kbd">q</kbd>

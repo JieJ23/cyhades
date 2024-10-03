@@ -13,7 +13,7 @@ export const DataProvider = ({ children }) => {
     async function load() {
       try {
         const response = await fetch(
-          `https://script.google.com/macros/s/AKfycbxCX4DUqrtstJ24ydCtPAXDS_8a3xZISRZORq7DdwmYdjmNLr-0A-mnL8dJb-_eIHKB/exec`
+          `https://script.google.com/macros/s/AKfycbxpzr726LzPiTop6UYQj06AAtcHXFPUC9tU1KZJwi3bKVLvYsUEZeUXFiHasKnC6h7U/exec`
         );
         const data = await response.json();
         const posts = await data.filter((obj) => obj.v === "y");

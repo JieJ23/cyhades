@@ -23,8 +23,6 @@ export default function Hades2() {
   const [selectedPlayer, setSelectedPlayer] = useState("");
   const [visibleRows, setVisibleRows] = useState(50);
 
-  // console.log(calculateTime(`17:46.02`) < calculateTime(`20:04.65`));
-
   const { posts, loader } = useData();
 
   useEffect(() => {
