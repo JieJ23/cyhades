@@ -42,7 +42,7 @@ export default function FormSubmission() {
         <h2 className="font-customDress text-[24px] my-5">Entry Submission</h2>
         <div>
           <form
-            className="form flex flex-col gap-2 font-serif"
+            className="form flex flex-col gap-2 font-serif max-w-[800px] px-4"
             onSubmit={Submit}
           >
             {/* Directly using Submit here */}
@@ -52,20 +52,36 @@ export default function FormSubmission() {
               type="date"
               className="input"
             />
+            <div className="form-control">
+              <label className="label cursor-pointer">
+                <span className="label-text">Olympus</span>
+                <input
+                  type="radio"
+                  name="Direction"
+                  className="radio checked:bg-yellow-500"
+                />
+              </label>
+            </div>
+            <div className="form-control">
+              <label className="label cursor-pointer">
+                <span className="label-text">Underworld</span>
+                <input
+                  type="radio"
+                  name="Direction"
+                  className="radio checked:bg-green-500"
+                />
+              </label>
+            </div>
+            <select className="select w-full" name="Category">
+              <option disabled selected>
+                Run Category
+              </option>
+              <option>Unseeded</option>
+              <option>Seeded</option>
+              <option>Modded</option>
+            </select>
             <input
-              placeholder="Direction"
-              name="Direction"
-              type="text"
-              className="input"
-            />
-            <input
-              placeholder="Category"
-              name="Category"
-              type="text"
-              className="input"
-            />
-            <input
-              placeholder="Your Name"
+              placeholder="Player Name"
               name="Name"
               type="text"
               className="input"
@@ -76,18 +92,24 @@ export default function FormSubmission() {
               type="text"
               className="input"
             />
-            <input
-              placeholder="Your Weapon"
-              name="Weapon"
-              type="text"
-              className="input"
-            />
-            <input
-              placeholder="Your Aspect"
-              name="Aspect"
-              type="text"
-              className="input"
-            />
+            <select className="select w-full" name="Weapon">
+              <option disabled selected>
+                Weapon Type
+              </option>
+              <option>Witch's Staff</option>
+              <option>Sister Blades</option>
+              <option>Moonstone Axe</option>
+              <option>Umbral Flames</option>
+              <option>Argent Skull</option>
+            </select>
+            <select className="select w-full" name="Weapon">
+              <option disabled selected>
+                Weapon Type
+              </option>
+              <option>Melinoe Staff</option>
+              <option>Circe</option>
+              <option>Momus</option>
+            </select>
             <input
               placeholder="Gameplay Src"
               name="Src"
@@ -106,19 +128,94 @@ export default function FormSubmission() {
               type="text"
               className="input"
             />
-            <input
-              placeholder="Boons"
-              name="Boons_Picked"
-              type="text"
-              className="input"
-            />
+            <label className="label flex justify-center">Boons Used Test</label>
+            <section className="flex justify-evenly">
+              <div className="form-control">
+                <label className="label cursor-pointer gap-2">
+                  <span className="label-text">Blinding_Sprint</span>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="Boons_Picked"
+                  />
+                </label>
+                <label className="label cursor-pointer">
+                  <span className="label-text">Wave_Flourish</span>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="Boons_Picked"
+                  />
+                </label>
+              </div>
+              <div className="form-control">
+                <label className="label cursor-pointer gap-2">
+                  <span className="label-text">Double_Moonshot</span>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="Boons_Picked"
+                  />
+                </label>
+                <label className="label cursor-pointer">
+                  <span className="label-text">Sunken_Treasure</span>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="Boons_Picked"
+                  />
+                </label>
+              </div>
+              <div className="form-control">
+                <label className="label cursor-pointer gap-2">
+                  <span className="label-text">Swift_Flourish</span>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="Boons_Picked"
+                  />
+                </label>
+                <label className="label cursor-pointer">
+                  <span className="label-text">Super_Nova</span>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="Boons_Picked"
+                  />
+                </label>
+              </div>
+              <div className="form-control">
+                <label className="label cursor-pointer gap-2">
+                  <span className="label-text">Static_Shock</span>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="Boons_Picked"
+                  />
+                </label>
+                <label className="label cursor-pointer">
+                  <span className="label-text">Dark_Side</span>
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="Boons_Picked"
+                  />
+                </label>
+              </div>
+            </section>
             <button
               name="submit"
               type="submit"
-              className="btn btn-success text-[16px]"
+              className="btn btn-success text-[16px] max-w-[400px] mx-auto w-full my-5"
             >
               Button
             </button>
+            <div className="text-center font-customDress text-[12px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              eius fugiat adipisci optio! Animi pariatur fuga, reiciendis
+              commodi tempore harum sed beatae alias repudiandae fugit
+              distinctio, impedit fugiat voluptates neque.
+            </div>
           </form>
         </div>
       </div>
