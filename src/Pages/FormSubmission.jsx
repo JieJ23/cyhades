@@ -71,26 +71,14 @@ export default function FormSubmission() {
               type="date"
               className="input"
             />
-            <div className="form-control">
-              <label className="label cursor-pointer">
-                <span className="label-text">Olympus</span>
-                <input
-                  type="radio"
-                  name="Direction"
-                  className="radio checked:bg-yellow-500"
-                />
-              </label>
-            </div>
-            <div className="form-control">
-              <label className="label cursor-pointer">
-                <span className="label-text">Underworld</span>
-                <input
-                  type="radio"
-                  name="Direction"
-                  className="radio checked:bg-green-500"
-                />
-              </label>
-            </div>
+            <select className="select w-full" name="Direction">
+              <option disabled selected>
+                Direction
+              </option>
+              <option>Olympus</option>
+              <option>Underworld</option>
+            </select>
+
             <select className="select w-full" name="Category">
               <option disabled selected>
                 Run Category
@@ -147,93 +135,92 @@ export default function FormSubmission() {
               type="text"
               className="input"
             />
-            <label className="label flex justify-center">Boons Used Test</label>
-            <section className="flex justify-evenly">
-              <div className="form-control">
-                <label className="label cursor-pointer gap-2">
-                  <span className="label-text">Blinding_Sprint</span>
-                  <input
-                    type="checkbox"
-                    className="checkbox"
-                    onChange={handleCBChange}
-                    value="Blinding_Sprint"
-                  />
-                </label>
-                <label className="label cursor-pointer">
-                  <span className="label-text">Wave_Flourish</span>
-                  <input
-                    type="checkbox"
-                    className="checkbox"
-                    onChange={handleCBChange}
-                    value="Wave_Flourish"
-                  />
-                </label>
-              </div>
-              <div className="form-control">
-                <label className="label cursor-pointer gap-2">
-                  <span className="label-text">Double_Moonshot</span>
-                  <input
-                    type="checkbox"
-                    className="checkbox"
-                    onChange={handleCBChange}
-                    value="Double_Moonshot"
-                  />
-                </label>
-                <label className="label cursor-pointer">
-                  <span className="label-text">Sunken_Treasure</span>
-                  <input
-                    type="checkbox"
-                    className="checkbox"
-                    onChange={handleCBChange}
-                    value="Sunken_Treasure"
-                  />
-                </label>
-              </div>
-              <div className="form-control">
-                <label className="label cursor-pointer gap-2">
-                  <span className="label-text">Swift_Flourish</span>
-                  <input
-                    type="checkbox"
-                    className="checkbox"
-                    onChange={handleCBChange}
-                    value="Swift_Flourish"
-                  />
-                </label>
-                <label className="label cursor-pointer">
-                  <span className="label-text">Super_Nova</span>
-                  <input
-                    type="checkbox"
-                    className="checkbox"
-                    onChange={handleCBChange}
-                    value="Super_Nova"
-                  />
-                </label>
-              </div>
-              <div className="form-control">
-                <label className="label cursor-pointer gap-2">
-                  <span className="label-text">Static_Shock</span>
-                  <input
-                    type="checkbox"
-                    className="checkbox"
-                    onChange={handleCBChange}
-                    value="Static_Shock"
-                  />
-                </label>
-                <label className="label cursor-pointer">
-                  <span className="label-text">Dark_Side</span>
-                  <input
-                    type="checkbox"
-                    className="checkbox"
-                    onChange={handleCBChange}
-                    value="Dark_Side"
-                  />
-                </label>
-              </div>
+            <label className="label flex justify-center">
+              Boons Used Test Etc.
+            </label>
+            <section className="grid grid-cols-2 sm:grid-cols-4 justify-evenly gap-x-10">
+              <label className="label cursor-pointer flex justify-between gap-2">
+                <span className="label-text">Blinding_Sprint</span>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  onChange={handleCBChange}
+                  value="Blinding_Sprint"
+                />
+              </label>
+              <label className="label cursor-pointer flex justify-between">
+                <span className="label-text">Wave_Flourish</span>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  onChange={handleCBChange}
+                  value="Wave_Flourish"
+                />
+              </label>
+
+              <label className="label cursor-pointer flex justify-between gap-2">
+                <span className="label-text">Double_Moonshot</span>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  onChange={handleCBChange}
+                  value="Double_Moonshot"
+                />
+              </label>
+              <label className="label cursor-pointer flex justify-between">
+                <span className="label-text">Sunken_Treasure</span>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  onChange={handleCBChange}
+                  value="Sunken_Treasure"
+                />
+              </label>
+
+              <label className="label cursor-pointer flex justify-between gap-2">
+                <span className="label-text">Swift_Flourish</span>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  onChange={handleCBChange}
+                  value="Swift_Flourish"
+                />
+              </label>
+              <label className="label cursor-pointer flex justify-between">
+                <span className="label-text">Super_Nova</span>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  onChange={handleCBChange}
+                  value="Super_Nova"
+                />
+              </label>
+
+              <label className="label cursor-pointer flex justify-between gap-2">
+                <span className="label-text flex items-center justify-center gap-1">
+                  Static_Shock
+                </span>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  onChange={handleCBChange}
+                  value="Static_Shock"
+                />
+              </label>
+              <label className="label cursor-pointer flex justify-between">
+                <span className="label-text">Dark_Side</span>
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  onChange={handleCBChange}
+                  value="Dark_Side"
+                />
+              </label>
             </section>
             <button
               name="submit"
               type="submit"
-              className="btn btn-success text-[16px] max-w-[400px] mx-auto w-full my-5"
+              className="btn btn-success text-[16px] max-w-[400px] mx-auto w-full my-5 pointer-events-none"
             >
               Button
             </button>
