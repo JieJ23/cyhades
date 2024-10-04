@@ -1,12 +1,31 @@
 import Header from "../Components/Header";
 import FooterInfo from "../Components/Footer";
+import { useState } from "react";
 
 export default function FormSubmission() {
+  const [selectedBoons, setSelectedBoons] = useState([]);
+
+  const handleCBChange = (event) => {
+    const value = event.target.value;
+    setSelectedBoons((prev) => {
+      // Check if the value is already in the selectedBoons array
+      if (prev.includes(value)) {
+        // Remove the value if it's already selected
+        return prev.filter((boon) => boon !== value);
+      } else {
+        // Add the value if it's not selected
+        return [...prev, value];
+      }
+    });
+  };
+
   async function Submit(e) {
     e.preventDefault(); // Prevent default form submission
 
     const formEle = e.target; // Reference the form that triggered the event
     const formDatab = new FormData(formEle); // Create a FormData object
+
+    formDatab.append("Boons_Picked", selectedBoons.join(", ")); // Append the selected boons
 
     try {
       const res = await fetch(
@@ -102,9 +121,9 @@ export default function FormSubmission() {
               <option>Umbral Flames</option>
               <option>Argent Skull</option>
             </select>
-            <select className="select w-full" name="Weapon">
+            <select className="select w-full" name="Aspect">
               <option disabled selected>
-                Weapon Type
+                Aspect
               </option>
               <option>Melinoe Staff</option>
               <option>Circe</option>
@@ -136,7 +155,8 @@ export default function FormSubmission() {
                   <input
                     type="checkbox"
                     className="checkbox"
-                    name="Boons_Picked"
+                    onChange={handleCBChange}
+                    value="Blinding_Sprint"
                   />
                 </label>
                 <label className="label cursor-pointer">
@@ -144,7 +164,8 @@ export default function FormSubmission() {
                   <input
                     type="checkbox"
                     className="checkbox"
-                    name="Boons_Picked"
+                    onChange={handleCBChange}
+                    value="Wave_Flourish"
                   />
                 </label>
               </div>
@@ -154,7 +175,8 @@ export default function FormSubmission() {
                   <input
                     type="checkbox"
                     className="checkbox"
-                    name="Boons_Picked"
+                    onChange={handleCBChange}
+                    value="Double_Moonshot"
                   />
                 </label>
                 <label className="label cursor-pointer">
@@ -162,7 +184,8 @@ export default function FormSubmission() {
                   <input
                     type="checkbox"
                     className="checkbox"
-                    name="Boons_Picked"
+                    onChange={handleCBChange}
+                    value="Sunken_Treasure"
                   />
                 </label>
               </div>
@@ -172,7 +195,8 @@ export default function FormSubmission() {
                   <input
                     type="checkbox"
                     className="checkbox"
-                    name="Boons_Picked"
+                    onChange={handleCBChange}
+                    value="Swift_Flourish"
                   />
                 </label>
                 <label className="label cursor-pointer">
@@ -180,7 +204,8 @@ export default function FormSubmission() {
                   <input
                     type="checkbox"
                     className="checkbox"
-                    name="Boons_Picked"
+                    onChange={handleCBChange}
+                    value="Super_Nova"
                   />
                 </label>
               </div>
@@ -190,7 +215,8 @@ export default function FormSubmission() {
                   <input
                     type="checkbox"
                     className="checkbox"
-                    name="Boons_Picked"
+                    onChange={handleCBChange}
+                    value="Static_Shock"
                   />
                 </label>
                 <label className="label cursor-pointer">
@@ -198,7 +224,8 @@ export default function FormSubmission() {
                   <input
                     type="checkbox"
                     className="checkbox"
-                    name="Boons_Picked"
+                    onChange={handleCBChange}
+                    value="Dark_Side"
                   />
                 </label>
               </div>
