@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="navbar w-[95%] mx-auto my-4 rounded-lg bg-base-300 max-w-[800px] font-serif">
+    <div
+      className="navbar w-[95%] mx-auto my-4 rounded-lg bg-base-300 max-w-[800px] font-serif"
+      data-theme="dark"
+    >
       <div className="flex-1">
         <Link className="btn btn-ghost text-xl text-gray-100" to={`/`}>
           Home

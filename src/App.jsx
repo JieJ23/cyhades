@@ -14,7 +14,10 @@ export default function App() {
       >
         <div className="hero-overlay bg-opacity-20" />
 
-        <div className="hero-content text-neutral-content text-center flex flex-col h-full">
+        <div
+          className="hero-content text-neutral-content text-center flex flex-col h-full bg-transparent"
+          data-theme="dark"
+        >
           <div className="max-w-2xl">
             <h1 className="mb-5 text-5xl font-bold font-serif text-gray-300">
               CapriceYuri

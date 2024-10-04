@@ -82,7 +82,10 @@ export default function Hades2() {
   const displayData = allAvailableData[data];
 
   return (
-    <div className="h-lvh overflow-x-hidden select-none">
+    <div
+      className="h-lvh overflow-x-hidden select-none bg-transparent"
+      data-theme="dark"
+    >
       <div
         className="fixed h-full w-full bg-cover -z-10 bg-center"
         style={{ backgroundImage: "url('/mainBG.png')" }}
