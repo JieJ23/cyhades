@@ -82,7 +82,7 @@ export default function HadesTopAspect() {
                       <th></th>
                       <th>Aspect</th>
                       <th>Boons</th>
-                      <th>Heat</th>
+                      <th>Fear</th>
                       <th>Category</th>
                       <th>Link</th>
                     </tr>
@@ -94,7 +94,10 @@ export default function HadesTopAspect() {
                         <td>
                           <div className="avatar">
                             <div className="mask mask-decagon w-7">
-                              <img src={`/Aspects/${obj.Aspect}.png`} />
+                              <img
+                                src={`/Aspects/${obj.Aspect}.png`}
+                                draggable={false}
+                              />
                             </div>
                           </div>
                         </td>
@@ -108,7 +111,10 @@ export default function HadesTopAspect() {
                               .map((item) => (
                                 <div className="avatar">
                                   <div className="mask mask-decagon w-7">
-                                    <img src={`/Boon/${item}.png`} />
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
                                   </div>
                                 </div>
                               ))}

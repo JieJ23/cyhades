@@ -172,7 +172,10 @@ export default function Hades2() {
                     <td>
                       <div className="avatar">
                         <div className="mask mask-decagon w-7">
-                          <img src={`/Aspects/${obj.Aspect}.png`} />
+                          <img
+                            src={`/Aspects/${obj.Aspect}.png`}
+                            draggable={false}
+                          />
                         </div>
                       </div>
                     </td>
@@ -192,7 +195,10 @@ export default function Hades2() {
                           .map((item) => (
                             <div className="avatar">
                               <div className="mask mask-decagon w-7">
-                                <img src={`/Boon/${item}.png`} />
+                                <img
+                                  src={`/Boon/${item}.png`}
+                                  draggable={false}
+                                />
                               </div>
                             </div>
                           ))}
