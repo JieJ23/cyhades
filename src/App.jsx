@@ -68,8 +68,10 @@ export default function App() {
               </Link>
             </div>
           </div>
-          <Link to={`/FormSubmission`}>
-            <button className="btn btn-success">Submission Form</button>
+          <Link to={`/FormSubmission`} className="pointer-events-none">
+            <button className="btn btn-success" disabled>
+              Submission Form
+            </button>
           </Link>
           {/*  */}
           {/* <div className="flex flex-wrap w-full justify-center gap-1">

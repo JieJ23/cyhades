@@ -51,7 +51,10 @@ export default function HadesTopAspect() {
   }
 
   return (
-    <div className="h-lvh overflow-x-hidden select-none">
+    <div
+      className="h-lvh overflow-x-hidden select-none bg-transparent"
+      data-theme="dark"
+    >
       <div
         className="fixed h-full w-full bg-cover -z-10 bg-center"
         style={{ backgroundImage: "url('/mainBG.png')" }}
@@ -73,7 +76,7 @@ export default function HadesTopAspect() {
               {finalizedData.map((arr) => (
                 <>
                   <thead>
-                    <tr className="font-serif bg-[#181a19] text-gray-400">
+                    <tr className="font-serif bg-[#000000] text-gray-400">
                       <th></th>
                       <th></th>
                       <th></th>
