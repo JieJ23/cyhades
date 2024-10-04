@@ -236,7 +236,7 @@ export default function FormSubmission() {
                   value="Static_Shock"
                   disabled={
                     selectedBoons.length >= 4 &&
-                    !selectedBoons.includes("Blinding_Sprint")
+                    !selectedBoons.includes("Static_Shock")
                   } // Disable logic
                 />
               </label>
