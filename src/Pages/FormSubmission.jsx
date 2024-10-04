@@ -7,14 +7,19 @@ export default function FormSubmission() {
 
   const handleCBChange = (event) => {
     const value = event.target.value;
+    const isChecked = event.target.checked;
+
     setSelectedBoons((prev) => {
-      // Check if the value is already in the selectedBoons array
-      if (prev.includes(value)) {
-        // Remove the value if it's already selected
-        return prev.filter((boon) => boon !== value);
+      if (isChecked && prev.length >= 4) {
+        // Prevent further selections if 4 are already selected
+        return prev;
+      }
+
+      // Add or remove the value from the selectedBoons array
+      if (isChecked) {
+        return [...prev, value]; // Add value
       } else {
-        // Add the value if it's not selected
-        return [...prev, value];
+        return prev.filter((boon) => boon !== value); // Remove value
       }
     });
   };
@@ -146,6 +151,10 @@ export default function FormSubmission() {
                   className="checkbox"
                   onChange={handleCBChange}
                   value="Blinding_Sprint"
+                  disabled={
+                    selectedBoons.length >= 4 &&
+                    !selectedBoons.includes("Blinding_Sprint")
+                  } // Disable logic
                 />
               </label>
               <label className="label cursor-pointer flex justify-between">
@@ -155,6 +164,10 @@ export default function FormSubmission() {
                   className="checkbox"
                   onChange={handleCBChange}
                   value="Wave_Flourish"
+                  disabled={
+                    selectedBoons.length >= 4 &&
+                    !selectedBoons.includes("Wave_Flourish")
+                  } // Disable logic
                 />
               </label>
 
@@ -165,6 +178,10 @@ export default function FormSubmission() {
                   className="checkbox"
                   onChange={handleCBChange}
                   value="Double_Moonshot"
+                  disabled={
+                    selectedBoons.length >= 4 &&
+                    !selectedBoons.includes("Double_Moonshot")
+                  } // Disable logic
                 />
               </label>
               <label className="label cursor-pointer flex justify-between">
@@ -174,6 +191,10 @@ export default function FormSubmission() {
                   className="checkbox"
                   onChange={handleCBChange}
                   value="Sunken_Treasure"
+                  disabled={
+                    selectedBoons.length >= 4 &&
+                    !selectedBoons.includes("Sunken_Treasure")
+                  } // Disable logic
                 />
               </label>
 
@@ -184,6 +205,10 @@ export default function FormSubmission() {
                   className="checkbox"
                   onChange={handleCBChange}
                   value="Swift_Flourish"
+                  disabled={
+                    selectedBoons.length >= 4 &&
+                    !selectedBoons.includes("Swift_Flourish")
+                  } // Disable logic
                 />
               </label>
               <label className="label cursor-pointer flex justify-between">
@@ -193,6 +218,10 @@ export default function FormSubmission() {
                   className="checkbox"
                   onChange={handleCBChange}
                   value="Super_Nova"
+                  disabled={
+                    selectedBoons.length >= 4 &&
+                    !selectedBoons.includes("Super_Nova")
+                  } // Disable logic
                 />
               </label>
 
@@ -205,6 +234,10 @@ export default function FormSubmission() {
                   className="checkbox"
                   onChange={handleCBChange}
                   value="Static_Shock"
+                  disabled={
+                    selectedBoons.length >= 4 &&
+                    !selectedBoons.includes("Blinding_Sprint")
+                  } // Disable logic
                 />
               </label>
               <label className="label cursor-pointer flex justify-between">
@@ -214,6 +247,10 @@ export default function FormSubmission() {
                   className="checkbox"
                   onChange={handleCBChange}
                   value="Dark_Side"
+                  disabled={
+                    selectedBoons.length >= 4 &&
+                    !selectedBoons.includes("Dark_Side")
+                  } // Disable logic
                 />
               </label>
             </section>
@@ -221,6 +258,10 @@ export default function FormSubmission() {
               name="submit"
               type="submit"
               className="btn btn-success text-[16px] max-w-[400px] mx-auto w-full my-5 pointer-events-none"
+              disabled={
+                selectedBoons.length >= 4 &&
+                !selectedBoons.includes("Blinding_Sprint")
+              } // Disable logic
             >
               Button
             </button>
