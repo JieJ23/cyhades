@@ -25,7 +25,7 @@ export default function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <Link
               to={`/Hades`}
-              className="group w-full overflow-hidden pointer-events-none opacity-40"
+              className="group w-full overflow-hidden opacity-40"
             >
               <div className="w-full min-h-[220px] relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[#253159] rounded-xl">
                 <div
