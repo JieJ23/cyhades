@@ -20,10 +20,10 @@ createRoot(document.getElementById("root")).render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/Hades" element={<Hades />} />
+        {/* <Route path="/Hades" element={<Hades />} />
         <Route path="/HadesH1TopAspect" element={<HadesH1TopAspect />} />
         <Route path="/HadesTopAspect" element={<HadesTopAspect />} />
-        <Route path="/Hades2" element={<Hades2 />} />
+        <Route path="/Hades2" element={<Hades2 />} /> */}
         <Route path="/FormSubmission" element={<FormSubmission />} />
       </Routes>
     </Router>
