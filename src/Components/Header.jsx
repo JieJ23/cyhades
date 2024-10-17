@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <div
-      className="navbar w-[95%] mx-auto my-4 rounded-lg bg-base-300 max-w-[800px] font-serif"
+      className="navbar w-[95%] mx-auto rounded-lg bg-transparent max-w-[800px] font-serif sticky top-2 z-40 backdrop-blur-md"
       data-theme="dark"
     >
       <div className="flex-1">

@@ -1,5 +1,5 @@
 import { removeDup } from "../Logic/Method";
-import { Hades1FullData } from "../Data/Hades1Data";
+import { Hades2FullData } from "../Data/Hades2Data";
 import { customOrder } from "../Logic/Method";
 
 export const weaponColor = (type) => {
@@ -48,17 +48,17 @@ export const weaponGIF = (type) => {
 
 import { hades_WeaponOrder } from "../Logic/Method";
 
-export default function TopPlayers() {
-  const LevelNumbers = [...new Set(Hades1FullData.map((obj) => obj.Heat))];
+export default function TopPlayers2() {
+  const LevelNumbers = [...new Set(Hades2FullData.map((obj) => obj.Fear))];
   const highestLevel = Math.max(...LevelNumbers);
   //
 
-  const rawData = Hades1FullData.slice()
+  const rawData = Hades2FullData.slice()
     .sort(
       (a, b) =>
         customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
     )
-    .sort((a, b) => b.Heat - a.Heat);
+    .sort((a, b) => b.Fear - a.Fear);
 
   const allWeapons = [...new Set(rawData.map((obj) => obj.Weapon))];
 
@@ -72,7 +72,7 @@ export default function TopPlayers() {
 
   //
   const highestEntries = removeDup(
-    Hades1FullData.filter((obj) => obj.Heat == +highestLevel)
+    Hades2FullData.filter((obj) => obj.Fear == +highestLevel)
   ).sort(
     (a, b) =>
       hades_WeaponOrder.indexOf(a.Aspect) - hades_WeaponOrder.indexOf(b.Aspect)
@@ -97,7 +97,7 @@ export default function TopPlayers() {
             </div>
             <div className="text-white text-[16px] z-20">{obj.Name}</div>
             <div className="text-gray-200 text-[12px] z-20">
-              {`Heat`} {obj.Heat}
+              {`Fear`} {obj.Fear}
             </div>
             <div className="avatar">
               <div className="mask mask-decagon w-8 relative">
@@ -105,11 +105,8 @@ export default function TopPlayers() {
                   src={`/${weaponGIF(obj.Weapon)}.gif`}
                   className="absolute"
                 />
-                {obj.Game == `Hades2` ? (
-                  <img src={`/Aspects/${obj.Aspect}.png`} />
-                ) : (
-                  <img src={`/Aspects/${obj.Weapon}-${obj.Aspect}.png`} />
-                )}
+
+                <img src={`/Aspects/${obj.Aspect}.png`} />
               </div>
             </div>
           </div>

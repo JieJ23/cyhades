@@ -3,7 +3,7 @@ import { removeDup, removeDupCate } from "../Logic/Method";
 import { customOrder, calculateTime } from "../Logic/Method";
 
 import Header from "../Components/Header";
-import TopPlayers from "../Components/TopPlayers";
+import TopPlayers2 from "../Components/TopPlayers2";
 
 import { Hades2FullData } from "../Data/Hades2Data";
 
@@ -95,10 +95,11 @@ export default function Hades2() {
       <div className="fixed bg-[#0e0d0d] h-lvh w-full object-cover -z-20" />
       {/*  */}
       <Header />
+      <TopPlayers2 />
 
       <div className="w-full">
         {/* <TopPlayers objData={testingdata} level={`Fear`} /> */}
-        <section>
+        <section className="hidden">
           <div className="flex justify-center my-2 gap-0.5">
             <button
               className="btn shadow-[inset_0_0_15px_black] text-gray-300"
@@ -125,25 +126,27 @@ export default function Hades2() {
           </div>
         </section>
         {/*  */}
-        <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
-          <PlayerSelection
-            watch={data}
-            fulldata={allAvailableData}
-            onPlayerChange={handlePlayerChange}
-            allPlayers={testingdata}
-          />
-          <AspectSelection
-            watch={data}
-            fulldata={allAvailableData}
-            onAspectChange={handleAspectChange}
-            allAspect={testingdata}
-          />
-        </section>
-        <Link to={`/HadesTopAspect`} className="flex justify-center my-2">
-          <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
-            Top Aspects
-          </button>
-        </Link>
+        <div className="hidden">
+          <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
+            <PlayerSelection
+              watch={data}
+              fulldata={allAvailableData}
+              onPlayerChange={handlePlayerChange}
+              allPlayers={testingdata}
+            />
+            <AspectSelection
+              watch={data}
+              fulldata={allAvailableData}
+              onAspectChange={handleAspectChange}
+              allAspect={testingdata}
+            />
+          </section>
+          <Link to={`/HadesTopAspect`} className="flex justify-center my-2">
+            <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
+              Top Aspects
+            </button>
+          </Link>
+        </div>
         {/*  */}
         <div className="overflow-x-auto rounded-md my-4">
           <table className="table table-xs select-none w-full max-w-[1400px] mx-auto text-white">
