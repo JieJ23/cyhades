@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import TopPlayers from "./Components/TopPlayers";
+import TopPlayers2 from "./Components/TopPlayers2";
+import Marquee from "react-fast-marquee";
+import FooterInfo from "./Components/Footer";
+import Header from "./Components/Header";
 
 export default function App() {
   return (
-    <div className="h-lvh overflow-x-hidden select-none">
+    <div className="h-lvh overflow-x-hidden select-none w-full">
       <div
         className="fixed h-full w-full bg-cover -z-10 bg-center"
         style={{ backgroundImage: "url('/mainBG.png')" }}
@@ -14,61 +19,76 @@ export default function App() {
         className="text-neutral-content text-center flex flex-col h-full bg-transparent"
         data-theme="dark"
       >
-        <div className="w-full max-w-[1000px] mx-auto pt-10 pb-5 px-4">
+        <div className="mx-auto pt-8 pb-5 w-full">
           <div className="mb-5 text-4xl font-bold font-serif text-gray-300">
             Supergiant Games
           </div>
-          <p className="mb-5 text-gray-400">
-            A community hub dedicated to tracking high-level gameplay within the
-            Hades community.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <Link to={`/Hades`} className="group w-full overflow-hidden">
-              <div className="w-full min-h-[220px] relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[#253159] rounded-xl">
-                <div
-                  className="absolute bg-[transparent] h-full w-full top-0 opacity-20 left-0 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-40 transition-all ease-in duration-200"
-                  style={{ backgroundImage: `url("/hadesBG.png")` }}
-                />
-                <div
-                  className="absolute h-full w-full top-0 left-0 rounded-xl bg-center bg-contain bg-no-repeat group-hover:scale-105 ease-in duration-200 transition-all z-10"
-                  style={{ backgroundImage: `url("/zagreus.png")` }}
-                />
-                <div className="absolute top-5 left-5 font-customDress uppercase z-20 text-[#ee1818] text-[20px] group-hover:text-[24px] ease-in duration-200 transition-all">
-                  Hades I
+          <div className="max-w-[1200px] mx-auto">
+            <div className="my-5">
+              <Link
+                to={`/Hades2`}
+                className="group w-full relative group overflow-hidden rounded-xl"
+              >
+                <div className="w-full min-h-[220px] max-w-[1000px] mx-auto relative bg-transparent shadow-[inset_0_0_5px_black] border-[1px] border-black/30 rounded-xl">
+                  <div
+                    className="absolute bg-[#29975399] h-full w-full top-0 left-0 opacity-20 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-40 transition-all ease-in duration-200"
+                    style={{ backgroundImage: `url("/hades2BG.png")` }}
+                  />
+                  <div
+                    className="absolute h-full w-full top-0 left-0 z-10 rounded-xl bg-center bg-contain bg-no-repeat group-hover:scale-105 ease-in duration-200 transition-all"
+                    style={{ backgroundImage: `url("/melinoe.png")` }}
+                  />
+                  <div className="absolute top-5 left-5 font-customDress uppercase z-20 text-[#16c247] text-[20px] group-hover:text-[24px] ease-in duration-200 transition-all">
+                    Hades II
+                  </div>
+                  <div className="absolute bottom-5 right-5 font-customDress uppercase z-20 text-white text-[16px] group-hover:text-[18px] ease-in duration-200 transition-all">
+                    Melinoë
+                  </div>
                 </div>
-                <div className="absolute bottom-5 right-5 font-customDress uppercase z-20 text-white text-[16px] group-hover:text-[18px] ease-in duration-200 transition-all">
-                  Zagreus
-                </div>
+              </Link>
+              <div className="rounded-xl">
+                <Marquee className="rounded-xl">
+                  <div className="w-[500px] md:w-[800px] lg:w-[1200px]">
+                    <TopPlayers2 />
+                  </div>
+                </Marquee>
               </div>
-            </Link>
-            <Link
-              to={`/Hades2`}
-              className="group w-full relative group overflow-hidden"
-            >
-              <div className="w-full min-h-[220px] relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[#253159] rounded-xl">
-                <div
-                  className="absolute bg-[#29975399] h-full w-full top-0 left-0 opacity-20 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-40 transition-all ease-in duration-200"
-                  style={{ backgroundImage: `url("/hades2BG.png")` }}
-                />
-                <div
-                  className="absolute h-full w-full top-0 left-0 z-10 rounded-xl bg-center bg-contain bg-no-repeat group-hover:scale-105 ease-in duration-200 transition-all"
-                  style={{ backgroundImage: `url("/melinoe.png")` }}
-                />
-                <div className="absolute top-5 left-5 font-customDress uppercase z-20 text-[#16c247] text-[20px] group-hover:text-[24px] ease-in duration-200 transition-all">
-                  Hades II
+            </div>
+            <div className="my-5">
+              <Link
+                to={`/Hades`}
+                className="group w-full overflow-hidden rounded-xl"
+              >
+                <div className="w-full min-h-[220px] relative max-w-[1000px] mx-auto bg-transparent shadow-[inset_0_0_5px_black] border-[1px] border-black/30 rounded-xl">
+                  <div
+                    className="absolute bg-[transparent] h-full w-full top-0 opacity-20 left-0 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-40 transition-all ease-in duration-200"
+                    style={{ backgroundImage: `url("/hadesBG.png")` }}
+                  />
+                  <div
+                    className="absolute h-full w-full top-0 left-0 rounded-xl bg-center bg-contain bg-no-repeat group-hover:scale-105 ease-in duration-200 transition-all z-10"
+                    style={{ backgroundImage: `url("/zagreus.png")` }}
+                  />
+                  <div className="absolute top-5 left-5 font-customDress uppercase z-20 text-[#ee1818] text-[20px] group-hover:text-[24px] ease-in duration-200 transition-all">
+                    Hades I
+                  </div>
+                  <div className="absolute bottom-5 right-5 font-customDress uppercase z-20 text-white text-[16px] group-hover:text-[18px] ease-in duration-200 transition-all">
+                    Zagreus
+                  </div>
                 </div>
-                <div className="absolute bottom-5 right-5 font-customDress uppercase z-20 text-white text-[16px] group-hover:text-[18px] ease-in duration-200 transition-all">
-                  Melinoë
+              </Link>
+              <Marquee>
+                <div className="w-[500px] md:w-[800px] lg:w-[1200px]">
+                  <TopPlayers />
                 </div>
-              </div>
-            </Link>
+              </Marquee>
+            </div>
           </div>
         </div>
-        <Link to={`/FormSubmission`}>
+        {/* <Link to={`/FormSubmission`}>
           <button className="btn btn-success">Submission Btn</button>
-        </Link>
+        </Link> */}
         {/*  */}
-        <section className="px-4 flex justify-center">
+        {/* <section className="px-4 flex justify-center">
           <div className="mockup-code bg-neutral w-full max-w-[800px] mx-auto my-5 p-5 text-black text-start">
             <pre data-prefix="$" className="text-primary">
               <code>Documentation</code>
@@ -98,7 +118,8 @@ export default function App() {
               <code>H2 Secondary - Boon/Time</code>
             </pre>
           </div>
-        </section>
+        </section> */}
+        <FooterInfo />
       </div>
     </div>
   );

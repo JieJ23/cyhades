@@ -196,7 +196,7 @@ export default function Hades2() {
                         .slice(0, 8)
                         .map((item) => (
                           <div className="avatar">
-                            <div className="mask mask-decagon w-7">
+                            <div className="mask mask-squircle w-7">
                               <img
                                 src={`/Boon/${item}.png`}
                                 draggable={false}

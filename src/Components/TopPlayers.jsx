@@ -83,8 +83,8 @@ export default function TopPlayers() {
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 justify-evenly gap-1 select-none w-full max-w-[1400px] mx-auto px-2 mt-5">
       {holder.map((obj) => (
         <div
-          className="w-full min-h-[125px] relative bg-transparent shadow-[0_0_30px_black] border-[1px] border-[black] rounded-xl"
-          style={{ backgroundColor: `${weaponColor(obj.Weapon)}33` }}
+          className="w-full min-h-[125px] relative bg-transparent shadow-[inset_0_0_30px_black] border-[1px] border-black/30 rounded-xl"
+          style={{ backgroundColor: `${weaponColor(obj.Weapon)}54` }}
         >
           <div className="absolute bg-[#17171766] h-full w-full top-0 left-0 object-cover rounded-xl" />
           <div
@@ -100,7 +100,7 @@ export default function TopPlayers() {
               {`Heat`} {obj.Heat}
             </div>
             <div className="avatar">
-              <div className="mask mask-decagon w-8 relative">
+              <div className="mask mask-squircle w-8 relative">
                 <img
                   src={`/${weaponGIF(obj.Weapon)}.gif`}
                   className="absolute"

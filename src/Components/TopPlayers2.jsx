@@ -19,6 +19,7 @@ export const weaponColor = (type) => {
     case "Rail":
     case "Sister Blades":
       return "#003366";
+    case "Black Coat":
     case "Shield":
       return "#131111";
   }
@@ -41,6 +42,7 @@ export const weaponGIF = (type) => {
     case "Rail":
     case "Sister Blades":
       return "blue";
+    case "Black Coat":
     case "Shield":
       return "yellow";
   }
@@ -83,8 +85,8 @@ export default function TopPlayers2() {
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 justify-evenly gap-1 select-none w-full max-w-[1400px] mx-auto px-2 mt-5">
       {holder.map((obj) => (
         <div
-          className="w-full min-h-[125px] relative bg-transparent shadow-[0_0_30px_black] border-[1px] border-[black] rounded-xl"
-          style={{ backgroundColor: `${weaponColor(obj.Weapon)}33` }}
+          className="w-full min-h-[125px] relative bg-transparent shadow-[inset_0_0_30px_black] border-[1px] border-black/30 rounded-xl"
+          style={{ backgroundColor: `${weaponColor(obj.Weapon)}54` }}
         >
           <div className="absolute bg-[#17171766] h-full w-full top-0 left-0 object-cover rounded-xl" />
           <div
