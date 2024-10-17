@@ -94,6 +94,12 @@ export default function TopPlayers2() {
             style={{ backgroundImage: `url("/${obj.Weapon}.png")` }}
           />
           <div className="h-full flex flex-col items-center justify-center gap-1 font-serif">
+            <div className="text-white z-20 absolute bottom-1.5 left-1.5 text-[10px]">
+              {obj.Patch}
+            </div>
+            <div className="text-white z-20 absolute bottom-1.5 right-1.5 text-[10px]">
+              {obj["Clear Time"]}
+            </div>
             <div className="text-[10px] uppercase text-gray-300 z-20">
               {obj.Weapon}
             </div>
