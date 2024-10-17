@@ -18,6 +18,7 @@ import Footer from "../Components/Footer";
 import { useState, useEffect } from "react";
 
 import { ReturnBoonList } from "../Logic/Method";
+import { testReturnBoonFilter } from "../Logic/Method";
 
 export default function Hades2() {
   const [data, setData] = useState(1);
@@ -26,8 +27,6 @@ export default function Hades2() {
   const [visibleRows, setVisibleRows] = useState(50);
 
   // const { posts, loader } = useData();
-
-  console.log(Hades2FullData);
 
   useEffect(() => {
     setVisibleRows(50);
@@ -147,7 +146,7 @@ export default function Hades2() {
         </Link>
         {/*  */}
         <div className="overflow-x-auto rounded-md my-4">
-          <table className="table table-xs select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
+          <table className="table table-xs select-none w-full max-w-[1400px] mx-auto text-white">
             <thead>
               <tr className="font-serif text-gray-400">
                 <th></th>
@@ -190,7 +189,7 @@ export default function Hades2() {
                   </td>
                   <td>
                     <div className="flex">
-                      {ReturnBoonList(obj.Boons_Picked)
+                      {testReturnBoonFilter(obj.Boons_Picked)
                         .slice(0, 8)
                         .map((item) => (
                           <div className="avatar">

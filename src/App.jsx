@@ -15,18 +15,15 @@ export default function App() {
         data-theme="dark"
       >
         <div className="w-full max-w-[1000px] mx-auto pt-10 pb-5 px-4">
-          <h1 className="mb-5 text-5xl font-bold font-serif text-gray-300">
-            CapriceYuri
-          </h1>
+          <div className="mb-5 text-4xl font-bold font-serif text-gray-300">
+            Supergiant Games
+          </div>
           <p className="mb-5 text-gray-400">
             A community hub dedicated to tracking high-level gameplay within the
             Hades community.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <Link
-              to={`/Hades`}
-              className="group w-full overflow-hidden opacity-40 pointer-events-none"
-            >
+            <Link to={`/Hades`} className="group w-full overflow-hidden">
               <div className="w-full min-h-[220px] relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[#253159] rounded-xl">
                 <div
                   className="absolute bg-[transparent] h-full w-full top-0 opacity-20 left-0 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-40 transition-all ease-in duration-200"
@@ -46,7 +43,7 @@ export default function App() {
             </Link>
             <Link
               to={`/Hades2`}
-              className="group w-full relative group overflow-hidden pointer-events-none"
+              className="group w-full relative group overflow-hidden"
             >
               <div className="w-full min-h-[220px] relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[#253159] rounded-xl">
                 <div

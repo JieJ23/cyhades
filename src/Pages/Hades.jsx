@@ -21,9 +21,10 @@ import { useState, useEffect } from "react";
 // import Loading from "../Hook/Loading";
 
 import { Hades1FullData } from "../Data/Hades1Data";
+import { customRemove } from "../Logic/Method";
 
 export default function Hades() {
-  const [data, setData] = useState(1);
+  const [data, setData] = useState(0);
   const [selectedAspect, setSelectedAspect] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState("");
   const [selectedAOTWHeat, setSelectedAOTWHeat] = useState("");
@@ -74,7 +75,9 @@ export default function Hades() {
       .sort((a, b) => b.Heat - a.Heat)
   );
 
-  const allAvailableData = [rawData, testingdata];
+  const customDisplay = customRemove(rawData);
+
+  const allAvailableData = [customDisplay, testingdata];
 
   const allWeaponType = [...new Set(testingdata.map((obj) => obj.Weapon))];
 
@@ -122,10 +125,9 @@ export default function Hades() {
       <div className="fixed bg-[#0e0d0d] h-lvh w-full object-cover -z-20" />
       {/*  */}
       <Header />
-
+      <TopPlayers />
       <div className="w-full">
-        <TopPlayers objData={testingdata} Heat={`Heat`} />
-        <section>
+        <section className="hidden">
           <div className="flex justify-center my-2 gap-0.5">
             <button
               className="btn shadow-[inset_0_0_15px_black] text-gray-300"
@@ -152,50 +154,55 @@ export default function Hades() {
           </div>
         </section>
         {/*  */}
-        <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full mb-2">
-          <AOTW_Heat
-            watch={data}
-            fulldata={allAvailableData}
-            onaotwHChange={handleAOTWHeatChange}
-            alldata={testingdata}
-          />
-          <AOTW_Speed
-            watch={data}
-            fulldata={allAvailableData}
-            onaotwSChange={handleAOTWSpeedChange}
-            alldata={testingdata}
-          />
-        </section>
-        <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
-          <PlayerSelection
-            watch={data}
-            fulldata={allAvailableData}
-            onPlayerChange={handlePlayerChange}
-            allPlayers={testingdata}
-          />
-          <AspectSelection
-            watch={data}
-            fulldata={allAvailableData}
-            onAspectChange={handleAspectChange}
-            allAspect={testingdata}
-          />
-        </section>
-        <Link to={`/HadesH1TopAspect`} className="flex justify-center my-2">
-          <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
-            Top Aspects
-          </button>
-        </Link>
+        <div className="hidden">
+          <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full mb-2">
+            <AOTW_Heat
+              watch={data}
+              fulldata={allAvailableData}
+              onaotwHChange={handleAOTWHeatChange}
+              alldata={testingdata}
+            />
+            <AOTW_Speed
+              watch={data}
+              fulldata={allAvailableData}
+              onaotwSChange={handleAOTWSpeedChange}
+              alldata={testingdata}
+            />
+          </section>
+          <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
+            <PlayerSelection
+              watch={data}
+              fulldata={allAvailableData}
+              onPlayerChange={handlePlayerChange}
+              allPlayers={testingdata}
+            />
+            <AspectSelection
+              watch={data}
+              fulldata={allAvailableData}
+              onAspectChange={handleAspectChange}
+              allAspect={testingdata}
+            />
+          </section>
+        </div>
+        <div className="hidden">
+          <Link to={`/HadesH1TopAspect`} className="flex justify-center my-2">
+            <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
+              Top Aspects
+            </button>
+          </Link>
+        </div>
         {/*  */}
         <div className="overflow-x-auto rounded-md my-4">
-          <table className="table table-xs select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
+          <table className="table table-sm select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
             <thead>
               <tr className="font-serif text-gray-400">
+                <th>#</th>
                 <th className="text-center">Name</th>
                 <th>Weapon</th>
                 <th>Aspect</th>
                 <th>Heat</th>
                 <th>Category</th>
-                <th>Time</th>
+                {/* <th>Time</th> */}
                 <th>Link</th>
                 <th>Date</th>
               </tr>
@@ -203,6 +210,7 @@ export default function Hades() {
             <tbody>
               {displayData.slice(0, visibleRows).map((obj, index) => (
                 <tr className="font-serif">
+                  <td>{index + 1}</td>
                   <td className="text-center">{obj.Name}</td>
                   <td>{obj.Weapon}</td>
                   <td>
@@ -236,12 +244,12 @@ export default function Hades() {
                   >
                     {obj.Category}
                   </td>
-                  <td>{obj.Time != null ? obj.Time : `-`}</td>
+                  {/* <td>{obj.Time != null ? obj.Time : `-`}</td> */}
                   <td>
                     <Link
-                      to={obj["Src"]}
+                      // to={obj["Src"]}
                       target="_blank"
-                      className="text-[#4651d1]"
+                      className="text-[#4651d1] pointer-events-none"
                     >
                       Video
                     </Link>

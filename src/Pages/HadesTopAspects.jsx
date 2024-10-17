@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 
 import { Link } from "react-router-dom";
 import { ReturnBoonList } from "../Logic/Method";
+import { testReturnBoonFilter } from "../Logic/Method";
 
 // import { useData } from "../Hook/DataFetch";
 // import Loading from "../Hook/Loading";
@@ -11,6 +12,7 @@ import { hades_WeaponOrder } from "../Logic/Method";
 
 import { removeDup } from "../Logic/Method";
 import { Hades2FullData } from "../Data/Hades2Data";
+import { Hades1FullData } from "../Data/Hades1Data";
 
 function findAspectAndRecords(targetAspect, rawData, destination) {
   let tempArr = [];
@@ -69,7 +71,7 @@ export default function HadesTopAspect() {
           Current Top Players
         </div>
         <div className="h-[800px] overflow-x-auto rounded-md mb-5">
-          <table className="table table-xs  table-pin-rows select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
+          <table className="table table-sm  table-pin-rows select-none w-full max-w-[1400px] mx-auto text-white">
             {finalizedData.map((arr) => (
               <>
                 <thead>
@@ -103,7 +105,7 @@ export default function HadesTopAspect() {
 
                       <td>
                         <div className="flex">
-                          {ReturnBoonList(obj.Boons_Picked)
+                          {testReturnBoonFilter(obj.Boons_Picked)
                             .slice(0, 8)
                             .map((item) => (
                               <div className="avatar">

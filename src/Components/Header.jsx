@@ -25,7 +25,7 @@ export default function Header() {
           <li>
             <details className="z-40 text-gray-100">
               <summary>Games</summary>
-              <ul className="bg-base-100 p-2 rounded-md pointer-events-none">
+              <ul className="bg-base-100 p-2 rounded-md">
                 <li>
                   <Link to={`/Hades`}>Hades</Link>
                 </li>

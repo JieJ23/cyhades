@@ -1,4 +1,6 @@
 import { removeDup } from "../Logic/Method";
+import { Hades1FullData } from "../Data/Hades1Data";
+import { customOrder } from "../Logic/Method";
 
 export const weaponColor = (type) => {
   switch (type) {
@@ -22,41 +24,87 @@ export const weaponColor = (type) => {
   }
 };
 
+export const weaponGIF = (type) => {
+  switch (type) {
+    case "Sword":
+    case "Argent Skull":
+      return `red`;
+    case "Spear":
+    case "Witch's Staff":
+      return `orange`;
+    case "Fists":
+    case "Umbral Flames":
+      return `purple`;
+    case "Bow":
+    case "Moonstone Axe":
+      return `green`;
+    case "Rail":
+    case "Sister Blades":
+      return "blue";
+    case "Shield":
+      return "yellow";
+  }
+};
+
 import { hades_WeaponOrder } from "../Logic/Method";
 
-export default function TopPlayers({ objData, level }) {
-  const LevelNumbers = [...new Set(objData.map((obj) => +obj.Level))];
+export default function TopPlayers() {
+  const LevelNumbers = [...new Set(Hades1FullData.map((obj) => obj.Heat))];
   const highestLevel = Math.max(...LevelNumbers);
+  //
 
+  const rawData = Hades1FullData.slice()
+    .sort(
+      (a, b) =>
+        customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
+    )
+    .sort((a, b) => b.Heat - a.Heat);
+
+  const allWeapons = [...new Set(rawData.map((obj) => obj.Weapon))];
+
+  const holder = [];
+
+  for (let i = 0; i < allWeapons.length; i++) {
+    let temp = rawData.filter((obj) => obj.Weapon === allWeapons[i]);
+    let pickFirst = temp[0];
+    holder.push(pickFirst);
+  }
+
+  //
   const highestEntries = removeDup(
-    objData.filter((obj) => obj.Level == +highestLevel)
+    Hades1FullData.filter((obj) => obj.Heat == +highestLevel)
   ).sort(
     (a, b) =>
       hades_WeaponOrder.indexOf(a.Aspect) - hades_WeaponOrder.indexOf(b.Aspect)
   );
 
+  console.log(highestLevel);
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 justify-evenly gap-0.5 select-none w-[95%] max-w-[1200px] mx-auto px-2">
-      {highestEntries.map((obj) => (
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 justify-evenly gap-1 select-none w-full max-w-[1400px] mx-auto px-2">
+      {holder.map((obj) => (
         <div
           className="w-full min-h-[125px] relative bg-transparent shadow-[0_0_30px_black] border-[1px] border-[black] rounded-xl"
-          style={{ backgroundColor: `${weaponColor(obj.Weapon)}99` }}
+          style={{ backgroundColor: `${weaponColor(obj.Weapon)}33` }}
         >
-          <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
+          <div className="absolute bg-[#17171766] h-full w-full top-0 left-0 object-cover rounded-xl" />
           <div
-            className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl opacity-60 bg-center bg-contain bg-no-repeat"
+            className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl bg-center bg-contain bg-no-repeat"
             style={{ backgroundImage: `url("/${obj.Weapon}.png")` }}
           />
           <div className="h-full flex flex-col items-center justify-center gap-1 font-serif">
             <div className="text-[10px] uppercase text-gray-300 z-20">
               {obj.Weapon}
             </div>
-            <div className="text-error z-20">{obj.Name}</div>
-            <div className="text-gray-300 text-[12px] z-20">
-              {level} {obj.Level}
+            <div className="text-white text-[16px] z-20">{obj.Name}</div>
+            <div className="text-gray-200 text-[12px] z-20">
+              {`Heat`} {obj.Heat}
             </div>
             <div className="avatar">
-              <div className="mask mask-decagon w-8">
+              <div className="mask mask-decagon w-8 relative">
+                <img
+                  src={`/${weaponGIF(obj.Weapon)}.gif`}
+                  className="absolute"
+                />
                 {obj.Game == `Hades2` ? (
                   <img src={`/Aspects/${obj.Aspect}.png`} />
                 ) : (
