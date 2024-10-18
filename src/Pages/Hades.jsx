@@ -197,10 +197,11 @@ export default function Hades() {
             <thead>
               <tr className="font-serif text-gray-400">
                 <th></th>
-                <th>#</th>
+                <th>Index</th>
                 <th className="text-center">Name</th>
                 <th>Weapon</th>
                 <th>Aspect</th>
+                <th></th>
                 <th>Heat</th>
                 <th>Category</th>
                 {/* <th>Time</th> */}
@@ -210,7 +211,7 @@ export default function Hades() {
             </thead>
             <tbody>
               {displayData.slice(0, visibleRows).map((obj, index) => (
-                <tr className="font-serif">
+                <tr className="font-[Roberto]">
                   <td></td>
                   <td>{index + 1}</td>
                   <td className="text-center">{obj.Name}</td>
@@ -220,6 +221,14 @@ export default function Hades() {
                       <div className="mask mask-heart w-8">
                         <img src={`/Aspects/${obj.Weapon}-${obj.Aspect}.png`} />
                       </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="w-[100px]">
+                      <img
+                        src={`/H1weapon/${obj.Aspect}-${obj.Weapon}.png`}
+                        className="rounded-xl shadow-[0_0_3px_teal]"
+                      />
                     </div>
                   </td>
                   <td

@@ -27,11 +27,11 @@ export default function App() {
             <div className="my-5">
               <Link
                 to={`/Hades2`}
-                className="group w-full relative group overflow-hidden rounded-xl"
+                className="group w-full relative group rounded-xl"
               >
-                <div className="w-full min-h-[220px] max-w-[800px] mx-auto relative bg-transparent shadow-[inset_0_0_5px_black] border-[1px] border-black/30 rounded-xl">
+                <div className="w-full min-h-[220px] max-w-[800px] mx-auto relative bg-transparent shadow-[inset_0_0_5px_black] border-[1px] border-black/30 rounded-xl overflow-hidden">
                   <div
-                    className="absolute bg-[#29975399] h-full w-full top-0 left-0 opacity-20 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-40 transition-all ease-in duration-200"
+                    className="absolute bg-[#29975399] h-full w-full top-0 left-0 opacity-40 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-60 transition-all ease-in duration-200"
                     style={{ backgroundImage: `url("/hades2BG.png")` }}
                   />
                   <div
@@ -109,6 +109,7 @@ export default function App() {
                 </Link>
               </div>
             </div>
+
             <div className="divider my-10 px-4 divider-neutral">
               <div className="w-[200px]">
                 <img src={`/logo.png`} />
@@ -116,13 +117,10 @@ export default function App() {
             </div>
 
             <div className="my-5">
-              <Link
-                to={`/Hades`}
-                className="group w-full overflow-hidden rounded-xl"
-              >
-                <div className="w-full min-h-[220px] relative max-w-[800px] mx-auto bg-transparent shadow-[inset_0_0_5px_black] border-[1px] border-black/30 rounded-xl">
+              <Link to={`/Hades`} className="group w-full rounded-xl">
+                <div className="w-full min-h-[220px] relative max-w-[800px] mx-auto bg-transparent shadow-[inset_0_0_5px_black] border-[1px] border-black/30 rounded-xl overflow-hidden">
                   <div
-                    className="absolute bg-[transparent] h-full w-full top-0 opacity-20 left-0 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-40 transition-all ease-in duration-200"
+                    className="absolute bg-[transparent] h-full w-full top-0 opacity-40 left-0 bg-cover bg-center bg-no-repeat rounded-xl group-hover:opacity-60 transition-all ease-in duration-200"
                     style={{ backgroundImage: `url("/hadesBG.png")` }}
                   />
                   <div
