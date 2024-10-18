@@ -61,7 +61,6 @@ export default function App() {
                   </button>
                 </Link>
               </div>
-
               <div className="font-customDress text-[14px] max-w-[800px] mx-auto text-center text-[#51b084] px-4">
                 Hades II is the upcoming sequel to Hades, developed by
                 Supergiant Games. In this game, you play as Melinoë, the sister
@@ -72,6 +71,18 @@ export default function App() {
                 from gods of Greek mythology. The game promises a blend of
                 challenging gameplay, character-driven storytelling, and rich
                 lore, building on the success of its predecessor.
+              </div>
+              <div className=" mt-2 flex flex-wrap justify-center gap-2">
+                <Link to={`https://hades2builder.vercel.app/`} target="_blank">
+                  <button className="btn btn-outline btn-success text-white font-serif border-white/20">
+                    <div className="avatar">
+                      <div className="w-8 rounded">
+                        <img src="/build.png" />
+                      </div>
+                    </div>
+                    <div>Boon Builder (Derpity)</div>
+                  </button>
+                </Link>
               </div>
               <div className="rounded-xl">
                 <Marquee className="rounded-xl">
@@ -88,7 +99,7 @@ export default function App() {
                   <button className="btn btn-outline text-white font-serif border-white/20">
                     <div className="avatar">
                       <div className="w-8 rounded">
-                        <img src="steam.png" />
+                        <img src="/steam.png" />
                       </div>
                     </div>
                     <div>Steam</div>
@@ -101,7 +112,7 @@ export default function App() {
                   <button className="btn btn-outline text-white font-serif border-white/20">
                     <div className="avatar">
                       <div className="w-8 rounded">
-                        <img src="epic.png" />
+                        <img src="/epic.png" />
                       </div>
                     </div>
                     <div>Epic Games</div>
@@ -161,6 +172,43 @@ export default function App() {
                 the loop, and each attempt to escape brings new dialogue,
                 upgrades, and story progression.
               </div>
+              <div className=" mt-2 flex flex-wrap justify-center gap-2">
+                <Link
+                  to={`https://cpecific.github.io/hades-wiki/`}
+                  target="_blank"
+                >
+                  <button className="btn btn-outline btn-error text-white font-serif border-white/20">
+                    <div className="avatar">
+                      <div className="w-8 rounded">
+                        <img src="/doc.png" />
+                      </div>
+                    </div>
+                    <div>Cpecific Wiki</div>
+                  </button>
+                </Link>
+                <Link to={`https://hadesheat.onrender.com/`} target="_blank">
+                  <button className="btn btn-outline btn-error text-white font-serif border-white/20">
+                    <div className="avatar">
+                      <div className="w-8 rounded">
+                        <img src="/heat.png" />
+                      </div>
+                    </div>
+                    <div>
+                      <div>Heat Calculator (G.K.)</div>
+                    </div>
+                  </button>
+                </Link>
+                <Link to={`https://www.boonbuilder.com/`} target="_blank">
+                  <button className="btn btn-outline btn-error text-white font-serif border-white/20">
+                    <div className="avatar">
+                      <div className="w-8 rounded">
+                        <img src="/build.png" />
+                      </div>
+                    </div>
+                    <div>Boon Builder (P.G.)</div>
+                  </button>
+                </Link>
+              </div>
               <Marquee>
                 <div className="w-[500px] md:w-[800px] lg:w-[1000px]">
                   <TopPlayers />
@@ -175,7 +223,7 @@ export default function App() {
                 <button className="btn btn-outline text-white font-serif border-white/20">
                   <div className="avatar">
                     <div className="w-8 rounded">
-                      <img src="steam.png" />
+                      <img src="/steam.png" />
                     </div>
                   </div>
                   <div>Steam</div>
@@ -188,7 +236,7 @@ export default function App() {
                 <button className="btn btn-outline text-white font-serif border-white/20">
                   <div className="avatar">
                     <div className="w-8 rounded">
-                      <img src="epic.png" />
+                      <img src="/epic.png" />
                     </div>
                   </div>
                   <div>Epic Games</div>
