@@ -193,7 +193,7 @@ export default function Hades2() {
                   </td>
                   <td>
                     <div className="flex">
-                      {obj.Patch === `Patch 5`
+                      {obj.Patch === `5`
                         ? testReturnBoonFilter(obj.Boons_Picked)
                             .slice(0, 8)
                             .map((item) => (
@@ -246,10 +246,8 @@ export default function Hades2() {
                   >
                     {obj.Category}
                   </td> */}
-                  <td
-                    className={obj.Patch === `Patch 5` ? `text-[#17f1bf]` : ``}
-                  >
-                    {obj.Patch}
+                  <td className={obj.Patch === `5` ? `text-[#26f48a]` : ``}>
+                    Patch {obj.Patch}
                   </td>
                   <td>
                     <Link

@@ -259,7 +259,7 @@ export default function FormSubmission() {
             </select>
             <select className="select w-full" name="Boon_Gain" required>
               <option value="" selected hidden>
-                Boon Sprint
+                Boon Gain
               </option>
               <option>Glamour_Gain</option>
               <option>Lucid_Gain</option>
