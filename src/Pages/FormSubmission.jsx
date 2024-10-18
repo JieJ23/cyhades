@@ -3,51 +3,47 @@ import FooterInfo from "../Components/Footer";
 import { useState } from "react";
 
 export default function FormSubmission() {
-  const [selectedBoons, setSelectedBoons] = useState([]);
+  const [loading, setLoading] = useState(false); // Loading state
 
-  const handleCBChange = (event) => {
-    const value = event.target.value;
-    const isChecked = event.target.checked;
+  const [selectedWeapon, setSelectedWeapon] = useState("");
 
-    setSelectedBoons((prev) => {
-      if (isChecked && prev.length >= 4) {
-        // Prevent further selections if 4 are already selected
-        return prev;
-      }
-
-      // Add or remove the value from the selectedBoons array
-      if (isChecked) {
-        return [...prev, value]; // Add value
-      } else {
-        return prev.filter((boon) => boon !== value); // Remove value
-      }
-    });
+  const handleWeaponChange = (e) => {
+    setSelectedWeapon(e.target.value); // Update the selected weapon
   };
 
   async function Submit(e) {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
 
-    const formEle = e.target; // Reference the form that triggered the event
-    const formDatab = new FormData(formEle); // Create a FormData object
+    const formEle = e.target;
+    const formDatab = new FormData(formEle);
 
-    formDatab.append("Boons_Picked", selectedBoons.join(", ")); // Append the selected boons
+    const boonStrike = formDatab.get("Boon_Strike");
+    const boonFlourish = formDatab.get("Boon_Flourish");
+    const boonRing = formDatab.get("Boon_Ring");
+    const boonSprint = formDatab.get("Boon_Sprint");
+    const boonGain = formDatab.get("Boon_Gain");
+
+    formDatab.append(
+      "Boons_Picked",
+      `${boonStrike}, ${boonFlourish}, ${boonRing}, ${boonSprint}, ${boonGain}`
+    );
+
+    setLoading(true);
 
     try {
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbzzQU1BWg9qM7_jidAomTxZbjYrdvrDeJrRx0Y5tmOKO8mnISw0QYDGLM_FtPOkOMCD/exec",
+        "https://script.google.com/macros/s/AKfycbwnH4AbqNqkLqz2UXTbSMGyfrL2dYo_ehnZ8e8KDCxLJ5MtF_jR0ezkprfQAwTJFHw/exec",
         {
           method: "POST",
           body: formDatab,
         }
       );
 
-      // const data = await res.json();
-      // Handle the response data here (e.g., display success message)
-
-      // Reset the form fields
       formEle.reset();
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -64,9 +60,9 @@ export default function FormSubmission() {
       <Header />
       <div className="flex flex-col gap-2 items-center">
         <h2 className="font-customDress text-[24px] my-5">Entry Submission</h2>
-        <div>
+        <div className="w-full max-w-[800px] m-auto">
           <form
-            className="form flex flex-col gap-2 font-serif max-w-[800px] px-4"
+            className="form flex flex-col gap-2 font-serif px-4"
             onSubmit={Submit}
           >
             {/* Directly using Submit here */}
@@ -75,37 +71,37 @@ export default function FormSubmission() {
               name="Date"
               type="date"
               className="input"
+              required
             />
-            <select className="select w-full" name="Direction">
-              <option disabled selected>
+            <select className="select w-full" name="Direction" required>
+              <option value="" selected hidden>
                 Direction
               </option>
               <option>Olympus</option>
               <option>Underworld</option>
-            </select>
-
-            <select className="select w-full" name="Category">
-              <option disabled selected>
-                Run Category
-              </option>
-              <option>Unseeded</option>
-              <option>Seeded</option>
-              <option>Modded</option>
             </select>
             <input
               placeholder="Player Name"
               name="Name"
               type="text"
               className="input"
+              required
             />
             <input
               placeholder="Fear Level"
               name="Fear"
               type="text"
               className="input"
+              required
             />
-            <select className="select w-full" name="Weapon">
-              <option disabled selected>
+            {/*  */}
+            <select
+              className="select w-full"
+              name="Weapon"
+              required
+              onChange={handleWeaponChange}
+            >
+              <option value="" selected hidden>
                 Weapon Type
               </option>
               <option>Witch's Staff</option>
@@ -113,164 +109,180 @@ export default function FormSubmission() {
               <option>Moonstone Axe</option>
               <option>Umbral Flames</option>
               <option>Argent Skull</option>
+              <option>Black Coat</option>
             </select>
-            <select className="select w-full" name="Aspect">
-              <option disabled selected>
-                Aspect
-              </option>
-              <option>Melinoe Staff</option>
-              <option>Circe</option>
-              <option>Momus</option>
-            </select>
+            {selectedWeapon === "Witch's Staff" && (
+              <select className="select w-full" name="Aspect" required>
+                <option value="" selected hidden>
+                  Aspect
+                </option>
+                <option>Melinoe Staff</option>
+                <option>Circe</option>
+                <option>Momus</option>
+              </select>
+            )}
+            {selectedWeapon === "Sister Blades" && (
+              <select className="select w-full" name="Aspect" required>
+                <option value="" selected hidden>
+                  Aspect
+                </option>
+                <option>Melinoe Blade</option>
+                <option>Artemis</option>
+                <option>Pan</option>
+              </select>
+            )}
+            {selectedWeapon === "Moonstone Axe" && (
+              <select className="select w-full" name="Aspect" required>
+                <option value="" selected hidden>
+                  Aspect
+                </option>
+                <option>Melinoe Axe</option>
+                <option>Charon</option>
+                <option>Thanatos</option>
+              </select>
+            )}
+            {selectedWeapon === "Umbral Flames" && (
+              <select className="select w-full" name="Aspect" required>
+                <option value="" selected hidden>
+                  Aspect
+                </option>
+                <option>Melinoe Flames</option>
+                <option>Moros</option>
+                <option>Eos</option>
+              </select>
+            )}
+            {selectedWeapon === "Argent Skull" && (
+              <select className="select w-full" name="Aspect" required>
+                <option value="" selected hidden>
+                  Aspect
+                </option>
+                <option>Melinoe Skull</option>
+                <option>Medea</option>
+                <option>Persephone</option>
+              </select>
+            )}
+            {selectedWeapon === "Black Coat" && (
+              <select className="select w-full" name="Aspect" required>
+                <option value="" selected hidden>
+                  Aspect
+                </option>
+                <option>Melinoe Coat</option>
+                <option>Selene</option>
+                <option>Nyx</option>
+              </select>
+            )}
+            {/*  */}
             <input
               placeholder="Gameplay Src"
               name="Src"
               type="text"
               className="input"
+              required
             />
             <input
               placeholder="Patch"
               name="Patch"
               type="text"
               className="input"
+              required
             />
             <input
               placeholder="Clear Time"
               name="Clear Time"
               type="text"
               className="input"
+              required
             />
-            <label className="label flex justify-center">
-              Boons Used Test Etc.
-            </label>
-            <section className="grid grid-cols-2 sm:grid-cols-4 justify-evenly gap-x-10">
-              <label className="label cursor-pointer flex justify-between gap-2">
-                <span className="label-text">Blinding_Sprint</span>
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  onChange={handleCBChange}
-                  value="Blinding_Sprint"
-                  disabled={
-                    selectedBoons.length >= 4 &&
-                    !selectedBoons.includes("Blinding_Sprint")
-                  } // Disable logic
-                />
-              </label>
-              <label className="label cursor-pointer flex justify-between">
-                <span className="label-text">Wave_Flourish</span>
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  onChange={handleCBChange}
-                  value="Wave_Flourish"
-                  disabled={
-                    selectedBoons.length >= 4 &&
-                    !selectedBoons.includes("Wave_Flourish")
-                  } // Disable logic
-                />
-              </label>
-
-              <label className="label cursor-pointer flex justify-between gap-2">
-                <span className="label-text">Double_Moonshot</span>
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  onChange={handleCBChange}
-                  value="Double_Moonshot"
-                  disabled={
-                    selectedBoons.length >= 4 &&
-                    !selectedBoons.includes("Double_Moonshot")
-                  } // Disable logic
-                />
-              </label>
-              <label className="label cursor-pointer flex justify-between">
-                <span className="label-text">Sunken_Treasure</span>
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  onChange={handleCBChange}
-                  value="Sunken_Treasure"
-                  disabled={
-                    selectedBoons.length >= 4 &&
-                    !selectedBoons.includes("Sunken_Treasure")
-                  } // Disable logic
-                />
-              </label>
-
-              <label className="label cursor-pointer flex justify-between gap-2">
-                <span className="label-text">Swift_Flourish</span>
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  onChange={handleCBChange}
-                  value="Swift_Flourish"
-                  disabled={
-                    selectedBoons.length >= 4 &&
-                    !selectedBoons.includes("Swift_Flourish")
-                  } // Disable logic
-                />
-              </label>
-              <label className="label cursor-pointer flex justify-between">
-                <span className="label-text">Super_Nova</span>
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  onChange={handleCBChange}
-                  value="Super_Nova"
-                  disabled={
-                    selectedBoons.length >= 4 &&
-                    !selectedBoons.includes("Super_Nova")
-                  } // Disable logic
-                />
-              </label>
-
-              <label className="label cursor-pointer flex justify-between gap-2">
-                <span className="label-text flex items-center justify-center gap-1">
-                  Static_Shock
-                </span>
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  onChange={handleCBChange}
-                  value="Static_Shock"
-                  disabled={
-                    selectedBoons.length >= 4 &&
-                    !selectedBoons.includes("Static_Shock")
-                  } // Disable logic
-                />
-              </label>
-              <label className="label cursor-pointer flex justify-between">
-                <span className="label-text">Dark_Side</span>
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  onChange={handleCBChange}
-                  value="Dark_Side"
-                  disabled={
-                    selectedBoons.length >= 4 &&
-                    !selectedBoons.includes("Dark_Side")
-                  } // Disable logic
-                />
-              </label>
-            </section>
+            {/*  */}
+            <div className="text-center mt-5 font-serif">Boon Selections</div>
+            <select className="select w-full" name="Boon_Strike" required>
+              <option value="" selected hidden>
+                Boon Strike
+              </option>
+              <option> Flutter_Strike</option>
+              <option> Nova_Strike</option>
+              <option> Ice_Strike</option>
+              <option> Volcanic_Strike</option>
+              <option> Sworn_Strike</option>
+              <option> Flame_Strike</option>
+              <option> Nimble_Limbs</option>
+              <option> Nimble_Mind</option>
+              <option> Wave_Strike</option>
+              <option> Heaven_Strike</option>
+            </select>
+            <select className="select w-full" name="Boon_Flourish" required>
+              <option value="" selected hidden>
+                Boon Flourish
+              </option>
+              <option>Flutter_Flourish</option>
+              <option>Nova_Flourish</option>
+              <option>Ice_Flourish</option>
+              <option>Volcanic_Flourish</option>
+              <option>Sworn_Flourish</option>
+              <option>Flame_Flourish</option>
+              <option>Swift_Strike</option>
+              <option>Swift_Flourish</option>
+              <option>Wave_Flourish</option>
+              <option>Heaven_Flourish</option>
+            </select>
+            <select className="select w-full" name="Boon_Ring" required>
+              <option value="" selected hidden>
+                Boon Ring
+              </option>
+              <option>Rapture_Ring</option>
+              <option>Solar_Ring</option>
+              <option>Prominence_Flare</option>
+              <option>Arctic_Ring</option>
+              <option>Anvil_Ring</option>
+              <option>Engagement_Ring</option>
+              <option>Smolder_Ring</option>
+              <option>Storm_Ring</option>
+              <option>Saved_Breath</option>
+              <option>Geyser_Spout</option>
+              <option>Tidal_Ring</option>
+              <option>Geyser_Ring</option>
+            </select>
+            <select className="select w-full" name="Boon_Sprint" required>
+              <option value="" selected hidden>
+                Boon Sprint
+              </option>
+              <option>Passion_Rush</option>
+              <option>Passion_Dash</option>
+              <option>Blinding_Sprint</option>
+              <option>Frigid_Sprint</option>
+              <option>Smithy_Sprint</option>
+              <option>Nexus_Sprint</option>
+              <option>Soot_Sprint</option>
+              <option>Breaker_Sprint</option>
+              <option>Thunder_Sprint</option>
+              <option>Nitro_Boost</option>
+            </select>
+            <select className="select w-full" name="Boon_Gain" required>
+              <option value="" selected hidden>
+                Boon Sprint
+              </option>
+              <option>Glamour_Gain</option>
+              <option>Lucid_Gain</option>
+              <option>Tranquil_Gain</option>
+              <option>Fixed_Gain</option>
+              <option>Born_Gain</option>
+              <option>Hearth_Gain</option>
+              <option>Fluid_Gain</option>
+              <option>Ionic_Gain</option>
+              <option>Witty_Retort</option>
+            </select>
+            {/*  */}
             <button
               name="submit"
               type="submit"
-              className="btn btn-success text-[16px] max-w-[400px] mx-auto w-full my-5 pointer-events-none"
-              disabled={
-                selectedBoons.length >= 4 &&
-                !selectedBoons.includes("Blinding_Sprint")
-              } // Disable logic
+              className="btn btn-success text-[16px] max-w-[400px] mx-auto w-full my-5"
             >
-              Button
+              {loading ? (
+                <span className="loading loading-dots loading-md"></span>
+              ) : (
+                "Submit"
+              )}
             </button>
-            <div className="text-center font-customDress text-[12px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              eius fugiat adipisci optio! Animi pariatur fuga, reiciendis
-              commodi tempore harum sed beatae alias repudiandae fugit
-              distinctio, impedit fugiat voluptates neque.
-            </div>
           </form>
         </div>
       </div>

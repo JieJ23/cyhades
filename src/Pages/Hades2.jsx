@@ -160,7 +160,8 @@ export default function Hades2() {
                 <th>Boons</th>
                 <th>Fear</th>
                 <th>Time</th>
-                <th>Category</th>
+                {/* <th>Category</th> */}
+                <th>Version</th>
                 <th>Link</th>
                 {/* <th>Patch</th> */}
               </tr>
@@ -192,18 +193,31 @@ export default function Hades2() {
                   </td>
                   <td>
                     <div className="flex">
-                      {testReturnBoonFilter(obj.Boons_Picked)
-                        .slice(0, 8)
-                        .map((item) => (
-                          <div className="avatar">
-                            <div className="mask mask-squircle w-7">
-                              <img
-                                src={`/Boon/${item}.png`}
-                                draggable={false}
-                              />
-                            </div>
-                          </div>
-                        ))}
+                      {obj.Patch === `Patch 5`
+                        ? testReturnBoonFilter(obj.Boons_Picked)
+                            .slice(0, 8)
+                            .map((item) => (
+                              <div className="avatar">
+                                <div className="mask mask-squircle w-7">
+                                  <img
+                                    src={`/Boon/${item}.png`}
+                                    draggable={false}
+                                  />
+                                </div>
+                              </div>
+                            ))
+                        : ReturnBoonList(obj.Boons_Picked)
+                            .slice(0, 5)
+                            .map((item) => (
+                              <div className="avatar">
+                                <div className="mask mask-squircle w-7">
+                                  <img
+                                    src={`/Boon/${item}.png`}
+                                    draggable={false}
+                                  />
+                                </div>
+                              </div>
+                            ))}
                     </div>
                   </td>
                   <td
@@ -221,7 +235,7 @@ export default function Hades2() {
                   </td>
                   <td>{obj["Clear Time"]}</td>
 
-                  <td
+                  {/* <td
                     className={
                       obj.Category === `Unseeded`
                         ? `text-[#e3ac6d]`
@@ -231,6 +245,11 @@ export default function Hades2() {
                     }
                   >
                     {obj.Category}
+                  </td> */}
+                  <td
+                    className={obj.Patch === `Patch 5` ? `text-[#17f1bf]` : ``}
+                  >
+                    {obj.Patch}
                   </td>
                   <td>
                     <Link
@@ -241,7 +260,6 @@ export default function Hades2() {
                       Video
                     </Link>
                   </td>
-                  {/* <td>{obj.Patch}</td> */}
                 </tr>
               ))}
             </tbody>

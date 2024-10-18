@@ -85,10 +85,10 @@ export default function TopPlayers2() {
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 justify-evenly gap-1 select-none w-full max-w-[1400px] mx-auto px-2 mt-5">
       {holder.map((obj) => (
         <div
-          className="w-full min-h-[125px] relative bg-transparent shadow-[inset_0_0_30px_black] border-[1px] border-black/30 rounded-xl"
+          className="w-full min-h-[125px] relative bg-transparent shadow-[inset_0_0_30px_black] border-[1px] border-white/10 rounded-xl"
           style={{ backgroundColor: `${weaponColor(obj.Weapon)}54` }}
         >
-          <div className="absolute bg-[#17171766] h-full w-full top-0 left-0 object-cover rounded-xl" />
+          <div className="absolute bg-[#17171754] h-full w-full top-0 left-0 object-cover rounded-xl" />
           <div
             className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl bg-center bg-contain bg-no-repeat"
             style={{ backgroundImage: `url("/${obj.Weapon}.png")` }}

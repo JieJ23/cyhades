@@ -12,7 +12,6 @@ export const Hades2FullData = [
     "Clear Time": "21:59.80",
     Boons_Picked:
       "Blinding_Sprint,Wave_Flourish,Dark_Side,Static_Shock,Super_Nova,Swift_Flourish,Sunken_Treasure,Double_Moonshot",
-    v: "y",
   },
   {
     Date: "5/10/2024",
@@ -27,7 +26,6 @@ export const Hades2FullData = [
     "Clear Time": "19:38.84",
     Boons_Picked:
       "Shimmering_Moonshot,Double_Moonshot,Heaven_Strike,Arctic_Ring,Gale_Force,Heavy_Metal,Hard_Target,Static_Shock",
-    v: "y",
   },
   {
     Date: "5/10/2024",
@@ -42,7 +40,6 @@ export const Hades2FullData = [
     "Clear Time": "11:54.59",
     Boons_Picked:
       "Double_Moonshot,Rapid_Moonfire,Soot_Sprint,Smolder_Ring,Wave_Flourish,Slippery_Slope,Hydraulic_Might,Lightning_Lance",
-    v: "y",
   },
   {
     Date: "5/10/2024",
@@ -57,7 +54,6 @@ export const Hades2FullData = [
     "Clear Time": "16:42.39",
     Boons_Picked:
       "Melting_Swipe,Double_Moonshot,Flutter_Strike,Soot_Sprint,Rapture_Ring,Wave_Flourish,Total_Eclipse,Glowing_Coal",
-    v: "y",
   },
   {
     Date: "5/8/2024",
@@ -72,7 +68,6 @@ export const Hades2FullData = [
     "Clear Time": "20:46.95",
     Boons_Picked:
       "Glamour_Gain,Wave_Flourish,Static_Shock,Divine_Vengeance,Ocean_Bounty,Broken_Resolve,Rapid_Moonfire,Shimmering_Moonshot",
-    v: "",
   },
   {
     Date: "5/11/2024",
@@ -87,7 +82,6 @@ export const Hades2FullData = [
     "Clear Time": "27:30.19",
     Boons_Picked:
       "Nova_Strike,Soot_Sprint,Moon_Water,Double_Up,Extra_Dose,Flood_Control,Burnt_Offering,Slow_Cooker",
-    v: "y",
   },
   {
     Date: "5/11/2024",
@@ -102,7 +96,6 @@ export const Hades2FullData = [
     "Clear Time": "17:49.39",
     Boons_Picked:
       "Double_Moonshot,Rapid_Moonfire,Volcanic_Strike,Frigid_Sprint,Wave_Flourish,Lunar_Ray,Heavy_Metal,Slippery_Slope",
-    v: "y",
   },
   {
     Date: "5/12/2024",
@@ -117,7 +110,6 @@ export const Hades2FullData = [
     "Clear Time": "16:15.07",
     Boons_Picked:
       "Moon_Water,Swift_Flourish,Wave_Flourish, Spirit_Surge, Blinding_Sprint,Slippery_Slope,Double_Moonshot,Giga_Moonburst",
-    v: "y",
   },
   {
     Date: "5/12/2024",
@@ -132,7 +124,6 @@ export const Hades2FullData = [
     "Clear Time": "18:11.43",
     Boons_Picked:
       "Heaven_Strike, Smolder_Ring, Total_Eclipse, Trusty_Shield, Divine_Vengeance, Lightning_Lance, Spirit_Surge, Fetching_Array",
-    v: "y",
   },
   {
     Date: "5/10/2024",
@@ -147,7 +138,6 @@ export const Hades2FullData = [
     "Clear Time": "20:17.69",
     Boons_Picked:
       "Breaker_Sprint, Gale_Force, Plentiful_Forage, Rare_Crop, Flood_Control, Slippery_Slope, Double_Moonshot, Extending_Wallop",
-    v: "",
   },
   {
     Date: "5/10/2024",
@@ -162,7 +152,6 @@ export const Hades2FullData = [
     "Clear Time": "18:51.77",
     Boons_Picked:
       "Wave_Flourish, Swift_Flourish,Nitro_Boost, Night_Bloom, Trusty_Shield, Flood_Control, Double_Moonshot, Giga_Moonburst",
-    v: "y",
   },
   {
     Date: "5/13/2024",
@@ -177,7 +166,6 @@ export const Hades2FullData = [
     "Clear Time": "17:46.02",
     Boons_Picked:
       "Volcanic_Flourish, Wave_Flourish, Phase_Shift, Heavy_Metal, Molten_Touch, Slippery_Slope, Double_Moonshot, Shimmering_Moonshot",
-    v: "y",
   },
   {
     Date: "5/11/2024",
@@ -192,7 +180,6 @@ export const Hades2FullData = [
     "Clear Time": "16:51.54",
     Boons_Picked:
       "Volcanic_Strike, Nova_Flourish, Nitro_Boost, Soot_Sprint, Lucid_Gain, Glowing_Coal, Slow_Cooker, Melting_Shredder",
-    v: "y",
   },
   {
     Date: "5/13/2024",
@@ -207,7 +194,6 @@ export const Hades2FullData = [
     "Clear Time": "39:12.26",
     Boons_Picked:
       "Wave_Flourish, Swift_Flourish, Super_Nova, Slippery_Slope, Lightning_Lance, Static_Shock, Rapid_Moonfire, Shimmering_Moonshot",
-    v: "y",
   },
   {
     Date: "5/9/2024",
@@ -222,7 +208,6 @@ export const Hades2FullData = [
     "Clear Time": "24:14.57",
     Boons_Picked:
       "Wave_Flourish, Nitro_Boost, Heavy_Metal, Tough_Trade, Flood_Control, Hydraulic_Might, Double_Moonshot, Rapid_Moonfire",
-    v: "y",
   },
   {
     Date: "5/11/2024",
@@ -237,7 +222,6 @@ export const Hades2FullData = [
     "Clear Time": "16:38.21",
     Boons_Picked:
       "Wave_Flourish, Rapture_Ring, Total_Eclipse, Wispy_Wiles, Winter_Coat, Coarse_Grit, Double_Moonshot, Giga_Moonburst",
-    v: "y",
   },
   {
     Date: "5/13/2024",
@@ -252,7 +236,6 @@ export const Hades2FullData = [
     "Clear Time": "20:44.78",
     Boons_Picked:
       "Volcanic_Flourish, Nitro_Boost, Gale_Force, Heavy_Metal, Trusty_Shield, Greater_Evasion, Rapid_Moonfire, Shimmering_Moonshot",
-    v: "y",
   },
   {
     Date: "5/13/2024",
@@ -267,7 +250,6 @@ export const Hades2FullData = [
     "Clear Time": "14:52.02",
     Boons_Picked:
       "Fixed_Gain, Weed_Killer, Winter_Coat, Heavy_Metal, Mynt_Condition, Trusty_Shield, Double_Moonshot, Rapid_Moonfire",
-    v: "y",
   },
   {
     Date: "5/13/2024",
@@ -282,7 +264,6 @@ export const Hades2FullData = [
     "Clear Time": "17:55.66",
     Boons_Picked:
       "Wave_Flourish, Glowing_Coal, Natural_Gas, Hydraulic_Might, Ocean_Bounty, Slippery_Slope, Dancing_Knives, Skulking_Slice",
-    v: "y",
   },
   {
     Date: "5/13/2024",
@@ -297,7 +278,6 @@ export const Hades2FullData = [
     "Clear Time": "19:59.86",
     Boons_Picked:
       "Arctic_Ring, Frigid_Sprint, Phase_Shift, Plentiful_Forage, Greater_Evasion, Burnt_Offering, Glowing_Coal, Giga_Cleaver",
-    v: "",
   },
   {
     Date: "5/13/2024",
@@ -312,7 +292,6 @@ export const Hades2FullData = [
     "Clear Time": "23:30.70",
     Boons_Picked:
       "Volcanic_Strike, Wave_Flourish, Gale_Force, Hard_Target, Water_Fitness, Slippery_Slope, Double_Moonshot, Melting_Swipe",
-    v: "y",
   },
   {
     Date: "5/13/2024",
@@ -327,7 +306,6 @@ export const Hades2FullData = [
     "Clear Time": "24:06.69",
     Boons_Picked:
       "Wave_Flourish, Heavy_Metal, Mynt_Condition, Hard_Target, Water_Fitness, Flood_Control, Slippery_Slope, Double_Moonshot",
-    v: "y",
   },
   {
     Date: "5/13/2024",
@@ -342,7 +320,6 @@ export const Hades2FullData = [
     "Clear Time": "20:32.28",
     Boons_Picked:
       "Nova_Strike, Wave_Flourish, Critical_Miss, Tough_Trade, Mean_Streak, Water_Fitness, Slippery_Slope, Double_Moonshot",
-    v: "",
   },
   {
     Date: "5/14/2024",
@@ -357,7 +334,6 @@ export const Hades2FullData = [
     "Clear Time": "17:28.21",
     Boons_Picked:
       "Heaven_Strike, Wave_Flourish, Frigid_Sprint, Nitro_Boost, Night_Bloom, Rare_Crop, Lightning_Lance, Static_Shock",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -372,7 +348,6 @@ export const Hades2FullData = [
     "Clear Time": "15:32.27",
     Boons_Picked:
       "Nova_Flourish, Arctic_Ring, Frigid_Sprint, Phase_Shift, Rare_Crop, Winter_Coat, Trusty_Shield, Greater_Evasion",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -387,7 +362,6 @@ export const Hades2FullData = [
     "Clear Time": "23:18.95",
     Boons_Picked:
       "Volcanic_Flourish, Swift_Flourish, Anvil_Ring, Greater_Evasion, Burnt_Offering, Glowing_Coal, Double_Moonshot, Shimmering_Moonshot",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -402,7 +376,6 @@ export const Hades2FullData = [
     "Clear Time": "30:49.88",
     Boons_Picked:
       "Flutter_Strike, Arctic_Ring, Secret_Crush, Gale_Force, Rare_Crop, Winter_Coat, Mynt_Condition, Giga_Cleaver",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -417,7 +390,6 @@ export const Hades2FullData = [
     "Clear Time": "55:55.54",
     Boons_Picked:
       "Wave_Strike, Sworn_Flourish, Solar_Ring, Blinding_Sprint, Lucid_Gain, Phase_Shift, Double_Up, Slippery_Slope",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -432,7 +404,6 @@ export const Hades2FullData = [
     "Clear Time": "11:26.00",
     Boons_Picked:
       "Wave_Flourish, Smolder_Ring, Soot_Sprint, Phase_Shift, Water_Fitness, Slippery_Slope, Double_Moonshot, Extending_Wallop",
-    v: "y",
   },
   {
     Date: "5/11/2024",
@@ -447,7 +418,6 @@ export const Hades2FullData = [
     "Clear Time": "22:03.19",
     Boons_Picked:
       "Ice_Flourish, Swift_Flourish, Engagement_Ring, Perfect_Image, Winter_Coat, Double_Moonshot, Shimmering_Moonshot",
-    v: "y",
   },
   {
     Date: "5/12/2024",
@@ -462,7 +432,6 @@ export const Hades2FullData = [
     "Clear Time": "26:16.32",
     Boons_Picked:
       "Wave_Strike, Volcanic_Flourish, Rapture_Ring, Heavy_Metal, Mynt_Condition, Trusty_Shield, Split_Fire, Swift_Strike",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -477,7 +446,6 @@ export const Hades2FullData = [
     "Clear Time": "16:49.11",
     Boons_Picked:
       "Wave_Flourish, Smolder_Ring, Soot_Sprint, Hearth_Gain, Hard_Target, Glowing_Coal, Concentrated_Flurry, Dancing_Knives",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -492,7 +460,6 @@ export const Hades2FullData = [
     "Clear Time": "18:22.21",
     Boons_Picked:
       "Heaven_Strike, Passion_Dash, Nitro_Boost, Fixed_Gain, Heavy_Metal, Mynt_Condition, Trusty_Shield, Mean_Streak",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -507,7 +474,6 @@ export const Hades2FullData = [
     "Clear Time": "18:30.09",
     Boons_Picked:
       "Flutter_Strike, Weed_Killer, Greater_Evasion, Hard_Target, Hydraulic_Might, Sunken_Treasure, Explosive_Ambush, Skulking_Slice",
-    v: "",
   },
   {
     Date: "5/12/2024",
@@ -522,7 +488,6 @@ export const Hades2FullData = [
     "Clear Time": "19:34.41",
     Boons_Picked:
       "Flutter_Strike, Sworn_Flourish, Passion_Dash, Broken_Resolve, Healthy_Rebound, Heart_Breaker, Secret_Crush, Gale_Force",
-    v: "",
   },
   {
     Date: "5/14/2024",
@@ -537,7 +502,6 @@ export const Hades2FullData = [
     "Clear Time": "17:07.20",
     Boons_Picked:
       "Flutter_Strike, Heaven_Flourish, Anvil_Ring, Smithy_Sprint, Ionic_Gain, Furnace_Blast, Divine_Vengeance, Electric_Overload",
-    v: "",
   },
   {
     Date: "5/11/2024",
@@ -552,7 +516,6 @@ export const Hades2FullData = [
     "Clear Time": "21:54.34",
     Boons_Picked:
       "Wave_Flourish, Swift_Flourish, Moon_Water, Trusty_Shield, Uncanny_Fortitude, Water_Fitness, Hydraulic_Might, Slippery_Slope",
-    v: "",
   },
   {
     Date: "5/14/2024",
@@ -567,7 +530,6 @@ export const Hades2FullData = [
     "Clear Time": "18:55.96",
     Boons_Picked:
       "Heaven_Flourish, Solar_Ring, Tranquil_Gain, Total_Eclipse, Gale_Force, Plentiful_Forage, Mynt_Condition, Greater_Evasion",
-    v: "",
   },
   {
     Date: "5/15/2024",
@@ -582,7 +544,6 @@ export const Hades2FullData = [
     "Clear Time": "20:42.98",
     Boons_Picked:
       "Smolder_Ring, Blinding_Sprint, Hearth_Gain, Wolf_Howl, Perfect_Image, Glowing_Coal, Natural_Gas, Flammable_Coating",
-    v: "",
   },
   {
     Date: "5/15/2024",
@@ -597,7 +558,6 @@ export const Hades2FullData = [
     "Clear Time": "19:06.35",
     Boons_Picked:
       "Heaven_Strike, Arctic_Ring, Frigid_Sprint, Fixed_Gain, Mynt_Condition, Trusty_Shield, Spirit_Surge, Static_Shock",
-    v: "y",
   },
   {
     Date: "5/15/2024",
@@ -612,7 +572,6 @@ export const Hades2FullData = [
     "Clear Time": "18:12.51",
     Boons_Picked:
       "Wave_Flourish, Smolder_Ring, Hearth_Gain, Greater_Evasion, Mean_Streak, Natural_Gas, Concentrated_Flurry, Spiral_Knives",
-    v: "y",
   },
   {
     Date: "5/15/2024",
@@ -627,7 +586,6 @@ export const Hades2FullData = [
     "Clear Time": "14:57.25",
     Boons_Picked:
       "Wave_Flourish, Blinding_Sprint, Glamour_Gain, Shameless_Attitude, Hard_Target, Slippery_Slope, Rapid_Moonfire, Shimmering_Moonshot",
-    v: "y",
   },
   {
     Date: "5/16/2024",
@@ -642,7 +600,6 @@ export const Hades2FullData = [
     "Clear Time": "25:11.17",
     Boons_Picked:
       "Wave_Flourish, Fluid_Gain, Dark_Side, Greater_Evasion, Slippery_Slope, Divine_Vengeance, Hook_Knives, Sureshot_Flurry",
-    v: "y",
   },
   {
     Date: "5/16/2024",
@@ -657,7 +614,6 @@ export const Hades2FullData = [
     "Clear Time": "25:26.11",
     Boons_Picked:
       "Sworn_Strike, Natural_Gas, Spontaneous_Combustion, Born_Gain, Hereditary_Bane, Keen_Intuition, Nasty_Comeback, Nexus_Sprint",
-    v: "",
   },
   {
     Date: "5/16/2024",
@@ -672,7 +628,6 @@ export const Hades2FullData = [
     "Clear Time": "16:55.59",
     Boons_Picked:
       "Heaven_Flourish, Arctic_Ring, Weed_Killer, Winter_Coat, Coarse_Grit, Lightning_Lance, Static_Shock, Bolstered_Array",
-    v: "y",
   },
   {
     Date: "5/16/2024",
@@ -687,7 +642,6 @@ export const Hades2FullData = [
     "Clear Time": "17:38.31",
     Boons_Picked:
       "Arctic_Ring, Night_Bloom, Gale_Force, Greater_Evasion, Toasting_Fork, Lightning_Lance, Static_Shock, Triple_Helix",
-    v: "y",
   },
   {
     Date: "5/17/2024",
@@ -702,7 +656,6 @@ export const Hades2FullData = [
     "Clear Time": "8:49.95",
     Boons_Picked:
       "Wave_Flourish, Swift_Flourish, Arctic_Ring, Gale_Force, Double_Moonshot, Hereditary_Bane, Nexus_Sprint",
-    v: "",
   },
   {
     Date: "5/17/2024",
@@ -717,7 +670,6 @@ export const Hades2FullData = [
     "Clear Time": "20:36.54",
     Boons_Picked:
       "Nova_Flourish, Solar_Ring, Extra_Dose, Midnight_Oil, Controlled_Burn, Giga_Cleaver, Empowering_Guard, Keen_Intuition",
-    v: "",
   },
   {
     Date: "5/17/2024",
@@ -732,7 +684,6 @@ export const Hades2FullData = [
     "Clear Time": "16:25.86",
     Boons_Picked:
       "Heaven_Flourish, Lunar_Ray, Winter_Coat, Mynt_Condition, Trusty_Shield, Static_Shock, Double_Moonshot, Melting_Swipe",
-    v: "y",
   },
   {
     Date: "5/17/2024",
@@ -747,7 +698,6 @@ export const Hades2FullData = [
     "Clear Time": "22:47.37",
     Boons_Picked:
       "Secret_Crush, Wispy_Wiles, Quick_Buck, Burnt_Offering, Slow_Cooker, Final_Slice, Marauder_Slice, Romantic_Spark",
-    v: "y",
   },
   {
     Date: "5/17/2024",
@@ -762,7 +712,6 @@ export const Hades2FullData = [
     "Clear Time": "18:52.88",
     Boons_Picked:
       "Engagement_Ring, Mynt_Condition, Molten_Touch, Bridal_Glow, Bolstered_Array, Fetching_Array, Nasty_Comeback, Proper_Upbringing",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -777,7 +726,6 @@ export const Hades2FullData = [
     "Clear Time": "33:31.38",
     Boons_Picked:
       "Arctic_Ring, Nitro_Boost, Lucid_Gain, Night_Bloom, Super_Nova, Winter_Coat, Witty_Retort, Beach_Ball",
-    v: "y",
   },
   {
     Date: "5/13/2024",
@@ -792,7 +740,6 @@ export const Hades2FullData = [
     "Clear Time": "31:13.55",
     Boons_Picked:
       "Flutter_Strike, Passion_Dash, Healthy_Rebound, Extra_Dose, Super_Nova, Marauder_Slash, Dashing_Heave, Self_Healing",
-    v: "y",
   },
   {
     Date: "5/16/2024",
@@ -807,7 +754,6 @@ export const Hades2FullData = [
     "Clear Time": "23:48.90",
     Boons_Picked:
       "Mynt_Condition, Trusty_Shield, Hydraulic_Might, Divine_Vengeance, Spirit_Surge, Static_Shock, Bolstered_Array, Air_Quality",
-    v: "y",
   },
   {
     Date: "5/15/2024",
@@ -822,7 +768,6 @@ export const Hades2FullData = [
     "Clear Time": "27:24.79",
     Boons_Picked:
       "Nova_Strike, Solar_Ring, Sun_Worshiper, Burnt_Offering, Slow_Cooker, Melting_Swipe, Cross_Cataclysm, Born_Gain",
-    v: "y",
   },
   {
     Date: "5/17/2024",
@@ -837,7 +782,6 @@ export const Hades2FullData = [
     "Clear Time": "18:17.96",
     Boons_Picked:
       "Ice_Strike, Tranquil_Gain, Gale_Force, Winter_Coat, Mynt_Condition, Trusty_Shield, Swift_Strike, Clean_Helix",
-    v: "y",
   },
   {
     Date: "5/17/2024",
@@ -852,7 +796,6 @@ export const Hades2FullData = [
     "Clear Time": "19:13.36",
     Boons_Picked:
       "Mynt_Condition, Trusty_Shield, Sun_Worshiper, Witty_Retort, Explosive_Ambush, Born_Gain, Proper_Upbringing, Martial_Art",
-    v: "y",
   },
   {
     Date: "5/18/2024",
@@ -867,7 +810,6 @@ export const Hades2FullData = [
     "Clear Time": "25:53.82",
     Boons_Picked:
       "Smolder_Ring, Hearth_Gain, Light_Smite, Slow_Cooker, Split_Fire, Growing_Coils, Melting_Comet, Self_Healing",
-    v: "y",
   },
   {
     Date: "5/17/2024",
@@ -882,7 +824,6 @@ export const Hades2FullData = [
     "Clear Time": "18:03.72",
     Boons_Picked:
       "Soot_Sprint, Glowing_Coal, Slow_Cooker, Divine_Vengeance, Spirit_Surge, Static_Shock, Double_Moonshot, Rapid_Moonfire",
-    v: "y",
   },
   {
     Date: "5/19/2024",
@@ -897,7 +838,6 @@ export const Hades2FullData = [
     "Clear Time": "24:15.15",
     Boons_Picked:
       "Geyser_Ring, Double_Up, Double_Moonshot, Extending_Wallop, Born_Gain, Keen_Intuition, Nasty_Comeback, Golden_Rule",
-    v: "",
   },
   {
     Date: "5/20/2024",
@@ -912,7 +852,6 @@ export const Hades2FullData = [
     "Clear Time": "18:19.19",
     Boons_Picked:
       "Exceptional_Talent, Arctic_Ring, Lucid_Gain, Super_Nova, Gale_Force, Sunken_Treasure, Psychic_Whirlwind, Furious_Whirlwind",
-    v: "y",
   },
   {
     Date: "5/20/2024",
@@ -927,7 +866,6 @@ export const Hades2FullData = [
     "Clear Time": "18:30.00",
     Boons_Picked:
       "Winter_Coat, Coarse_Grit, Mynt_Condition, Greater_Evasion, Unyielding_Slash, Born_Gain, Sudden_Cleaver, Tall_Order",
-    v: "y",
   },
   {
     Date: "5/18/2024",
@@ -942,7 +880,6 @@ export const Hades2FullData = [
     "Clear Time": "18:35.70",
     Boons_Picked:
       "Extra_Dose, Witty_Retort, Explosive_Ambush, Skulking_Slice, Born_Gain, Keen_Intuition, Back_Burner, Dazzling_Display",
-    v: "y",
   },
   {
     Date: "5/20/2024",
@@ -957,7 +894,6 @@ export const Hades2FullData = [
     "Clear Time": "20:24.90",
     Boons_Picked:
       "Rare_Crop, Weed_Killer, Coarse_Grit, Uncommon_Grace, Witty_Retort, Mean_Streak, Explosive_Ambush, Martial_Art",
-    v: "y",
   },
   {
     Date: "5/20/2024",
@@ -972,7 +908,6 @@ export const Hades2FullData = [
     "Clear Time": "19:41.95",
     Boons_Picked:
       "Saved_Breath, Light_Smite, Super_Nova, Mynt_Condition, Clean_Candle, Crushing_Comet, Shocking_Loss, Self_Healing",
-    v: "y",
   },
   {
     Date: "5/20/2024",
@@ -987,7 +922,6 @@ export const Hades2FullData = [
     "Clear Time": "17:17.44",
     Boons_Picked:
       "Engagement_Ring, Family_Trade, Water_Fitness, Slippery_Slope, Double_Moonshot, Marauder_Wallop, Proper_Upbringing, King_Tide",
-    v: "y",
   },
   {
     Date: "5/16/2024",
@@ -1002,7 +936,6 @@ export const Hades2FullData = [
     "Clear Time": "16:42.22",
     Boons_Picked:
       "Super_Nova, Greater_Evasion, Witty_Retort, Double_Cataclysm, Melting_Swipe, Born_Gain, Keen_Intuition, Exceptional_Talent",
-    v: "y",
   },
   {
     Date: "5/21/2024",
@@ -1017,7 +950,6 @@ export const Hades2FullData = [
     "Clear Time": "19:05.05",
     Boons_Picked:
       "Arctic_Ring, Plentiful_Forage, Rare_Crop, Greater_Evasion, Mean_Streak, Slippery_Slope, Concentrated_Flurry, Spiral_Knives",
-    v: "y",
   },
   {
     Date: "5/22/2024",
@@ -1032,7 +964,6 @@ export const Hades2FullData = [
     "Clear Time": "21:04.17",
     Boons_Picked:
       "Sworn_Strike, Winter_Coat, Coarse_Grit, Mynt_Condition, Double_Cataclysm, Vampiric_Cataclysm, Born_Gain, Hereditary_Bane",
-    v: "y",
   },
   {
     Date: "5/20/2024",
@@ -1047,7 +978,6 @@ export const Hades2FullData = [
     "Clear Time": "34:27.22",
     Boons_Picked:
       "Nova_Strike, Storm_Ring, Lucid_Gain, Dark_Side, Mynt_Condition, Static_Shock, Furious_Whirlwind, Unyielding_Slash",
-    v: "y",
   },
   {
     Date: "5/22/2024",
@@ -1062,7 +992,6 @@ export const Hades2FullData = [
     "Clear Time": "20:36.85",
     Boons_Picked:
       "Wave_Flourish, Smolder_Ring, Fluid_Gain, Greater_Evasion, Slow_Cooker, Water_Fitness, Triple_Helix, Dire_Candle",
-    v: "",
   },
   {
     Date: "5/22/2024",
@@ -1077,7 +1006,6 @@ export const Hades2FullData = [
     "Clear Time": "8:28.68",
     Boons_Picked:
       "Wave_Flourish, Engagement_Ring, Night_Bloom, Winter_Coat, Mean_Streak, Boundless_Flurry, Hook_Knives, Born_Gain",
-    v: "",
   },
   {
     Date: "5/24/2024",
@@ -1092,7 +1020,6 @@ export const Hades2FullData = [
     "Clear Time": "21:04.25",
     Boons_Picked:
       "Flutter_Strike, Flutter_Flourish, Volcanic_Flourish, Life_Affirmation, Secret_Crush, Trusty_Shield, Bolstered_Array, Self_Healing",
-    v: "y",
   },
   {
     Date: "5/24/2024",
@@ -1107,7 +1034,6 @@ export const Hades2FullData = [
     "Clear Time": "19:11.34",
     Boons_Picked:
       "Wave_Flourish, Flood_Control, Hydraulic_Might, Slippery_Slope, Double_Moonshot, Rapid_Moonfire, King_Tide, Crashing_Wave",
-    v: "y",
   },
   {
     Date: "5/24/2024",
@@ -1122,7 +1048,6 @@ export const Hades2FullData = [
     "Clear Time": "17:57.84",
     Boons_Picked:
       "Tranquil_Gain, Phase_Shift, Cold_Storage, Gale_Force, Plentiful_Forage, Double_Wallop, Shimmering_Moonshot, Winter_Harvest",
-    v: "",
   },
   {
     Date: "5/24/2024",
@@ -1137,7 +1062,6 @@ export const Hades2FullData = [
     "Clear Time": "18:50.76",
     Boons_Picked:
       "Plentiful_Forage, Trusty_Shield, Furious_Whirlwind, Unyielding_Slash, Born_Gain, Nexus_Sprint, Cherished_Heirloom, Spiteful_Strength",
-    v: "",
   },
   {
     Date: "5/20/2024",
@@ -1152,7 +1076,6 @@ export const Hades2FullData = [
     "Clear Time": "17:53.18",
     Boons_Picked:
       "Ice_Flourish, Blinding_Sprint, Perfect_Image, Gale_Force, Bridal_Glow, Family_Trade, Double_Moonshot, Melting_Swipe",
-    v: "y",
   },
   {
     Date: "5/25/2024",
@@ -1167,7 +1090,6 @@ export const Hades2FullData = [
     "Clear Time": "16:46.38",
     Boons_Picked:
       "Heaven_Strike, Swift_Flourish, Life_Affirmation, Mean_Streak, Flood_Control, Electric_Overload, Lightning_Lance, Static_Shock",
-    v: "y",
   },
   {
     Date: "5/25/2024",
@@ -1182,7 +1104,6 @@ export const Hades2FullData = [
     "Clear Time": "27:50.58",
     Boons_Picked:
       "Flame_Strike, Heaven_Flourish, Storm_Ring, Passion_Dash, Glamour_Gain, Bolstered_Array, Air_Quality, Thermal_Dynamics",
-    v: "y",
   },
   {
     Date: "5/25/2024",
@@ -1197,7 +1118,6 @@ export const Hades2FullData = [
     "Clear Time": "19:15.31",
     Boons_Picked:
       "Volcanic_Strike, Rare_Crop, Coarse_Grit, Slow_Cooker, Concentrated_Flurry, Dancing_Knives, Born_Gain, Nexus_Sprint",
-    v: "y",
   },
   {
     Date: "5/25/2024",
@@ -1212,7 +1132,6 @@ export const Hades2FullData = [
     "Clear Time": "26:38.40",
     Boons_Picked:
       "Sworn_Strike, Sworn_Flourish, Smolder_Ring, Hearth_Gain, Family_Trade, Explosive_Ambush, Skulking_Slice, Funeral_Pyre",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -1227,7 +1146,6 @@ export const Hades2FullData = [
     "Clear Time": "22:31.95",
     Boons_Picked:
       "Wave_Flourish, Glowing_Coal, Water_Fitness, Slippery_Slope, Marauder_Wallop, Shimmering_Moonshot, King_Tide, Crashing_Wave",
-    v: "",
   },
   {
     Date: "5/20/2024",
@@ -1242,7 +1160,6 @@ export const Hades2FullData = [
     "Clear Time": "9:20.07",
     Boons_Picked:
       "Wave_Flourish, Swift_Flourish, Hydraulic_Might, Slippery_Slope, Double_Moonshot, Rapid_Moonfire, King_Tide, Crashing_Wave",
-    v: "y",
   },
   {
     Date: "5/21/2024",
@@ -1257,7 +1174,6 @@ export const Hades2FullData = [
     "Clear Time": "12:46.01",
     Boons_Picked:
       "Wave_Flourish, Burnt_Offering, Glowing_Coal, Slow_Cooker, Slippery_Slope, Sunken_Treasure, Double_Moonshot, Scalding_Vapor",
-    v: "y",
   },
   {
     Date: "5/23/2024",
@@ -1272,7 +1188,6 @@ export const Hades2FullData = [
     "Clear Time": "10:42.51",
     Boons_Picked:
       "Flammable_Coating, Hydraulic_Might, Slippery_Slope, Static_Shock, Double_Moonshot, Marauder_Wallop, King_Tide, Crashing_Wave",
-    v: "y",
   },
   {
     Date: "5/25/2024",
@@ -1287,7 +1202,6 @@ export const Hades2FullData = [
     "Clear Time": "9:02.02",
     Boons_Picked:
       "Ice_Flourish, Smolder_Ring, Mynt_Condition, Molten_Touch, Slow_Cooker, Double_Moonshot, Shimmering_Moonshot, Tall_Order",
-    v: "y",
   },
   {
     Date: "5/17/2024",
@@ -1302,7 +1216,6 @@ export const Hades2FullData = [
     "Clear Time": "24:11.95",
     Boons_Picked:
       "Heavy_Metal, Trusty_Shield, Molten_Touch, Glowing_Coal, Static_Shock, Double_Moonshot, Shimmering_Moonshot, Master_Conductor",
-    v: "y",
   },
   {
     Date: "5/23/2024",
@@ -1317,7 +1230,6 @@ export const Hades2FullData = [
     "Clear Time": "24:26.81",
     Boons_Picked:
       "Perfect_Image, Uncommon_Grace, Greater_Evasion, Divine_Vengeance, Extending_Wallop, Cross_Cataclysm, Born_Gain, Proper_Upbringing",
-    v: "y",
   },
   {
     Date: "5/14/2024",
@@ -1332,7 +1244,6 @@ export const Hades2FullData = [
     "Clear Time": "19:43.59",
     Boons_Picked:
       "Wave_Flourish, Smolder_Ring, Blinding_Sprint, Nitro_Boost, Mean_Streak, Slippery_Slope, Double_Moonshot, Rapid_Moonfire",
-    v: "y",
   },
   {
     Date: "5/10/2024",
@@ -1347,7 +1258,6 @@ export const Hades2FullData = [
     "Clear Time": "18:13.79",
     Boons_Picked:
       "Mynt_Condition, Flood_Control, Spirit_Surge, Double_Moonshot, Rapid_Moonfire, Swift_Strike, Nasty_Comeback, Double_Strike",
-    v: "",
   },
   {
     Date: "5/26/2024",
@@ -1362,7 +1272,6 @@ export const Hades2FullData = [
     "Clear Time": "19:18.37",
     Boons_Picked:
       "Wave_Flourish, Trusty_Shield, Greater_Evasion, Boundless_Flurry, Concentrated_Flurry, Born_Gain, Keen_Intuition, Crashing_Wave",
-    v: "y",
   },
   {
     Date: "5/26/2024",
@@ -1377,7 +1286,6 @@ export const Hades2FullData = [
     "Clear Time": "20:04.65",
     Boons_Picked:
       "Winter_Coat, Mynt_Condition, Trusty_Shield, Hard_Target, Flood_Control, Slippery_Slope, Double_Moonshot, Shimmering_Moonshot",
-    v: "y",
   },
   {
     Date: "5/27/2024",
@@ -1392,7 +1300,6 @@ export const Hades2FullData = [
     "Clear Time": "18:29.02",
     Boons_Picked:
       "Sworn_Strike, Rapture_Ring, Heavy_Metal, Mynt_Condition, Trusty_Shield, Hard_Target, Born_Gain, Clean_Candle",
-    v: "y",
   },
   {
     Date: "5/28/2024",
@@ -1407,7 +1314,6 @@ export const Hades2FullData = [
     "Clear Time": "9:03.24",
     Boons_Picked:
       "Engagement_Ring, Nitro_Boost, Mynt_Condition, Slippery_Slope, Double_Moonshot, Shimmering_Moonshot, Nexus_Sprint, Crashing_Wave",
-    v: "y",
   },
   {
     Date: "5/29/2024",
@@ -1422,7 +1328,6 @@ export const Hades2FullData = [
     "Clear Time": "19:29.87",
     Boons_Picked:
       "Mynt_Condition, Molten_Touch, Flammable_Coating, Slow_Cooker, Hydraulic_Might, Double_Moonshot, Rapid_Moonfire, Born_Gain",
-    v: "y",
   },
   {
     Date: "5/30/2024",
@@ -1437,7 +1342,6 @@ export const Hades2FullData = [
     "Clear Time": "17:05.06",
     Boons_Picked:
       "Wave_Flourish, Heavy_Metal, Mynt_Condition, Trusty_Shield, Hydraulic_Might, Slippery_Slope, King_Tide, Crashing_Wave",
-    v: "y",
   },
   {
     Date: "6/1/2024",
@@ -1452,7 +1356,6 @@ export const Hades2FullData = [
     "Clear Time": "19:05.98",
     Boons_Picked:
       "Ice_Strike, Arctic_Ring, Wolf_Howl, Gale_Force, Weed_Killer, Winter_Coat, Midnight_Oil, Skulking_Slice",
-    v: "y",
   },
   {
     Date: "5/31/2024",
@@ -1467,7 +1370,6 @@ export const Hades2FullData = [
     "Clear Time": "20:43.62",
     Boons_Picked:
       "Life_Affirmation, Secret_Crush, Plentiful_Forage, Rare_Crop, Water_Fitness, Slippery_Slope, Double_Wallop, Marauder_Wallop",
-    v: "y",
   },
   {
     Date: "6/2/2024",
@@ -1482,7 +1384,6 @@ export const Hades2FullData = [
     "Clear Time": "17:41.82",
     Boons_Picked:
       "Wave_Flourish, Swift_Flourish, Heavy_Metal, Mynt_Condition, Trusty_Shield, Mean_Streak, Hook_Knives, Born_Gain",
-    v: "y",
   },
   {
     Date: "6/3/2024",
@@ -1497,7 +1398,6 @@ export const Hades2FullData = [
     "Clear Time": "19:40.59",
     Boons_Picked:
       "Arctic_Ring, Gale_Force, Weed_Killer, Winter_Coat, Coarse_Grit, Double_Wallop, Extending_Wallop, Spiteful_Strength",
-    v: "y",
   },
   {
     Date: "6/4/2024",
@@ -1512,7 +1412,6 @@ export const Hades2FullData = [
     "Clear Time": "19:59.07",
     Boons_Picked:
       "Nitro_Boost, Mynt_Condition, Trusty_Shield, Molten_Touch, Slippery_Slope, Double_Moonshot, Melting_Swipe, Tall_Order",
-    v: "y",
   },
   {
     Date: "6/4/2024",
@@ -1527,7 +1426,6 @@ export const Hades2FullData = [
     "Clear Time": "17:16.83",
     Boons_Picked:
       "Plentiful_Forage, Rare_Crop, Winter_Coat, Coarse_Grit, Mynt_Condition, Giga_Cleaver, Born_Gain, Dashing_Heave",
-    v: "y",
   },
   {
     Date: "6/5/2024",
@@ -1542,7 +1440,6 @@ export const Hades2FullData = [
     "Clear Time": "18:15.95",
     Boons_Picked:
       "Sworn_Strike, Mynt_Condition, Trusty_Shield, Static_Shock, Split_Fire, Born_Gain, Hereditary_Bane, Clean_Candle",
-    v: "y",
   },
   {
     Date: "6/5/2024",
@@ -1557,7 +1454,6 @@ export const Hades2FullData = [
     "Clear Time": "11:01.09",
     Boons_Picked:
       "Arctic_Ring, Nitro_Boost, Local_Climate, Winter_Coat, Coarse_Grit, Molten_Touch, Unyielding_Slash, Rapid_Slash",
-    v: "y",
   },
   {
     Date: "6/7/2024",
@@ -1572,7 +1468,6 @@ export const Hades2FullData = [
     "Clear Time": "10:16.70",
     Boons_Picked:
       "Secret_Crush, Rare_Crop, Winter_Coat, Mynt_Condition, Trusty_Shield, Divine_Vengeance, Rapid_Slash, Dashing_Heave",
-    v: "y",
   },
   {
     Date: "6/7/2024",
@@ -1587,7 +1482,6 @@ export const Hades2FullData = [
     "Clear Time": "29:07.22",
     Boons_Picked:
       "Weed_Killer, Furnace_Blast, Family_Trade, Glowing_Coal, Born_Gain, Melting_Tackle, Full_Salvo, Possessed_Array",
-    v: "y",
   },
   {
     Date: "6/6/2024",
@@ -1602,7 +1496,6 @@ export const Hades2FullData = [
     "Clear Time": "16:05.89",
     Boons_Picked:
       "Total_Eclipse, Furnace_Blast, Trusty_Shield, Empowering_Guard, Unyielding_Slash, Born_Gain, Keen_Intuition, Nasty_Comeback",
-    v: "y",
   },
   {
     Date: "6/8/2024",
@@ -1617,7 +1510,6 @@ export const Hades2FullData = [
     "Clear Time": "18:33.77",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Gale_Force, Winter_Coat, Coarse_Grit, Mynt_Condition, Static_Shock, Possessed_Array",
-    v: "y",
   },
   {
     Date: "6/8/2024",
@@ -1632,7 +1524,6 @@ export const Hades2FullData = [
     "Clear Time": "18:32.40",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Coarse_Grit, Mynt_Condition, Static_Shock, Rapid_Slash, Dashing_Heave, Martial_Art",
-    v: "",
   },
   {
     Date: "6/8/2024",
@@ -1647,7 +1538,6 @@ export const Hades2FullData = [
     "Clear Time": "19:45.05",
     Boons_Picked:
       "Flutter_Strike, Arctic_Ring, Coarse_Grit, Heavy_Metal, Mynt_Condition, Trusty_Shield, Unyielding_Slash, Rapid_Slash",
-    v: "",
   },
   {
     Date: "6/8/2024",
@@ -1662,7 +1552,6 @@ export const Hades2FullData = [
     "Clear Time": "16:46.01",
     Boons_Picked:
       "Local_Climate, Trusty_Shield, Molten_Touch, Bridal_Glow, Giga_Cleaver, Empowering_Guard, Born_Gain, Keen_Intuition",
-    v: "y",
   },
   {
     Date: "6/8/2024",
@@ -1677,7 +1566,6 @@ export const Hades2FullData = [
     "Clear Time": "16:55.65",
     Boons_Picked:
       "Shameless_Attitude, Wispy_Wiles, Static_Shock, Mirrored_Thrasher, Wicked_Thrasher, Rapid_Thrasher, Apocalyptic_Storm, Martial_Art",
-    v: "y",
   },
   {
     Date: "6/8/2024",
@@ -1692,7 +1580,6 @@ export const Hades2FullData = [
     "Clear Time": "9:44.59",
     Boons_Picked:
       "Nitro_Boost, Critical_Miss, Winter_Coat, Mean_Streak, Born_Gain, Rising_Coil, Clean_Helix, Proper_Upbringing",
-    v: "y",
   },
   {
     Date: "6/9/2024",
@@ -1707,7 +1594,6 @@ export const Hades2FullData = [
     "Clear Time": "19:27.79",
     Boons_Picked:
       "Flutter_Flourish, Storm_Ring, Soot_Sprint, Uncanny_Fortitude, Lightning_Lance, Air_Quality, Mega_Driver, Colossus_Driver",
-    v: "y",
   },
   {
     Date: "6/9/2024",
@@ -1722,7 +1608,6 @@ export const Hades2FullData = [
     "Clear Time": "19:49.62",
     Boons_Picked:
       "Engagement_Ring, Winter_Coat, Coarse_Grit, Mynt_Condition, Trusty_Shield, Giga_Cleaver, Melting_Shredder, Born_Gain",
-    v: "",
   },
   {
     Date: "6/7/2024",
@@ -1737,7 +1622,6 @@ export const Hades2FullData = [
     "Clear Time": "7:32.05",
     Boons_Picked:
       "Ice_Flourish, Smolder_Ring, Phase_Shift, Greater_Evasion, Slow_Cooker, Lightning_Lance, Empowering_Guard, Born_Gain",
-    v: "y",
   },
   {
     Date: "6/9/2024",
@@ -1752,7 +1636,6 @@ export const Hades2FullData = [
     "Clear Time": "25:31.82",
     Boons_Picked:
       "Family_Trade, Uncommon_Grace, Mega_Spark, Born_Gain, Triple_Helix, Proper_Upbringing, Spiteful_Strength, Leaden_Spark",
-    v: "y",
   },
   {
     Date: "6/9/2024",
@@ -1767,7 +1650,6 @@ export const Hades2FullData = [
     "Clear Time": "08:22.64",
     Boons_Picked:
       "Swift_Flourish, Mynt_Condition, Trusty_Shield, Slow_Cooker, Slippery_Slope, Spirit_Surge, Final_Slice, Boundless_Flurry",
-    v: "y",
   },
   {
     Date: "6/10/2024",
@@ -1782,7 +1664,6 @@ export const Hades2FullData = [
     "Clear Time": "18:56.45",
     Boons_Picked:
       "Gale_Force, Weed_Killer, Mynt_Condition, Hydraulic_Might, Sunken_Treasure, Unyielding_Slash, Dashing_Heave, Hell_Splitter",
-    v: "y",
   },
   {
     Date: "6/11/2024",
@@ -1797,7 +1678,6 @@ export const Hades2FullData = [
     "Clear Time": "3:56.49",
     Boons_Picked:
       "Secret_Crush, Mynt_Condition, Trusty_Shield, Natural_Gas, Flood_Control, Dashing_Heave, Martial_Art, Tall_Order",
-    v: "y",
   },
   {
     Date: "6/12/2024",
@@ -1812,7 +1692,6 @@ export const Hades2FullData = [
     "Clear Time": "10:13.61",
     Boons_Picked:
       "Extra_Dose, Perfect_Image, Mynt_Condition, Divine_Vengeance, Spirit_Surge, Double_Strike, Dashing_Heave, Hell_Splitter",
-    v: "y",
   },
   {
     Date: "6/11/2024",
@@ -1827,7 +1706,6 @@ export const Hades2FullData = [
     "Clear Time": "25:43.55",
     Boons_Picked:
       "Tough_Trade, Born_Gain, Hereditary_Bane, Nasty_Comeback, Spiteful_Strength, Colossus_Driver, Possessed_Array, Rocket_Bombard",
-    v: "y",
   },
   {
     Date: "6/11/2024",
@@ -1842,7 +1720,6 @@ export const Hades2FullData = [
     "Clear Time": "16:26.34",
     Boons_Picked:
       "Nova_Strike, Solar_Ring, Extra_Dose, Perfect_Image, Mynt_Condition, Trusty_Shield, Mirrored_Thrasher, Born_Gain",
-    v: "y",
   },
   {
     Date: "6/8/2024",
@@ -1857,7 +1734,6 @@ export const Hades2FullData = [
     "Clear Time": "19:35.39",
     Boons_Picked:
       "Plentiful_Forage, Uncommon_Grace, Wicked_Thrasher, Rapid_Thrasher, Born_Gain, Keen_Intuition, Cherished_Heirloom, Dazzling_Display",
-    v: "y",
   },
   {
     Date: "6/8/2024",
@@ -1872,7 +1748,6 @@ export const Hades2FullData = [
     "Clear Time": "19:12.39",
     Boons_Picked:
       "Nova_Strike, Nova_Flourish, Sun_Worshiper, Born_Gain, Clean_Candle, Self_Healing, Dazzling_Display, Leaden_Spark",
-    v: "y",
   },
   {
     Date: "6/8/2024",
@@ -1887,7 +1762,6 @@ export const Hades2FullData = [
     "Clear Time": "20:35.10",
     Boons_Picked:
       "Sworn_Strike, Rapture_Ring, Heart_Breaker, Life_Affirmation, Burnt_Offering, Born_Gain, Sustained_Spark, Clean_Helix",
-    v: "y",
   },
   {
     Date: "6/8/2024",
@@ -1902,7 +1776,6 @@ export const Hades2FullData = [
     "Clear Time": "16:05.11",
     Boons_Picked:
       "Life_Affirmation, Extra_Dose, Burnt_Offering, Spirit_Surge, Empowering_Guard, Hell_Splitter, Back_Burner, Sweet_Surrender",
-    v: "y",
   },
   {
     Date: "6/13/2024",
@@ -1917,7 +1790,6 @@ export const Hades2FullData = [
     "Clear Time": "19:36.17",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Weed_Killer, Coarse_Grit, Trusty_Shield, Uncanny_Fortitude, Bolstered_Array, Dying_Wish",
-    v: "y",
   },
   {
     Date: "6/13/2024",
@@ -1932,7 +1804,6 @@ export const Hades2FullData = [
     "Clear Time": "7:35.65",
     Boons_Picked:
       "Arctic_Ring, Super_Nova, Winter_Coat, Coarse_Grit, Bridal_Glow, Dancing_Knives, Spiral_Knives, Born_Gain",
-    v: "y",
   },
   {
     Date: "6/14/2024",
@@ -1947,7 +1818,6 @@ export const Hades2FullData = [
     "Clear Time": "19:02.89",
     Boons_Picked:
       "Ice_Flourish, Arctic_Ring, Total_Eclipse, Winter_Coat, Mynt_Condition, Born_Gain, Clean_Candle, Spiteful_Strength",
-    v: "y",
   },
   {
     Date: "6/14/2024",
@@ -1962,7 +1832,6 @@ export const Hades2FullData = [
     "Clear Time": "8:23.12",
     Boons_Picked:
       "Nitro_Boost, Mynt_Condition, Tough_Trade, Mean_Streak, Flood_Control, Hydraulic_Might, Colossus_Driver, Possessed_Array",
-    v: "y",
   },
   {
     Date: "6/16/2024",
@@ -1977,7 +1846,6 @@ export const Hades2FullData = [
     "Clear Time": "17:57.12",
     Boons_Picked:
       "Heaven_Flourish, Arctic_Ring, Nitro_Boost, Mynt_Condition, Born_Gain, Triple_Helix, Sustained_Spark, Spiteful_Strength",
-    v: "y",
   },
   {
     Date: "6/15/2024",
@@ -1992,7 +1860,6 @@ export const Hades2FullData = [
     "Clear Time": "10:00.51",
     Boons_Picked:
       "Perfect_Image, Critical_Miss, Mynt_Condition, Trusty_Shield, Molten_Touch, Rapid_Onslaught, Killer_Current, Back_Burner",
-    v: "y",
   },
   {
     Date: "6/17/2024",
@@ -2007,7 +1874,6 @@ export const Hades2FullData = [
     "Clear Time": "19:50.78",
     Boons_Picked:
       "Nova_Strike, Volcanic_Flourish, Arctic_Ring, Trusty_Shield, Hard_Target, Spirit_Surge, Rapid_Slash, Dashing_Heave",
-    v: "y",
   },
   {
     Date: "6/17/2024",
@@ -2022,7 +1888,6 @@ export const Hades2FullData = [
     "Clear Time": "20:07.13",
     Boons_Picked:
       "Sworn_Flourish, Solar_Ring, Frigid_Sprint, Mynt_Condition, Giga_Cleaver, Born_Gain, Sudden_Cleaver, Torrential_Downpour",
-    v: "y",
   },
   {
     Date: "6/17/2024",
@@ -2037,7 +1902,6 @@ export const Hades2FullData = [
     "Clear Time": "8:00.21",
     Boons_Picked:
       "Flutter_Strike, Secret_Crush, Shameless_Attitude, Hydraulic_Might, Spirit_Surge, Static_Shock, Mirrored_Thrasher, Wicked_Thrasher",
-    v: "y",
   },
   {
     Date: "6/17/2024",
@@ -2052,7 +1916,6 @@ export const Hades2FullData = [
     "Clear Time": "24:02.13",
     Boons_Picked:
       "Ice_Strike, Ice_Flourish, Solar_Ring, Mynt_Condition, Trusty_Shield, Sun_Worshiper, Giga_Cleaver, Born_Gain",
-    v: "y",
   },
   {
     Date: "6/17/2024",
@@ -2067,7 +1930,6 @@ export const Hades2FullData = [
     "Clear Time": "19:31.48",
     Boons_Picked:
       "Heavy_Metal, Mynt_Condition, Tough_Trade, Uncommon_Grace, Born_Gain, Inverted_Spark, Clean_Helix, Spiteful_Strength",
-    v: "y",
   },
   {
     Date: "6/17/2024",
@@ -2082,7 +1944,6 @@ export const Hades2FullData = [
     "Clear Time": "15:03.62",
     Boons_Picked:
       "Perfect_Image, Super_Nova, Electric_Overload, Lightning_Lance, Born_Gain, Cherished_Heirloom, Clean_Candle, Crushing_Comet",
-    v: "y",
   },
   {
     Date: "6/18/2024",
@@ -2097,7 +1958,6 @@ export const Hades2FullData = [
     "Clear Time": "8:05.72",
     Boons_Picked:
       "Nova_Strike, Sworn_Flourish, Rapture_Ring, Nitro_Boost, Soot_Sprint, Bolstered_Array, Dazzling_Display, Burning_Desire",
-    v: "y",
   },
   {
     Date: "6/19/2024",
@@ -2112,7 +1972,6 @@ export const Hades2FullData = [
     "Clear Time": "15:26.49",
     Boons_Picked:
       "Heaven_Strike, Flutter_Flourish, Arctic_Ring, Gale_Force, Mynt_Condition, Trusty_Shield, Born_Gain, Clean_Candle",
-    v: "y",
   },
   {
     Date: "6/21/2024",
@@ -2127,7 +1986,6 @@ export const Hades2FullData = [
     "Clear Time": "20:38.25",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Winter_Coat, Coarse_Grit, Mynt_Condition, Born_Gain, Clean_Candle, Sustained_Spark",
-    v: "y",
   },
   {
     Date: "6/23/2024",
@@ -2142,7 +2000,6 @@ export const Hades2FullData = [
     "Clear Time": "20:14.09",
     Boons_Picked:
       "Heaven_Flourish, Arctic_Ring, Super_Nova, Gale_Force, Lightning_Lance, Empowering_Guard, Born_Gain, Sudden_Cleaver",
-    v: "y",
   },
   {
     Date: "6/23/2024",
@@ -2157,7 +2014,6 @@ export const Hades2FullData = [
     "Clear Time": "19:02.31",
     Boons_Picked:
       "Volcanic_Strike, Wave_Flourish, Arctic_Ring, Nitro_Boost, Gale_Force, Heavy_Metal, Static_Shock, Empowering_Guard",
-    v: "y",
   },
   {
     Date: "6/24/2024",
@@ -2172,7 +2028,6 @@ export const Hades2FullData = [
     "Clear Time": "18:46.47",
     Boons_Picked:
       "Nova_Flourish, Rapture_Ring, Total_Eclipse, Gale_Force, Winter_Coat, Melting_Shredder, Born_Gain, Sudden_Cleaver",
-    v: "y",
   },
   {
     Date: "6/24/2024",
@@ -2187,7 +2042,6 @@ export const Hades2FullData = [
     "Clear Time": "17:09.08",
     Boons_Picked:
       "Ice_Flourish, Rapture_Ring, Broken_Resolve, Divine_Vengeance, Lightning_Lance, Giga_Cleaver, Empowering_Guard, Born_Gain",
-    v: "y",
   },
   {
     Date: "6/24/2024",
@@ -2202,7 +2056,6 @@ export const Hades2FullData = [
     "Clear Time": "17:42.53",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Winter_Coat, Coarse_Grit, Trusty_Shield, Static_Shock, Bolstered_Array, Possessed_Array",
-    v: "y",
   },
   {
     Date: "6/24/2024",
@@ -2217,7 +2070,6 @@ export const Hades2FullData = [
     "Clear Time": "18:39.30",
     Boons_Picked:
       "Nova_Strike, Rapture_Ring, Passion_Dash, Mynt_Condition, Trusty_Shield, Spirit_Surge, Bolstered_Array, Destructive_Array",
-    v: "y",
   },
   {
     Date: "6/24/2024",
@@ -2232,7 +2084,6 @@ export const Hades2FullData = [
     "Clear Time": "17:29.65",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Frigid_Sprint, Extra_Dose, Mynt_Condition, Rapid_Slash, Dashing_Heave, Proper_Upbringing",
-    v: "y",
   },
   {
     Date: "6/25/2024",
@@ -2247,7 +2098,6 @@ export const Hades2FullData = [
     "Clear Time": "27:04.93",
     Boons_Picked:
       "Sworn_Strike, Nitro_Boost, Night_Bloom, Spirit_Surge, Wicked_Thrasher, Extending_Wallop, Born_Gain",
-    v: "y",
   },
   {
     Date: "6/23/2024",
@@ -2262,7 +2112,6 @@ export const Hades2FullData = [
     "Clear Time": "23:07.20",
     Boons_Picked:
       "Sworn_Flourish, Storm_Ring, Life_Affirmation, Uncommon_Grace, Martial_Art, Mega_Driver, Colossus_Driver, Twisting_Crash",
-    v: "y",
   },
   {
     Date: "6/26/2024",
@@ -2277,7 +2126,6 @@ export const Hades2FullData = [
     "Clear Time": "18:10.16",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Wolf_Howl, Cold_Storage, Gale_Force, Weed_Killer, Mynt_Condition, Leaden_Spark",
-    v: "y",
   },
   {
     Date: "6/27/2024",
@@ -2292,7 +2140,6 @@ export const Hades2FullData = [
     "Clear Time": "19:50.91",
     Boons_Picked:
       "Sworn_Flourish, Arctic_Ring, Nitro_Boost, Lucid_Gain, Total_Eclipse, Local_Climate, Mynt_Condition, Nexus_Sprint",
-    v: "y",
   },
   {
     Date: "6/27/2024",
@@ -2307,7 +2154,6 @@ export const Hades2FullData = [
     "Clear Time": "18:33.65",
     Boons_Picked:
       "Flutter_Flourish, Solar_Ring, Lucid_Gain, Lunar_Ray, Gale_Force, Rare_Crop, Hard_Target, Giga_Cleaver,Unyielding_Slash,Howling_Soul",
-    v: "y",
   },
   {
     Date: "6/27/2024",
@@ -2322,7 +2168,6 @@ export const Hades2FullData = [
     "Clear Time": "17:38.12",
     Boons_Picked:
       "Sworn_Strike, Passion_Dash, Nitro_Boost, Glamour_Gain, Psychic_Whirlwind, Dying_Wish, Sweet_Surrender, Glowing_Coal,Nimble_Limbs,Snow_Queen,Lethal_Snare,Burnt_Offering",
-    v: "y",
   },
   {
     Date: "6/27/2024",
@@ -2337,7 +2182,6 @@ export const Hades2FullData = [
     "Clear Time": "19:21.67",
     Boons_Picked:
       "Flutter_Strike, Wave_Flourish, Engagement_Ring, Wispy_Wiles, Mynt_Condition, Greater_Evasion, Psychic_Whirlwind, Unyielding_Slash,Flood_Control,Life_Affirmation",
-    v: "y",
   },
   {
     Date: "6/28/2024",
@@ -2352,7 +2196,6 @@ export const Hades2FullData = [
     "Clear Time": "20:02.01",
     Boons_Picked:
       "Sworn_Flourish, Arctic_Ring, Soot_Sprint, Lucid_Gain, Local_Climate, Greater_Evasion, Giga_Cleaver, Empowering_Guard",
-    v: "y",
   },
   {
     Date: "6/29/2024",
@@ -2367,7 +2210,6 @@ export const Hades2FullData = [
     "Clear Time": "18:51.68",
     Boons_Picked:
       "Wave_Strike, Ice_Flourish, Rapture_Ring, Blinding_Sprint, Glamour_Gain, Trusty_Shield, Final_Slice, Martial_Art, Flick_Knives,Lethal_Snare,Snow_Queen,Slippery_Slope",
-    v: "y",
   },
   {
     Date: "6/29/2024",
@@ -2382,7 +2224,6 @@ export const Hades2FullData = [
     "Clear Time": "19:27.02",
     Boons_Picked:
       "Flutter_Strike, Sworn_Flourish, Arctic_Ring, Tranquil_Gain, Mynt_Condition, Trusty_Shield, Triple_Helix, Clean_Candle",
-    v: "y",
   },
   {
     Date: "6/29/2024",
@@ -2397,7 +2238,6 @@ export const Hades2FullData = [
     "Clear Time": "17:56.72",
     Boons_Picked:
       "Flame_Flourish, Engagement_Ring, Passion_Dash, Nitro_Boost, Glamour_Gain, Trusty_Shield, Hook_Knives, Tall_Order, Support_Fire,Mynt_Condition,Elementary_Particles",
-    v: "y",
   },
   {
     Date: "6/29/2024",
@@ -2412,7 +2252,6 @@ export const Hades2FullData = [
     "Clear Time": "19:12.79",
     Boons_Picked:
       "Heaven_Strike, Sworn_Flourish, Storm_Ring, Glamour_Gain, Phase_Shift, Heart_Breaker, Mega_Driver, Twisting_Crash",
-    v: "y",
   },
   {
     Date: "6/29/2024",
@@ -2427,7 +2266,6 @@ export const Hades2FullData = [
     "Clear Time": "17:49.46",
     Boons_Picked:
       "Flutter_Strike, Flame_Flourish, Engagement_Ring, Nitro_Boost, Soot_Sprint, Glamour_Gain, Trusty_Shield, Skulking_Slice,Support_Fire,Hot_Flash,Mynt_Condition,Greater_Evasion",
-    v: "y",
   },
   {
     Date: "6/29/2024",
@@ -2442,7 +2280,6 @@ export const Hades2FullData = [
     "Clear Time": "16:27.45",
     Boons_Picked:
       "Nova_Strike, Engagement_Ring, Frigid_Sprint, Gale_Force, Mynt_Condition, Bolstered_Array, Hereditary_Bane, Possessed_Array,Tall_Order,Dazzling_Display,Snow_Queen,Extra_Dose",
-    v: "y",
   },
   {
     Date: "6/30/2024",
@@ -2457,7 +2294,6 @@ export const Hades2FullData = [
     "Clear Time": "17:39.22",
     Boons_Picked:
       "Ice_Strike, Storm_Ring, Passion_Rush, Gale_Force, Mynt_Condition, Lightning_Lance, Mirrored_Thrasher, Hail_Storm",
-    v: "y",
   },
   {
     Date: "6/30/2024",
@@ -2472,7 +2308,6 @@ export const Hades2FullData = [
     "Clear Time": "17:18.18",
     Boons_Picked:
       "Flame_Strike, Engagement_Ring, Trusty_Shield, Explosive_Ambush, Final_Slice, Dying_Wish, Pyro_Technique, Elementary_Particles",
-    v: "y",
   },
   {
     Date: "6/30/2024",
@@ -2487,7 +2322,6 @@ export const Hades2FullData = [
     "Clear Time": "14:52.83",
     Boons_Picked:
       "Nova_Strike, Engagement_Ring, Nitro_Boost, Gale_Force, Mynt_Condition, Trusty_Shield, Dying_Wish, Dashing_Heave",
-    v: "y",
   },
   {
     Date: "6/30/2024",
@@ -2502,7 +2336,6 @@ export const Hades2FullData = [
     "Clear Time": "18:54.40",
     Boons_Picked:
       "Sworn_Flourish, Storm_Ring, Hearth_Gain, Night_Bloom, Trusty_Shield, Dying_Wish, Twisting_Crash, Silver_Streak,Mynt_Condition",
-    v: "y",
   },
   {
     Date: "6/30/2024",
@@ -2517,7 +2350,6 @@ export const Hades2FullData = [
     "Clear Time": "19:11.16",
     Boons_Picked:
       "Flutter_Strike, Ice_Flourish, Engagement_Ring, Passion_Rush, Mynt_Condition, Trusty_Shield, Greater_Evasion, Colossus_Driver,Sweet_Surrender,Ecstatic_Obsession,Snow_Queen",
-    v: "y",
   },
   {
     Date: "6/30/2024",
@@ -2532,7 +2364,6 @@ export const Hades2FullData = [
     "Clear Time": "19:01.24",
     Boons_Picked:
       "Wave_Strike, Engagement_Ring, Glamour_Gain, Phase_Shift, Slippery_Slope, Static_Shock, Mirrored_Thrasher, Extending_Wallop,Thunder_Sprint,Water_Fitness,Air_Quality,Hard_Target",
-    v: "y",
   },
   {
     Date: "7/1/2024",
@@ -2547,7 +2378,6 @@ export const Hades2FullData = [
     "Clear Time": "19:09.49",
     Boons_Picked:
       "Flame_Strike, Heaven_Flourish, Engagement_Ring, Blinding_Sprint, Nitro_Boost, Static_Shock, Wicked_Thrasher, Extending_Wallop, Thermal_Dynamics, Deep_Dissent",
-    v: "y",
   },
   {
     Date: "7/1/2024",
@@ -2562,7 +2392,6 @@ export const Hades2FullData = [
     "Clear Time": "17:33.66",
     Boons_Picked:
       "Flame_Strike, Volcanic_Flourish, Storm_Ring, Nitro_Boost, Phase_Shift, Mynt_Condition, Lightning_Lance, Static_Shock, Mirrored_Thrasher, Splash_Fount, Nimble_Limbs, Lethal_Snare",
-    v: "y",
   },
   {
     Date: "6/30/2024",
@@ -2577,7 +2406,6 @@ export const Hades2FullData = [
     "Clear Time": "20:59.41",
     Boons_Picked:
       "Volcanic_Flourish, Rare_Crop, Trusty_Shield, Empowering_Guard, Born_Gain, Rapid_Slash, Sudden_Cleaver, Blood_Line, Last_Gasp, Mixed_Blessings",
-    v: "y",
   },
   {
     Date: "6/27/2024",
@@ -2592,7 +2420,6 @@ export const Hades2FullData = [
     "Clear Time": "29:02.49",
     Boons_Picked:
       "Sworn_Strike, Sworn_Flourish, Uncanny_Fortitude, Static_Shock, Back_Burner, Tall_Order, Blood_Line, Nimble_Mind, Silver_Streak, Howling_Soul",
-    v: "y",
   },
   {
     Date: "7/1/2024",
@@ -2607,7 +2434,6 @@ export const Hades2FullData = [
     "Clear Time": "18:16.52",
     Boons_Picked:
       "Sworn_Flourish, Arctic_Ring, Lucid_Gain, Wolf_Howl, Trusty_Shield, Easy_Shot, Bless_Chant,Dying_Wish,Life_Savings",
-    v: "y",
   },
   {
     Date: "7/1/2024",
@@ -2622,7 +2448,6 @@ export const Hades2FullData = [
     "Clear Time": "18:57.12",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Blinding_Sprint, Glamour_Gain, Shameless_Attitude,Leaden_Spark,Split_Fire,Bless_Strike,Fates_Trimmings,Super_Nova",
-    v: "y",
   },
   {
     Date: "7/2/2024",
@@ -2637,7 +2462,6 @@ export const Hades2FullData = [
     "Clear Time": "17:41.61",
     Boons_Picked:
       "Sworn_Strike, Storm_Ring, Lucid_Gain, Total_Eclipse, Extra_Dose, Super_Nova, Heavy_Metal, Trusty_Shield, Uncanny_Fortitude, Bridal_Glow, Clean_Candle, Sustained_Spark",
-    v: "y",
   },
   {
     Date: "7/2/2024",
@@ -2652,7 +2476,6 @@ export const Hades2FullData = [
     "Clear Time": "19:20.82",
     Boons_Picked:
       "Flame_Strike, Engagement_Ring, Passion_Rush, Life_Affirmation, Mynt_Condition, Trusty_Shield, Lightning_Lance, Static_Shock, Mega_Spark, Inverted_Spark, Pyro_Technique,Bless_Strike",
-    v: "y",
   },
   {
     Date: "7/2/2024",
@@ -2667,7 +2490,6 @@ export const Hades2FullData = [
     "Clear Time": "19:30.69",
     Boons_Picked:
       "Sworn_Strike, Heaven_Flourish, Nitro_Boost, Hearth_Gain, Phase_Shift, Mynt_Condition, Witty_Retort, Hereditary_Bane, Clean_Candle, Lethal_Snare, SurviveSurviveSurvive, Bless_Will",
-    v: "y",
   },
   {
     Date: "7/3/2024",
@@ -2682,7 +2504,6 @@ export const Hades2FullData = [
     "Clear Time": "19:37.55",
     Boons_Picked:
       "Sworn_Strike, Heaven_Flourish, Rapture_Ring, Mynt_Condition, Trusty_Shield, Uncanny_Fortitude, Dying_Wish, Sudden_Driver, Possessed_Array, Nimble_Limbs, SurviveSurviveSurvive, Ancestral_Offering",
-    v: "y",
   },
   {
     Date: "7/2/2024",
@@ -2697,7 +2518,6 @@ export const Hades2FullData = [
     "Clear Time": "20:10.43",
     Boons_Picked:
       "Nova_Strike, Engagement_Ring, Blinding_Sprint, Gale_Force, Trusty_Shield, Uncanny_Fortitude, Bolstered_Array, Lethal_Snare",
-    v: "y",
   },
   {
     Date: "7/3/2024",
@@ -2712,7 +2532,6 @@ export const Hades2FullData = [
     "Clear Time": "17:32.84",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Blinding_Sprint, Cold_Storage, Hard_Target, Empowering_Guard, Rapid_Slash, Lethal_Snare, Bless_Strike",
-    v: "y",
   },
   {
     Date: "7/4/2024",
@@ -2727,7 +2546,6 @@ export const Hades2FullData = [
     "Clear Time": "8:28.32",
     Boons_Picked:
       "Flutter_Strike, Mynt_Condition, Quick_Buck, Hydraulic_Might, Mirrored_Thrasher, Melting_Swipe, Born_Gain, Hereditary_Bane, Golden_Rule, Nimble_Mind, Last_Gasp, Mixed_Blessings",
-    v: "y",
   },
   {
     Date: "7/4/2024",
@@ -2742,7 +2560,6 @@ export const Hades2FullData = [
     "Clear Time": "8:48.12",
     Boons_Picked:
       "Flutter_Strike, Volcanic_Flourish, Nitro_Boost, Quick_Buck, Hydraulic_Might, Mirrored_Thrasher, Wicked_Thrasher, Born_Gain, Golden_Rule, Blood_Line, Pressure_Points, Mixed_Blessings",
-    v: "y",
   },
   {
     Date: "7/6/2024",
@@ -2757,7 +2574,6 @@ export const Hades2FullData = [
     "Clear Time": "20:05.13",
     Boons_Picked:
       "Sworn_Strike, Engagement_Ring, Passion_Rush, Glamour_Gain, Mynt_Condition, Trusty_Shield, Greater_Evasion, Lightning_Lance, Static_Shock, Martial_Art",
-    v: "y",
   },
   {
     Date: "7/6/2024",
@@ -2772,7 +2588,6 @@ export const Hades2FullData = [
     "Clear Time": "19:46.38",
     Boons_Picked:
       "Engagement_Ring, Nitro_Boost, Mynt_Condition, Trusty_Shield, Greater_Evasion, Lightning_Lance, Dying_Wish, Proper_Upbringing, Spiteful_Strength, Destructive_Array, Support_Fire, SurviveSurviveSurvive",
-    v: "y",
   },
   {
     Date: "7/7/2024",
@@ -2787,7 +2602,6 @@ export const Hades2FullData = [
     "Clear Time": "17:49.36",
     Boons_Picked:
       "Ice_Strike, Engagement_Ring, Glamour_Gain, Cold_Storage, Weed_Killer, Trusty_Shield, Quick_Buck, Mirrored_Thrasher, Wicked_Thrasher, Dying_Wish, Hereditary_Bane, Blood_Line",
-    v: "y",
   },
   {
     Date: "7/8/2024",
@@ -2802,7 +2616,6 @@ export const Hades2FullData = [
     "Clear Time": "20:17.29",
     Boons_Picked:
       "Sworn_Strike, Engagement_Ring, Passion_Rush, Fluid_Gain, Extra_Dose, Greater_Evasion, Hard_Target, Wicked_Thrasher, Rapid_Thrasher, Bless_Strike",
-    v: "y",
   },
   {
     Date: "7/9/2024",
@@ -2817,7 +2630,6 @@ export const Hades2FullData = [
     "Clear Time": "17:33.86",
     Boons_Picked:
       "Flame_Strike, Volcanic_Flourish, Storm_Ring, Passion_Rush, Mynt_Condition, Trusty_Shield, Static_Shock, Mirrored_Thrasher, Wicked_Thrasher, Air_Quality, Pyro_Technique, Pressure_Points",
-    v: "y",
   },
   {
     Date: "7/11/2024",
@@ -2832,7 +2644,6 @@ export const Hades2FullData = [
     "Clear Time": "18:45.09",
     Boons_Picked:
       "Sworn_Strike, Ice_Flourish, Arctic_Ring, Frigid_Sprint, Hearth_Gain, Total_Eclipse, Trusty_Shield, Quick_Buck, Dying_Wish, Clean_Candle, Sustained_Spark, Pressure_Points",
-    v: "y",
   },
   {
     Date: "7/10/2024",
@@ -2847,7 +2658,6 @@ export const Hades2FullData = [
     "Clear Time": "20:52.24",
     Boons_Picked:
       "Engagement_Ring, Secret_Crush, Mynt_Condition, Trusty_Shield, Lightning_Lance, Spirit_Surge, Furious_Whirlwind, Advancing_Whirlwind, Spiteful_Strength, Martial_Art",
-    v: "y",
   },
   {
     Date: "7/12/2024",
@@ -2862,7 +2672,6 @@ export const Hades2FullData = [
     "Clear Time": "17:12.70",
     Boons_Picked:
       "Flame_Strike, Storm_Ring, Nitro_Boost, Gale_Force, Mynt_Condition, Molten_Touch, Hard_Target, Hydraulic_Might, Mirrored_Thrasher, Wicked_Thrasher, Extending_Wallop, Lethal_Snare",
-    v: "y",
   },
   {
     Date: "7/12/2024",
@@ -2877,7 +2686,6 @@ export const Hades2FullData = [
     "Clear Time": "17:19.43",
     Boons_Picked:
       "Nova_Strike, Volcanic_Flourish, Engagement_Ring, Blinding_Sprint, Glamour_Gain, Mynt_Condition, Trusty_Shield, Executioner_Chop, Rapid_Slash, Grand_Caldera, Lethal_Snare, Bless_Mind",
-    v: "y",
   },
   {
     Date: "7/12/2024",
@@ -2892,7 +2700,6 @@ export const Hades2FullData = [
     "Clear Time": "19:30.92",
     Boons_Picked:
       "Sworn_Strike, Wave_Flourish, Storm_Ring, Nitro_Boost, Mynt_Condition, Trusty_Shield, Rapid_Thrasher, Cross_Cataclysm, Hereditary_Bane, Martial_Art, Nimble_Limbs, Lethal_Snare",
-    v: "y",
   },
   {
     Date: "7/13/2024",
@@ -2907,7 +2714,6 @@ export const Hades2FullData = [
     "Clear Time": "18:30.85",
     Boons_Picked:
       "Wave_Strike, Storm_Ring, Mynt_Condition, Trusty_Shield, Static_Shock, Final_Slice, King_Tide, Lethal_Snare",
-    v: "y",
   },
   {
     Date: "7/14/2024",
@@ -2922,7 +2728,6 @@ export const Hades2FullData = [
     "Clear Time": "18:02.79",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Frigid_Sprint, Mynt_Condition, Trusty_Shield, Rapid_Slash, Dashing_Heave, Lethal_Snare",
-    v: "y",
   },
   {
     Date: "7/14/2024",
@@ -2937,7 +2742,6 @@ export const Hades2FullData = [
     "Clear Time": "20:21.68",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Trusty_Shield, Midnight_Oil, Hereditary_Bane, Sustained_Spark, Lethal_Snare, Bless_Will",
-    v: "y",
   },
   {
     Date: "7/14/2024",
@@ -2952,7 +2756,6 @@ export const Hades2FullData = [
     "Clear Time": "19:43.48",
     Boons_Picked:
       "Flame_Strike, Engagement_Ring, Passion_Rush, Glamour_Gain, Trusty_Shield, Final_Slice, Rapid_Onslaught, Hot_Flash",
-    v: "y",
   },
   {
     Date: "7/9/2024",
@@ -2967,7 +2770,6 @@ export const Hades2FullData = [
     "Clear Time": "19:20.92",
     Boons_Picked:
       "Flame_Strike, Engagement_Ring, Natural_Gas, Born_Gain, Clean_Candle, Pyro_Technique, Lethal_Snare, Deep_Dissent",
-    v: "y",
   },
   {
     Date: "7/14/2024",
@@ -2982,7 +2784,6 @@ export const Hades2FullData = [
     "Clear Time": "20:27.54",
     Boons_Picked:
       "Sworn_Strike, Engagement_Ring, Nitro_Boost, Tranquil_Gain, Mynt_Condition, Trusty_Shield, Psychic_Whirlwind, Furious_Whirlwind, EvadeEvadeEvade",
-    v: "y",
   },
   {
     Date: "7/12/2024",
@@ -2997,7 +2798,6 @@ export const Hades2FullData = [
     "Clear Time": "17:58.37",
     Boons_Picked:
       "Flame_Strike, Engagement_Ring, Blinding_Sprint, Nitro_Boost, Trusty_Shield, Final_Slice, Skulking_Slice, Lethal_Snare",
-    v: "y",
   },
   {
     Date: "7/14/2024",
@@ -3012,7 +2812,6 @@ export const Hades2FullData = [
     "Clear Time": "20:31.92",
     Boons_Picked:
       "Ice_Strike, Sworn_Flourish, Storm_Ring, Blinding_Sprint, Trusty_Shield, Lightning_Lance, Static_Shock, Mirrored_Thrasher, Wicked_Thrasher, Pressure_Points",
-    v: "y",
   },
   {
     Date: "7/14/2024",
@@ -3027,7 +2826,6 @@ export const Hades2FullData = [
     "Clear Time": "19:53.72",
     Boons_Picked:
       "Sworn_Flourish, Engagement_Ring, Blinding_Sprint, Lucid_Gain, Trusty_Shield, Giga_Cleaver, Dying_Wish, Silver_Streak, EvadeEvadeEvade",
-    v: "y",
   },
   {
     Date: "7/14/2024",
@@ -3042,7 +2840,6 @@ export const Hades2FullData = [
     "Clear Time": "18:51.42",
     Boons_Picked:
       "Flame_Strike, Anvil_Ring, Passion_Rush, Mynt_Condition, Trusty_Shield, Pyro_Technique, Elementary_Particles, Hot_Flash, Pressure_Points",
-    v: "y",
   },
   {
     Date: "7/14/2024",
@@ -3057,7 +2854,6 @@ export const Hades2FullData = [
     "Clear Time": "19:05.70",
     Boons_Picked:
       "Sworn_Strike, Engagement_Ring, Gale_Force, Snow_Queen, Mynt_Condition, Trusty_Shield, Greater_Evasion, Bolstered_Array, Fetching_Array, Proper_Upbringing, Lethal_Snare, Bless_Strike",
-    v: "y",
   },
   {
     Date: "7/15/2024",
@@ -3072,7 +2868,6 @@ export const Hades2FullData = [
     "Clear Time": "19:04.87",
     Boons_Picked:
       "Arctic_Ring, Rare_Crop, Snow_Queen, Mynt_Condition, Trusty_Shield, Electric_Overload, Static_Shock, Mirrored_Thrasher, Wicked_Thrasher, Air_Quality, Shocking_Loss, Martial_Art",
-    v: "y",
   },
   {
     Date: "7/16/2024",
@@ -3087,7 +2882,6 @@ export const Hades2FullData = [
     "Clear Time": "19:26.87",
     Boons_Picked:
       "Flame_Strike, Arctic_Ring, Passion_Rush, Secret_Crush, Mynt_Condition, Wicked_Onslaught, Freezer_Burn, Hot_Flash, Nimble_Limbs, Flick_Knives, Lethal_Snare",
-    v: "y",
   },
   {
     Date: "7/16/2024",
@@ -3102,7 +2896,6 @@ export const Hades2FullData = [
     "Clear Time": "19:11.45",
     Boons_Picked:
       "Sworn_Strike, Geyser_Spout, Nitro_Boost, Glamour_Gain, Vampiric_Cataclysm, Hereditary_Bane, Solar_Ring, Bless_Soul",
-    v: "y",
   },
   {
     Date: "7/17/2024",
@@ -3117,7 +2910,6 @@ export const Hades2FullData = [
     "Clear Time": "18:44.70",
     Boons_Picked:
       "Sworn_Strike, Anvil_Ring, Nitro_Boost, Glamour_Gain, Gale_Force, Mega_Spark, Clean_Candle, Leaden_Spark, Lethal_Snare, Life_Savings, Ecstatic_Obsession",
-    v: "y",
   },
   {
     Date: "7/18/2024",
@@ -3132,7 +2924,6 @@ export const Hades2FullData = [
     "Clear Time": "20:15.78",
     Boons_Picked:
       "Heaven_Strike, Rapture_Ring, Broken_Resolve, Trusty_Shield, Divine_Vengeance, Wicked_Thrasher, Rapid_Thrasher, First_Blood, Last_Gasp, Bless_Favor",
-    v: "y",
   },
   {
     Date: "7/20/2024",
@@ -3147,7 +2938,6 @@ export const Hades2FullData = [
     "Clear Time": "17:04.94",
     Boons_Picked:
       "Sworn_Strike, Passion_Rush, Broken_Resolve, Life_Affirmation, Furious_Whirlwind, Hereditary_Bane, Rapid_Slash, Hot_Flash",
-    v: "y",
   },
   {
     Date: "7/20/2024",
@@ -3162,7 +2952,6 @@ export const Hades2FullData = [
     "Clear Time": "19:12.61",
     Boons_Picked:
       "Flame_Strike, Sworn_Flourish, Hearth_Gain, Snow_Queen, Mynt_Condition, Trusty_Shield, Natural_Gas, Dying_Wish, Leaden_Spark",
-    v: "y",
   },
   {
     Date: "7/19/2024",
@@ -3177,7 +2966,6 @@ export const Hades2FullData = [
     "Clear Time": "17:25.90",
     Boons_Picked:
       "Flutter_Strike, Arctic_Ring, Secret_Crush, Extra_Dose, Cold_Storage, Furnace_Blast, Final_Slice, Rapid_Onslaught, Fine_Tuning, Grand_Caldera",
-    v: "y",
   },
   {
     Date: "7/18/2024",
@@ -3192,7 +2980,6 @@ export const Hades2FullData = [
     "Clear Time": "17:45.03",
     Boons_Picked:
       "Flutter_Strike, Heaven_Flourish, Frigid_Sprint, Shameless_Attitude, Static_Shock, Double_Strike, Air_Quality, Looming_Ignition, Colossus_Driver, Bless_Strike",
-    v: "y",
   },
   {
     Date: "7/18/2024",
@@ -3207,7 +2994,6 @@ export const Hades2FullData = [
     "Clear Time": "19:44.55",
     Boons_Picked:
       "Heaven_Strike, Shameless_Attitude, Mynt_Condition, Trusty_Shield, Double_Up, Psychic_Whirlwind, Unyielding_Slash, Shocking_Loss",
-    v: "y",
   },
   {
     Date: "7/18/2024",
@@ -3222,7 +3008,6 @@ export const Hades2FullData = [
     "Clear Time": "19:27.50",
     Boons_Picked:
       "Sworn_Strike, Sworn_Flourish, Anvil_Ring, Mynt_Condition, Trusty_Shield, Rousing_Reception, Unyielding_Slash, Dashing_Heave",
-    v: "y",
   },
   {
     Date: "7/19/2024",
@@ -3237,7 +3022,6 @@ export const Hades2FullData = [
     "Clear Time": "18:59.77",
     Boons_Picked:
       "Flutter_Strike, Fixed_Gain, Shameless_Attitude, Gale_Force, Weed_Killer, Snow_Queen, Heavy_Metal, Mynt_Condition, Unyielding_Slash, Rapid_Slash, Hearty_Appetite",
-    v: "y",
   },
   {
     Date: "7/19/2024",
@@ -3252,7 +3036,6 @@ export const Hades2FullData = [
     "Clear Time": "19:26.89",
     Boons_Picked:
       "Sworn_Strike, Smolder_Ring, Storm_Ring, Trusty_Shield, Uncanny_Fortitude, Divine_Vengeance, Unyielding_Slash, Hereditary_Bane, Dashing_Heave, Howling_Soul",
-    v: "y",
   },
   {
     Date: "7/19/2024",
@@ -3267,7 +3050,6 @@ export const Hades2FullData = [
     "Clear Time": "19:25.56",
     Boons_Picked:
       "Engagement_Ring, Blinding_Sprint, Double_Up, Flood_Control, Melting_Dart, Final_Slice, Skulking_Slice, Hereditary_Bane, Self_Healing, Back_Burner, Nimble_Limbs",
-    v: "y",
   },
   {
     Date: "7/19/2024",
@@ -3282,7 +3064,6 @@ export const Hades2FullData = [
     "Clear Time": "19:15.51",
     Boons_Picked:
       "Nova_Strike, Plentiful_Forage, Snow_Queen, Mynt_Condition, Trusty_Shield, Sun_Worshiper, Skulking_Slice, Spiral_Knives",
-    v: "y",
   },
   {
     Date: "7/20/2024",
@@ -3297,7 +3078,6 @@ export const Hades2FullData = [
     "Clear Time": "19:44.11",
     Boons_Picked:
       "Flutter_Strike, Secret_Crush, Wispy_Wiles, Mynt_Condition, Trusty_Shield, Executioner_Chop, Rapid_Slash, Martial_Art",
-    v: "y",
   },
   {
     Date: "7/21/2024",
@@ -3312,7 +3092,6 @@ export const Hades2FullData = [
     "Clear Time": "18:46.83",
     Boons_Picked:
       "Heaven_Strike, Nitro_Boost, Static_Shock, Melting_Swipe, Dashing_Heave, Romantic_Spark, Nimble_Limbs, Lethal_Snare",
-    v: "y",
   },
   {
     Date: "7/23/2024",
@@ -3327,7 +3106,6 @@ export const Hades2FullData = [
     "Clear Time": "8:09.26",
     Boons_Picked:
       "Passion_Rush, Lucid_Gain, Heart_Breaker, Perfect_Image, Mynt_Condition, Sudden_Cleaver, Sunny_Disposition, First_Blood, Solar_Ring",
-    v: "y",
   },
   {
     Date: "7/23/2024",
@@ -3342,7 +3120,6 @@ export const Hades2FullData = [
     "Clear Time": "17:08.78",
     Boons_Picked:
       "Flutter_Strike, Sworn_Flourish, Glamour_Gain, Divine_Vengeance, Dual_Moonshot, Aetheric_Moonburst, Back_Burner, Solar_Ring",
-    v: "y",
   },
   {
     Date: "7/20/2024",
@@ -3357,7 +3134,6 @@ export const Hades2FullData = [
     "Clear Time": "18:10.81",
     Boons_Picked:
       "Arctic_Ring, Blinding_Sprint, Lucid_Gain, Perfect_Image, Mynt_Condition, Trusty_Shield, Melting_Shredder, Rapid_Slash",
-    v: "y",
   },
   {
     Date: "7/23/2024",
@@ -3372,7 +3148,6 @@ export const Hades2FullData = [
     "Clear Time": "18:35.00",
     Boons_Picked:
       "Sworn_Strike, Smolder_Ring, Nitro_Boost, Mynt_Condition, Trusty_Shield, Hereditary_Bane, Nasty_Comeback, Rapid_Slash",
-    v: "y",
   },
   {
     Date: "7/23/2024",
@@ -3387,7 +3162,6 @@ export const Hades2FullData = [
     "Clear Time": "20:08.39",
     Boons_Picked:
       "Sworn_Flourish, Storm_Ring, Snow_Queen, Mynt_Condition, Trusty_Shield, Mega_Driver, Twisting_Crash, Curse_Caustic",
-    v: "y",
   },
   {
     Date: "7/23/2024",
@@ -3402,7 +3176,6 @@ export const Hades2FullData = [
     "Clear Time": "17:54.63",
     Boons_Picked:
       "Anvil_Ring, Glamour_Gain, Broken_Resolve, Trusty_Shield, Uncanny_Fortitude, Split_Fire, Clean_Candle, Martial_Art",
-    v: "y",
   },
   {
     Date: "7/24/2024",
@@ -3417,7 +3190,6 @@ export const Hades2FullData = [
     "Clear Time": "18:21.59",
     Boons_Picked:
       "Flutter_Strike, Engagement_Ring, Secret_Crush, Shameless_Attitude, Mynt_Condition, Trusty_Shield, Rapid_Slash, Dashing_Heave",
-    v: "y",
   },
   {
     Date: "7/29/2024",
@@ -3432,7 +3204,6 @@ export const Hades2FullData = [
     "Clear Time": "20:08.07",
     Boons_Picked:
       "Ice_Strike, Engagement_Ring, Blinding_Sprint, Cold_Storage, Mynt_Condition, Trusty_Shield, Executioner_Chop, Unyielding_Slash, Hereditary_Bane, Sudden_Cleaver, Martial_Art, Nimble_Limbs",
-    v: "y",
   },
   {
     Date: "7/28/2024",
@@ -3447,7 +3218,6 @@ export const Hades2FullData = [
     "Clear Time": "19:29.40",
     Boons_Picked:
       "Ice_Flourish, Engagement_Ring, Heavy_Metal, Mynt_Condition, Trusty_Shield, Born_Gain, Triple_Helix, Clean_Candle",
-    v: "y",
   },
   {
     Date: "8/1/2024",
@@ -3462,7 +3232,6 @@ export const Hades2FullData = [
     "Clear Time": "17:23.60",
     Boons_Picked:
       "Sworn_Strike, Smolder_Ring, Passion_Rush, Nitro_Boost, Mynt_Condition, Trusty_Shield, Executioner_Chop, Unyielding_Slash, Martial_Art",
-    v: "y",
   },
   {
     Date: "8/1/2024",
@@ -3477,7 +3246,6 @@ export const Hades2FullData = [
     "Clear Time": "13:22.07",
     Boons_Picked:
       "Engagement_Ring, Gale_Force, Weed_Killer, Snow_Queen, Rousing_Reception, Cherished_Heirloom, Rapid_Slash, Hell_Splitter",
-    v: "y",
   },
   {
     Date: "8/1/2024",
@@ -3492,7 +3260,6 @@ export const Hades2FullData = [
     "Clear Time": "18:42.12",
     Boons_Picked:
       "Perfect_Image, Super_Nova, Hydraulic_Might, Sudden_Flurry, Hook_Knives, Born_Gain, Nasty_Comeback, Solar_Ring",
-    v: "y",
   },
   {
     Date: "8/1/2024",
@@ -3507,7 +3274,6 @@ export const Hades2FullData = [
     "Clear Time": "19:21.46",
     Boons_Picked:
       "Flutter_Flourish, Passion_Rush, Shameless_Attitude, Born_Gain, Twisting_Crash, Rocket_Bombard, Blood_Line, Nervous_Wreck",
-    v: "y",
   },
   {
     Date: "8/1/2024",
@@ -3522,7 +3288,6 @@ export const Hades2FullData = [
     "Clear Time": "18:55.98",
     Boons_Picked:
       "Sworn_Strike, Arctic_Ring, Smithy_Sprint, Glamour_Gain, Mynt_Condition, Wicked_Thrasher, Rapid_Thrasher, Nimble_Mind",
-    v: "y",
   },
   {
     Date: "8/2/2024",
@@ -3537,7 +3302,6 @@ export const Hades2FullData = [
     "Clear Time": "19:15.74",
     Boons_Picked:
       "Ice_Strike, Storm_Ring, Glamour_Gain, Broken_Resolve, Greater_Evasion, Static_Shock, Wicked_Thrasher, Bless_Soul",
-    v: "y",
   },
   {
     Date: "8/4/2024",
@@ -3552,7 +3316,6 @@ export const Hades2FullData = [
     "Clear Time": "20:20.63",
     Boons_Picked:
       "Heaven_Strike, Arctic_Ring, Gale_Force, Snow_Queen, Mynt_Condition, Trusty_Shield, Hard_Target, Rapid_Onslaught, Hail_Storm, Nimble_Limbs",
-    v: "y",
   },
   {
     Date: "8/12/2024",
@@ -3567,7 +3330,6 @@ export const Hades2FullData = [
     "Clear Time": "15:42.21",
     Boons_Picked:
       "Heaven_Strike, Smolder_Ring, Frigid_Sprint, Snow_Queen, Wicked_Onslaught, Final_Slice, Thermal_Dynamics, Pyro_Technique, First_Blood",
-    v: "y",
   },
   {
     Date: "8/13/2024",
@@ -3582,7 +3344,6 @@ export const Hades2FullData = [
     "Clear Time": "17:38.92",
     Boons_Picked:
       "Sworn_Flourish, Arctic_Ring, Hearth_Gain, Cold_Storage, Gale_Force, Snow_Queen, Nexus_Sprint, Triple_Helix, Clean_Candle, Winter_Harvest",
-    v: "y",
   },
   {
     Date: "8/13/2024",
@@ -3597,7 +3358,6 @@ export const Hades2FullData = [
     "Clear Time": "19:00.95",
     Boons_Picked:
       "Ice_Strike, Sworn_Flourish, Smolder_Ring, Glamour_Gain, Cold_Storage, Weed_Killer, Dying_Wish, Clean_Helix, Elementary_Particles",
-    v: "y",
   },
   {
     Date: "8/13/2024",
@@ -3612,7 +3372,6 @@ export const Hades2FullData = [
     "Clear Time": "18:09.88",
     Boons_Picked:
       "Flame_Strike, Ice_Flourish, Arctic_Ring, Hearth_Gain, Mynt_Condition, Trusty_Shield, Sustained_Spark, Clean_Helix, Freezer_Burn",
-    v: "y",
   },
   {
     Date: "8/13/2024",
@@ -3627,7 +3386,6 @@ export const Hades2FullData = [
     "Clear Time": "19:46.23",
     Boons_Picked:
       "Sworn_Strike, Flutter_Flourish, Arctic_Ring, Lucid_Gain, Secret_Crush, Gale_Force, Dying_Wish, Full_Salvo, Possessed_Array, First_Blood",
-    v: "y",
   },
   {
     Date: "8/14/2024",
@@ -3642,7 +3400,6 @@ export const Hades2FullData = [
     "Clear Time": "18:32.71",
     Boons_Picked:
       "Nova_Flourish, Arctic_Ring, Lucid_Gain, Phase_Shift, Trusty_Shield, Spirit_Surge, Giga_Cleaver, Empowering_Guard, Nimble_Mind",
-    v: "y",
   },
   {
     Date: "8/16/2024",
@@ -3657,7 +3414,6 @@ export const Hades2FullData = [
     "Clear Time": "19:09.77",
     Boons_Picked:
       "Wave_Strike, Sworn_Flourish, Storm_Ring, Super_Nova, Nexus_Sprint, Twisting_Crash, Nimble_Mind, Bless_Chasm",
-    v: "y",
   },
   {
     Date: "8/18/2024",
@@ -3672,7 +3428,6 @@ export const Hades2FullData = [
     "Clear Time": "18:24.96",
     Boons_Picked:
       "Sworn_Strike, Heaven_Flourish, Storm_Ring, Nitro_Boost, Super_Nova, Glowing_Coal, Hereditary_Bane, Colossus_Driver, Possessed_Array",
-    v: "y",
   },
   {
     Date: "8/23/2024",
@@ -3687,7 +3442,6 @@ export const Hades2FullData = [
     "Clear Time": "17:58.62",
     Boons_Picked:
       "Sworn_Strike, Smolder_Ring, Nitro_Boost, Hearth_Gain, Total_Eclipse, Snow_Queen, Mynt_Condition, Trusty_Shield",
-    v: "y",
   },
   {
     Date: "10/1/2024",
@@ -3698,11 +3452,10 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Aspect: "Melinoe Coat",
     Src: "",
-    Patch: "Patch 4",
+    Patch: "Patch 5",
     "Clear Time": "9:22.97",
     Boons_Picked:
       "Nova_Strike, Nova_Flourish, Solar_Ring, Blinding_Sprint, Lucid_Gain",
-    v: "y",
   },
   {
     Date: "10/1/2024",
@@ -3713,10 +3466,9 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Aspect: "Nyx",
     Src: "",
-    Patch: "Patch 4",
+    Patch: "Patch 5",
     "Clear Time": "9:22.97",
     Boons_Picked: `Volcanic_Strike, Volcanic_Flourish, Anvil_Ring, Smithy_Sprint, Born_Gain`,
-    v: "y",
   },
   {
     Date: "10/1/2024",
@@ -3727,9 +3479,8 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Aspect: "Selene",
     Src: "",
-    Patch: "Patch 4",
+    Patch: "Patch 5",
     "Clear Time": "9:22.97",
-    Boons_Picked: `Heaven_Strike, Heaven_Flourish, Geyser_Spout, Nitro_Boost, Born_Gain`,
-    v: "y",
+    Boons_Picked: `Flame_Strike,Sworn_Flourish,Anvil_Ring,Soot_Sprint,Hearth_Gain`,
   },
 ];

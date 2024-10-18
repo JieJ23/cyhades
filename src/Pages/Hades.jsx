@@ -196,6 +196,7 @@ export default function Hades() {
           <table className="table table-sm select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
             <thead>
               <tr className="font-serif text-gray-400">
+                <th></th>
                 <th>#</th>
                 <th className="text-center">Name</th>
                 <th>Weapon</th>
@@ -204,18 +205,19 @@ export default function Hades() {
                 <th>Category</th>
                 {/* <th>Time</th> */}
                 <th>Link</th>
-                <th>Date</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               {displayData.slice(0, visibleRows).map((obj, index) => (
                 <tr className="font-serif">
+                  <td></td>
                   <td>{index + 1}</td>
                   <td className="text-center">{obj.Name}</td>
                   <td>{obj.Weapon}</td>
                   <td>
                     <div className="avatar">
-                      <div className="mask mask-heart w-7">
+                      <div className="mask mask-heart w-8">
                         <img src={`/Aspects/${obj.Weapon}-${obj.Aspect}.png`} />
                       </div>
                     </div>
@@ -254,7 +256,7 @@ export default function Hades() {
                       Video
                     </Link>
                   </td>
-                  <td>{obj.Date ? obj.Date.slice(0, 10) : `-`}</td>
+                  <td>{obj.Date ? obj.Date.slice(0, 10) : ``}</td>
                 </tr>
               ))}
             </tbody>

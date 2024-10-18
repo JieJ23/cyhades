@@ -11,17 +11,18 @@ export default function Header() {
           Home
         </Link>
       </div>
+      <div className="avatar shadow-[0_0_10px_blue] rounded-full">
+        <div className="mask mask-decagon w-10">
+          <img src={`/joyboy.png`} />
+        </div>
+      </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-          {/* <li>
-            <Link
-              to={`https://docs.google.com/forms/d/e/1FAIpQLSdgJUEQirVM1Dwzd3_rJ8wy5wXxbv8n2SYIrVyJ8et1uWXY-g/viewform`}
-              target="_blank"
-              className="text-gray-100"
-            >
+          <li>
+            <Link to={`/FormSubmission`} className="text-white">
               Submit
             </Link>
-          </li> */}
+          </li>
           <li>
             <details className="z-40 text-gray-100">
               <summary>Games</summary>
