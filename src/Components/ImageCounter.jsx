@@ -14,13 +14,6 @@ const ImageCounter = ({ imageSrc, values, onValueChange, line }) => {
     onValueChange(newValue - currentValue); // Adjust based on the new value
   };
 
-  const handleRightClick = (event) => {
-    event.preventDefault(); // Prevent the default context menu
-    const resetValue = values[0];
-    setIndex(0);
-    onValueChange(resetValue - currentValue);
-  };
-
   return (
     <div
       className={`transition-all ease-in duration-300  rounded-2xl relative select-none group ${
@@ -29,12 +22,7 @@ const ImageCounter = ({ imageSrc, values, onValueChange, line }) => {
           : "bg-gradient-to-tr from-[#6a2678ae] to-[#0d1ca3b5]"
       }`}
     >
-      <MakeVowCards
-        num={imageSrc}
-        onClick2={handleRightClick}
-        onClick={handleClick}
-        circle={line}
-      />
+      <MakeVowCards num={imageSrc} onClick={handleClick} circle={line} />
       {currentValue > 0 && (
         <div
           className={`text-[16px] font-serif flex justify-center items-center absolute top-1 right-3 ${
@@ -52,10 +40,7 @@ const ImageCounter = ({ imageSrc, values, onValueChange, line }) => {
         </div>
       )}
       {currentValue > 0 && (
-        <div
-          className="h-5 w-5 text-[white] absolute top-0 left-0 z-20 cursor-pointer hover:h-6 hover:w-6 transition-all ease-in duration-200"
-          onClick={handleRightClick}
-        />
+        <div className="h-5 w-5 text-[white] absolute top-0 left-0 z-20 cursor-pointer hover:h-6 hover:w-6 transition-all ease-in duration-200" />
       )}
     </div>
   );
