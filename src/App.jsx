@@ -83,6 +83,16 @@ export default function App() {
                     <div>Boon Builder (Derpity)</div>
                   </button>
                 </Link>
+                <Link to={`/FearCalculator`}>
+                  <button className="btn btn-outline btn-success text-white font-serif border-white/20">
+                    <div className="avatar">
+                      <div className="w-8 rounded">
+                        <img src="/heat.png" />
+                      </div>
+                    </div>
+                    <div>Fear Calculator</div>
+                  </button>
+                </Link>
               </div>
               <div className="rounded-xl">
                 <Marquee className="rounded-xl">
