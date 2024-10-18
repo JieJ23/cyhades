@@ -102,6 +102,7 @@ export const hades_WeaponOrder = [
 
 export const boonEntry = [
   // ALL STRIKES
+  `No_Strike`,
   `Flutter_Strike`,
   `Nova_Strike`,
   `Ice_Strike`,
@@ -114,6 +115,7 @@ export const boonEntry = [
   `Heaven_Strike`,
 
   // ALL FLOURISHES
+  `No_Flourish`,
   `Flutter_Flourish`,
   `Nova_Flourish`,
   `Ice_Flourish`,
@@ -126,6 +128,7 @@ export const boonEntry = [
   `Heaven_Flourish`,
 
   // ALL RINGS
+  `No_Ring`,
   `Rapture_Ring`,
   `Solar_Ring`,
   `Prominence_Flare`,
@@ -140,6 +143,7 @@ export const boonEntry = [
   `Geyser_Ring`,
 
   // ALL SPRINTS
+  `No_Sprint`,
   `Passion_Rush`,
   `Passion_Dash`,
   `Blinding_Sprint`,
@@ -152,6 +156,7 @@ export const boonEntry = [
   `Nitro_Boost`,
 
   // ALL GAINS
+  `No_Gain`,
   `Glamour_Gain`,
   `Lucid_Gain`,
   `Tranquil_Gain`,

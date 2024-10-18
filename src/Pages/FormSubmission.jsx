@@ -199,6 +199,7 @@ export default function FormSubmission() {
               <option value="" selected hidden>
                 Boon Strike
               </option>
+              <option> No_Strike</option>
               <option> Flutter_Strike</option>
               <option> Nova_Strike</option>
               <option> Ice_Strike</option>
@@ -214,6 +215,7 @@ export default function FormSubmission() {
               <option value="" selected hidden>
                 Boon Flourish
               </option>
+              <option> No_Flourish</option>
               <option>Flutter_Flourish</option>
               <option>Nova_Flourish</option>
               <option>Ice_Flourish</option>
@@ -229,6 +231,7 @@ export default function FormSubmission() {
               <option value="" selected hidden>
                 Boon Ring
               </option>
+              <option> No_Ring</option>
               <option>Rapture_Ring</option>
               <option>Solar_Ring</option>
               <option>Prominence_Flare</option>
@@ -246,6 +249,7 @@ export default function FormSubmission() {
               <option value="" selected hidden>
                 Boon Sprint
               </option>
+              <option> No_Sprint</option>
               <option>Passion_Rush</option>
               <option>Passion_Dash</option>
               <option>Blinding_Sprint</option>
@@ -261,6 +265,7 @@ export default function FormSubmission() {
               <option value="" selected hidden>
                 Boon Gain
               </option>
+              <option> No_Gain</option>
               <option>Glamour_Gain</option>
               <option>Lucid_Gain</option>
               <option>Tranquil_Gain</option>
