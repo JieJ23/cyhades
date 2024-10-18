@@ -222,7 +222,6 @@ export default function FormSubmission() {
               <option>Volcanic_Flourish</option>
               <option>Sworn_Flourish</option>
               <option>Flame_Flourish</option>
-              <option>Swift_Strike</option>
               <option>Swift_Flourish</option>
               <option>Wave_Flourish</option>
               <option>Heaven_Flourish</option>

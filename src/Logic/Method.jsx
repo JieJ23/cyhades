@@ -122,7 +122,6 @@ export const boonEntry = [
   `Volcanic_Flourish`,
   `Sworn_Flourish`,
   `Flame_Flourish`,
-  `Swift_Strike`,
   `Swift_Flourish`,
   `Wave_Flourish`,
   `Heaven_Flourish`,

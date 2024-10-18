@@ -61,6 +61,7 @@ export default function Hades2() {
           calculateTime(a["Clear Time"]) - calculateTime(b["Clear Time"])
       )
       .sort((a, b) => b.Fear - a.Fear)
+      .sort((a, b) => b.Patch - a.Patch)
   );
 
   const allAvailableData = [rawData, testingdata];
@@ -223,9 +224,9 @@ export default function Hades2() {
                   <td
                     className={`${
                       obj.Fear == 55
-                        ? `text-error`
+                        ? `text-[#f0f02a]`
                         : obj.Fear >= 50
-                        ? `text-warning`
+                        ? `text-[#f38356]`
                         : obj.Fear >= 40
                         ? `text-success`
                         : ``
