@@ -94,19 +94,19 @@ export default function App() {
                   </button>
                 </Link>
               </div>
-              <div className="rounded-xl">
+              <div className="rounded-xl max-w-[1200px] mx-auto">
                 <Marquee className="rounded-xl">
-                  <div className="w-[500px] md:w-[800px] lg:w-[1000px]">
+                  <div className="w-[500px] md:w-[800px] lg:w-[1100px]">
                     <TopPlayers2 />
                   </div>
                 </Marquee>
               </div>
-              <div className="mt-5 flex justify-center gap-2">
+              <div className="mt-5 flex justify-center gap-1">
                 <Link
                   to={`https://store.steampowered.com/app/1145350/Hades_II/`}
                   target="_blank"
                 >
-                  <button className="btn btn-outline text-white font-serif border-white/20">
+                  <button className="btn text-white font-serif border-white/20 bg-black rounded-none rounded-tl-xl rounded-bl-xl">
                     <div className="avatar">
                       <div className="w-8 rounded">
                         <img src="/steam.png" />
@@ -119,7 +119,7 @@ export default function App() {
                   to={`https://store.epicgames.com/en-US/p/hades-ii`}
                   target="_blank"
                 >
-                  <button className="btn btn-outline text-white font-serif border-white/20">
+                  <button className="btn text-white font-serif border-white/20 bg-black rounded-none rounded-tr-xl rounded-br-xl">
                     <div className="avatar">
                       <div className="w-8 rounded">
                         <img src="/epic.png" />
@@ -219,18 +219,20 @@ export default function App() {
                   </button>
                 </Link>
               </div>
-              <Marquee>
-                <div className="w-[500px] md:w-[800px] lg:w-[1000px]">
-                  <TopPlayers />
-                </div>
-              </Marquee>
+              <div className="rounded-xl max-w-[1200px] mx-auto">
+                <Marquee>
+                  <div className="w-[500px] md:w-[800px] lg:w-[1100px]">
+                    <TopPlayers />
+                  </div>
+                </Marquee>
+              </div>
             </div>
-            <div className="mt-5 flex justify-center gap-2">
+            <div className="mt-5 flex justify-center gap-1">
               <Link
                 to={`https://store.steampowered.com/app/1145360/Hades/`}
                 target="_blank"
               >
-                <button className="btn btn-outline text-white font-serif border-white/20">
+                <button className="btn btn-outline text-white font-serif border-white/20 bg-black rounded-none rounded-tl-xl rounded-bl-xl">
                   <div className="avatar">
                     <div className="w-8 rounded">
                       <img src="/steam.png" />
@@ -243,7 +245,7 @@ export default function App() {
                 to={`https://store.epicgames.com/en-US/p/hades`}
                 target="_blank"
               >
-                <button className="btn btn-outline text-white font-serif border-white/20">
+                <button className="btn btn-outline text-white font-serif border-white/20 bg-black rounded-none rounded-tr-xl rounded-br-xl">
                   <div className="avatar">
                     <div className="w-8 rounded">
                       <img src="/epic.png" />

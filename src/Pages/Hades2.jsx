@@ -162,9 +162,9 @@ export default function Hades2() {
                 <th>Weapon</th>
                 <th>Aspect</th>
                 <th>Direction</th>
-                <th>Boons</th>
+                <th>GB</th>
                 <th>Fear</th>
-                <th>Time</th>
+                <th>GT</th>
                 {/* <th>Category</th> */}
                 <th>Version</th>
                 <th>Link</th>

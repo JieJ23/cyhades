@@ -16,6 +16,7 @@ import Footer from "../Components/Footer";
 import { calculateTime } from "../Logic/Method";
 
 import { useState, useEffect } from "react";
+import { genTime } from "../Logic/Gen";
 
 // import { useData } from "../Hook/DataFetch";
 // import Loading from "../Hook/Loading";
@@ -193,7 +194,7 @@ export default function Hades() {
         </div>
         {/*  */}
         <div className="overflow-x-auto rounded-md my-4">
-          <table className="table table-sm select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
+          <table className="table table-xs select-none min-w-[700px] max-w-[1400px] mx-auto text-white">
             <thead>
               <tr className="font-serif text-gray-400">
                 <th></th>
@@ -204,6 +205,7 @@ export default function Hades() {
                 <th></th>
                 <th>Heat</th>
                 <th>Category</th>
+                <th>GT</th>
                 {/* <th>Time</th> */}
                 <th>Link</th>
                 <th></th>
@@ -255,6 +257,7 @@ export default function Hades() {
                   >
                     {obj.Category}
                   </td>
+                  <td>{genTime()}</td>
                   {/* <td>{obj.Time != null ? obj.Time : `-`}</td> */}
                   <td>
                     <Link
