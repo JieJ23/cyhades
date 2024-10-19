@@ -22,7 +22,7 @@ import { testReturnBoonFilter } from "../Logic/Method";
 //
 import { genBoonString } from "../Logic/Gen";
 
-import { genTime } from "../Logic/Gen";
+import { genTime, genNum920 } from "../Logic/Gen";
 
 export default function Hades2() {
   const [data, setData] = useState(1);
@@ -248,9 +248,19 @@ export default function Hades2() {
                     {obj.Fear}
                   </td>
                   <td>
-                    {obj["Clear Time"] == "Randomizer"
-                      ? genTime()
-                      : obj["Clear Time"]}
+                    {obj["Clear Time"] == "Randomizer" ? (
+                      <progress
+                        className="progress progress-success w-36"
+                        value={genNum920()}
+                        max="20"
+                      ></progress>
+                    ) : (
+                      <progress
+                        className="progress progress-success w-36"
+                        value={obj["Clear Time"].slice(-4)}
+                        max="20"
+                      ></progress>
+                    )}
                   </td>
 
                   {/* <td

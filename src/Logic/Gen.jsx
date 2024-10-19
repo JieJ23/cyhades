@@ -1,4 +1,4 @@
-function genNum920() {
+export function genNum920() {
   return Math.floor(Math.random() * (20 - 9 + 1)) + 9;
 }
 function genNum060() {
