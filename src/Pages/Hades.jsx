@@ -16,7 +16,7 @@ import Footer from "../Components/Footer";
 import { calculateTime } from "../Logic/Method";
 
 import { useState, useEffect } from "react";
-import { genTime } from "../Logic/Gen";
+import { genNum920 } from "../Logic/Gen";
 
 // import { useData } from "../Hook/DataFetch";
 // import Loading from "../Hook/Loading";
@@ -213,7 +213,7 @@ export default function Hades() {
             </thead>
             <tbody>
               {displayData.slice(0, visibleRows).map((obj, index) => (
-                <tr className="font-[Roberto]">
+                <tr className="font-[serif]">
                   <td></td>
                   <td>{index + 1}</td>
                   <td className="text-center">{obj.Name}</td>
@@ -257,7 +257,14 @@ export default function Hades() {
                   >
                     {obj.Category}
                   </td>
-                  <td>{genTime()}</td>
+                  <td>
+                    {" "}
+                    <progress
+                      className="progress progress-success w-36"
+                      value={genNum920()}
+                      max="20"
+                    ></progress>
+                  </td>
                   {/* <td>{obj.Time != null ? obj.Time : `-`}</td> */}
                   <td>
                     <Link
