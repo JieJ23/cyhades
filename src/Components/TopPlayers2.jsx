@@ -79,8 +79,6 @@ export default function TopPlayers2() {
     (a, b) =>
       hades_WeaponOrder.indexOf(a.Aspect) - hades_WeaponOrder.indexOf(b.Aspect)
   );
-
-  console.log(highestLevel);
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 justify-evenly gap-1 select-none w-full max-w-[1400px] mx-auto px-2 mt-5">
       {holder.map((obj) => (

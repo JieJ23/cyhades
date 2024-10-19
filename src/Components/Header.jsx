@@ -11,7 +11,7 @@ export default function Header() {
           Home
         </Link>
       </div>
-      <div className="avatar shadow-[0_0_10px_blue] rounded-full">
+      <div className="avatar online shadow-[0_0_10px_blue] rounded-full">
         <div className="mask mask-decagon w-10">
           <img src={`/joyboy.png`} />
         </div>

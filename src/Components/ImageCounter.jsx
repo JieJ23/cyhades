@@ -63,10 +63,15 @@ function MakeVowCards({ num, onClick, onClick2, circle }) {
 
   return (
     <div
-      className="flex justify-center gap-2 items-center group w-[150px] h-[100px] cursor-pointer rounded-2xl"
+      className=" relative flex justify-center gap-2 items-center group w-[150px] h-[100px] cursor-pointer rounded-2xl"
       onClick={handleCombinedClick}
       onContextMenu={onClick2}
     >
+      <div className="rating rating-xs absolute bottom-2 left-2 pointer-events-none">
+        {Array.from({ length: circle - 1 }).map((num) => (
+          <div className="bottom-2 left-2 h-1.5 w-1.5 bg-[gray] me-0.5 rounded-full" />
+        ))}
+      </div>
       <div
         className="avatar w-10 select-none group-hover:scale-125 ease-in duration-100 transition-all"
         draggable={false}

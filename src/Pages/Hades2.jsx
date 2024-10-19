@@ -19,6 +19,10 @@ import { useState, useEffect } from "react";
 
 import { ReturnBoonList } from "../Logic/Method";
 import { testReturnBoonFilter } from "../Logic/Method";
+//
+import { genBoonString } from "../Logic/Gen";
+
+import { genTime } from "../Logic/Gen";
 
 export default function Hades2() {
   const [data, setData] = useState(1);
@@ -194,19 +198,28 @@ export default function Hades2() {
                   </td>
                   <td>
                     <div className="flex">
-                      {obj.Patch === `5`
-                        ? testReturnBoonFilter(obj.Boons_Picked)
-                            .slice(0, 8)
-                            .map((item) => (
-                              <div className="avatar">
-                                <div className="mask mask-squircle w-7">
-                                  <img
-                                    src={`/Boon/${item}.png`}
-                                    draggable={false}
-                                  />
-                                </div>
+                      {obj.Boons_Picked === `Randomizer`
+                        ? testReturnBoonFilter(genBoonString()).map((item) => (
+                            <div className="avatar">
+                              <div className="mask mask-squircle w-7">
+                                <img
+                                  src={`/Boon/${item}.png`}
+                                  draggable={false}
+                                />
                               </div>
-                            ))
+                            </div>
+                          ))
+                        : obj.Patch === `5`
+                        ? testReturnBoonFilter(obj.Boons_Picked).map((item) => (
+                            <div className="avatar">
+                              <div className="mask mask-squircle w-7">
+                                <img
+                                  src={`/Boon/${item}.png`}
+                                  draggable={false}
+                                />
+                              </div>
+                            </div>
+                          ))
                         : ReturnBoonList(obj.Boons_Picked)
                             .slice(0, 5)
                             .map((item) => (
@@ -234,7 +247,11 @@ export default function Hades2() {
                   >
                     {obj.Fear}
                   </td>
-                  <td>{obj["Clear Time"]}</td>
+                  <td>
+                    {obj["Clear Time"] == "Randomizer"
+                      ? genTime()
+                      : obj["Clear Time"]}
+                  </td>
 
                   {/* <td
                     className={

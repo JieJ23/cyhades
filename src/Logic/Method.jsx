@@ -45,6 +45,9 @@ export function customRemove(obj) {
 export const customOrder = ["Unseeded", "Seeded", "Modded"];
 
 export function calculateTime(num) {
+  if (num === `Randomizer`) {
+    return 0;
+  }
   let [min, rest] = num.split(":");
   let [sec, ms] = rest.split(".");
 

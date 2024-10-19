@@ -5,6 +5,9 @@ export default function FooterInfo() {
         This website has no affiliation with or endorsement from Supergaint
         Games, LLC.
       </div>
+      <div className="text-gray-300 font-serif text-center text-[12px]">
+        Collaboration 小Joyboy2k
+      </div>
       <div className="text-gray-400 font-serif text-center text-[12px]">
         © 2024 CY. All rights reserved.
       </div>

@@ -74,7 +74,7 @@ export default function App() {
               </div>
               <div className=" mt-2 flex flex-wrap justify-center gap-2">
                 <Link to={`https://hades2builder.vercel.app/`} target="_blank">
-                  <button className="btn btn-outline btn-success text-white font-serif border-white/20">
+                  <button className="btn rounded-none rounded-tr-xl rounded-bl-xl text-white font-serif border-white/20 bg-[#053723]">
                     <div className="avatar">
                       <div className="w-8 rounded">
                         <img src="/build.png" />
@@ -84,9 +84,9 @@ export default function App() {
                   </button>
                 </Link>
                 <Link to={`/FearCalculator`}>
-                  <button className="btn btn-outline btn-success text-white font-serif border-white/20">
+                  <button className="btn rounded-none rounded-tr-xl rounded-bl-xl font-serif border-white/20 bg-[#053723] text-white">
                     <div className="avatar">
-                      <div className="w-8 rounded">
+                      <div className="w-8">
                         <img src="/heat.png" />
                       </div>
                     </div>
@@ -187,7 +187,7 @@ export default function App() {
                   to={`https://cpecific.github.io/hades-wiki/`}
                   target="_blank"
                 >
-                  <button className="btn btn-outline btn-error text-white font-serif border-white/20">
+                  <button className="btn text-white font-serif border-white/20 rounded-none rounded-tl-xl rounded-br-xl bg-[#480404]">
                     <div className="avatar">
                       <div className="w-8 rounded">
                         <img src="/doc.png" />
@@ -197,7 +197,7 @@ export default function App() {
                   </button>
                 </Link>
                 <Link to={`https://hadesheat.onrender.com/`} target="_blank">
-                  <button className="btn btn-outline btn-error text-white font-serif border-white/20">
+                  <button className="btn text-white font-serif border-white/20 rounded-none rounded-tl-xl rounded-br-xl bg-[#480404]">
                     <div className="avatar">
                       <div className="w-8 rounded">
                         <img src="/heat.png" />
@@ -209,7 +209,7 @@ export default function App() {
                   </button>
                 </Link>
                 <Link to={`https://www.boonbuilder.com/`} target="_blank">
-                  <button className="btn btn-outline btn-error text-white font-serif border-white/20">
+                  <button className="btn text-white font-serif border-white/20 rounded-none rounded-tl-xl rounded-br-xl bg-[#480404]">
                     <div className="avatar">
                       <div className="w-8 rounded">
                         <img src="/build.png" />
