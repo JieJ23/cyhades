@@ -88,7 +88,7 @@ export default function TopPlayers() {
         >
           <div className="absolute bg-[#17171754] h-full w-full top-0 left-0 object-cover rounded-xl" />
           <div
-            className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl bg-center bg-contain bg-no-repeat"
+            className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl bg-top bg-cover bg-no-repeat"
             style={{ backgroundImage: `url("/${obj.Weapon}.png")` }}
           />
           <div className="h-full flex flex-col items-center justify-center gap-1 font-serif">
@@ -105,11 +105,7 @@ export default function TopPlayers() {
                   src={`/${weaponGIF(obj.Weapon)}.gif`}
                   className="absolute"
                 />
-                {obj.Game == `Hades2` ? (
-                  <img src={`/Aspects/${obj.Aspect}.png`} />
-                ) : (
-                  <img src={`/Aspects/${obj.Weapon}-${obj.Aspect}.png`} />
-                )}
+                <img src={`/Aspects/${obj.Weapon}-${obj.Aspect}.png`} />
               </div>
             </div>
           </div>
