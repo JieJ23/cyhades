@@ -1,6 +1,7 @@
 import { removeDup } from "../Logic/Method";
 import { Hades2FullData } from "../Data/Hades2Data";
 import { customOrder } from "../Logic/Method";
+import { genTime } from "../Logic/Gen";
 
 export const weaponColor = (type) => {
   switch (type) {
@@ -96,7 +97,7 @@ export default function TopPlayers2() {
               Patch {obj.Patch}
             </div>
             <div className="text-white z-20 absolute bottom-1.5 right-1.5 text-[10px]">
-              {obj["Clear Time"]}
+              {genTime()}
             </div>
             <div className="text-[10px] uppercase text-gray-300 z-20">
               {obj.Weapon}
