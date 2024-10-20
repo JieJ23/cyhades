@@ -104,16 +104,16 @@ export default function Hades2() {
 
       <div className="w-full">
         {/* <TopPlayers objData={testingdata} level={`Fear`} /> */}
-        <section className="hidden">
+        <section>
           <div className="flex justify-center my-2 gap-0.5">
             <button
-              className="btn shadow-[inset_0_0_15px_black] text-gray-300"
+              className="btn shadow-[1px_1px_0_teal] text-gray-300"
               onClick={() => handleDataChange(0)}
             >
               All
             </button>
             <button
-              className="btn shadow-[inset_0_0_15px_black] text-gray-300"
+              className="btn shadow-[1px_1px_0_teal] text-gray-300"
               onClick={() => handleDataChange(1)}
             >
               Rank
@@ -122,7 +122,7 @@ export default function Hades2() {
           <div className="my-2 mx-auto flex flex-wrap justify-center gap-1">
             {allWeaponType.map((obj, index) => (
               <button
-                className="btn shadow-[inset_0_0_15px_black] text-gray-300"
+                className="btn shadow-[1px_1px_0_teal] text-gray-300 font-serif text-[11px]"
                 onClick={() => handleDataChange(index + 2)}
               >
                 {obj}
@@ -131,27 +131,25 @@ export default function Hades2() {
           </div>
         </section>
         {/*  */}
-        <div className="hidden">
-          <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
-            <PlayerSelection
-              watch={data}
-              fulldata={allAvailableData}
-              onPlayerChange={handlePlayerChange}
-              allPlayers={testingdata}
-            />
-            <AspectSelection
-              watch={data}
-              fulldata={allAvailableData}
-              onAspectChange={handleAspectChange}
-              allAspect={testingdata}
-            />
-          </section>
-          <Link to={`/HadesTopAspect`} className="flex justify-center my-2">
-            <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
-              Top Aspects
-            </button>
-          </Link>
-        </div>
+        {/* <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
+          <PlayerSelection
+            watch={data}
+            fulldata={allAvailableData}
+            onPlayerChange={handlePlayerChange}
+            allPlayers={testingdata}
+          />
+          <AspectSelection
+            watch={data}
+            fulldata={allAvailableData}
+            onAspectChange={handleAspectChange}
+            allAspect={testingdata}
+          />
+        </section> */}
+        {/* <Link to={`/HadesTopAspect`} className="flex justify-center my-2">
+          <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
+            Top Aspects
+          </button>
+        </Link> */}
         {/*  */}
         <div className="overflow-x-auto rounded-md my-4">
           <table className="table table-xs select-none w-full max-w-[1400px] mx-auto text-white">
