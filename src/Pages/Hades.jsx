@@ -213,7 +213,7 @@ export default function Hades() {
             </thead>
             <tbody>
               {displayData.slice(0, visibleRows).map((obj, index) => (
-                <tr className="font-[serif]">
+                <tr className="font-serif">
                   <td></td>
                   <td>{index + 1}</td>
                   <td className="text-center">{obj.Name}</td>
@@ -258,12 +258,11 @@ export default function Hades() {
                     {obj.Category}
                   </td>
                   <td>
-                    {" "}
                     <progress
-                      className="progress progress-success w-36"
+                      className="progress progress-error w-36"
                       value={genNum920()}
-                      max="20"
-                    ></progress>
+                      max="25"
+                    />
                   </td>
                   {/* <td>{obj.Time != null ? obj.Time : `-`}</td> */}
                   <td>

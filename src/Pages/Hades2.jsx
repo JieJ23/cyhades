@@ -162,8 +162,8 @@ export default function Hades2() {
                 <th>Weapon</th>
                 <th>Aspect</th>
                 <th>Direction</th>
-                <th>GB</th>
                 <th>Fear</th>
+                <th>GB</th>
                 <th>GT</th>
                 {/* <th>Category</th> */}
                 <th>Version</th>
@@ -195,6 +195,19 @@ export default function Hades2() {
                     }
                   >
                     {obj.Direction}
+                  </td>
+                  <td
+                    className={`${
+                      obj.Fear == 55
+                        ? `text-[#f0f02a]`
+                        : obj.Fear >= 50
+                        ? `text-[#f38356]`
+                        : obj.Fear >= 40
+                        ? `text-success`
+                        : ``
+                    }`}
+                  >
+                    {obj.Fear}
                   </td>
                   <td>
                     <div className="flex">
@@ -234,25 +247,12 @@ export default function Hades2() {
                             ))}
                     </div>
                   </td>
-                  <td
-                    className={`${
-                      obj.Fear == 55
-                        ? `text-[#f0f02a]`
-                        : obj.Fear >= 50
-                        ? `text-[#f38356]`
-                        : obj.Fear >= 40
-                        ? `text-success`
-                        : ``
-                    }`}
-                  >
-                    {obj.Fear}
-                  </td>
                   <td>
                     {obj["Clear Time"] == "Randomizer" ? (
                       <progress
                         className="progress progress-success w-36"
                         value={genNum920()}
-                        max="20"
+                        max="25"
                       ></progress>
                     ) : (
                       <progress
