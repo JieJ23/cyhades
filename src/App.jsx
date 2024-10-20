@@ -73,16 +73,6 @@ export default function App() {
                 lore, building on the success of its predecessor.
               </div>
               <div className=" mt-2 flex flex-wrap justify-center gap-2">
-                <Link to={`https://hades2builder.vercel.app/`} target="_blank">
-                  <button className="btn rounded-none rounded-tr-xl rounded-bl-xl text-white font-serif border-white/20 bg-[#053723]">
-                    <div className="avatar">
-                      <div className="w-8 rounded">
-                        <img src="/build.png" />
-                      </div>
-                    </div>
-                    <div>Boon Builder (Derpity)</div>
-                  </button>
-                </Link>
                 <Link to={`/FearCalculator`}>
                   <button className="btn rounded-none rounded-tr-xl rounded-bl-xl font-serif border-white/20 bg-[#053723] text-white">
                     <div className="avatar">
@@ -91,6 +81,26 @@ export default function App() {
                       </div>
                     </div>
                     <div>Fear Calculator</div>
+                  </button>
+                </Link>
+                <Link to={`/H2Boons`}>
+                  <button className="btn rounded-none rounded-tr-xl rounded-bl-xl font-serif border-white/20 bg-[#053723] text-white">
+                    <div className="avatar">
+                      <div className="w-8">
+                        <img src="/doc.png" />
+                      </div>
+                    </div>
+                    <div>Boons</div>
+                  </button>
+                </Link>
+                <Link to={`https://hades2builder.vercel.app/`} target="_blank">
+                  <button className="btn rounded-none rounded-tr-xl rounded-bl-xl text-white font-serif border-white/20 bg-[#053723]">
+                    <div className="avatar">
+                      <div className="w-8 rounded">
+                        <img src="/build.png" />
+                      </div>
+                    </div>
+                    <div>Boon Builder (Derpity)</div>
                   </button>
                 </Link>
               </div>
