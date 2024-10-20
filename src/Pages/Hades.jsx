@@ -128,16 +128,16 @@ export default function Hades() {
       <Header />
       <TopPlayers />
       <div className="w-full">
-        <section className="hidden">
+        <section>
           <div className="flex justify-center my-2 gap-0.5">
             <button
-              className="btn shadow-[inset_0_0_15px_black] text-gray-300"
+              className="btn shadow-[1px_1px_0_red] text-gray-300 font-serif text-[11px]"
               onClick={() => handleDataChange(0)}
             >
               All
             </button>
             <button
-              className="btn shadow-[inset_0_0_15px_black] text-gray-300"
+              className="btn shadow-[1px_1px_0_red] text-gray-300 font-serif text-[11px]"
               onClick={() => handleDataChange(1)}
             >
               Rank
@@ -146,7 +146,7 @@ export default function Hades() {
           <div className="my-2 mx-auto flex flex-wrap justify-center gap-1">
             {allWeaponType.map((obj, index) => (
               <button
-                className="btn shadow-[inset_0_0_15px_black] text-gray-300"
+                className="btn shadow-[1px_1px_0_red] text-gray-300 font-serif text-[11px]"
                 onClick={() => handleDataChange(index + 2)}
               >
                 {obj}
