@@ -11,6 +11,7 @@ import Hades2 from "./Pages/Hades2.jsx";
 import HadesTopAspect from "./Pages/HadesTopAspects.jsx";
 import HadesH1TopAspect from "./Pages/Hades1TopAspect.jsx";
 
+import BoonSelection from "./Pages/BoonSelection.jsx";
 import H2Boons from "./Pages/H2Boons.jsx";
 import FearCalculator from "./Pages/FearCalculator.jsx";
 
@@ -26,6 +27,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/Hades" element={<Hades />} />
         <Route path="/FearCalculator" element={<FearCalculator />} />
         <Route path="/H2Boons" element={<H2Boons />} />
+        <Route path="/BoonSelection" element={<BoonSelection />} />
         <Route path="/HadesH1TopAspect" element={<HadesH1TopAspect />} />
         <Route path="/HadesTopAspect" element={<HadesTopAspect />} />
         <Route path="/Hades2" element={<Hades2 />} />

@@ -52,6 +52,11 @@ export default function App() {
                     Hades 2
                   </button>
                 </Link>
+                <Link to={`/BoonSelection`}>
+                  <button className="btn btn-success my-3 btn-outline font-serif">
+                    Boon Selection
+                  </button>
+                </Link>
                 <Link
                   to={`https://www.supergiantgames.com/games/hades-ii/`}
                   target="_blank"

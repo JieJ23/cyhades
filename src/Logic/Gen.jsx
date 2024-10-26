@@ -13,7 +13,7 @@ export function genTime() {
 }
 //
 
-const genstrike = [
+export const genstrike = [
   `No_Strike`,
   `Flutter_Strike`,
   `Nova_Strike`,
@@ -27,7 +27,7 @@ const genstrike = [
   `Heaven_Strike`,
 ];
 
-const genflour = [
+export const genflour = [
   `No_Flourish`,
   `Flutter_Flourish`,
   `Nova_Flourish`,
@@ -40,7 +40,7 @@ const genflour = [
   `Heaven_Flourish`,
 ];
 
-const gensprint = [
+export const gensprint = [
   `No_Sprint`,
   `Passion_Rush`,
   `Passion_Dash`,
@@ -54,7 +54,7 @@ const gensprint = [
   `Nitro_Boost`,
 ];
 
-const genring = [
+export const genring = [
   `No_Ring`,
   `Rapture_Ring`,
   `Solar_Ring`,
@@ -70,7 +70,7 @@ const genring = [
   `Geyser_Ring`,
 ];
 
-const gengain = [
+export const gengain = [
   `No_Gain`,
   `Glamour_Gain`,
   `Lucid_Gain`,
