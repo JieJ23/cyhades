@@ -131,7 +131,7 @@ export default function Hades2() {
           </div>
         </section>
         {/*  */}
-        {/* <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
+        <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
           <PlayerSelection
             watch={data}
             fulldata={allAvailableData}
@@ -144,7 +144,7 @@ export default function Hades2() {
             onAspectChange={handleAspectChange}
             allAspect={testingdata}
           />
-        </section> */}
+        </section>
         {/* <Link to={`/HadesTopAspect`} className="flex justify-center my-2">
           <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
             Top Aspects

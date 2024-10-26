@@ -85,8 +85,8 @@ export default function BoonSelection() {
       <section className="flex justify-center gap-2 flex-wrap max-w-[1200px] mx-auto mt-8">
         {weaponTypes.map((ite, index) => (
           <button
-            className={`btn shadow-[1px_1px_0_teal] text-white ${
-              index === weapon ? `btn-primary text-black` : ``
+            className={`btn font-serif text-[12px] shadow-[1px_1px_0_teal] ${
+              index === weapon ? `btn-primary text-black` : `text-white`
             }`}
             onClick={() => handleChangeWeapon(index)}
           >
