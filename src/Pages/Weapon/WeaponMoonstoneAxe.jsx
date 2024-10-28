@@ -100,6 +100,13 @@ const moonstone_melinoe = [
       `Rapid_Slash`,
       `Psychic_Whirlwind`,
     ],
+    CoreBoon: [
+      `Flutter_Strike`,
+      `Nova_Flourish`,
+      `Arctic_Ring`,
+      `Thunder_Sprint`,
+      `Fluid_Gain`,
+    ],
     Core: [`Hera`, `Demeter`, `Aphrodite`, `Hephaestus`],
     Keepsake: [`13`, `15`, `09`, `06`],
   },
@@ -111,6 +118,13 @@ const moonstone_melinoe = [
       `Rapid_Slash`,
       `Psychic_Whirlwind`,
     ],
+    CoreBoon: [
+      `Flutter_Strike`,
+      `Nova_Flourish`,
+      `Arctic_Ring`,
+      `Thunder_Sprint`,
+      `Fluid_Gain`,
+    ],
     Core: [`Hera`, `Demeter`, `Zeus`, `Hephaestus`],
     Keepsake: [`13`, `26`, `09`, `10`],
   },
@@ -121,6 +135,13 @@ const moonstone_melinoe = [
       `Psychic_Whirlwind`,
       `Rapid_Slash`,
       `Psychic_Whirlwind`,
+    ],
+    CoreBoon: [
+      `Flutter_Strike`,
+      `Nova_Flourish`,
+      `Arctic_Ring`,
+      `Thunder_Sprint`,
+      `Fluid_Gain`,
     ],
     Core: [`Hera`, `Demeter`, `Apollo`, `Hephaestus`],
     Keepsake: [`13`, `18`, `26`, `06`],
@@ -221,25 +242,10 @@ export default function WeaponMoonstoneAxe() {
                             </div>
                             <div className="text-[12px]">Secondary</div>
                           </section>
-                          <section className="bg-neutral rounded-lg p-1">
-                            <div className="flex flex-row justify-center">
-                              {obj.Hammer.map((item) => (
-                                <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
-                                    <img
-                                      src={`/Boon/${item}.png`}
-                                      draggable={false}
-                                    />
-                                  </div>
-                                </div>
-                              ))}
-                            </div>
-                            <div className="text-[12px]">Tertiary</div>
-                          </section>
                         </div>
                       </td>
                       <td>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-1">
                           <section className="bg-primary rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core.map((item) => (
@@ -271,6 +277,21 @@ export default function WeaponMoonstoneAxe() {
                             <div className="text-[13px] text-white">
                               Defense
                             </div>
+                          </section>
+                          <section className="bg-neutral rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.CoreBoon.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-8">
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">Ideal</div>
                           </section>
                         </div>
                       </td>
@@ -457,25 +478,10 @@ export default function WeaponMoonstoneAxe() {
                             </div>
                             <div className="text-[12px]">Secondary</div>
                           </section>
-                          <section className="bg-neutral rounded-lg p-1">
-                            <div className="flex flex-row justify-center">
-                              {obj.Hammer.map((item) => (
-                                <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
-                                    <img
-                                      src={`/Boon/${item}.png`}
-                                      draggable={false}
-                                    />
-                                  </div>
-                                </div>
-                              ))}
-                            </div>
-                            <div className="text-[12px]">Tertiary</div>
-                          </section>
                         </div>
                       </td>
                       <td>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-1">
                           <section className="bg-primary rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core.map((item) => (
@@ -507,6 +513,21 @@ export default function WeaponMoonstoneAxe() {
                             <div className="text-[13px] text-white">
                               Defense
                             </div>
+                          </section>
+                          <section className="bg-neutral rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.CoreBoon.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-8">
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">Ideal</div>
                           </section>
                         </div>
                       </td>
@@ -708,25 +729,10 @@ export default function WeaponMoonstoneAxe() {
                             </div>
                             <div className="text-[12px]">Secondary</div>
                           </section>
-                          <section className="bg-neutral rounded-lg p-1">
-                            <div className="flex flex-row justify-center">
-                              {obj.Hammer.map((item) => (
-                                <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
-                                    <img
-                                      src={`/Boon/${item}.png`}
-                                      draggable={false}
-                                    />
-                                  </div>
-                                </div>
-                              ))}
-                            </div>
-                            <div className="text-[12px]">Tertiary</div>
-                          </section>
                         </div>
                       </td>
                       <td>
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-1">
                           <section className="bg-primary rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core.map((item) => (
@@ -796,6 +802,21 @@ export default function WeaponMoonstoneAxe() {
                             <div className="text-[13px] text-white">
                               Defense
                             </div>
+                          </section>
+                          <section className="bg-neutral rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.CoreBoon.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-8">
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">Ideal</div>
                           </section>
                         </div>
                       </td>
