@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        customDress: ["Caesar Dressing"]
+        customDress: ["Caesar Dressing"],
+        customCin: ["Cinzel"]
       },
     },
   },

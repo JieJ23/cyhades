@@ -57,14 +57,19 @@ export default function App() {
                     Boon Selection
                   </button>
                 </Link>
-                <Link
+                <Link to={`/Guide`}>
+                  <button className="btn btn-success my-3 btn-outline font-serif">
+                    Guide
+                  </button>
+                </Link>
+                {/* <Link
                   to={`https://www.supergiantgames.com/games/hades-ii/`}
                   target="_blank"
                 >
                   <button className="btn btn-success my-3 btn-outline font-serif">
                     Official SG Hade 2
                   </button>
-                </Link>
+                </Link> */}
               </div>
               <div className="font-customDress text-[14px] max-w-[800px] mx-auto text-center text-[#51b084] px-4">
                 Hades II is the upcoming sequel to Hades, developed by
@@ -177,14 +182,14 @@ export default function App() {
                     Hades
                   </button>
                 </Link>
-                <Link
+                {/* <Link
                   to={`https://www.supergiantgames.com/games/hades/`}
                   target="_blank"
                 >
                   <button className="btn btn-error my-3 btn-outline font-serif">
                     Official SG Hades
                   </button>
-                </Link>
+                </Link> */}
               </div>
               <div className="font-customDress text-[14px] max-w-[800px] mx-auto text-center text-[#c04747] px-4">
                 Hades is a roguelike action game where you play as Zagreus, the

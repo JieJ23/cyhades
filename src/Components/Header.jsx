@@ -11,16 +11,16 @@ export default function Header() {
           Home
         </Link>
       </div>
-      <div className="avatar online shadow-[0_0_10px_blue] rounded-full">
-        <div className="mask mask-decagon w-10">
-          <img src={`/joyboy.png`} />
-        </div>
-      </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
             <Link to={`/FormSubmission`} className="text-white">
               Submit
+            </Link>
+          </li>
+          <li>
+            <Link to={`/Guide`} className="text-white">
+              Guide
             </Link>
           </li>
           <li>
