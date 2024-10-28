@@ -17,6 +17,8 @@ import FearCalculator from "./Pages/FearCalculator.jsx";
 
 import Guide from "./Pages/H2Guide.jsx";
 //
+import WeaponMoonstoneAxe from "./Pages/Weapon/WeaponMoonstoneAxe.jsx";
+
 import ID1 from "./Pages/Guides/ID1.jsx";
 //
 
@@ -35,6 +37,9 @@ createRoot(document.getElementById("root")).render(
         <Route path="/BoonSelection" element={<BoonSelection />} />
 
         <Route path="/Guide" element={<Guide />} />
+        {/*  */}
+        <Route path="/WeaponMoonstoneAxe" element={<WeaponMoonstoneAxe />} />
+
         {/*  */}
         <Route path="/ID1" element={<ID1 />} />
 

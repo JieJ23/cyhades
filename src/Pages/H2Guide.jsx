@@ -17,7 +17,40 @@ export default function Guide() {
 
       <Header />
 
-      <main className="my-16 flex flex-wrap gap-4 justify-center">
+      <div className="flex flex-wrap gap-2 justify-center my-16">
+        <Link to={`/WeaponMoonstoneAxe`}>
+          <button className="btn text-white border-white/30 font-customCin">
+            Moonstone Axe
+          </button>
+        </Link>
+        <Link to={`/`}>
+          <button className="btn text-white border-white/30 font-customCin">
+            Sister Blades
+          </button>
+        </Link>
+        <Link to={`/`}>
+          <button className="btn text-white border-white/30 font-customCin">
+            Witch's Staff
+          </button>
+        </Link>
+        <Link to={`/`}>
+          <button className="btn text-white border-white/30 font-customCin">
+            Umbral Flames
+          </button>
+        </Link>
+        <Link to={`/`}>
+          <button className="btn text-white border-white/30 font-customCin">
+            Argent Skull
+          </button>
+        </Link>
+        <Link to={`/`}>
+          <button className="btn text-white border-white/30 font-customCin">
+            Black Coat
+          </button>
+        </Link>
+      </div>
+
+      <div className="my-16 flex flex-wrap gap-4 justify-center">
         <Link to={`/ID1`}>
           <div className="card bg-black/30 w-96 shadow-xl relative border-[1px] border-white/40 group">
             <div
@@ -46,7 +79,7 @@ export default function Guide() {
             </div>
           </div>
         </Link>
-      </main>
+      </div>
 
       <FooterInfo />
     </div>
