@@ -1,5 +1,6 @@
 import Header from "../../Components/Header";
 import FooterInfo from "../../Components/Footer";
+import { Link } from "react-router-dom";
 
 const arcane1 = [
   1, 0, 3, 0, 0, 6, 7, 0, 0, 0, 11, 12, 13, 0, 0, 16, 17, 18, 0, 0, 21, 22, 0,
@@ -10,6 +11,26 @@ const arcane2 = [
   1, 2, 0, 0, 5, 6, 7, 8, 0, 10, 11, 12, 13, 0, 0, 16, 17, 18, 0, 0, 21, 22, 0,
   24, 0,
 ];
+
+function VideoLink({ src, info }) {
+  return (
+    <Link to={src} target="_blank">
+      <button className="flex items-center p-2 bg-[#a58b3b6c] rounded-xl mb-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 26 26"
+          className="h-6 w-6 shrink-0 stroke-current]"
+        >
+          <polygon
+            class="play-btn__svg"
+            points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"
+          />
+        </svg>
+        <span className="text-white font-customCin text-[12px]">{info}</span>
+      </button>
+    </Link>
+  );
+}
 
 export default function ID1() {
   return (
@@ -27,8 +48,14 @@ export default function ID1() {
       {/*  */}
       <main className="max-w-[1000px] px-4 mx-auto my-16 font-customCin flex flex-col gap-10">
         <section>
+          <div className="text-[24px] md:text-[34px] text-white text-center">
+            A Guide On Xinth, The Black Coat.
+          </div>
+          <div className="text-gray-300 text-center">@ Myntkaramell</div>
+        </section>
+        <section>
           <div className="flex gap-2">
-            <div className="text-[24px] text-white">Attacks</div>
+            <div className="text-[20px] text-white">Attacks</div>
             <div className="avatar">
               <div className="w-8 rounded">
                 <img src="/Boon/Sworn_Strike.png" />
@@ -56,22 +83,28 @@ export default function ID1() {
             into HP-melting machines. If you think your attacks don't seem to be
             doing a lot of damage as is, the game lets you spam missiles while
             punching, seems like it's intended to in order to meet the dps of
-            other weapons in that regard. (On the topic of Static Shock, Zeus'
-            Heaven Strike is also a popular choice among speedrunners at the
-            moment, utilizing it and his duo boon with Aphrodite, Romantic
-            Spark, to recreate what is essentially Merciful End from Hades 1.
-            Sounds pretty fun to me, give it a go.) The Omega Attack is a mix of
-            Hades 1 Shield's Bull Rush's holding block mechanic and this game's
-            Omega and Magick system. Xinth Omega Attack rewards intuitive blocks
-            rather than mindlessly charging it out. If you want to block
-            immediately, do Attack 1 and hold that button down. It should be
-            noted that if you have insufficient Magick, you will be unable to
-            project an Energy Shield, leaving you a sitting duck mid-animation.
-            To ensure you don't use your Magick, do a Dash Attack while charging
-            to cancel. Remember that, like the old Axe Special, shockwave or
-            ground pulse type enemy attacks are unblockable (eg. Polyphemus's
-            Shockwave or Surface Fire), and should be dashed through or given
-            space.
+            other weapons in that regard.
+            <br />
+            <br />
+            <div>
+              (On the topic of Static Shock, Zeus' Heaven Strike is also a
+              popular choice among speedrunners at the moment, utilizing it and
+              his duo boon with Aphrodite, Romantic Spark, to recreate what is
+              essentially Merciful End from Hades 1. Sounds pretty fun to me,
+              give it a go.)
+            </div>
+            <br />
+            The Omega Attack is a mix of Hades 1 Shield's Bull Rush's holding
+            block mechanic and this game's Omega and Magick system. Xinth Omega
+            Attack rewards intuitive blocks rather than mindlessly charging it
+            out. If you want to block immediately, do Attack 1 and hold that
+            button down. It should be noted that if you have insufficient
+            Magick, you will be unable to project an Energy Shield, leaving you
+            a sitting duck mid-animation. To ensure you don't use your Magick,
+            do a Dash Attack while charging to cancel. Remember that, like the
+            old Axe Special, shockwave or ground pulse type enemy attacks are
+            unblockable (eg. Polyphemus's Shockwave or Surface Fire), and should
+            be dashed through or given space.
           </div>
           <div className="mt-2 bg-[#f3ad4438] rounded-md p-2 text-[12px] sm:text-[14px] flex gap-1 text-gray-300">
             <svg
@@ -96,7 +129,7 @@ export default function ID1() {
         </section>
 
         <section>
-          <div className="text-[24px] text-white">Specials</div>
+          <div className="text-[20px] text-white">Specials</div>
           <div className="text-gray-300 tracking-wider text-[13px] sm:text-[15px]">
             The specials are heat seeking missiles. Sounds pretty cool. You can
             toss these out while punching, you can toss them out while running.
@@ -108,20 +141,25 @@ export default function ID1() {
             pop uptime. Scorch is usable to a lesser degree as it is good for
             Origination, but overall suboptimal. It should be noted that moving
             while shooting missiles out is much more fluid when using mouse
-            aiming, as you can walk one way and barrage out the other. The Omega
-            Special is quick, and it's able to ensure you send out a missile
-            barrage to maximize damage. Against single targets, you can feel the
-            difference between an Omega Special and spamming your Special. Yet
-            again, this is more fluid on mouse aiming, as you still need to turn
-            slowly on the control stick should you have started the Omega
-            Special target calibration toward the wrong direction.
+            aiming, as you can walk one way and barrage out the other.
+            <br />
+            <br />
+            <div>
+              The Omega Special is quick, and it's able to ensure you send out a
+              missile barrage to maximize damage. Against single targets, you
+              can feel the difference between an Omega Special and spamming your
+              Special. Yet again, this is more fluid on mouse aiming, as you
+              still need to turn slowly on the control stick should you have
+              started the Omega Special target calibration toward the wrong
+              direction.
+            </div>
           </div>
         </section>
 
         <section className="flex flex-col gap-6">
           <div>
             <div className="flex gap-2">
-              <div className="text-[24px] text-white">
+              <div className="text-[20px] text-white">
                 The Aspect of Melinoë
               </div>
               <div className="avatar">
@@ -142,17 +180,29 @@ export default function ID1() {
               Special appreciate the Hitch and scaling. Zeus is a good choice on
               it in general, Blitz Special and Static Shock provide good damage,
               and Storm Ring is a good choice against chunkier enemies you'd
-              rather not get close to for smacking. The Aspect itself is rather
-              low maintenance, and is fully capable of functioning without any
-              MP whatsoever. For gameplay videos, I have a 55 Fear clear up
-              using Missile Spam, but 55 isn't really something you can base the
-              ability of an aspect on, so here are some 50 Fear runs with
-              varying playstyles.
+              rather not get close to for smacking.
+              <br />
+              <br />
+              <div>
+                The Aspect itself is rather low maintenance, and is fully
+                capable of functioning without any MP whatsoever. For gameplay
+                videos, I have a 55 Fear clear up using Missile Spam, but 55
+                isn't really something you can base the ability of an aspect on,
+                so here are some 50 Fear runs with varying playstyles.
+              </div>
             </div>
+            <VideoLink
+              src={`https://www.youtube.com/watch?v=n8_xeHfpMT8`}
+              info={`Mynt - Mostly Dash Attack and Attack`}
+            />
+            <VideoLink
+              src={`https://www.youtube.com/watch?v=iAyuRELmBcQ`}
+              info={`Foolish - Split between Specials, Attack and Dash Attack`}
+            />
           </div>
           <div>
             <div className="flex gap-2">
-              <div className="text-[24px] text-white">The Aspect of Nyx</div>
+              <div className="text-[20px] text-white">The Aspect of Nyx</div>
               <div className="avatar">
                 <div className="w-8 rounded">
                   <img src="/Aspects/Nyx.png" />
@@ -168,17 +218,29 @@ export default function ID1() {
               normal, for a 1.5x boost to attacks and specials under this
               effect) and lets your missiles split apart once it hits its main
               target. These split missiles do not benefit from Waves or Scorch,
-              so it isn't as strong as I had hoped, however. The general
-              playstyle of this aspect to maximize damage is to run at a target
-              to obtain Nightspawn, then continuously pelt that target with
-              empowered attacks and specials. I mostly see people doing it with
-              Specials, but I do suppose it's a much safer option. The aspect in
-              general seems to enjoy Static Shock, and doesn't really enjoy
-              synergies with sprint boons such as Poseidon sprint, instead using
-              the Omega Boost as a means to gain a buff rather than a main
-              source of damage. Don't let this stop you, though, I know people
-              can make fun builds around it.
+              so it isn't as strong as I had hoped, however.
+              <br />
+              <br />
+              <div>
+                The general playstyle of this aspect to maximize damage is to
+                run at a target to obtain Nightspawn, then continuously pelt
+                that target with empowered attacks and specials. I mostly see
+                people doing it with Specials, but I do suppose it's a much
+                safer option. The aspect in general seems to enjoy Static Shock,
+                and doesn't really enjoy synergies with sprint boons such as
+                Poseidon sprint, instead using the Omega Boost as a means to
+                gain a buff rather than a main source of damage. Don't let this
+                stop you, though, I know people can make fun builds around it.
+              </div>
             </div>
+            <VideoLink
+              src={`https://www.youtube.com/watch?v=XvZvXGHJ4l0`}
+              info={`Foolish - Using Hera Special (percentage damage boost)`}
+            />
+            <VideoLink
+              src={`https://www.youtube.com/watch?v=M6nxEcpbkBA`}
+              info={`Coldshade - Using Poseidon Special (flat damage add-on)`}
+            />
           </div>
 
           <div>
@@ -202,7 +264,7 @@ export default function ID1() {
 
           <div>
             <div className="flex gap-2">
-              <div className="text-[24px] text-white">The Aspect of Selene</div>
+              <div className="text-[20px] text-white">The Aspect of Selene</div>
               <div className="avatar">
                 <div className="w-8 rounded">
                   <img src="/Aspects/Selene.png" />
@@ -219,19 +281,26 @@ export default function ID1() {
               causes enemies to take more damage from your Omega moves. Though
               starting off mediocre, it scales monstrously as you unlock more
               Path of Stars nodes. You are almost basing your gameplay and build
-              around this thing. Its ability to strengthen your Omega Attacks
-              using Skyfall while crushing the ranks of enemies is quite
-              entertaining. Starting with a Moon Beam was never optimal until
-              this Aspect came around, and that +8 Path of Stars start in Erebus
-              is certainly off putting until you realize how easy it is to
-              activate. Prioritize the Prism path of stars upgrade should it
-              exist. You will typically want % Scaling boosts for your Attack
-              and Special, as Scorch/Waves/Static will not gain the 50% Bonus
-              from Shine. Demeter is preferable to have despite her having the
-              weakest % damage bonus, as you will gain access to Arctic Ring and
-              Weed Killer a lot easier. Perhaps prioritize those two off of
-              Demeter while hunting for an Apollo, Aphrodite or Hera Strike.
-              Utilize the in-depth section written below for more information.
+              around this thing.
+              <br />
+              <br />
+              <div>
+                Its ability to strengthen your Omega Attacks using Skyfall while
+                crushing the ranks of enemies is quite entertaining. Starting
+                with a Moon Beam was never optimal until this Aspect came
+                around, and that +8 Path of Stars start in Erebus is certainly
+                off putting until you realize how easy it is to activate.
+                Prioritize the Prism path of stars upgrade should it exist. You
+                will typically want % Scaling boosts for your Attack and
+                Special, as Scorch/Waves/Static will not gain the 50% Bonus from
+                Shine. Demeter is preferable to have despite her having the
+                weakest % damage bonus, as you will gain access to Arctic Ring
+                and Weed Killer a lot easier. Perhaps prioritize those two off
+                of Demeter while hunting for an Apollo, Aphrodite or Hera
+                Strike. Utilize the in-depth section written below for more
+                information.
+              </div>
+              <br />
               The Aspect of Selene deserves its own little writeup due to how
               different it feels to play compared to anything else in the game,
               so I'll do just that.
@@ -243,28 +312,37 @@ export default function ID1() {
               while using the aspect, and the first Selene appearance in a run
               will be a path of stars rather than a hex choice. Sky Fall applies
               a curse called "Shine" which buffs the damage of all your omega
-              moves by 50%. The Gameplay of Selene is very Omega focused due to
-              the Shine Curse's effect. I recommend using the Death Arcana (15%
-              Crit Chance on Omega moves when using a different omega to the
-              last one) and adopting a playstyle where you cycle between Omega
-              Attack and Omega Special. Some of the better hammers to look out
-              for are: World Collider: +100 Power on fully charged Omega
-              AttackThis hammer can lead to your Omega Attack hitting for
-              absurdly high damage. Combined with Shine, Death Arcana and other
-              buffs you can be getting numbers in the several thousands. Ripper
-              Rockets: Your Specials gain +5 Power up to 5 consecutive hits on
-              the same enemy. This hammer can make your Omega Special very
-              strong, and is recommended when your special boon is a % increase,
-              such as Hera or Apollo. Counter Barrage: When blocking an attack
-              with your Omega Attack, your Omega Special is automatically
-              launched, with a cooldown of 3 seconds. Quite strong, the block on
-              Omega Attack is very useful and a free Omega Special every now and
-              then can lead to a lot of damage. This is the recommended Arcana
-              Page for Selene. Once again, this is geared towards high fear, so
-              don't be afraid to try some other pages as well. (edit: Boatman
-              and Origination are interchangeable, and we find that Origination
-              damage is quite fun to have, so feel free to swap to that. Foolish
-              just loves peddling Boatman in high fear.)
+              moves by 50%.
+              <br />
+              The Gameplay of Selene is very Omega focused due to the Shine
+              Curse's effect. I recommend using the Death Arcana (15% Crit
+              Chance on Omega moves when using a different omega to the last
+              one) and adopting a playstyle where you cycle between Omega Attack
+              and Omega Special. Some of the better hammers to look out for are:
+              <br />
+              <br />
+              World Collider: +100 Power on fully charged Omega AttackThis
+              hammer can lead to your Omega Attack hitting for absurdly high
+              damage. Combined with Shine, Death Arcana and other buffs you can
+              be getting numbers in the several thousands.
+              <br />
+              <br />
+              Ripper Rockets: Your Specials gain +5 Power up to 5 consecutive
+              hits on the same enemy. This hammer can make your Omega Special
+              very strong, and is recommended when your special boon is a %
+              increase, such as Hera or Apollo.
+              <br />
+              <br />
+              Counter Barrage: When blocking an attack with your Omega Attack,
+              your Omega Special is automatically launched, with a cooldown of 3
+              seconds. Quite strong, the block on Omega Attack is very useful
+              and a free Omega Special every now and then can lead to a lot of
+              damage. This is the recommended Arcana Page for Selene. Once
+              again, this is geared towards high fear, so don't be afraid to try
+              some other pages as well. (edit: Boatman and Origination are
+              interchangeable, and we find that Origination damage is quite fun
+              to have, so feel free to swap to that. Foolish just loves peddling
+              Boatman in high fear.)
             </div>
             <div className="text-gray-300 tracking-wider text-[13px] sm:text-[15px] mt-5">
               For arcana pages, there are what we recommend using for these two
@@ -282,41 +360,8 @@ export default function ID1() {
           </div>
         </section>
 
-        {/* <section>
-          <div className="text-[24px] text-white">Overview</div>
-          <div className="text-gray-300 tracking-wider text-[13px] sm:text-[15px]">
-            Aspect Selene is one of the most unique aspects in the game. Its
-            effect grants you the unique Hex, Sky Fall, which is only obtainable
-            with Aspect of Selene. You cannot gain any other hex while using the
-            aspect, and the first Selene appearance in a run will be a path of
-            stars rather than a hex choice. Sky Fall applies a curse called
-            "Shine" which buffs the damage of all your omega moves by 50%. The
-            Gameplay of Selene is very Omega focused due to the Shine Curse's
-            effect. I recommend using the Death Arcana (15% Crit Chance on Omega
-            moves when using a different omega to the last one) and adopting a
-            playstyle where you cycle between Omega Attack and Omega Special.
-            Some of the better hammers to look out for are: World Collider: +100
-            Power on fully charged Omega AttackThis hammer can lead to your
-            Omega Attack hitting for absurdly high damage. Combined with Shine,
-            Death Arcana and other buffs you can be getting numbers in the
-            several thousands. Ripper Rockets: Your Specials gain +5 Power up to
-            5 consecutive hits on the same enemy. This hammer can make your
-            Omega Special very strong, and is recommended when your special boon
-            is a % increase, such as Hera or Apollo. Counter Barrage: When
-            blocking an attack with your Omega Attack, your Omega Special is
-            automatically launched, with a cooldown of 3 seconds. Quite strong,
-            the block on Omega Attack is very useful and a free Omega Special
-            every now and then can lead to a lot of damage. This is the
-            recommended Arcana Page for Selene. Once again, this is geared
-            towards high fear, so don't be afraid to try some other pages as
-            well. (edit: Boatman and Origination are interchangeable, and we
-            find that Origination damage is quite fun to have, so feel free to
-            swap to that. Foolish just loves peddling Boatman in high fear.)
-          </div>
-        </section> */}
-
         <section>
-          <div className="text-[24px] text-white">General Strategy</div>
+          <div className="text-[20px] text-white">General Strategy</div>
           <div className="text-gray-300 tracking-wider text-[13px] sm:text-[15px]">
             The Moon Beam keepsake from Selene should almost always be taken at
             some point during a run. It makes your next path of stars more
@@ -324,24 +369,46 @@ export default function ID1() {
             the stronger upgrades of your Hex immediately such as Prism or
             Scorn. Moon Beam can work very well as the *first* keepsake of a run
             since Aspect of Selene is very flexible with which gods work for it,
-            and as such a specific god's keepsake is not required. In terms of
-            god boons that work well with the aspect,boons that raise the cost
-            of Omega moves are very welcome. These make the Hex easier and
-            quicker to charge resulting in more frequent uses of it. Boons that
-            increase magick cost of Omegas include; Weedkiller, Bloodline,
-            Controlled burn, Glorious Disaster and Exceptional Talent. Attack
-            boons that are a % increase in damage and not flat damage are ideal,
-            due to the Omega Attack having a high base damage of 200. These
-            boons include Hera Attack, Apollo Attack, Aphrodite Attack and
-            Demeter Attack. For Special, almost any special boons *can* work
-            since the Coat special is both multihit *and* hits decently hard
-            with certain setups. The only Special boon I would recommend staying
-            away from is Hephaestus Special. Priority special boons would be
-            Zeus and Hera. For Gain, I recommend starting with Hecuba (dog) as
-            your Familiar, which lets you make a gain boon a low priority, and
-            lets some of the weaker gain boons be viable picks even for late in
-            the run. Some of the better gains are Born Gain and Ionic Gain.
+            and as such a specific god's keepsake is not required.
+            <br />
+            <br />
+            In terms of god boons that work well with the aspect,boons that
+            raise the cost of Omega moves are very welcome. These make the Hex
+            easier and quicker to charge resulting in more frequent uses of it.
+            Boons that increase magick cost of Omegas include; Weedkiller,
+            Bloodline, Controlled burn, Glorious Disaster and Exceptional
+            Talent.
+            <br />
+            <br />
+            Attack boons that are a % increase in damage and not flat damage are
+            ideal, due to the Omega Attack having a high base damage of 200.
+            These boons include Hera Attack, Apollo Attack, Aphrodite Attack and
+            Demeter Attack.
+            <br />
+            <br />
+            For Special, almost any special boons *can* work since the Coat
+            special is both multihit *and* hits decently hard with certain
+            setups. The only Special boon I would recommend staying away from is
+            Hephaestus Special. Priority special boons would be Zeus and Hera.
+            <br />
+            <br />
+            For Gain, I recommend starting with Hecuba (dog) as your Familiar,
+            which lets you make a gain boon a low priority, and lets some of the
+            weaker gain boons be viable picks even for late in the run. Some of
+            the better gains are Born Gain and Ionic Gain.
           </div>
+          <VideoLink
+            src={`https://www.youtube.com/watch?v=r-_c_YWpU38`}
+            info={`Mynt - 50 Fear Selene, little to no "proper" Omegas, mainly meant to consume MP, to use Skyfall a lot.`}
+          />
+          <VideoLink
+            src={`https://www.youtube.com/watch?v=f1FGm2AkeR4`}
+            info={`Foolish - 50 Fear Selene, Omegas on rotation with minimal Skyfall downtime.`}
+          />
+          <VideoLink
+            src={`https://www.youtube.com/watch?v=zmFTBgSvnKs`}
+            info={`Poshboy - 50 Fear Selene judgment run, 7 min timer/area`}
+          />
         </section>
       </main>
       {/*  */}
