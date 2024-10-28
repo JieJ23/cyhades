@@ -37,6 +37,60 @@ const weapon1details = [
   },
 ];
 
+const weapon2details = [
+  {
+    Rank: 1,
+    Info: `Cast-Cleaves are 10% larger and do 10% more damage`,
+  },
+  {
+    Rank: 2,
+    Info: `Cast-Cleaves are 15% larger and do 15% more damage`,
+  },
+  {
+    Rank: 3,
+    Info: `Cast-Cleaves are 20% larger and do 20% more damage`,
+  },
+  {
+    Rank: 4,
+    Info: `Cast-Cleaves are 25% larger and do 25% more damage`,
+  },
+  {
+    Rank: 5,
+    Info: `Cast-Cleaves are 30% larger and do 30% more damage`,
+  },
+  {
+    Rank: 6,
+    Info: `Cast-Cleaves are 45% larger and do 45% more damage`,
+  },
+];
+
+const weapon3details = [
+  {
+    Rank: 1,
+    Info: `Gain 10% Attack Speed`,
+  },
+  {
+    Rank: 2,
+    Info: `Gain 15% Attack Speed`,
+  },
+  {
+    Rank: 3,
+    Info: `Gain 20% Attack Speed`,
+  },
+  {
+    Rank: 4,
+    Info: `Gain 25% Attack Speed`,
+  },
+  {
+    Rank: 5,
+    Info: `Gain 30% Attack Speed`,
+  },
+  {
+    Rank: 6,
+    Info: `Gain 45% Attack Speed`,
+  },
+];
+
 const moonstone_melinoe = [
   {
     player: `Myntkaramell`,
@@ -106,7 +160,9 @@ export default function WeaponMoonstoneAxe() {
             {weapon1details.map((obj, index) => (
               <div
                 className={`flex flex-col ${
-                  index === 5 ? `bg-[#814211]` : `bg-[#107454]`
+                  index === 5
+                    ? `bg-gradient-to-tl from-[#71422a] to-[#760202]`
+                    : `bg-gradient-to-tr from-[#6d3aa3] to-[#062e7d]`
                 } items-center p-3 rounded-xl max-w-[150px] text-center`}
               >
                 <div className="text-white text-[14px]">Rank #{obj.Rank}</div>
@@ -123,7 +179,7 @@ export default function WeaponMoonstoneAxe() {
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
-                    <th></th>
+                    <th>Player</th>
                     <th>Hammer</th>
                     <th>Core</th>
                     <th>Keepsake ( E-O-F-T )</th>
@@ -335,6 +391,170 @@ export default function WeaponMoonstoneAxe() {
           <div className="flex justify-center my-4">
             <img src="/Divider/Charon.png" className="w-[220px]" />
           </div>
+
+          <section className="flex flex-wrap gap-4 sm:gap-2 justify-center">
+            {weapon2details.map((obj, index) => (
+              <div
+                className={`flex flex-col ${
+                  index === 5
+                    ? `bg-gradient-to-tl from-[#71422a] to-[#760202]`
+                    : `bg-gradient-to-tr from-[#6d3aa3] to-[#062e7d]`
+                } items-center p-3 rounded-xl max-w-[150px] text-center`}
+              >
+                <div className="text-white text-[14px]">Rank #{obj.Rank}</div>
+                <div className="text-[12px] font-serif text-gray-300">
+                  {obj.Info}
+                </div>
+              </div>
+            ))}
+          </section>
+
+          <section className="my-10">
+            <div className="overflow-x-auto">
+              <table className="table">
+                {/* head */}
+                <thead>
+                  <tr className="text-gray-300 text-center">
+                    <th>Player</th>
+                    <th>Hammer</th>
+                    <th>Core</th>
+                    <th>Keepsake ( E-O-F-T )</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {moonstone_melinoe.map((obj) => (
+                    <tr className="text-white text-center">
+                      <td>{obj.player}</td>
+                      <td>
+                        <div className="flex flex-col gap-1">
+                          <section className="bg-primary rounded-lg p-1">
+                            <div className="flex flex-row justify-center">
+                              {obj.Hammer.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-8">
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[12px]">Core</div>
+                          </section>
+                          <section className="bg-success rounded-lg p-1">
+                            <div className="flex flex-row justify-center">
+                              {obj.Hammer.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-8">
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[12px]">Secondary</div>
+                          </section>
+                          <section className="bg-neutral rounded-lg p-1">
+                            <div className="flex flex-row justify-center">
+                              {obj.Hammer.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-8">
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[12px]">Tertiary</div>
+                          </section>
+                        </div>
+                      </td>
+                      <td>
+                        <div className="flex flex-col gap-4">
+                          <section className="bg-primary rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.Core.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/Element/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px]">Offense</div>
+                          </section>
+                          <section className="bg-success rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.Core.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/Element/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">
+                              Defense
+                            </div>
+                          </section>
+                        </div>
+                      </td>
+                      <td>
+                        <div className="flex flex-col gap-1">
+                          <section className="bg-primary rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.Keepsake.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">
+                              Offense
+                            </div>
+                          </section>
+                          <section className="bg-success rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.Keepsake.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">
+                              Defense
+                            </div>
+                          </section>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
           <div className="text-gray-300 tracking-wider text-[13px] sm:text-[14px]">
             "The Charon Axe does not play like a normal Moonstone Axe. While it
             is an Axe that is capable of both close combat and artillery-range
@@ -422,6 +642,170 @@ export default function WeaponMoonstoneAxe() {
           <div className="flex justify-center my-4">
             <img src="/Divider/Thanatos.png" className="w-[220px]" />
           </div>
+
+          <section className="flex flex-wrap gap-4 sm:gap-2 justify-center">
+            {weapon3details.map((obj, index) => (
+              <div
+                className={`flex flex-col ${
+                  index === 5
+                    ? `bg-gradient-to-tl from-[#71422a] to-[#760202]`
+                    : `bg-gradient-to-tr from-[#6d3aa3] to-[#062e7d]`
+                } items-center p-3 rounded-xl max-w-[150px] text-center`}
+              >
+                <div className="text-white text-[14px]">Rank #{obj.Rank}</div>
+                <div className="text-[12px] font-serif text-gray-300">
+                  {obj.Info}
+                </div>
+              </div>
+            ))}
+          </section>
+
+          <section className="my-10">
+            <div className="overflow-x-auto">
+              <table className="table">
+                {/* head */}
+                <thead>
+                  <tr className="text-gray-300 text-center">
+                    <th>Player</th>
+                    <th>Hammer</th>
+                    <th>Core</th>
+                    <th>Keepsake ( E-O-F-T )</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {moonstone_melinoe.map((obj) => (
+                    <tr className="text-white text-center">
+                      <td>{obj.player}</td>
+                      <td>
+                        <div className="flex flex-col gap-1">
+                          <section className="bg-primary rounded-lg p-1">
+                            <div className="flex flex-row justify-center">
+                              {obj.Hammer.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-8">
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[12px]">Core</div>
+                          </section>
+                          <section className="bg-success rounded-lg p-1">
+                            <div className="flex flex-row justify-center">
+                              {obj.Hammer.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-8">
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[12px]">Secondary</div>
+                          </section>
+                          <section className="bg-neutral rounded-lg p-1">
+                            <div className="flex flex-row justify-center">
+                              {obj.Hammer.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-8">
+                                    <img
+                                      src={`/Boon/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[12px]">Tertiary</div>
+                          </section>
+                        </div>
+                      </td>
+                      <td>
+                        <div className="flex flex-col gap-4">
+                          <section className="bg-primary rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.Core.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/Element/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px]">Offense</div>
+                          </section>
+                          <section className="bg-success rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.Core.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/Element/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">
+                              Defense
+                            </div>
+                          </section>
+                        </div>
+                      </td>
+                      <td>
+                        <div className="flex flex-col gap-1">
+                          <section className="bg-primary rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.Keepsake.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">
+                              Offense
+                            </div>
+                          </section>
+                          <section className="bg-success rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.Keepsake.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">
+                              Defense
+                            </div>
+                          </section>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
           <div className="text-gray-300 tracking-wider text-[13px] sm:text-[14px]">
             "The Thanatos Axe is the speed variant of the melee Moonstone Axes,
             boasting flexibility between builds based on the situation and RNG
