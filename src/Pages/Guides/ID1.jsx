@@ -46,7 +46,7 @@ export default function ID1() {
 
       <Header />
       {/*  */}
-      <main className="max-w-[1000px] px-4 mx-auto my-16 font-customCin flex flex-col gap-10">
+      <main className="max-w-[1000px] px-4 mx-auto my-16 font-customCin flex flex-col gap-10 select-none">
         <section>
           <div className="text-[24px] md:text-[34px] text-white text-center">
             A Guide On Xinth, The Black Coat.
@@ -58,17 +58,17 @@ export default function ID1() {
             <div className="text-[20px] text-white">Attacks</div>
             <div className="avatar">
               <div className="w-8 rounded">
-                <img src="/Boon/Sworn_Strike.png" />
+                <img src="/Boon/Sworn_Strike.png" draggable={false} />
               </div>
             </div>
             <div className="avatar">
               <div className="w-8 rounded">
-                <img src="/Boon/Nova_Strike.png" />
+                <img src="/Boon/Nova_Strike.png" draggable={false} />
               </div>
             </div>
             <div className="avatar">
               <div className="w-8 rounded">
-                <img src="/Boon/Flutter_Strike.png" />
+                <img src="/Boon/Flutter_Strike.png" draggable={false} />
               </div>
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function ID1() {
               </div>
               <div className="avatar">
                 <div className="w-8 rounded">
-                  <img src="/Aspects/Melinoe Coat.png" />
+                  <img src="/Aspects/Melinoe Coat.png" draggable={false} />
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@ export default function ID1() {
               <div className="text-[20px] text-white">The Aspect of Nyx</div>
               <div className="avatar">
                 <div className="w-8 rounded">
-                  <img src="/Aspects/Nyx.png" />
+                  <img src="/Aspects/Nyx.png" draggable={false} />
                 </div>
               </div>
             </div>
@@ -256,7 +256,7 @@ export default function ID1() {
             <div className="flex justify-center flex-wrap max-w-[380px] sm:max-w-[500px] gap-1 mx-auto mt-2 mb-5 px-0">
               {arcane1.map((num) => (
                 <div className="avatar w-[70] h-[95px] sm:w-[90px] sm:h-[120px]">
-                  <img src={`/Card/card${num}.png`} />
+                  <img src={`/Card/card${num}.png`} draggable={false} />
                 </div>
               ))}
             </div>
@@ -267,7 +267,7 @@ export default function ID1() {
               <div className="text-[20px] text-white">The Aspect of Selene</div>
               <div className="avatar">
                 <div className="w-8 rounded">
-                  <img src="/Aspects/Selene.png" />
+                  <img src="/Aspects/Selene.png" draggable={false} />
                 </div>
               </div>
             </div>
@@ -353,7 +353,7 @@ export default function ID1() {
             <div className="flex justify-center flex-wrap max-w-[380px] sm:max-w-[500px] gap-1 mx-auto mt-2 mb-5 px-0">
               {arcane2.map((num) => (
                 <div className="avatar w-[70] h-[95px] sm:w-[90px] sm:h-[120px]">
-                  <img src={`/Card/card${num}.png`} />
+                  <img src={`/Card/card${num}.png`} draggable={false} />
                 </div>
               ))}
             </div>

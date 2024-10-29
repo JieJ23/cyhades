@@ -12,7 +12,11 @@ import {
 function MoonstoneAxeDivider() {
   return (
     <div className="divider w-full mx-auto divider-neutral my-6">
-      <img src="/Divider/MoonstoneDivider.png" className="h-[25px]" />
+      <img
+        src="/Divider/MoonstoneDivider.png"
+        className="h-[25px]"
+        draggable={false}
+      />
     </div>
   );
 }
@@ -32,7 +36,7 @@ export default function WeaponMoonstoneAxe() {
       <Header />
       {/*  */}
 
-      <main className="mt-16 mb-10 px-4 max-w-[1200px] mx-auto font-customCin">
+      <main className="mt-16 mb-10 px-4 max-w-[1200px] mx-auto font-customCin select-none">
         <div className="text-[30px] text-center text-white">
           The Moonstone Axe, Zoraphet
         </div>
@@ -43,7 +47,11 @@ export default function WeaponMoonstoneAxe() {
             Aspect of Melinoë
           </div>
           <div className="flex justify-center my-4">
-            <img src="/Divider/Melinoe Moonstone.png" className="w-[220px]" />
+            <img
+              src="/Divider/Melinoe Moonstone.png"
+              className="w-[220px]"
+              draggable={false}
+            />
           </div>
 
           <section className="flex flex-wrap gap-4 sm:gap-2 justify-center my-5">
@@ -362,7 +370,11 @@ export default function WeaponMoonstoneAxe() {
             Aspect of Charon
           </div>
           <div className="flex justify-center my-4">
-            <img src="/Divider/Charon.png" className="w-[220px]" />
+            <img
+              src="/Divider/Charon.png"
+              className="w-[220px]"
+              draggable={false}
+            />
           </div>
 
           <section className="flex flex-wrap gap-4 sm:gap-2 justify-center my-5">
@@ -695,7 +707,11 @@ export default function WeaponMoonstoneAxe() {
             Aspect of Thanatos
           </div>
           <div className="flex justify-center my-4">
-            <img src="/Divider/Thanatos.png" className="w-[220px]" />
+            <img
+              src="/Divider/Thanatos.png"
+              className="w-[220px]"
+              draggable={false}
+            />
           </div>
 
           <section className="flex flex-wrap gap-4 sm:gap-2 justify-center my-5">
