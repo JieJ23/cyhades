@@ -23,45 +23,52 @@ export default function Guide() {
             Moonstone Axe
           </button>
         </Link>
-        <Link to={`/`}>
-          <button className="btn text-white border-white/30 font-customCin">
-            Sister Blades
-          </button>
-        </Link>
-        <Link to={`/`}>
-          <button className="btn text-white border-white/30 font-customCin">
-            Witch's Staff
-          </button>
-        </Link>
-        <Link to={`/`}>
-          <button className="btn text-white border-white/30 font-customCin">
-            Umbral Flames
-          </button>
-        </Link>
-        <Link to={`/`}>
-          <button className="btn text-white border-white/30 font-customCin">
-            Argent Skull
-          </button>
-        </Link>
-        <Link to={`/`}>
-          <button className="btn text-white border-white/30 font-customCin">
-            Black Coat
-          </button>
-        </Link>
+        <button
+          className="btn text-white border-white/30 font-customCin"
+          disabled={true}
+        >
+          Sister Blades
+        </button>
+        <button
+          className="btn text-white border-white/30 font-customCin"
+          disabled={true}
+        >
+          Witch's Staff
+        </button>
+        <button
+          className="btn text-white border-white/30 font-customCin"
+          disabled={true}
+        >
+          Umbral Flames
+        </button>
+        <button
+          className="btn text-white border-white/30 font-customCin"
+          disabled={true}
+        >
+          Argent Skull
+        </button>
+        <button
+          className="btn text-white border-white/30 font-customCin"
+          disabled={true}
+        >
+          Black Coat
+        </button>{" "}
       </div>
 
       <div className="my-16 flex flex-wrap gap-4 justify-center">
         <Link to={`/ID1`}>
-          <div className="card bg-black/30 w-96 shadow-xl relative border-[1px] border-white/40 group">
+          <div className="card bg-black/30 w-96 shadow-xl relative border-[1px] border-white/40 group overflow-hidden">
             <div
-              className="bg-cover bg-center h-full w-full absolute opacity-30 group-hover:opacity-50 duration-150 ease-in transition-opacity"
-              style={{ backgroundImage: "url('/Black Coat.png')" }}
+              className="bg-cover bg-no-repeat bg-top h-full w-full absolute opacity-10 group-hover:opacity-30 duration-300 ease-in transition-opacity"
+              style={{
+                backgroundImage: "url('/Divider/Black Coat.png')",
+              }}
             />
             <div className="card-body z-20 pb-4 px-6">
               <div className="card-title text-white font-serif mx-auto underline">
                 Xinth, the Black Coat
               </div>
-              <div className="text-[12px] text-gray-400">
+              <div className="text-[12px] text-gray-300">
                 "The Black Coat is a versatile weapon that sports multiple
                 playstyles, but let's start with the base kit first."
               </div>
