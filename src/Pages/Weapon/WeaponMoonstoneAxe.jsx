@@ -1,6 +1,13 @@
 import Header from "../../Components/Header";
 import FooterInfo from "../../Components/Footer";
-import { ReturnBoonList } from "../../Logic/Method";
+import {
+  weapon1details,
+  weapon2details,
+  weapon3details,
+  moonstone1,
+  moonstone2,
+  moonstone3,
+} from "./Moonstone";
 
 function MoonstoneAxeDivider() {
   return (
@@ -9,144 +16,6 @@ function MoonstoneAxeDivider() {
     </div>
   );
 }
-
-const weapon1details = [
-  {
-    Rank: 1,
-    Info: `Gain 15 Max Health and 15 Power`,
-  },
-  {
-    Rank: 2,
-    Info: `Gain 20 Max Health and 20 Power`,
-  },
-  {
-    Rank: 3,
-    Info: `Gain 25 Max Health and 25 Power`,
-  },
-  {
-    Rank: 4,
-    Info: `Gain 30 Max Health and 30 Power`,
-  },
-  {
-    Rank: 5,
-    Info: `Gain 35 Max Health and 35 Power`,
-  },
-  {
-    Rank: 6,
-    Info: `Gain 45 Max Health and 45 Power`,
-  },
-];
-
-const weapon2details = [
-  {
-    Rank: 1,
-    Info: `Cast-Cleaves are 10% larger and do 10% more damage`,
-  },
-  {
-    Rank: 2,
-    Info: `Cast-Cleaves are 15% larger and do 15% more damage`,
-  },
-  {
-    Rank: 3,
-    Info: `Cast-Cleaves are 20% larger and do 20% more damage`,
-  },
-  {
-    Rank: 4,
-    Info: `Cast-Cleaves are 25% larger and do 25% more damage`,
-  },
-  {
-    Rank: 5,
-    Info: `Cast-Cleaves are 30% larger and do 30% more damage`,
-  },
-  {
-    Rank: 6,
-    Info: `Cast-Cleaves are 45% larger and do 45% more damage`,
-  },
-];
-
-const weapon3details = [
-  {
-    Rank: 1,
-    Info: `Gain 10% Attack Speed`,
-  },
-  {
-    Rank: 2,
-    Info: `Gain 15% Attack Speed`,
-  },
-  {
-    Rank: 3,
-    Info: `Gain 20% Attack Speed`,
-  },
-  {
-    Rank: 4,
-    Info: `Gain 25% Attack Speed`,
-  },
-  {
-    Rank: 5,
-    Info: `Gain 30% Attack Speed`,
-  },
-  {
-    Rank: 6,
-    Info: `Gain 45% Attack Speed`,
-  },
-];
-
-const moonstone_melinoe = [
-  {
-    player: `Myntkaramell`,
-    Hammer: [
-      `Dashing_Heave`,
-      `Psychic_Whirlwind`,
-      `Rapid_Slash`,
-      `Psychic_Whirlwind`,
-    ],
-    CoreBoon: [
-      `Flutter_Strike`,
-      `Nova_Flourish`,
-      `Arctic_Ring`,
-      `Thunder_Sprint`,
-      `Fluid_Gain`,
-    ],
-    Core: [`Hera`, `Demeter`, `Aphrodite`, `Hephaestus`],
-    Keepsake: [`13`, `15`, `09`, `06`],
-  },
-  {
-    player: `Machi`,
-    Hammer: [
-      `Dashing_Heave`,
-      `Melting_Shredder`,
-      `Rapid_Slash`,
-      `Psychic_Whirlwind`,
-    ],
-    CoreBoon: [
-      `Flutter_Strike`,
-      `Nova_Flourish`,
-      `Arctic_Ring`,
-      `Thunder_Sprint`,
-      `Fluid_Gain`,
-    ],
-    Core: [`Hera`, `Demeter`, `Zeus`, `Hephaestus`],
-    Keepsake: [`13`, `26`, `09`, `10`],
-  },
-  {
-    player: `Red`,
-    Hammer: [
-      `Dashing_Heave`,
-      `Psychic_Whirlwind`,
-      `Rapid_Slash`,
-      `Psychic_Whirlwind`,
-    ],
-    CoreBoon: [
-      `Flutter_Strike`,
-      `Nova_Flourish`,
-      `Arctic_Ring`,
-      `Thunder_Sprint`,
-      `Fluid_Gain`,
-    ],
-    Core: [`Hera`, `Demeter`, `Apollo`, `Hephaestus`],
-    Keepsake: [`13`, `18`, `26`, `06`],
-  },
-];
 
 export default function WeaponMoonstoneAxe() {
   return (
@@ -177,7 +46,7 @@ export default function WeaponMoonstoneAxe() {
             <img src="/Divider/Melinoe Moonstone.png" className="w-[220px]" />
           </div>
 
-          <section className="flex flex-wrap gap-4 sm:gap-2 justify-center">
+          <section className="flex flex-wrap gap-4 sm:gap-2 justify-center my-5">
             {weapon1details.map((obj, index) => (
               <div
                 className={`flex flex-col ${
@@ -196,27 +65,28 @@ export default function WeaponMoonstoneAxe() {
 
           <section className="my-10">
             <div className="overflow-x-auto">
-              <table className="table">
+              <table className="table table-zebra-zebra">
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
                     <th>Player</th>
                     <th>Hammer</th>
-                    <th>Core</th>
+                    <th> ATK / CAST / EFFECTS / DEF</th>
                     <th>Keepsake ( E-O-F-T )</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {moonstone_melinoe.map((obj) => (
+                  {moonstone1.map((obj) => (
                     <tr className="text-white text-center">
                       <td>{obj.player}</td>
                       <td>
                         <div className="flex flex-col gap-1">
-                          <section className="bg-primary rounded-lg p-1">
+                          <section className="rounded-lg p-1">
+                            <div className="text-[13px]">Best Hammers</div>
                             <div className="flex flex-row justify-center">
                               {obj.Hammer.map((item) => (
                                 <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
+                                  <div className="mask mask-squircle w-10">
                                     <img
                                       src={`/Boon/${item}.png`}
                                       draggable={false}
@@ -225,28 +95,19 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[12px]">Core</div>
-                          </section>
-                          <section className="bg-success rounded-lg p-1">
-                            <div className="flex flex-row justify-center">
-                              {obj.Hammer.map((item) => (
-                                <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
-                                    <img
-                                      src={`/Boon/${item}.png`}
-                                      draggable={false}
-                                    />
-                                  </div>
+                            <div className="flex flex-col justify-center">
+                              {obj.Hammer.map((item, index) => (
+                                <div className="text-start text-[11px]">
+                                  {`${index + 1}. ${item}`}
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[12px]">Secondary</div>
                           </section>
                         </div>
                       </td>
                       <td>
-                        <div className="flex flex-col gap-1">
-                          <section className="bg-primary rounded-lg p-2">
+                        <div className="flex flex-col min-w-[200px] gap-1">
+                          <section className="bg-[#07446db3] rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core.map((item) => (
                                 <div className="avatar">
@@ -259,11 +120,11 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px]">Offense</div>
+                            <div className="text-[13px]">Ideal Core</div>
                           </section>
-                          <section className="bg-success rounded-lg p-2">
+                          <section className="bg-[#09421ab3] rounded-lg p-2">
                             <div className="flex flex-row justify-center">
-                              {obj.Core.map((item) => (
+                              {obj.Core2.map((item) => (
                                 <div className="avatar">
                                   <div className="mask mask-squircle w-10">
                                     <img
@@ -275,60 +136,151 @@ export default function WeaponMoonstoneAxe() {
                               ))}
                             </div>
                             <div className="text-[13px] text-white">
-                              Defense
+                              Secondary Core
                             </div>
                           </section>
-                          <section className="bg-neutral rounded-lg p-2">
+                          <section className="rounded-lg p-2">
                             <div className="flex flex-row justify-center">
-                              {obj.CoreBoon.map((item) => (
+                              {obj.Core3.map((item) => (
                                 <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
+                                  <div className="mask mask-squircle w-10">
                                     <img
-                                      src={`/Boon/${item}.png`}
+                                      src={`/Element/${item}.png`}
                                       draggable={false}
                                     />
                                   </div>
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px] text-white">Ideal</div>
+                            <div className="text-[13px] text-white">
+                              RNG screwed, but manageable
+                            </div>
                           </section>
                         </div>
                       </td>
                       <td>
-                        <div className="flex flex-col gap-1">
-                          <section className="bg-primary rounded-lg p-2">
-                            <div className="flex flex-row justify-center">
-                              {obj.Keepsake.map((item) => (
-                                <div className="avatar">
-                                  <div className="mask mask-squircle w-10">
-                                    <img
-                                      src={`/KS/${item}.png`}
-                                      draggable={false}
-                                    />
-                                  </div>
-                                </div>
-                              ))}
+                        <div className="flex flex-col min-w-[350px] gap-1">
+                          <section className="rounded-lg p-2 bg-[#4b6b3ab3]">
+                            <div className="text-[11px] text-[gold]">
+                              Erebus
                             </div>
-                            <div className="text-[13px] text-white">
-                              Offense
+                            <div className="flex flex-row justify-center">
+                              <div className="avatar">
+                                <div className="mask mask-squircle w-10">
+                                  <img
+                                    src={`/KS/${obj.Erebus.KS}.png`}
+                                    draggable={false}
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="text-[11px] text-white">
+                              {obj.Erebus.Info}
                             </div>
                           </section>
-                          <section className="bg-success rounded-lg p-2">
-                            <div className="flex flex-row justify-center">
-                              {obj.Keepsake.map((item) => (
+                          <section className="flex justify-center gap-2 bg-[#436ba1b3] rounded-lg relative">
+                            <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
+                              Oceanus
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
                                 <div className="avatar">
                                   <div className="mask mask-squircle w-10">
                                     <img
-                                      src={`/KS/${item}.png`}
+                                      src={`/KS/${obj.Oceanus.KS}.png`}
                                       draggable={false}
                                     />
                                   </div>
                                 </div>
-                              ))}
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Oceanus.Info}
+                              </div>
                             </div>
-                            <div className="text-[13px] text-white">
-                              Defense
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Oceanus.KS2}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Oceanus.Info2}
+                              </div>
+                            </div>
+                          </section>
+                          <section className="flex justify-center gap-2 rounded-lg bg-[#954646b3] relative">
+                            <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
+                              Field
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Field.KS}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Field.Info}
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Field.KS2}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Field.Info2}
+                              </div>
+                            </div>
+                          </section>
+                          <section className="flex justify-center gap-2 rounded-lg bg-[#7c7425b3] relative">
+                            <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
+                              Tartarus
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Tartarus.KS}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Tartarus.Info}
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Tartarus.KS2}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Tartarus.Info2}
+                              </div>
                             </div>
                           </section>
                         </div>
@@ -413,7 +365,7 @@ export default function WeaponMoonstoneAxe() {
             <img src="/Divider/Charon.png" className="w-[220px]" />
           </div>
 
-          <section className="flex flex-wrap gap-4 sm:gap-2 justify-center">
+          <section className="flex flex-wrap gap-4 sm:gap-2 justify-center my-5">
             {weapon2details.map((obj, index) => (
               <div
                 className={`flex flex-col ${
@@ -432,27 +384,28 @@ export default function WeaponMoonstoneAxe() {
 
           <section className="my-10">
             <div className="overflow-x-auto">
-              <table className="table">
+              <table className="table table-zebra-zebra">
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
                     <th>Player</th>
                     <th>Hammer</th>
-                    <th>Core</th>
+                    <th> ATK / CAST / EFFECTS / DEF</th>
                     <th>Keepsake ( E-O-F-T )</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {moonstone_melinoe.map((obj) => (
+                  {moonstone2.map((obj) => (
                     <tr className="text-white text-center">
                       <td>{obj.player}</td>
                       <td>
                         <div className="flex flex-col gap-1">
-                          <section className="bg-primary rounded-lg p-1">
+                          <section className="rounded-lg p-1">
+                            <div className="text-[13px]">Best Hammers</div>
                             <div className="flex flex-row justify-center">
                               {obj.Hammer.map((item) => (
                                 <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
+                                  <div className="mask mask-squircle w-10">
                                     <img
                                       src={`/Boon/${item}.png`}
                                       draggable={false}
@@ -461,28 +414,19 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[12px]">Core</div>
-                          </section>
-                          <section className="bg-success rounded-lg p-1">
-                            <div className="flex flex-row justify-center">
-                              {obj.Hammer.map((item) => (
-                                <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
-                                    <img
-                                      src={`/Boon/${item}.png`}
-                                      draggable={false}
-                                    />
-                                  </div>
+                            <div className="flex flex-col justify-center">
+                              {obj.Hammer.map((item, index) => (
+                                <div className="text-start text-[11px]">
+                                  {`${index + 1}. ${item}`}
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[12px]">Secondary</div>
                           </section>
                         </div>
                       </td>
                       <td>
-                        <div className="flex flex-col gap-1">
-                          <section className="bg-primary rounded-lg p-2">
+                        <div className="flex flex-col min-w-[200px] gap-1">
+                          <section className="bg-[#07446db3] rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core.map((item) => (
                                 <div className="avatar">
@@ -495,11 +439,11 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px]">Offense</div>
+                            <div className="text-[13px]">Ideal Core</div>
                           </section>
-                          <section className="bg-success rounded-lg p-2">
+                          <section className="bg-[#09421ab3] rounded-lg p-2">
                             <div className="flex flex-row justify-center">
-                              {obj.Core.map((item) => (
+                              {obj.Core2.map((item) => (
                                 <div className="avatar">
                                   <div className="mask mask-squircle w-10">
                                     <img
@@ -511,60 +455,151 @@ export default function WeaponMoonstoneAxe() {
                               ))}
                             </div>
                             <div className="text-[13px] text-white">
-                              Defense
+                              Secondary Core
                             </div>
                           </section>
-                          <section className="bg-neutral rounded-lg p-2">
+                          <section className="rounded-lg p-2">
                             <div className="flex flex-row justify-center">
-                              {obj.CoreBoon.map((item) => (
+                              {obj.Core3.map((item) => (
                                 <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
+                                  <div className="mask mask-squircle w-10">
                                     <img
-                                      src={`/Boon/${item}.png`}
+                                      src={`/Element/${item}.png`}
                                       draggable={false}
                                     />
                                   </div>
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px] text-white">Ideal</div>
+                            <div className="text-[13px] text-white">
+                              RNG screwed, but manageable
+                            </div>
                           </section>
                         </div>
                       </td>
                       <td>
-                        <div className="flex flex-col gap-1">
-                          <section className="bg-primary rounded-lg p-2">
-                            <div className="flex flex-row justify-center">
-                              {obj.Keepsake.map((item) => (
-                                <div className="avatar">
-                                  <div className="mask mask-squircle w-10">
-                                    <img
-                                      src={`/KS/${item}.png`}
-                                      draggable={false}
-                                    />
-                                  </div>
-                                </div>
-                              ))}
+                        <div className="flex flex-col min-w-[350px] gap-1">
+                          <section className="rounded-lg p-2 bg-[#4b6b3ab3]">
+                            <div className="text-[11px] text-[gold]">
+                              Erebus
                             </div>
-                            <div className="text-[13px] text-white">
-                              Offense
+                            <div className="flex flex-row justify-center">
+                              <div className="avatar">
+                                <div className="mask mask-squircle w-10">
+                                  <img
+                                    src={`/KS/${obj.Erebus.KS}.png`}
+                                    draggable={false}
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="text-[11px] text-white">
+                              {obj.Erebus.Info}
                             </div>
                           </section>
-                          <section className="bg-success rounded-lg p-2">
-                            <div className="flex flex-row justify-center">
-                              {obj.Keepsake.map((item) => (
+                          <section className="flex justify-center gap-2 bg-[#436ba1b3] rounded-lg relative">
+                            <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
+                              Oceanus
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
                                 <div className="avatar">
                                   <div className="mask mask-squircle w-10">
                                     <img
-                                      src={`/KS/${item}.png`}
+                                      src={`/KS/${obj.Oceanus.KS}.png`}
                                       draggable={false}
                                     />
                                   </div>
                                 </div>
-                              ))}
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Oceanus.Info}
+                              </div>
                             </div>
-                            <div className="text-[13px] text-white">
-                              Defense
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Oceanus.KS2}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Oceanus.Info2}
+                              </div>
+                            </div>
+                          </section>
+                          <section className="flex justify-center gap-2 rounded-lg bg-[#954646b3] relative">
+                            <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
+                              Field
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Field.KS}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Field.Info}
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Field.KS2}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Field.Info2}
+                              </div>
+                            </div>
+                          </section>
+                          <section className="flex justify-center gap-2 rounded-lg bg-[#7c7425b3] relative">
+                            <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
+                              Tartarus
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Tartarus.KS}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Tartarus.Info}
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Tartarus.KS2}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Tartarus.Info2}
+                              </div>
                             </div>
                           </section>
                         </div>
@@ -575,7 +610,6 @@ export default function WeaponMoonstoneAxe() {
               </table>
             </div>
           </section>
-
           <div className="text-gray-300 tracking-wider text-[13px] sm:text-[14px]">
             "The Charon Axe does not play like a normal Moonstone Axe. While it
             is an Axe that is capable of both close combat and artillery-range
@@ -664,7 +698,7 @@ export default function WeaponMoonstoneAxe() {
             <img src="/Divider/Thanatos.png" className="w-[220px]" />
           </div>
 
-          <section className="flex flex-wrap gap-4 sm:gap-2 justify-center">
+          <section className="flex flex-wrap gap-4 sm:gap-2 justify-center my-5">
             {weapon3details.map((obj, index) => (
               <div
                 className={`flex flex-col ${
@@ -683,27 +717,28 @@ export default function WeaponMoonstoneAxe() {
 
           <section className="my-10">
             <div className="overflow-x-auto">
-              <table className="table">
+              <table className="table table-zebra-zebra">
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
                     <th>Player</th>
                     <th>Hammer</th>
-                    <th>Core</th>
+                    <th> ATK / CAST / EFFECTS / DEF</th>
                     <th>Keepsake ( E-O-F-T )</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {moonstone_melinoe.map((obj) => (
+                  {moonstone3.map((obj) => (
                     <tr className="text-white text-center">
                       <td>{obj.player}</td>
                       <td>
                         <div className="flex flex-col gap-1">
-                          <section className="bg-primary rounded-lg p-1">
+                          <section className="rounded-lg p-1">
+                            <div className="text-[13px]">Best Hammers</div>
                             <div className="flex flex-row justify-center">
                               {obj.Hammer.map((item) => (
                                 <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
+                                  <div className="mask mask-squircle w-10">
                                     <img
                                       src={`/Boon/${item}.png`}
                                       draggable={false}
@@ -712,28 +747,19 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[12px]">Core</div>
-                          </section>
-                          <section className="bg-success rounded-lg p-1">
-                            <div className="flex flex-row justify-center">
-                              {obj.Hammer.map((item) => (
-                                <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
-                                    <img
-                                      src={`/Boon/${item}.png`}
-                                      draggable={false}
-                                    />
-                                  </div>
+                            <div className="flex flex-col justify-center">
+                              {obj.Hammer.map((item, index) => (
+                                <div className="text-start text-[11px]">
+                                  {`${index + 1}. ${item}`}
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[12px]">Secondary</div>
                           </section>
                         </div>
                       </td>
                       <td>
-                        <div className="flex flex-col gap-1">
-                          <section className="bg-primary rounded-lg p-2">
+                        <div className="flex flex-col min-w-[200px] gap-1">
+                          <section className="bg-[#07446db3] rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core.map((item) => (
                                 <div className="avatar">
@@ -746,11 +772,11 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px]">Offense</div>
+                            <div className="text-[13px]">Ideal Core</div>
                           </section>
-                          <section className="bg-success rounded-lg p-2">
+                          <section className="bg-[#09421ab3] rounded-lg p-2">
                             <div className="flex flex-row justify-center">
-                              {obj.Core.map((item) => (
+                              {obj.Core2.map((item) => (
                                 <div className="avatar">
                                   <div className="mask mask-squircle w-10">
                                     <img
@@ -762,61 +788,152 @@ export default function WeaponMoonstoneAxe() {
                               ))}
                             </div>
                             <div className="text-[13px] text-white">
-                              Defense
+                              Secondary Core
+                            </div>
+                          </section>
+                          <section className="rounded-lg p-2">
+                            <div className="flex flex-row justify-center">
+                              {obj.Core3.map((item) => (
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/Element/${item}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                            <div className="text-[13px] text-white">
+                              RNG screwed, but manageable
                             </div>
                           </section>
                         </div>
                       </td>
                       <td>
-                        <div className="flex flex-col gap-1">
-                          <section className="bg-primary rounded-lg p-2">
+                        <div className="flex flex-col min-w-[350px] gap-1">
+                          <section className="rounded-lg p-2 bg-[#4b6b3ab3]">
+                            <div className="text-[11px] text-[gold]">
+                              Erebus
+                            </div>
                             <div className="flex flex-row justify-center">
-                              {obj.Keepsake.map((item) => (
+                              <div className="avatar">
+                                <div className="mask mask-squircle w-10">
+                                  <img
+                                    src={`/KS/${obj.Erebus.KS}.png`}
+                                    draggable={false}
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="text-[11px] text-white">
+                              {obj.Erebus.Info}
+                            </div>
+                          </section>
+                          <section className="flex justify-center gap-2 bg-[#436ba1b3] rounded-lg relative">
+                            <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
+                              Oceanus
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
                                 <div className="avatar">
                                   <div className="mask mask-squircle w-10">
                                     <img
-                                      src={`/KS/${item}.png`}
+                                      src={`/KS/${obj.Oceanus.KS}.png`}
                                       draggable={false}
                                     />
                                   </div>
                                 </div>
-                              ))}
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Oceanus.Info}
+                              </div>
                             </div>
-                            <div className="text-[13px] text-white">
-                              Offense
-                            </div>
-                          </section>
-                          <section className="bg-success rounded-lg p-2">
-                            <div className="flex flex-row justify-center">
-                              {obj.Keepsake.map((item) => (
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
                                 <div className="avatar">
                                   <div className="mask mask-squircle w-10">
                                     <img
-                                      src={`/KS/${item}.png`}
+                                      src={`/KS/${obj.Oceanus.KS2}.png`}
                                       draggable={false}
                                     />
                                   </div>
                                 </div>
-                              ))}
-                            </div>
-                            <div className="text-[13px] text-white">
-                              Defense
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Oceanus.Info2}
+                              </div>
                             </div>
                           </section>
-                          <section className="bg-neutral rounded-lg p-2">
-                            <div className="flex flex-row justify-center">
-                              {obj.CoreBoon.map((item) => (
+                          <section className="flex justify-center gap-2 rounded-lg bg-[#954646b3] relative">
+                            <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
+                              Field
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
                                 <div className="avatar">
-                                  <div className="mask mask-squircle w-8">
+                                  <div className="mask mask-squircle w-10">
                                     <img
-                                      src={`/Boon/${item}.png`}
+                                      src={`/KS/${obj.Field.KS}.png`}
                                       draggable={false}
                                     />
                                   </div>
                                 </div>
-                              ))}
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Field.Info}
+                              </div>
                             </div>
-                            <div className="text-[13px] text-white">Ideal</div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Field.KS2}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Field.Info2}
+                              </div>
+                            </div>
+                          </section>
+                          <section className="flex justify-center gap-2 rounded-lg bg-[#7c7425b3] relative">
+                            <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
+                              Tartarus
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Tartarus.KS}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Tartarus.Info}
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex flex-col items-center justify-center">
+                                <div className="avatar">
+                                  <div className="mask mask-squircle w-10">
+                                    <img
+                                      src={`/KS/${obj.Tartarus.KS2}.png`}
+                                      draggable={false}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="text-[11px] text-white">
+                                {obj.Tartarus.Info2}
+                              </div>
+                            </div>
                           </section>
                         </div>
                       </td>
@@ -897,7 +1014,6 @@ export default function WeaponMoonstoneAxe() {
             your Magick."
           </div>
         </section>
-
         <MoonstoneAxeDivider />
       </main>
 
