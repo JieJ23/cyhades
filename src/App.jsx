@@ -71,7 +71,7 @@ export default function App() {
                   </button>
                 </Link> */}
               </div>
-              <div className="font-customDress text-[14px] max-w-[800px] mx-auto text-center text-[#51b084] px-4">
+              <div className="font-customCin text-[14px] max-w-[800px] mx-auto text-center text-[#51b084] px-4">
                 Hades II is the upcoming sequel to Hades, developed by
                 Supergiant Games. In this game, you play as Melinoë, the sister
                 of Zagreus and another child of Hades. She embarks on her own
@@ -191,7 +191,7 @@ export default function App() {
                   </button>
                 </Link> */}
               </div>
-              <div className="font-customDress text-[14px] max-w-[800px] mx-auto text-center text-[#c04747] px-4">
+              <div className="font-customCin text-[14px] max-w-[800px] mx-auto text-center text-[#c04747] px-4">
                 Hades is a roguelike action game where you play as Zagreus, the
                 son of Hades, trying to escape the Underworld. Each run is
                 procedurally generated, featuring fast-paced combat with a
