@@ -319,7 +319,7 @@ export default function WeaponMoonstoneAxe() {
             </div>
           </section>
 
-          <div className="text-gray-300 tracking-wider text-[11px] sm:text-[14px">
+          <div className="text-gray-300 tracking-wider text-[11px] sm:text-[14px]">
             "The Melinoë Axe is the power variant of the melee Moonstone Axes,
             capable of making short work of almost any enemy type, though
             struggling early with Vow of Rebuke. This weakness can be alleviated
