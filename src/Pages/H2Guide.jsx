@@ -52,20 +52,14 @@ export default function Guide() {
           disabled={true}
         >
           Black Coat
-        </button>{" "}
+        </button>
       </div>
 
-      <div className="my-16 flex flex-wrap gap-4 justify-center">
+      <div className="my-16 flex flex-wrap gap-4 justify-center xl:justify-start max-w-[1200px] mx-auto">
         <Link to={`/ID1`}>
-          <div className="card bg-black/30 w-96 shadow-xl relative border-[1px] border-white/40 group overflow-hidden">
-            <div
-              className="bg-cover bg-no-repeat bg-top h-full w-full absolute opacity-10 group-hover:opacity-30 duration-300 ease-in transition-opacity"
-              style={{
-                backgroundImage: "url('/Divider/Black Coat.png')",
-              }}
-            />
-            <div className="card-body z-20 pb-4 px-6">
-              <div className="card-title text-white font-serif mx-auto underline">
+          <div className="bg-black/30 h-full w-96 shadow-xl relative border-[1px] border-white/40 rounded-md group overflow-hidden">
+            <div className="p-3 flex flex-col gap-1 group-hover:bg-[#279468] transition-all duration-150 ease-in">
+              <div className="text-white font-serif mx-auto underline">
                 Xinth, the Black Coat
               </div>
               <div className="text-[12px] text-gray-300">

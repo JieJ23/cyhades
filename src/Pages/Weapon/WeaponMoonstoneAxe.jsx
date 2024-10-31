@@ -87,10 +87,12 @@ export default function WeaponMoonstoneAxe() {
 
           <section className="my-10">
             <div className="overflow-x-auto">
-              <table className="table table-zebra-zebra">
+              <table className="table">
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
+                    <th></th>
+
                     <th>Player</th>
                     <th>Hammer</th>
                     <th> ATK / CAST / EFFECTS / DEF</th>
@@ -99,12 +101,15 @@ export default function WeaponMoonstoneAxe() {
                 </thead>
                 <tbody>
                   {moonstone1.map((obj) => (
-                    <tr className="text-white text-center">
+                    <tr className="text-white text-center relative">
+                      <div
+                        className={`absolute top-0 left-0 h-[100%] w-full bg-cover bg-center -z-10 opacity-50 bg-[url('/B/back.png')]`}
+                      />
                       <td>{obj.player}</td>
                       <td>
                         <div className="flex flex-col gap-1">
                           <section className="rounded-lg p-1">
-                            <div className="text-[13px]">Best Hammers</div>
+                            <div className="text-[11px]">Best Hammers</div>
                             <div className="flex flex-row justify-center">
                               {obj.Hammer.map((item) => (
                                 <div className="avatar">
@@ -129,7 +134,7 @@ export default function WeaponMoonstoneAxe() {
                       </td>
                       <td>
                         <div className="flex flex-col min-w-[200px] gap-1">
-                          <section className="bg-[#07446db3] rounded-lg p-2">
+                          <section className="rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core.map((item) => (
                                 <div className="avatar">
@@ -142,9 +147,9 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px]">Ideal Core</div>
+                            <div className="text-[11px]">Ideal Core</div>
                           </section>
-                          <section className="bg-[#09421ab3] rounded-lg p-2">
+                          <section className="rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core2.map((item) => (
                                 <div className="avatar">
@@ -157,7 +162,7 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px] text-white">
+                            <div className="text-[11px] text-white">
                               Secondary Core
                             </div>
                           </section>
@@ -174,7 +179,7 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px] text-white">
+                            <div className="text-[11px] text-white">
                               RNG screwed, but manageable
                             </div>
                           </section>
@@ -182,7 +187,7 @@ export default function WeaponMoonstoneAxe() {
                       </td>
                       <td>
                         <div className="flex flex-col min-w-[350px] gap-1">
-                          <section className="rounded-lg p-2 bg-[#4b6b3ab3]">
+                          <section className="rounded-lg p-2">
                             <div className="text-[11px] text-[gold]">
                               Erebus
                             </div>
@@ -200,7 +205,7 @@ export default function WeaponMoonstoneAxe() {
                               {obj.Erebus.Info}
                             </div>
                           </section>
-                          <section className="flex justify-center gap-2 bg-[#436ba1b3] rounded-lg relative">
+                          <section className="flex justify-center gap-2 rounded-lg relative">
                             <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
                               Oceanus
                             </div>
@@ -235,7 +240,7 @@ export default function WeaponMoonstoneAxe() {
                               </div>
                             </div>
                           </section>
-                          <section className="flex justify-center gap-2 rounded-lg bg-[#954646b3] relative">
+                          <section className="flex justify-center gap-2 rounded-lg relative">
                             <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
                               Field
                             </div>
@@ -270,7 +275,7 @@ export default function WeaponMoonstoneAxe() {
                               </div>
                             </div>
                           </section>
-                          <section className="flex justify-center gap-2 rounded-lg bg-[#7c7425b3] relative">
+                          <section className="flex justify-center gap-2 rounded-lg relative">
                             <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
                               Tartarus
                             </div>
@@ -314,7 +319,7 @@ export default function WeaponMoonstoneAxe() {
             </div>
           </section>
 
-          <div className="text-gray-300 tracking-wider text-[13px] sm:text-[14px]">
+          <div className="text-gray-300 tracking-wider text-[11px] sm:text-[14px">
             "The Melinoë Axe is the power variant of the melee Moonstone Axes,
             capable of making short work of almost any enemy type, though
             struggling early with Vow of Rebuke. This weakness can be alleviated
@@ -410,10 +415,11 @@ export default function WeaponMoonstoneAxe() {
 
           <section className="my-10">
             <div className="overflow-x-auto">
-              <table className="table table-zebra-zebra">
+              <table className="table">
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
+                    <th></th>
                     <th>Player</th>
                     <th>Hammer</th>
                     <th> ATK / CAST / EFFECTS / DEF</th>
@@ -422,12 +428,15 @@ export default function WeaponMoonstoneAxe() {
                 </thead>
                 <tbody>
                   {moonstone2.map((obj) => (
-                    <tr className="text-white text-center">
+                    <tr className="text-white text-center relative">
+                      <div
+                        className={`absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat -z-10 opacity-50 bg-[url('/B/back.png')]`}
+                      />
                       <td>{obj.player}</td>
                       <td>
                         <div className="flex flex-col gap-1">
                           <section className="rounded-lg p-1">
-                            <div className="text-[13px]">Best Hammers</div>
+                            <div className="text-[11px]">Best Hammers</div>
                             <div className="flex flex-row justify-center">
                               {obj.Hammer.map((item) => (
                                 <div className="avatar">
@@ -452,7 +461,7 @@ export default function WeaponMoonstoneAxe() {
                       </td>
                       <td>
                         <div className="flex flex-col min-w-[200px] gap-1">
-                          <section className="bg-[#07446db3] rounded-lg p-2">
+                          <section className="rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core.map((item) => (
                                 <div className="avatar">
@@ -465,9 +474,9 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px]">Ideal Core</div>
+                            <div className="text-[11px]">Ideal Core</div>
                           </section>
-                          <section className="bg-[#09421ab3] rounded-lg p-2">
+                          <section className=" rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core2.map((item) => (
                                 <div className="avatar">
@@ -480,7 +489,7 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px] text-white">
+                            <div className="text-[11px] text-white">
                               Secondary Core
                             </div>
                           </section>
@@ -497,7 +506,7 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px] text-white">
+                            <div className="text-[11px] text-white">
                               RNG screwed, but manageable
                             </div>
                           </section>
@@ -505,7 +514,7 @@ export default function WeaponMoonstoneAxe() {
                       </td>
                       <td>
                         <div className="flex flex-col min-w-[350px] gap-1">
-                          <section className="rounded-lg p-2 bg-[#4b6b3ab3]">
+                          <section className="rounded-lg p-2 ">
                             <div className="text-[11px] text-[gold]">
                               Erebus
                             </div>
@@ -523,7 +532,7 @@ export default function WeaponMoonstoneAxe() {
                               {obj.Erebus.Info}
                             </div>
                           </section>
-                          <section className="flex justify-center gap-2 bg-[#436ba1b3] rounded-lg relative">
+                          <section className="flex justify-center gap-2 rounded-lg relative">
                             <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
                               Oceanus
                             </div>
@@ -558,7 +567,7 @@ export default function WeaponMoonstoneAxe() {
                               </div>
                             </div>
                           </section>
-                          <section className="flex justify-center gap-2 rounded-lg bg-[#954646b3] relative">
+                          <section className="flex justify-center gap-2 rounded-lg  relative">
                             <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
                               Field
                             </div>
@@ -593,7 +602,7 @@ export default function WeaponMoonstoneAxe() {
                               </div>
                             </div>
                           </section>
-                          <section className="flex justify-center gap-2 rounded-lg bg-[#7c7425b3] relative">
+                          <section className="flex justify-center gap-2 rounded-lg relative">
                             <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
                               Tartarus
                             </div>
@@ -636,7 +645,7 @@ export default function WeaponMoonstoneAxe() {
               </table>
             </div>
           </section>
-          <div className="text-gray-300 tracking-wider text-[13px] sm:text-[14px]">
+          <div className="text-gray-300 tracking-wider text-[11px] sm:text-[14px]">
             "The Charon Axe does not play like a normal Moonstone Axe. While it
             is an Axe that is capable of both close combat and artillery-range
             playstyles, it does not do this with the attack button. It has a
@@ -747,10 +756,11 @@ export default function WeaponMoonstoneAxe() {
 
           <section className="my-10">
             <div className="overflow-x-auto">
-              <table className="table table-zebra-zebra">
+              <table className="table">
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
+                    <th></th>
                     <th>Player</th>
                     <th>Hammer</th>
                     <th> ATK / CAST / EFFECTS / DEF</th>
@@ -759,12 +769,15 @@ export default function WeaponMoonstoneAxe() {
                 </thead>
                 <tbody>
                   {moonstone3.map((obj) => (
-                    <tr className="text-white text-center">
+                    <tr className="text-white text-center relative">
+                      <div
+                        className={`absolute top-0 left-0 h-full w-full bg-cover bg-center -z-10 opacity-50 bg-[url('/B/back.png')]`}
+                      />
                       <td>{obj.player}</td>
                       <td>
                         <div className="flex flex-col gap-1">
                           <section className="rounded-lg p-1">
-                            <div className="text-[13px]">Best Hammers</div>
+                            <div className="text-[11px]">Best Hammers</div>
                             <div className="flex flex-row justify-center">
                               {obj.Hammer.map((item) => (
                                 <div className="avatar">
@@ -789,7 +802,7 @@ export default function WeaponMoonstoneAxe() {
                       </td>
                       <td>
                         <div className="flex flex-col min-w-[200px] gap-1">
-                          <section className="bg-[#07446db3] rounded-lg p-2">
+                          <section className=" rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core.map((item) => (
                                 <div className="avatar">
@@ -802,9 +815,9 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px]">Ideal Core</div>
+                            <div className="text-[11px]">Ideal Core</div>
                           </section>
-                          <section className="bg-[#09421ab3] rounded-lg p-2">
+                          <section className=" rounded-lg p-2">
                             <div className="flex flex-row justify-center">
                               {obj.Core2.map((item) => (
                                 <div className="avatar">
@@ -817,7 +830,7 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px] text-white">
+                            <div className="text-[11px] text-white">
                               Secondary Core
                             </div>
                           </section>
@@ -834,7 +847,7 @@ export default function WeaponMoonstoneAxe() {
                                 </div>
                               ))}
                             </div>
-                            <div className="text-[13px] text-white">
+                            <div className="text-[11px] text-white">
                               RNG screwed, but manageable
                             </div>
                           </section>
@@ -842,7 +855,7 @@ export default function WeaponMoonstoneAxe() {
                       </td>
                       <td>
                         <div className="flex flex-col min-w-[350px] gap-1">
-                          <section className="rounded-lg p-2 bg-[#4b6b3ab3]">
+                          <section className="rounded-lg p-2 ">
                             <div className="text-[11px] text-[gold]">
                               Erebus
                             </div>
@@ -860,7 +873,7 @@ export default function WeaponMoonstoneAxe() {
                               {obj.Erebus.Info}
                             </div>
                           </section>
-                          <section className="flex justify-center gap-2 bg-[#436ba1b3] rounded-lg relative">
+                          <section className="flex justify-center gap-2 rounded-lg relative">
                             <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
                               Oceanus
                             </div>
@@ -895,7 +908,7 @@ export default function WeaponMoonstoneAxe() {
                               </div>
                             </div>
                           </section>
-                          <section className="flex justify-center gap-2 rounded-lg bg-[#954646b3] relative">
+                          <section className="flex justify-center gap-2 rounded-lg relative">
                             <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
                               Field
                             </div>
@@ -930,7 +943,7 @@ export default function WeaponMoonstoneAxe() {
                               </div>
                             </div>
                           </section>
-                          <section className="flex justify-center gap-2 rounded-lg bg-[#7c7425b3] relative">
+                          <section className="flex justify-center gap-2 rounded-lg  relative">
                             <div className="text-[11px] text-[gold] absolute top-0 right-1/2 translate-x-[50%]">
                               Tartarus
                             </div>
@@ -974,7 +987,7 @@ export default function WeaponMoonstoneAxe() {
             </div>
           </section>
 
-          <div className="text-gray-300 tracking-wider text-[13px] sm:text-[14px]">
+          <div className="text-gray-300 tracking-wider text-[11px] sm:text-[14px]">
             "The Thanatos Axe is the speed variant of the melee Moonstone Axes,
             boasting flexibility between builds based on the situation and RNG
             presented to you. It enjoys powerful start-of-night offensive
