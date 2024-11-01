@@ -36,7 +36,7 @@ export default function WeaponMoonstoneAxe() {
       <Header />
       {/*  */}
 
-      <div className="flex w-[80%] max-w-[1000px] flex-col gap-4 mx-auto my-10">
+      {/* <div className="flex w-[80%] max-w-[1000px] flex-col gap-4 mx-auto my-10">
         <div className="skeleton h-32 w-full"></div>
         <div className="skeleton h-4 w-[50%]"></div>
         <div className="skeleton h-4 w-[75%]"></div>
@@ -49,8 +49,8 @@ export default function WeaponMoonstoneAxe() {
         <div className="skeleton h-4 w-[50%]"></div>
         <div className="skeleton h-4 w-[75%]"></div>
         <div className="skeleton h-4 w-full"></div>
-      </div>
-      <main className="mt-16 mb-10 px-4 max-w-[1200px] mx-auto font-customCin select-none hidden">
+      </div> */}
+      <main className="mt-16 mb-10 px-4 max-w-[1200px] mx-auto font-customCin select-none">
         <div className="text-[30px] text-center text-white">
           The Moonstone Axe, Zoraphet
         </div>

@@ -18,38 +18,41 @@ export default function Guide() {
       <Header />
 
       <div className="flex flex-wrap gap-2 justify-center my-16">
-        <Link to={`/WeaponMoonstoneAxe`}>
-          <button className="btn text-white border-white/30 font-customCin">
+        <Link>
+          <button
+            className="btn text-white border-white/30 font-customCin"
+            disabled
+          >
             Moonstone Axe
           </button>
         </Link>
         <button
           className="btn text-white border-white/30 font-customCin"
-          disabled={true}
+          disabled
         >
           Sister Blades
         </button>
         <button
           className="btn text-white border-white/30 font-customCin"
-          disabled={true}
+          disabled
         >
           Witch's Staff
         </button>
         <button
           className="btn text-white border-white/30 font-customCin"
-          disabled={true}
+          disabled
         >
           Umbral Flames
         </button>
         <button
           className="btn text-white border-white/30 font-customCin"
-          disabled={true}
+          disabled
         >
           Argent Skull
         </button>
         <button
           className="btn text-white border-white/30 font-customCin"
-          disabled={true}
+          disabled
         >
           Black Coat
         </button>
