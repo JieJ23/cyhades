@@ -183,7 +183,7 @@ export const Hades2NewFullData = [
   {
     Direction: "Underworld",
     Name: "辣味鸡",
-    Fear: "50",
+    Fear: "32",
     Weapon: "Sister Blades",
     Aspect: "Pan",
     Src: "https://www.bilibili.com/video/BV1BwSHYRESA/?spm_id_from=333.337.search-card.all.click&vd_source=8ae8810d8577a178edeeea4fb0278e18",
