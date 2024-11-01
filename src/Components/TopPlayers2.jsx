@@ -1,7 +1,6 @@
 import { removeDup } from "../Logic/Method";
-import { Hades2FullData } from "../Data/Hades2Data";
+import { Hades2NewFullData } from "../Data/Hades2NewData";
 import { customOrder } from "../Logic/Method";
-import { genTime } from "../Logic/Gen";
 
 export const weaponColor = (type) => {
   switch (type) {
@@ -52,11 +51,11 @@ export const weaponGIF = (type) => {
 import { hades_WeaponOrder } from "../Logic/Method";
 
 export default function TopPlayers2() {
-  const LevelNumbers = [...new Set(Hades2FullData.map((obj) => obj.Fear))];
+  const LevelNumbers = [...new Set(Hades2NewFullData.map((obj) => obj.Fear))];
   const highestLevel = Math.max(...LevelNumbers);
   //
 
-  const rawData = Hades2FullData.slice()
+  const rawData = Hades2NewFullData.slice()
     .sort(
       (a, b) =>
         customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
@@ -75,11 +74,12 @@ export default function TopPlayers2() {
 
   //
   const highestEntries = removeDup(
-    Hades2FullData.filter((obj) => obj.Fear == +highestLevel)
+    Hades2NewFullData.filter((obj) => obj.Fear == +highestLevel)
   ).sort(
     (a, b) =>
       hades_WeaponOrder.indexOf(a.Aspect) - hades_WeaponOrder.indexOf(b.Aspect)
   );
+
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 justify-evenly gap-1 select-none w-full max-w-[1400px] mx-auto px-2 mt-5">
       {holder.map((obj) => (
@@ -97,7 +97,7 @@ export default function TopPlayers2() {
               Patch {obj.Patch}
             </div>
             <div className="text-white z-20 absolute bottom-1.5 right-1.5 text-[10px]">
-              {genTime()}
+              {obj["Clear Time"]}
             </div>
             <div className="text-[10px] uppercase text-gray-300 z-20">
               {obj.Weapon}

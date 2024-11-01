@@ -5,7 +5,7 @@ import { customOrder, calculateTime } from "../Logic/Method";
 import Header from "../Components/Header";
 import TopPlayers2 from "../Components/TopPlayers2";
 
-import { Hades2FullData } from "../Data/Hades2Data";
+import { Hades2NewFullData } from "../Data/Hades2NewData";
 
 import AspectSelection from "../Components/Select/Aspect";
 import PlayerSelection from "../Components/Select/Player";
@@ -21,8 +21,6 @@ import { ReturnBoonList } from "../Logic/Method";
 import { testReturnBoonFilter } from "../Logic/Method";
 //
 import { genBoonString } from "../Logic/Gen";
-
-import { genTime, genNum920 } from "../Logic/Gen";
 
 export default function Hades2() {
   const [data, setData] = useState(2);
@@ -53,9 +51,9 @@ export default function Hades2() {
   };
   //
 
-  const rawData = Hades2FullData.slice().sort((a, b) => b.Fear - a.Fear);
+  const rawData = Hades2NewFullData.slice().sort((a, b) => b.Fear - a.Fear);
   const testingdata = removeDupAspect(
-    Hades2FullData.slice()
+    Hades2NewFullData.slice()
       .sort(
         (a, b) =>
           customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
@@ -68,7 +66,7 @@ export default function Hades2() {
       .sort((a, b) => b.Patch - a.Patch)
   );
   const testingdata2 = removeDupNameOnly(
-    Hades2FullData.slice()
+    Hades2NewFullData.slice()
       .sort(
         (a, b) =>
           customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
@@ -118,21 +116,21 @@ export default function Hades2() {
       <div className="w-full">
         {/* <TopPlayers objData={testingdata} level={`Fear`} /> */}
         <section>
-          <div className="flex justify-center my-2 gap-0.5">
+          <div className="flex justify-center my-2 gap-1 font-customCin">
             <button
-              className="btn shadow-[1px_1px_0_teal] text-gray-300"
+              className="btn shadow-[1px_1px_0_teal] text-gray-300 text-[13px]"
               onClick={() => handleDataChange(0)}
             >
               All
             </button>
             <button
-              className="btn shadow-[1px_1px_0_teal] text-gray-300"
+              className="btn shadow-[1px_1px_0_teal] text-gray-300 text-[13px]"
               onClick={() => handleDataChange(1)}
             >
-              Rank
+              Unique
             </button>
             <button
-              className="btn shadow-[1px_1px_0_teal] text-gray-300"
+              className="btn shadow-[1px_1px_0_teal] text-gray-300 text-[13px]"
               onClick={() => handleDataChange(2)}
             >
               Player
@@ -141,7 +139,7 @@ export default function Hades2() {
           <div className="my-2 mx-auto flex flex-wrap justify-center gap-1">
             {allWeaponType.map((obj, index) => (
               <button
-                className="btn shadow-[1px_1px_0_teal] text-gray-300 font-serif text-[11px]"
+                className="btn shadow-[1px_1px_0_teal] text-gray-300 font-customCin text-[11px]"
                 onClick={() => handleDataChange(index + 3)}
               >
                 {obj}
@@ -180,11 +178,11 @@ export default function Hades2() {
                 <th>Aspect</th>
                 <th>Direction</th>
                 <th>Fear</th>
+                <th>Time</th>
                 <th>Boon</th>
                 <th>Familiar</th>
-                <th>Time</th>
                 {/* <th>Category</th> */}
-                <th>Version</th>
+                <th>Ver.</th>
                 <th>Link</th>
                 {/* <th>Patch</th> */}
               </tr>
@@ -227,42 +225,16 @@ export default function Hades2() {
                   >
                     {obj.Fear}
                   </td>
+                  <td>{obj["Clear Time"]}</td>
                   <td>
                     <div className="flex">
-                      {obj.Boons_Picked === `Randomizer`
-                        ? testReturnBoonFilter(genBoonString()).map((item) => (
-                            <div className="avatar">
-                              <div className="mask mask-squircle w-7">
-                                <img
-                                  src={`/Boon/${item}.png`}
-                                  draggable={false}
-                                />
-                              </div>
-                            </div>
-                          ))
-                        : obj.Patch === `5`
-                        ? testReturnBoonFilter(obj.Boons_Picked).map((item) => (
-                            <div className="avatar">
-                              <div className="mask mask-squircle w-7">
-                                <img
-                                  src={`/Boon/${item}.png`}
-                                  draggable={false}
-                                />
-                              </div>
-                            </div>
-                          ))
-                        : ReturnBoonList(obj.Boons_Picked)
-                            .slice(0, 5)
-                            .map((item) => (
-                              <div className="avatar">
-                                <div className="mask mask-squircle w-7">
-                                  <img
-                                    src={`/Boon/${item}.png`}
-                                    draggable={false}
-                                  />
-                                </div>
-                              </div>
-                            ))}
+                      {testReturnBoonFilter(obj.Boons_Picked).map((item) => (
+                        <div className="avatar">
+                          <div className="mask mask-squircle w-7">
+                            <img src={`/Boon/${item}.png`} draggable={false} />
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </td>
                   <td>
@@ -281,22 +253,6 @@ export default function Hades2() {
                       ``
                     )}
                   </td>
-                  <td>
-                    {obj["Clear Time"] == "Randomizer" ? (
-                      <progress
-                        className="progress progress-success w-36"
-                        value={genNum920()}
-                        max="25"
-                      ></progress>
-                    ) : (
-                      <progress
-                        className="progress progress-success w-36"
-                        value={obj["Clear Time"].slice(-4)}
-                        max="20"
-                      ></progress>
-                    )}
-                  </td>
-
                   {/* <td
                     className={
                       obj.Category === `Unseeded`

@@ -140,7 +140,7 @@ export default function Hades() {
               className="btn shadow-[1px_1px_0_red] text-gray-300 font-serif text-[11px]"
               onClick={() => handleDataChange(1)}
             >
-              Rank
+              Unique
             </button>
           </div>
           <div className="my-2 mx-auto flex flex-wrap justify-center gap-1">
