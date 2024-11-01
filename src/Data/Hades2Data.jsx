@@ -3517,6 +3517,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=iVMjzZbCLrM",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3528,6 +3529,7 @@ export const Hades2FullData = [
     Src: "https://www.bilibili.com/video/BV1AC81eTEei/",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3539,6 +3541,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/0p1iR9WQih4",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3550,6 +3553,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=T3UE2JnrzJM",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3561,6 +3565,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/SH4PWHpDFYg",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3572,6 +3577,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/iqByiKGEXmM",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3583,6 +3589,7 @@ export const Hades2FullData = [
     Src: "https://www.bilibili.com/video/BV1oC8jekEjw/",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3594,6 +3601,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/gw0rjUi0uS8?si=hyxuHMPKoLBQxKbM",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3605,6 +3613,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/JN2pb6GxDvM",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3616,6 +3625,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/f5TTj0TegGw?si=6MDgh_W3B0KVOhIg",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3627,6 +3637,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/1IOZnMilJKM?si=figZ_6JFzvU8bTUM",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3638,6 +3649,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/7MlsRVpwNe8",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3649,6 +3661,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=g2QVvTao__U",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3660,6 +3673,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/D1OZPAfw_aM?si=3cMiCOkeulNZ5stu",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3671,6 +3685,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=F9-IEZiNjXw",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3682,6 +3697,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/rZHxzVt4zWg",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3693,6 +3709,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/moUd2VjDMdw",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3704,6 +3721,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=C_62TkmHlt4 ",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3715,6 +3733,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/t_PGYqhJbp4?si=ulwc2PpW6yAG20Cc",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3726,6 +3745,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/VcNMQoSne8E?si=eSjZrUwwbgdm3ubI",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3737,6 +3757,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/X6gno_CV4Ss?si=uRW7TCvLoY5pDxc6",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3748,6 +3769,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/GFsT-tqz1eA?si=3ZWKuDX6y1zJD3ad",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3759,6 +3781,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/K0sIObvG56Q",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3770,6 +3793,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/UaYagPFFOD8",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3781,6 +3805,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=airRuPzTj9A",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3792,6 +3817,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/_CNKbq2jp-o",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3803,6 +3829,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=T3-_ajaEPLs",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3814,6 +3841,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/fVo85w4o43s?si=1cxPJQ_kNR5rd4tU",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3825,6 +3853,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=CFd6hX3GJ4A",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3836,6 +3865,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/mh29pAn-oVM?si=wOG3Cl2s6aDujg8b",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3847,6 +3877,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/INLKiNcJP1E",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3858,6 +3889,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/LvoOsUSZGr0",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3869,6 +3901,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=Pu9AafpHrcs",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3880,6 +3913,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/tFM3glVW-zA",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Hecuba`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3891,6 +3925,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=HiDXNvaqj6U ",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Toula`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3902,6 +3937,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/gAky6YMjnN0?si=v3GZwMphWlhOkHeT",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Raki`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3913,6 +3949,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/ge8NLLYVE4M?si=JUfE6m5l4VNH-zoK",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3924,6 +3961,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=U3csrKYg4P0",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3935,6 +3973,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/dbhtMAOy8as",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3946,6 +3985,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=laAKb31C7m0",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3957,6 +3997,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/uN79j1QS2B4?si=Q7YI8WOPHFgGpud7",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3968,6 +4009,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=yNKaaNZqXpM",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3979,6 +4021,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=VSkyWJ91Z24",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -3990,6 +4033,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=DGZwYoP3NoU",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4001,6 +4045,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/dP0sM0r8FJs",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4012,6 +4057,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/yYt2Xyf6mvI",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4023,6 +4069,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/_KeWNEu6T9U",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4034,6 +4081,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=XEfSJXFfIX8",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4045,6 +4093,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=HqLUfd8kY-g&t=6s",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4056,6 +4105,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/kH365oiX7LI",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4067,6 +4117,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/hUS9JwdAeWM?si=xOgRJQbBRldfdcgW",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4078,6 +4129,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/rUYqkubQ0yA",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4089,6 +4141,7 @@ export const Hades2FullData = [
     Src: "https://www.bilibili.com/video/BV1DE4m1X7KN/",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4100,6 +4153,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/gHpV2X_Gu_M?si=1v7GA3H44uGfR54v",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4111,6 +4165,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=Yuy-2UTxjkI",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4122,6 +4177,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/ol1uGun4I1o?si=bLBwn5TS7kGSGk65",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4133,6 +4189,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/S4AF4G2i_Ys?si=-HEvFzLJgSFVRYDe",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4144,6 +4201,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/JsaAHhPddlY",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4155,6 +4213,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/XG8MWO18IYY ",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4166,6 +4225,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=PSRIbU00lHk",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4177,6 +4237,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/3Zvi72oaM6U?si=7x3o7STn3aRvCqgp",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4188,6 +4249,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/IzeWjOOeBtI?si=5NC2o0JXpVRNUO6v",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4199,6 +4261,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/swtM8Y4FhyM?si=dL92F3IHFbt27FIw",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4210,6 +4273,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/HOSrImKiy54",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4221,6 +4285,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=c5x0VmsANzw",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4232,6 +4297,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/1PVFnL3gai0?si=qzsw-6QtAg22rmF4",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4243,6 +4309,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=oDLUzwFaXio",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4254,6 +4321,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/P2llmdeAXu4",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4265,6 +4333,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/oyx21o1w_1c",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4276,6 +4345,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/mTOVNucule0?si=2WwTJYOcPmSRK7CP",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4287,6 +4357,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/OpME6Mk6wRg?si=q0aYXPgki2UWLUs2",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4298,6 +4369,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/zGYHQbr_KlM",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4309,6 +4381,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/o2thJz_AwOY",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4320,6 +4393,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/KcS799E22g4",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4331,6 +4405,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/iAcoxXx5fg0",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4342,6 +4417,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/oBrEP4zTsVg?si=WWiK0Us0-zmms2Dt",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4353,6 +4429,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/3ElopaGXk_k?si=LnO5wIeac17oQxe7",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4364,6 +4441,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/LdTxL-BzDWM?si=EQHwwyTmcJLDc82I",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4375,6 +4453,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=yTHnmd4yDXk",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4386,6 +4465,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/7TseRMohHgw",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4397,6 +4477,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/qfOz8WbOg9E",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4408,6 +4489,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/nxvB1Hb5F8s",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4419,6 +4501,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=kfXFBYUHv18",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4430,6 +4513,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/4jGN5C5rSjY?si=PxSCWTOA18_InLZT",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4441,6 +4525,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/cd2wfcXboxY",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4452,6 +4537,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/_q1UgRDTFrA?si=uIWRRiYqEKgoVGms",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4463,6 +4549,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/kH6NN6WZ-p8?si=aBRAUg6r8uBj8lqh",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4474,6 +4561,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=tnmwMZvNYMI",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4485,6 +4573,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/nA1JIOfQnmo",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4496,6 +4585,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/gUTDQZThvHY",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4507,6 +4597,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=jb-FF0sGmKU",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4518,6 +4609,7 @@ export const Hades2FullData = [
     Src: "https://youtu.be/mnVDZqAGDJw",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
   {
@@ -4529,6 +4621,7 @@ export const Hades2FullData = [
     Src: "https://www.youtube.com/watch?v=hp9NrvTkFHo",
     Patch: "4",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
   },
 
@@ -4541,6 +4634,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4552,6 +4646,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4563,6 +4658,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4574,6 +4670,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4585,6 +4682,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4596,6 +4694,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4607,6 +4706,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4618,6 +4718,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4629,6 +4730,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4640,6 +4742,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4651,6 +4754,7 @@ export const Hades2FullData = [
     Weapon: "Moonstone Axe",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4662,6 +4766,7 @@ export const Hades2FullData = [
     Weapon: "Argent Skull",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4673,6 +4778,7 @@ export const Hades2FullData = [
     Weapon: "Argent Skull",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4684,6 +4790,7 @@ export const Hades2FullData = [
     Weapon: "Argent Skull",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4695,6 +4802,7 @@ export const Hades2FullData = [
     Weapon: "Argent Skull",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4706,6 +4814,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4717,6 +4826,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4728,6 +4838,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4739,6 +4850,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4750,6 +4862,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4761,6 +4874,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4772,6 +4886,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4783,6 +4898,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4794,6 +4910,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4805,6 +4922,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4816,6 +4934,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4827,6 +4946,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4838,6 +4958,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4849,6 +4970,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },
@@ -4860,6 +4982,7 @@ export const Hades2FullData = [
     Weapon: "Black Coat",
     Direction: "Underworld",
     "Clear Time": "Randomizer",
+    Familiar: `Frinos`,
     Boons_Picked: "Randomizer",
     Patch: "5",
   },

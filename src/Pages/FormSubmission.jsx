@@ -32,7 +32,7 @@ export default function FormSubmission() {
 
     try {
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbwnH4AbqNqkLqz2UXTbSMGyfrL2dYo_ehnZ8e8KDCxLJ5MtF_jR0ezkprfQAwTJFHw/exec",
+        "https://script.google.com/macros/s/AKfycbznkGo5-XZ9_1QaF8U3HY2vEwtkf7lF89osZGZDpA28Oz4CA7NFqy-9JAxdM3fKZL4e/exec",
         {
           method: "POST",
           body: formDatab,
@@ -194,6 +194,18 @@ export default function FormSubmission() {
               required
             />
             {/*  */}
+            <div className="text-center mt-5 font-serif">
+              Familiar Selections
+            </div>
+            <select className="select w-full" name="Familiar" required>
+              <option value="" selected hidden>
+                Animal Familiar
+              </option>
+              <option> Frinos</option>
+              <option> Toula</option>
+              <option> Raki</option>
+              <option> Hecuba</option>
+            </select>
             <div className="text-center mt-5 font-serif">Boon Selections</div>
             <select className="select w-full" name="Boon_Strike" required>
               <option value="" selected hidden>

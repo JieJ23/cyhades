@@ -205,7 +205,6 @@ export default function Hades() {
                 <th></th>
                 <th>Heat</th>
                 <th>Category</th>
-                <th>GT</th>
                 {/* <th>Time</th> */}
                 <th>Link</th>
                 <th></th>
@@ -256,13 +255,6 @@ export default function Hades() {
                     }
                   >
                     {obj.Category}
-                  </td>
-                  <td>
-                    <progress
-                      className="progress progress-error w-36"
-                      value={genNum920()}
-                      max="25"
-                    />
                   </td>
                   {/* <td>{obj.Time != null ? obj.Time : `-`}</td> */}
                   <td>

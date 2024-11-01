@@ -28,6 +28,34 @@ export function removeDupCate(obj) {
   return result;
 }
 
+export function removeDupAspect(obj) {
+  const seen = new Set();
+  const result = obj.filter((item) => {
+    const key = `${item.Name}-${item.Aspect}`;
+    if (seen.has(key)) {
+      return false;
+    } else {
+      seen.add(key);
+      return true;
+    }
+  });
+  return result;
+}
+
+export function removeDupNameOnly(obj) {
+  const seen = new Set();
+  const result = obj.filter((item) => {
+    const key = `${item.Name}`;
+    if (seen.has(key)) {
+      return false;
+    } else {
+      seen.add(key);
+      return true;
+    }
+  });
+  return result;
+}
+
 export function customRemove(obj) {
   const seen = new Set();
   const result = obj.filter((item) => {

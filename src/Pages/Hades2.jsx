@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { removeDup, removeDupCate } from "../Logic/Method";
+import { removeDup, removeDupAspect, removeDupNameOnly } from "../Logic/Method";
 import { customOrder, calculateTime } from "../Logic/Method";
 
 import Header from "../Components/Header";
@@ -25,7 +25,7 @@ import { genBoonString } from "../Logic/Gen";
 import { genTime, genNum920 } from "../Logic/Gen";
 
 export default function Hades2() {
-  const [data, setData] = useState(1);
+  const [data, setData] = useState(2);
   const [selectedAspect, setSelectedAspect] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState("");
   const [visibleRows, setVisibleRows] = useState(50);
@@ -54,7 +54,20 @@ export default function Hades2() {
   //
 
   const rawData = Hades2FullData.slice().sort((a, b) => b.Fear - a.Fear);
-  const testingdata = removeDupCate(
+  const testingdata = removeDupAspect(
+    Hades2FullData.slice()
+      .sort(
+        (a, b) =>
+          customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
+      )
+      .sort(
+        (a, b) =>
+          calculateTime(a["Clear Time"]) - calculateTime(b["Clear Time"])
+      )
+      .sort((a, b) => b.Fear - a.Fear)
+      .sort((a, b) => b.Patch - a.Patch)
+  );
+  const testingdata2 = removeDupNameOnly(
     Hades2FullData.slice()
       .sort(
         (a, b) =>
@@ -68,7 +81,7 @@ export default function Hades2() {
       .sort((a, b) => b.Patch - a.Patch)
   );
 
-  const allAvailableData = [rawData, testingdata];
+  const allAvailableData = [rawData, testingdata, testingdata2];
 
   const allWeaponType = [...new Set(testingdata.map((obj) => obj.Weapon))];
 
@@ -118,12 +131,18 @@ export default function Hades2() {
             >
               Rank
             </button>
+            <button
+              className="btn shadow-[1px_1px_0_teal] text-gray-300"
+              onClick={() => handleDataChange(2)}
+            >
+              Player
+            </button>
           </div>
           <div className="my-2 mx-auto flex flex-wrap justify-center gap-1">
             {allWeaponType.map((obj, index) => (
               <button
                 className="btn shadow-[1px_1px_0_teal] text-gray-300 font-serif text-[11px]"
-                onClick={() => handleDataChange(index + 2)}
+                onClick={() => handleDataChange(index + 3)}
               >
                 {obj}
               </button>
@@ -161,8 +180,9 @@ export default function Hades2() {
                 <th>Aspect</th>
                 <th>Direction</th>
                 <th>Fear</th>
-                <th>GB</th>
-                <th>GT</th>
+                <th>Boon</th>
+                <th>Familiar</th>
+                <th>Time</th>
                 {/* <th>Category</th> */}
                 <th>Version</th>
                 <th>Link</th>
@@ -244,6 +264,22 @@ export default function Hades2() {
                               </div>
                             ))}
                     </div>
+                  </td>
+                  <td>
+                    {obj.Familiar ? (
+                      <div className="flex gap-2 items-center">
+                        <div className="avatar">
+                          <div className="w-6 rounded">
+                            <img src={`/Familiar/${obj.Familiar}.png`} />
+                          </div>
+                        </div>
+                        <div className="w-6">
+                          <img src={`/Familiar/${obj.Familiar}_icon.png`} />
+                        </div>
+                      </div>
+                    ) : (
+                      ``
+                    )}
                   </td>
                   <td>
                     {obj["Clear Time"] == "Randomizer" ? (
