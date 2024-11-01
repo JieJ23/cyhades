@@ -27,12 +27,11 @@ export default function WeaponMoonstoneAxe() {
       className="h-lvh overflow-x-hidden select-none bg-transparent"
       data-theme="dark"
     >
-      {/* <div
+      <div
         className="fixed h-full w-full bg-cover -z-10 bg-center"
         style={{ backgroundImage: "url('/mainBG.png')" }}
-      /> */}
-      {/* <div className="fixed bg-[#0e0d0d] h-lvh w-full object-cover -z-20" /> */}
-      <div className="fixed bg-[#000] h-lvh w-full object-cover -z-20" />
+      />
+      <div className="fixed bg-[#0e0d0d] h-lvh w-full object-cover -z-20" />
 
       <Header />
       {/*  */}
@@ -92,7 +91,7 @@ export default function WeaponMoonstoneAxe() {
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
-                    {/* <th></th> */}
+                    <th></th>
 
                     <th>Player</th>
                     <th>Hammer</th>
@@ -103,9 +102,9 @@ export default function WeaponMoonstoneAxe() {
                 <tbody>
                   {moonstone1.map((obj) => (
                     <tr className="text-white text-center relative">
-                      {/* <div
+                      <div
                         className={`absolute top-0 left-0 h-[100%] w-full bg-cover bg-center -z-10 opacity-50 bg-[url('/B/back.png')]`}
-                      /> */}
+                      />
                       <td>{obj.player}</td>
                       <td>
                         <div className="flex flex-col gap-1">
@@ -420,7 +419,7 @@ export default function WeaponMoonstoneAxe() {
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
-                    {/* <th></th> */}
+                    <th></th>
                     <th>Player</th>
                     <th>Hammer</th>
                     <th> ATK / CAST / EFFECTS / DEF</th>
@@ -430,9 +429,9 @@ export default function WeaponMoonstoneAxe() {
                 <tbody>
                   {moonstone2.map((obj) => (
                     <tr className="text-white text-center relative">
-                      {/* <div
+                      <div
                         className={`absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat -z-10 opacity-50 bg-[url('/B/back.png')]`}
-                      /> */}
+                      />
                       <td>{obj.player}</td>
                       <td>
                         <div className="flex flex-col gap-1">
@@ -761,7 +760,7 @@ export default function WeaponMoonstoneAxe() {
                 {/* head */}
                 <thead>
                   <tr className="text-gray-300 text-center">
-                    {/* <th></th> */}
+                    <th></th>
                     <th>Player</th>
                     <th>Hammer</th>
                     <th> ATK / CAST / EFFECTS / DEF</th>
@@ -771,9 +770,9 @@ export default function WeaponMoonstoneAxe() {
                 <tbody>
                   {moonstone3.map((obj) => (
                     <tr className="text-white text-center relative">
-                      {/* <div
+                      <div
                         className={`absolute top-0 left-0 h-full w-full bg-cover bg-center -z-10 opacity-50 bg-[url('/B/back.png')]`}
-                      /> */}
+                      />
                       <td>{obj.player}</td>
                       <td>
                         <div className="flex flex-col gap-1">

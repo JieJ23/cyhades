@@ -18,14 +18,12 @@ export default function Guide() {
       <Header />
 
       <div className="flex flex-wrap gap-2 justify-center my-16">
-        <Link>
-          <button
-            className="btn text-white border-white/30 font-customCin"
-            disabled
-          >
-            Moonstone Axe
-          </button>
-        </Link>
+        <button
+          className="btn text-white border-white/30 font-customCin"
+          disabled
+        >
+          Moonstone Axe
+        </button>
         <button
           className="btn text-white border-white/30 font-customCin"
           disabled
