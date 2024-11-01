@@ -216,11 +216,9 @@ export default function Hades2() {
                   <td
                     className={`${
                       obj.Fear == 55
-                        ? `text-[#f0f02a]`
+                        ? `text-[red]`
                         : obj.Fear >= 50
-                        ? `text-[#f38356]`
-                        : obj.Fear >= 40
-                        ? `text-success`
+                        ? `text-[orange]`
                         : ``
                     }`}
                   >

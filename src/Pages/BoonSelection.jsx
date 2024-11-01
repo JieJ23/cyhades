@@ -1,4 +1,4 @@
-import { Hades2FullData } from "../Data/Hades2Data";
+import { Hades2NewFullData } from "../Data/Hades2NewData";
 
 import Header from "../Components/Header";
 import FooterInfo from "../Components/Footer";
@@ -21,11 +21,13 @@ export default function BoonSelection() {
     setWeapon(num);
   }
 
-  const weaponTypes = [...new Set(Hades2FullData.map((obj) => obj.Weapon))];
+  const weaponTypes = [...new Set(Hades2NewFullData.map((obj) => obj.Weapon))];
   //
   const displayData = weaponTypes[weapon];
 
-  const targetData = Hades2FullData.filter((obj) => obj.Weapon === displayData);
+  const targetData = Hades2NewFullData.filter(
+    (obj) => obj.Weapon === displayData
+  );
   //
 
   let patch5Data = targetData.filter(
@@ -94,8 +96,11 @@ export default function BoonSelection() {
           </button>
         ))}
       </section>
+      <section className="font-customCin text-center mt-4 underline">
+        *Automatically calculated based on the entries on the board
+      </section>
 
-      <div className="overflow-x-auto max-w-[1000px] mx-auto my-10">
+      <div className="overflow-x-auto max-w-[1000px] mx-auto mb-10">
         <table className="table">
           {/* head */}
           <thead>
@@ -110,9 +115,9 @@ export default function BoonSelection() {
             <tr>
               <td
                 colSpan={4}
-                className="font-serif text-[16px] text-white bg-[#02795a7a] text-center rounded-full"
+                className="font-customCin text-[16px] text-white text-center rounded-full"
               >
-                Strike
+                Strike Boon
               </td>
             </tr>
             {allDataStrike.map((obj) => (
@@ -139,9 +144,9 @@ export default function BoonSelection() {
             <tr>
               <td
                 colSpan={4}
-                className="font-serif text-[16px] text-white bg-[#02795a7a] text-center rounded-full"
+                className="font-customCin text-[16px] text-white text-center rounded-full"
               >
-                Flourish
+                Flourish Boon
               </td>
             </tr>
             {allDataFlour.map((obj) => (
@@ -168,9 +173,9 @@ export default function BoonSelection() {
             <tr>
               <td
                 colSpan={4}
-                className="font-serif text-[16px] text-white bg-[#02795a7a] text-center rounded-full"
+                className="font-customCin text-[16px] text-white text-center rounded-full"
               >
-                Sprint
+                Sprint Boon
               </td>
             </tr>
             {allDataSprint.map((obj) => (
@@ -197,9 +202,9 @@ export default function BoonSelection() {
             <tr>
               <td
                 colSpan={4}
-                className="font-serif text-[16px] text-white bg-[#02795a7a] text-center rounded-full"
+                className="font-customCin text-[16px] text-white text-center rounded-full"
               >
-                Ring
+                Ring Boon
               </td>
             </tr>
             {allDataRing.map((obj) => (
@@ -226,9 +231,9 @@ export default function BoonSelection() {
             <tr>
               <td
                 colSpan={4}
-                className="font-serif text-[16px] text-white bg-[#02795a7a] text-center rounded-full"
+                className="font-customCin text-[16px] text-white text-center rounded-full"
               >
-                Gain
+                Gain Boon
               </td>
             </tr>
             {allDataGain.map((obj) => (
