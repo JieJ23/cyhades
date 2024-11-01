@@ -20,10 +20,9 @@ import { useState, useEffect } from "react";
 import { ReturnBoonList } from "../Logic/Method";
 import { testReturnBoonFilter } from "../Logic/Method";
 //
-import { genBoonString } from "../Logic/Gen";
 
 export default function Hades2() {
-  const [data, setData] = useState(2);
+  const [data, setData] = useState(1);
   const [selectedAspect, setSelectedAspect] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState("");
   const [visibleRows, setVisibleRows] = useState(50);
@@ -51,7 +50,9 @@ export default function Hades2() {
   };
   //
 
-  const rawData = Hades2NewFullData.slice().sort((a, b) => b.Fear - a.Fear);
+  const rawData = Hades2NewFullData.slice()
+    .sort((a, b) => b.Fear - a.Fear)
+    .sort((a, b) => b.Patch - a.Patch);
   const testingdata = removeDupAspect(
     Hades2NewFullData.slice()
       .sort(
@@ -264,14 +265,18 @@ export default function Hades2() {
                   >
                     {obj.Category}
                   </td> */}
-                  <td className={obj.Patch === `5` ? `text-[#26f48a]` : ``}>
+                  <td
+                    className={
+                      obj.Patch === `5` ? `text-[#26f48a]` : `text-[#db5ff1]`
+                    }
+                  >
                     Patch {obj.Patch}
                   </td>
                   <td>
                     <Link
                       to={obj["Src"]}
                       target="_blank"
-                      className="text-[#4651d1]"
+                      className="text-[#979ff5]"
                     >
                       Video
                     </Link>

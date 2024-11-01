@@ -192,7 +192,7 @@ export const boonEntry = [
   `Tranquil_Gain`,
   `Fixed_Gain`,
   `Born_Gain`,
-  `Hearth_Gain`,
+  `Warmth_Gain`,
   `Fluid_Gain`,
   `Ionic_Gain`,
   `Witty_Retort`,

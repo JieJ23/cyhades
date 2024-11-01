@@ -282,7 +282,7 @@ export default function FormSubmission() {
               <option>Tranquil_Gain</option>
               <option>Fixed_Gain</option>
               <option>Born_Gain</option>
-              <option>Hearth_Gain</option>
+              <option>Warmth_Gain</option>
               <option>Fluid_Gain</option>
               <option>Ionic_Gain</option>
               <option>Witty_Retort</option>

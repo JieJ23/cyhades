@@ -92,7 +92,7 @@ export default function TopPlayers2() {
             className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl bg-top bg-cover bg-no-repeat"
             style={{ backgroundImage: `url("/${obj.Weapon}.png")` }}
           />
-          <div className="h-full flex flex-col items-center justify-center gap-1 font-serif">
+          <div className="h-full flex flex-col items-center justify-center gap-1 font-customCin">
             <div className="text-white z-20 absolute bottom-1.5 left-1.5 text-[10px]">
               Patch {obj.Patch}
             </div>
@@ -102,8 +102,8 @@ export default function TopPlayers2() {
             <div className="text-[10px] uppercase text-gray-300 z-20">
               {obj.Weapon}
             </div>
-            <div className="text-white text-[16px] z-20">{obj.Name}</div>
-            <div className="text-gray-200 text-[12px] z-20">
+            <div className="text-white text-[15px] z-20">{obj.Name}</div>
+            <div className="text-gray-200 text-[11px] z-20">
               {`Fear`} {obj.Fear}
             </div>
             <div className="avatar">
