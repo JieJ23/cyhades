@@ -194,7 +194,7 @@ export default function Hades2() {
                 <tr className="font-serif">
                   <th className="font-serif">{index + 1}.</th>
                   <td>{obj.Name}</td>
-                  <td>{obj.Weapon}</td>
+                  <td className="min-w-[100px]">{obj.Weapon}</td>
                   <td>
                     <div className="avatar">
                       <div className="mask mask-decagon w-7">
@@ -226,7 +226,7 @@ export default function Hades2() {
                     {obj.Fear}
                   </td>
                   <td>{obj["Clear Time"]}</td>
-                  <td>
+                  <td className="min-w-[180px]">
                     <div className="flex">
                       {testReturnBoonFilter(obj.Boons_Picked).map((item) => (
                         <div className="avatar">
@@ -237,9 +237,9 @@ export default function Hades2() {
                       ))}
                     </div>
                   </td>
-                  <td>
+                  <td className="min-w-[80px]">
                     {obj.Familiar ? (
-                      <div className="flex gap-2 items-center">
+                      <div className="flex gap-1 items-center">
                         <div className="avatar">
                           <div className="w-6 rounded">
                             <img src={`/Familiar/${obj.Familiar}.png`} />
@@ -265,13 +265,14 @@ export default function Hades2() {
                     {obj.Category}
                   </td> */}
                   <td
-                    className={
+                    className={`min-w-[70px] ${
                       obj.Patch === `5`
                         ? `text-[#26f48a]`
                         : obj.Patch === `6`
                         ? `text-[#db5ff1]`
                         : `text-white`
                     }
+                    `}
                   >
                     Patch {obj.Patch}
                   </td>
