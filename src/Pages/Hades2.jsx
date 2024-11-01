@@ -268,7 +268,7 @@ export default function Hades2() {
                     className={
                       obj.Patch === `5`
                         ? `text-[#26f48a]`
-                        : obj.Patch === `5`
+                        : obj.Patch === `6`
                         ? `text-[#db5ff1]`
                         : `text-white`
                     }
