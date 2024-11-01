@@ -5,7 +5,8 @@ import { customOrder, calculateTime } from "../Logic/Method";
 import Header from "../Components/Header";
 import TopPlayers2 from "../Components/TopPlayers2";
 
-import { Hades2NewFullData } from "../Data/Hades2NewData";
+// import { Hades2NewFullData } from "../Data/Hades2NewData";
+import { Hades2FullData } from "../Data/Hades2Data";
 
 import AspectSelection from "../Components/Select/Aspect";
 import PlayerSelection from "../Components/Select/Player";
@@ -50,11 +51,11 @@ export default function Hades2() {
   };
   //
 
-  const rawData = Hades2NewFullData.slice()
+  const rawData = Hades2FullData.slice()
     .sort((a, b) => b.Fear - a.Fear)
     .sort((a, b) => b.Patch - a.Patch);
   const testingdata = removeDupAspect(
-    Hades2NewFullData.slice()
+    Hades2FullData.slice()
       .sort(
         (a, b) =>
           customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
@@ -67,7 +68,7 @@ export default function Hades2() {
       .sort((a, b) => b.Patch - a.Patch)
   );
   const testingdata2 = removeDupNameOnly(
-    Hades2NewFullData.slice()
+    Hades2FullData.slice()
       .sort(
         (a, b) =>
           customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
@@ -265,7 +266,11 @@ export default function Hades2() {
                   </td> */}
                   <td
                     className={
-                      obj.Patch === `5` ? `text-[#26f48a]` : `text-[#db5ff1]`
+                      obj.Patch === `5`
+                        ? `text-[#26f48a]`
+                        : obj.Patch === `5`
+                        ? `text-[#db5ff1]`
+                        : `text-white`
                     }
                   >
                     Patch {obj.Patch}

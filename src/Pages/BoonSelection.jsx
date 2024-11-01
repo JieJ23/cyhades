@@ -1,4 +1,4 @@
-import { Hades2NewFullData } from "../Data/Hades2NewData";
+import { Hades2FullData } from "../Data/Hades2Data";
 
 import Header from "../Components/Header";
 import FooterInfo from "../Components/Footer";
@@ -21,13 +21,11 @@ export default function BoonSelection() {
     setWeapon(num);
   }
 
-  const weaponTypes = [...new Set(Hades2NewFullData.map((obj) => obj.Weapon))];
+  const weaponTypes = [...new Set(Hades2FullData.map((obj) => obj.Weapon))];
   //
   const displayData = weaponTypes[weapon];
 
-  const targetData = Hades2NewFullData.filter(
-    (obj) => obj.Weapon === displayData
-  );
+  const targetData = Hades2FullData.filter((obj) => obj.Weapon === displayData);
   //
 
   let patch5Data = targetData.filter(
@@ -96,8 +94,9 @@ export default function BoonSelection() {
           </button>
         ))}
       </section>
-      <section className="font-customCin text-center mt-4 underline">
-        *Automatically calculated based on the entries on the board
+      <section className="font-customCin text-center my-6 underline text-[14px]">
+        *Automatically calculated based on the entries on the board, Patch 5 &
+        6.
       </section>
 
       <div className="overflow-x-auto max-w-[1000px] mx-auto mb-10">

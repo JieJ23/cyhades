@@ -1,5 +1,5 @@
 import { removeDup } from "../Logic/Method";
-import { Hades2NewFullData } from "../Data/Hades2NewData";
+import { Hades2FullData } from "../Data/Hades2Data";
 import { customOrder } from "../Logic/Method";
 
 export const weaponColor = (type) => {
@@ -51,11 +51,11 @@ export const weaponGIF = (type) => {
 import { hades_WeaponOrder } from "../Logic/Method";
 
 export default function TopPlayers2() {
-  const LevelNumbers = [...new Set(Hades2NewFullData.map((obj) => obj.Fear))];
+  const LevelNumbers = [...new Set(Hades2FullData.map((obj) => obj.Fear))];
   const highestLevel = Math.max(...LevelNumbers);
   //
 
-  const rawData = Hades2NewFullData.slice()
+  const rawData = Hades2FullData.slice()
     .sort(
       (a, b) =>
         customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
@@ -74,7 +74,7 @@ export default function TopPlayers2() {
 
   //
   const highestEntries = removeDup(
-    Hades2NewFullData.filter((obj) => obj.Fear == +highestLevel)
+    Hades2FullData.filter((obj) => obj.Fear == +highestLevel)
   ).sort(
     (a, b) =>
       hades_WeaponOrder.indexOf(a.Aspect) - hades_WeaponOrder.indexOf(b.Aspect)
