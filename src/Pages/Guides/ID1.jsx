@@ -56,21 +56,6 @@ export default function ID1() {
         <section>
           <div className="flex gap-2">
             <div className="text-[20px] text-white">Attacks</div>
-            <div className="avatar">
-              <div className="w-8 rounded">
-                <img src="/Boon/Sworn_Strike.png" draggable={false} />
-              </div>
-            </div>
-            <div className="avatar">
-              <div className="w-8 rounded">
-                <img src="/Boon/Nova_Strike.png" draggable={false} />
-              </div>
-            </div>
-            <div className="avatar">
-              <div className="w-8 rounded">
-                <img src="/Boon/Flutter_Strike.png" draggable={false} />
-              </div>
-            </div>
           </div>
           <div className="text-gray-300 tracking-wider text-[13px] sm:text-[15px]">
             Xinth's Attacks do 30 and 45 damage on strike 1 and 2 respectively,

@@ -2,6 +2,8 @@ import { removeDup } from "../Logic/Method";
 import { Hades2FullData } from "../Data/Hades2Data";
 import { customOrder } from "../Logic/Method";
 
+import { calculateTime } from "../Logic/Method";
+
 export const weaponColor = (type) => {
   switch (type) {
     case "Sword":
@@ -59,6 +61,9 @@ export default function TopPlayers2() {
     .sort(
       (a, b) =>
         customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
+    )
+    .sort(
+      (a, b) => calculateTime(a["Clear Time"]) - calculateTime(b["Clear Time"])
     )
     .sort((a, b) => b.Fear - a.Fear);
 

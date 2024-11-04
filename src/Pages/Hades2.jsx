@@ -228,13 +228,18 @@ export default function Hades2() {
                   <td>{obj["Clear Time"]}</td>
                   <td className="min-w-[180px]">
                     <div className="flex">
-                      {testReturnBoonFilter(obj.Boons_Picked).map((item) => (
-                        <div className="avatar">
-                          <div className="mask mask-squircle w-7">
-                            <img src={`/Boon/${item}.png`} draggable={false} />
+                      {ReturnBoonList(obj.Boons_Picked)
+                        .slice(0, 5)
+                        .map((item) => (
+                          <div className="avatar">
+                            <div className="mask mask-squircle w-7">
+                              <img
+                                src={`/Boon/${item}.png`}
+                                draggable={false}
+                              />
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
                     </div>
                   </td>
                   <td className="min-w-[80px]">

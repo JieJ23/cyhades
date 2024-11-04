@@ -3689,4 +3689,16 @@ export const Hades2FullData = [
       "No_Strike, Sworn_Flourish, Storm_Ring, No_Sprint, Glamour_Gain",
     Familiar: "Raki",
   },
+  {
+    Direction: "Olympus",
+    Name: "老穆",
+    Fear: "50",
+    Weapon: "Sister Blades",
+    Aspect: "Pan",
+    Src: "https://www.bilibili.com/video/BV1PKDsYCEM9/?spm_id_from=333.337.search-card.all.click&vd_source=8ae8810d8577a178edeeea4fb0278e18",
+    Patch: "6",
+    "Clear Time": "14:26.66",
+    Boons_Picked: "No_Strike, Wave_Flourish, Arctic_Ring, No_Sprint, No_Gain",
+    Familiar: "Hecuba",
+  },
 ];
