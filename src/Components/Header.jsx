@@ -7,23 +7,29 @@ export default function Header() {
       data-theme="dark"
     >
       <div className="flex-1">
-        <Link className="btn btn-ghost text-xl text-gray-100" to={`/`}>
+        <Link
+          className="btn btn-ghost font-customCin text-xl text-gray-100"
+          to={`/`}
+        >
           Home
         </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to={`/FormSubmission`} className="text-white">
+            <Link
+              to={`/FormSubmission`}
+              className="text-white font-customCin text-xl"
+            >
               Submit
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={`/Guide`} className="text-white">
               Guide
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <details className="z-40 text-gray-100">
               <summary>Games</summary>
               <ul className="bg-base-100 p-2 rounded-md">
@@ -35,7 +41,7 @@ export default function Header() {
                 </li>
               </ul>
             </details>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

@@ -1,7 +1,8 @@
 import { removeDup } from "../Logic/Method";
-import { Hades2FullData } from "../Data/Hades2Data";
+import { hades2CN } from "../Data/Hades2NewData";
 import { customOrder } from "../Logic/Method";
-
+import { ReturnBoonList } from "../Logic/Method";
+import { genBoonString } from "../Logic/Gen";
 import { calculateTime } from "../Logic/Method";
 
 export const weaponColor = (type) => {
@@ -53,11 +54,12 @@ export const weaponGIF = (type) => {
 import { hades_WeaponOrder } from "../Logic/Method";
 
 export default function TopPlayers2() {
-  const LevelNumbers = [...new Set(Hades2FullData.map((obj) => obj.Fear))];
+  const LevelNumbers = [...new Set(hades2CN.map((obj) => obj.Fear))];
   const highestLevel = Math.max(...LevelNumbers);
   //
 
-  const rawData = Hades2FullData.slice()
+  const rawData = hades2CN
+    .slice()
     .sort(
       (a, b) =>
         customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
@@ -79,7 +81,7 @@ export default function TopPlayers2() {
 
   //
   const highestEntries = removeDup(
-    Hades2FullData.filter((obj) => obj.Fear == +highestLevel)
+    hades2CN.filter((obj) => obj.Fear == +highestLevel)
   ).sort(
     (a, b) =>
       hades_WeaponOrder.indexOf(a.Aspect) - hades_WeaponOrder.indexOf(b.Aspect)
@@ -88,37 +90,56 @@ export default function TopPlayers2() {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 justify-evenly gap-1 select-none w-full max-w-[1400px] mx-auto px-2 mt-5">
       {holder.map((obj) => (
-        <div
-          className="w-full min-h-[125px] relative bg-transparent shadow-[inset_0_0_30px_black] border-[1px] border-white/10 rounded-xl"
-          style={{ backgroundColor: `${weaponColor(obj.Weapon)}54` }}
-        >
-          <div className="absolute bg-[#17171754] h-full w-full top-0 left-0 object-cover rounded-xl" />
+        <div className="w-full min-h-[150px] relative bg-transparent shadow-[inset_0_0_10px_black] p-4">
           <div
+            className="absolute h-full w-full  top-0 left-0"
+            style={{
+              borderImage: `url(/Border/one.png) 32 fill`, // URL to the image and slicing settings
+              borderImageWidth: "10px", // Set the width of the border image
+            }}
+          />
+          <div
+            className="absolute h-full w-full top-0 left-0"
+            style={{
+              borderImage: `url(/Border/border.png) 128 fill`,
+              borderImageWidth: "30px",
+            }}
+          />
+          {/* <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" /> */}
+          {/* <div
             className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl bg-top bg-cover bg-no-repeat"
             style={{ backgroundImage: `url("/${obj.Weapon}.png")` }}
-          />
+          /> */}
           <div className="h-full flex flex-col items-center justify-center gap-1 font-customCin">
-            <div className="text-white z-20 absolute bottom-1.5 left-1.5 text-[10px]">
-              Patch {obj.Patch}
+            <div className="text-white z-20 absolute bottom-3 left-3 text-[10px]">
+              Fear {obj.Fear}
             </div>
-            <div className="text-white z-20 absolute bottom-1.5 right-1.5 text-[10px]">
+            <div className="text-white z-20 absolute bottom-3 right-3 text-[10px]">
               {obj["Clear Time"]}
             </div>
             <div className="text-[10px] uppercase text-gray-300 z-20">
               {obj.Weapon}
             </div>
             <div className="text-white text-[15px] z-20">{obj.Name}</div>
-            <div className="text-gray-200 text-[11px] z-20">
-              {`Fear`} {obj.Fear}
-            </div>
             <div className="avatar">
-              <div className="mask mask-decagon w-8 relative">
+              <div className="mask mask-squircle w-8 relative">
                 <img
                   src={`/${weaponGIF(obj.Weapon)}.gif`}
-                  className="absolute"
+                  className="absolute scale-125"
                 />
                 <img src={`/Aspects/${obj.Aspect}.png`} />
               </div>
+            </div>
+            <div className="mb-2">
+              {ReturnBoonList(genBoonString())
+                .slice(0, 5)
+                .map((item) => (
+                  <div className="avatar">
+                    <div className="mask mask-squircle w-7">
+                      <img src={`/Boon/${item}.png`} draggable={false} />
+                    </div>
+                  </div>
+                ))}
             </div>
           </div>
         </div>

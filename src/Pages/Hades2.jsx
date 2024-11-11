@@ -6,7 +6,7 @@ import Header from "../Components/Header";
 import TopPlayers2 from "../Components/TopPlayers2";
 
 // import { Hades2NewFullData } from "../Data/Hades2NewData";
-import { Hades2FullData } from "../Data/Hades2Data";
+import { hades2CN } from "../Data/Hades2NewData";
 
 import AspectSelection from "../Components/Select/Aspect";
 import PlayerSelection from "../Components/Select/Player";
@@ -20,6 +20,7 @@ import { useState, useEffect } from "react";
 
 import { ReturnBoonList } from "../Logic/Method";
 import { testReturnBoonFilter } from "../Logic/Method";
+import { genBoonString } from "../Logic/Gen";
 //
 
 export default function Hades2() {
@@ -51,11 +52,13 @@ export default function Hades2() {
   };
   //
 
-  const rawData = Hades2FullData.slice()
+  const rawData = hades2CN
+    .slice()
     .sort((a, b) => b.Fear - a.Fear)
     .sort((a, b) => b.Patch - a.Patch);
   const testingdata = removeDupAspect(
-    Hades2FullData.slice()
+    hades2CN
+      .slice()
       .sort(
         (a, b) =>
           customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
@@ -68,7 +71,8 @@ export default function Hades2() {
       .sort((a, b) => b.Patch - a.Patch)
   );
   const testingdata2 = removeDupNameOnly(
-    Hades2FullData.slice()
+    hades2CN
+      .slice()
       .sort(
         (a, b) =>
           customOrder.indexOf(a.Category) - customOrder.indexOf(b.Category)
@@ -118,30 +122,44 @@ export default function Hades2() {
       <div className="w-full">
         {/* <TopPlayers objData={testingdata} level={`Fear`} /> */}
         <section>
-          <div className="flex justify-center my-2 gap-1 font-customCin">
+          <div className="flex flex-wrap justify-center my-2 gap-1 font-customCin">
             <button
-              className="btn shadow-[1px_1px_0_teal] text-gray-300 text-[13px]"
+              className="btn text-white text-[11px]"
+              style={{
+                borderImage: `url(/Border/one.png) 32 fill`,
+                borderImageWidth: "10px",
+              }}
               onClick={() => handleDataChange(0)}
             >
               All
             </button>
             <button
-              className="btn shadow-[1px_1px_0_teal] text-gray-300 text-[13px]"
+              className="btn text-white text-[11px]"
+              style={{
+                borderImage: `url(/Border/one.png) 32 fill`,
+                borderImageWidth: "10px",
+              }}
               onClick={() => handleDataChange(1)}
             >
               Unique
             </button>
             <button
-              className="btn shadow-[1px_1px_0_teal] text-gray-300 text-[13px]"
+              className="btn text-white text-[11px]"
+              style={{
+                borderImage: `url(/Border/one.png) 32 fill`,
+                borderImageWidth: "10px",
+              }}
               onClick={() => handleDataChange(2)}
             >
-              Player
+              Rank
             </button>
-          </div>
-          <div className="my-2 mx-auto flex flex-wrap justify-center gap-1">
             {allWeaponType.map((obj, index) => (
               <button
-                className="btn shadow-[1px_1px_0_teal] text-gray-300 font-customCin text-[11px]"
+                className="btn text-white font-customCin text-[11px]"
+                style={{
+                  borderImage: `url(/Border/one.png) 32 fill`,
+                  borderImageWidth: "10px",
+                }}
                 onClick={() => handleDataChange(index + 3)}
               >
                 {obj}
@@ -150,7 +168,7 @@ export default function Hades2() {
           </div>
         </section>
         {/*  */}
-        <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
+        {/* <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
           <PlayerSelection
             watch={data}
             fulldata={allAvailableData}
@@ -163,7 +181,7 @@ export default function Hades2() {
             onAspectChange={handleAspectChange}
             allAspect={testingdata}
           />
-        </section>
+        </section> */}
         {/* <Link to={`/HadesTopAspect`} className="flex justify-center my-2">
           <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
             Top Aspects
@@ -171,20 +189,20 @@ export default function Hades2() {
         </Link> */}
         {/*  */}
         <div className="overflow-x-auto rounded-md my-4">
-          <table className="table table-xs select-none w-full max-w-[1400px] mx-auto text-white">
+          <table className="table table-xs table-zebra-zebra select-none w-full max-w-[1200px] mx-auto text-white">
             <thead>
               <tr className="font-serif text-gray-400">
                 <th></th>
                 <th>Name</th>
                 <th>Weapon</th>
-                <th>Aspect</th>
                 <th>Direction</th>
                 <th>Fear</th>
                 <th>Time</th>
                 <th>Boon</th>
-                <th>Familiar</th>
+                <th></th>
+                <th>Rating</th>
                 {/* <th>Category</th> */}
-                <th>Ver.</th>
+                {/* <th>Ver.</th> */}
                 <th>Link</th>
                 {/* <th>Patch</th> */}
               </tr>
@@ -192,17 +210,12 @@ export default function Hades2() {
             <tbody>
               {displayData.slice(0, visibleRows).map((obj, index) => (
                 <tr className="font-serif">
-                  <th className="font-serif">{index + 1}.</th>
+                  <td className="font-serif">{index + 1}.</td>
                   <td>{obj.Name}</td>
-                  <td className="min-w-[100px]">{obj.Weapon}</td>
-                  <td>
-                    <div className="avatar">
-                      <div className="mask mask-decagon w-7">
-                        <img
-                          src={`/Aspects/${obj.Aspect}.png`}
-                          draggable={false}
-                        />
-                      </div>
+                  <td className="whitespace-nowrap">
+                    <div>{obj.Aspect}</div>
+                    <div className="text-gray-500 text-[11px]">
+                      {obj.Weapon}
                     </div>
                   </td>
                   <td
@@ -214,78 +227,68 @@ export default function Hades2() {
                   >
                     {obj.Direction}
                   </td>
-                  <td
-                    className={`${
-                      obj.Fear == 55
-                        ? `text-[red]`
-                        : obj.Fear >= 50
-                        ? `text-[orange]`
-                        : ``
-                    }`}
-                  >
-                    {obj.Fear}
-                  </td>
+                  <td>{obj.Fear}</td>
                   <td>{obj["Clear Time"]}</td>
-                  <td className="min-w-[180px]">
-                    <div className="flex">
-                      {ReturnBoonList(obj.Boons_Picked)
-                        .slice(0, 5)
-                        .map((item) => (
-                          <div className="avatar">
-                            <div className="mask mask-squircle w-7">
-                              <img
-                                src={`/Boon/${item}.png`}
-                                draggable={false}
-                              />
-                            </div>
-                          </div>
-                        ))}
+                  <td className="flex">
+                    <div className="avatar">
+                      <div className="mask mask-squircle w-7">
+                        <img
+                          src={`/Aspects/${obj.Aspect}.png`}
+                          draggable={false}
+                        />
+                      </div>
                     </div>
-                  </td>
-                  <td className="min-w-[80px]">
-                    {obj.Familiar ? (
-                      <div className="flex gap-1 items-center">
-                        <div className="avatar">
-                          <div className="w-6 rounded">
-                            <img src={`/Familiar/${obj.Familiar}.png`} />
-                          </div>
-                        </div>
-                        <div className="w-6">
-                          <img src={`/Familiar/${obj.Familiar}_icon.png`} />
+                    <div className="avatar pe-4">
+                      <div className="w-7 mask mask-squircle">
+                        <img src={`/Familiar/${obj.Familiar}.png`} />
+                      </div>
+                    </div>
+                    {ReturnBoonList(genBoonString()).map((item) => (
+                      <div className="avatar">
+                        <div className="mask mask-squircle w-7">
+                          <img src={`/Boon/${item}.png`} draggable={false} />
                         </div>
                       </div>
-                    ) : (
-                      ``
-                    )}
+                    ))}
                   </td>
-                  {/* <td
-                    className={
-                      obj.Category === `Unseeded`
-                        ? `text-[#e3ac6d]`
-                        : obj.Category === `Modded`
-                        ? `text-[#39bb5c]`
-                        : `text-[#4f80d5]`
-                    }
-                  >
-                    {obj.Category}
-                  </td> */}
                   <td
-                    className={`min-w-[70px] ${
-                      obj.Patch === `5`
-                        ? `text-[#26f48a]`
-                        : obj.Patch === `6`
-                        ? `text-[#db5ff1]`
-                        : `text-white`
-                    }
-                    `}
+                    className={`relative
+                      ${
+                        obj.Rating === 5
+                          ? "font-serif font-bold text-[12px] text-[#eddd28]"
+                          : obj.Rating === 4
+                          ? "font-serif font-bold text-[12px] text-[#f36e27]"
+                          : "font-serif font-bold text-[12px] text-[white]"
+                      }`}
                   >
-                    Patch {obj.Patch}
+                    <div
+                      className="p-2 flex justify-center items-center"
+                      style={{
+                        borderImage: `url(/Vows/holder.png) 32 fill`,
+                        borderImageWidth: "30px",
+                      }}
+                    >
+                      {obj.Rating === 5 ? "S+" : obj.Rating === 4 ? "S" : "A"}
+                    </div>
+                  </td>
+                  <td>
+                    <section className="flex">
+                      {Array.from({ length: obj.Rating }, (_, ite) => (
+                        <div className="rating rating-sm">
+                          <input
+                            type="radio"
+                            name="rating-4"
+                            className="mask mask-star-2 bg-[#b930ef]"
+                          />
+                        </div>
+                      ))}
+                    </section>
                   </td>
                   <td>
                     <Link
-                      to={obj["Src"]}
+                      // to={obj["Src"]}
                       target="_blank"
-                      className="text-[#979ff5]"
+                      className="text-[#979ff5] pointer-events-none"
                     >
                       Video
                     </Link>
@@ -296,8 +299,15 @@ export default function Hades2() {
           </table>
         </div>
         {visibleRows < displayData.length && (
-          <div className="flex justify-center my-2">
-            <button onClick={loadMore} className="btn btn-primary">
+          <div className=" flex justify-center">
+            <button
+              onClick={loadMore}
+              className="btn btn-lg text-white font-customCin text-[13px]"
+              style={{
+                borderImage: `url(/Border/one.png) 32 fill`,
+                borderImageWidth: "10px",
+              }}
+            >
               Load More
             </button>
           </div>

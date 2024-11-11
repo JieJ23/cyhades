@@ -38,17 +38,17 @@ export default function App() {
                     className="absolute h-full w-full top-0 left-0 z-10 rounded-xl bg-center bg-contain bg-no-repeat group-hover:scale-105 ease-in duration-200 transition-all"
                     style={{ backgroundImage: `url("/melinoe.png")` }}
                   />
-                  <div className="absolute top-5 left-5 font-customDress uppercase z-20 text-[#16c247] text-[20px] group-hover:text-[24px] ease-in duration-200 transition-all">
+                  <div className="absolute top-5 left-5 font-customCin uppercase z-20 text-[#16c247] text-[20px] group-hover:text-[24px] ease-in duration-200 transition-all">
                     Hades II
                   </div>
-                  <div className="absolute bottom-5 right-5 font-customDress uppercase z-20 text-white text-[16px] group-hover:text-[18px] ease-in duration-200 transition-all">
+                  <div className="absolute bottom-5 right-5 font-customCin uppercase z-20 text-white text-[16px] group-hover:text-[18px] ease-in duration-200 transition-all">
                     Melinoë
                   </div>
                 </div>
               </Link>
               <div className="flex justify-center gap-2">
                 <Link to={`/Hades2`}>
-                  <button className="btn btn-success my-3 btn-outline font-serif">
+                  <button className="btn btn-success my-3 btn-filled font-serif">
                     Hades 2
                   </button>
                 </Link>
@@ -57,21 +57,19 @@ export default function App() {
                     Boon Selection
                   </button>
                 </Link>
-                <Link to={`/Guide`}>
+                {/* <Link to={`/Guide`}>
                   <button className="btn btn-success my-3 btn-outline font-serif">
                     Guide
                   </button>
-                </Link>
-                {/* <Link
-                  to={`https://www.supergiantgames.com/games/hades-ii/`}
-                  target="_blank"
-                >
-                  <button className="btn btn-success my-3 btn-outline font-serif">
-                    Official SG Hade 2
-                  </button>
                 </Link> */}
               </div>
-              <div className="font-customCin text-[14px] max-w-[800px] mx-auto text-center text-[#51b084] px-4">
+              <div
+                className="font-customCin text-[14px] max-w-[800px] mx-auto text-start text-gray-400 p-8"
+                style={{
+                  borderImage: `url(/Border/one.png) 32 fill`,
+                  borderImageWidth: "20px",
+                }}
+              >
                 Hades II is the upcoming sequel to Hades, developed by
                 Supergiant Games. In this game, you play as Melinoë, the sister
                 of Zagreus and another child of Hades. She embarks on her own
@@ -82,7 +80,7 @@ export default function App() {
                 challenging gameplay, character-driven storytelling, and rich
                 lore, building on the success of its predecessor.
               </div>
-              <div className=" mt-2 flex flex-wrap justify-center gap-2">
+              {/* <div className=" mt-2 flex flex-wrap justify-center gap-2">
                 <Link to={`/FearCalculator`}>
                   <button className="btn rounded-none rounded-tr-xl rounded-bl-xl font-serif border-white/20 bg-[#053723] text-white">
                     <div className="avatar">
@@ -113,51 +111,23 @@ export default function App() {
                     <div>Boon Builder (Derpity)</div>
                   </button>
                 </Link>
-              </div>
-              <div className="rounded-xl max-w-[1200px] mx-auto">
+              </div> */}
+              {/* <div className="rounded-xl max-w-[1200px] mx-auto">
                 <Marquee className="rounded-xl">
                   <div className="w-[500px] md:w-[800px] lg:w-[1100px]">
                     <TopPlayers2 />
                   </div>
                 </Marquee>
-              </div>
-              <div className="mt-5 flex justify-center gap-1">
-                <Link
-                  to={`https://store.steampowered.com/app/1145350/Hades_II/`}
-                  target="_blank"
-                >
-                  <button className="btn text-white font-serif border-white/20 bg-black rounded-none rounded-tl-xl rounded-bl-xl">
-                    <div className="avatar">
-                      <div className="w-8 rounded">
-                        <img src="/steam.png" />
-                      </div>
-                    </div>
-                    <div>Steam</div>
-                  </button>
-                </Link>
-                <Link
-                  to={`https://store.epicgames.com/en-US/p/hades-ii`}
-                  target="_blank"
-                >
-                  <button className="btn text-white font-serif border-white/20 bg-black rounded-none rounded-tr-xl rounded-br-xl">
-                    <div className="avatar">
-                      <div className="w-8 rounded">
-                        <img src="/epic.png" />
-                      </div>
-                    </div>
-                    <div>Epic Games</div>
-                  </button>
-                </Link>
-              </div>
+              </div> */}
             </div>
 
-            <div className="divider my-10 px-4 divider-neutral">
+            <div className="divider my-10 max-w-[1000px] mx-auto px-4 divider-neutral">
               <div className="w-[200px]">
                 <img src={`/logo.png`} />
               </div>
             </div>
 
-            <div className="my-5">
+            {/* <div className="my-5">
               <Link to={`/Hades`} className="group w-full rounded-xl">
                 <div className="w-full min-h-[220px] relative max-w-[800px] mx-auto bg-transparent shadow-[inset_0_0_5px_black] border-[1px] border-black/30 rounded-xl overflow-hidden">
                   <div
@@ -182,14 +152,6 @@ export default function App() {
                     Hades
                   </button>
                 </Link>
-                {/* <Link
-                  to={`https://www.supergiantgames.com/games/hades/`}
-                  target="_blank"
-                >
-                  <button className="btn btn-error my-3 btn-outline font-serif">
-                    Official SG Hades
-                  </button>
-                </Link> */}
               </div>
               <div className="font-customCin text-[14px] max-w-[800px] mx-auto text-center text-[#c04747] px-4">
                 Hades is a roguelike action game where you play as Zagreus, the
@@ -246,40 +208,13 @@ export default function App() {
                   </div>
                 </Marquee>
               </div>
-            </div>
-            <div className="mt-5 flex justify-center gap-1">
-              <Link
-                to={`https://store.steampowered.com/app/1145360/Hades/`}
-                target="_blank"
-              >
-                <button className="btn btn-outline text-white font-serif border-white/20 bg-black rounded-none rounded-tl-xl rounded-bl-xl">
-                  <div className="avatar">
-                    <div className="w-8 rounded">
-                      <img src="/steam.png" />
-                    </div>
-                  </div>
-                  <div>Steam</div>
-                </button>
-              </Link>
-              <Link
-                to={`https://store.epicgames.com/en-US/p/hades`}
-                target="_blank"
-              >
-                <button className="btn btn-outline text-white font-serif border-white/20 bg-black rounded-none rounded-tr-xl rounded-br-xl">
-                  <div className="avatar">
-                    <div className="w-8 rounded">
-                      <img src="/epic.png" />
-                    </div>
-                  </div>
-                  <div>Epic Games</div>
-                </button>
-              </Link>
-            </div>
-            <div className="divider my-10 px-4 divider-neutral">
+            </div> */}
+
+            {/* <div className="divider my-10 px-4 divider-neutral">
               <div className="w-[200px]">
                 <img src={`/logo2.png`} />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <FooterInfo />

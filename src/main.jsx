@@ -30,24 +30,24 @@ createRoot(document.getElementById("root")).render(
     {/* <DataProvider> */}
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/Hades" element={<Hades />} />
+        <Route path="/" element={<Hades2 />} />
+        {/* <Route path="/Hades" element={<Hades />} />
         <Route path="/FearCalculator" element={<FearCalculator />} />
         <Route path="/H2Boons" element={<H2Boons />} />
-        <Route path="/BoonSelection" element={<BoonSelection />} />
+        <Route path="/BoonSelection" element={<BoonSelection />} /> */}
 
-        <Route path="/Guide" element={<Guide />} />
+        {/* <Route path="/Guide" element={<Guide />} /> */}
         {/*  */}
-        <Route path="/WeaponMoonstoneAxe" element={<WeaponMoonstoneAxe />} />
-
-        {/*  */}
-        <Route path="/ID1" element={<ID1 />} />
+        {/* <Route path="/WeaponMoonstoneAxe" element={<WeaponMoonstoneAxe />} /> */}
 
         {/*  */}
+        {/* <Route path="/ID1" element={<ID1 />} /> */}
 
+        {/*  */}
+        {/* 
         <Route path="/HadesH1TopAspect" element={<HadesH1TopAspect />} />
         <Route path="/HadesTopAspect" element={<HadesTopAspect />} />
-        <Route path="/Hades2" element={<Hades2 />} />
+        <Route path="/Hades2" element={<Hades2 />} /> */}
         <Route path="/FormSubmission" element={<FormSubmission />} />
       </Routes>
     </Router>
