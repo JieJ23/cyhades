@@ -11,7 +11,8 @@ import { testReturnBoonFilter } from "../Logic/Method";
 import { hades_WeaponOrder } from "../Logic/Method";
 
 import { removeDup } from "../Logic/Method";
-import { hades2d } from "../Data/Hades2NewData";
+import { hades2d } from "../Data/Hades2D";
+
 import { Hades1FullData } from "../Data/Hades1Data";
 
 function findAspectAndRecords(targetAspect, rawData, destination) {

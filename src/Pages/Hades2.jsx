@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { removeDup, removeDupAspect, removeDupNameOnly } from "../Logic/Method";
+import { removeDupAspect, removeDupNameOnly } from "../Logic/Method";
 import { customOrder, calculateTime } from "../Logic/Method";
 
 import { defineWeapon } from "../Logic/Gen";
@@ -7,17 +7,11 @@ import { defineWeapon } from "../Logic/Gen";
 import Header from "../Components/Header";
 import TopPlayers2 from "../Components/TopPlayers2";
 
-// import { Hades2NewFullData } from "../Data/Hades2NewData";
-import AspectSelection from "../Components/Select/Aspect";
-import PlayerSelection from "../Components/Select/Player";
-
-import { hades2d } from "../Data/Hades2NewData";
+// import AspectSelection from "../Components/Select/Aspect";
+// import PlayerSelection from "../Components/Select/Player";
 
 import Footer from "../Components/Footer";
-
-// import { useData } from "../Hook/DataFetch";
-// import Loading from "../Hook/Loading";
-
+import { hades2d } from "../Data/Hades2D";
 import { useState, useEffect } from "react";
 
 import { ReturnBoonList } from "../Logic/Method";
@@ -28,8 +22,6 @@ export default function Hades2() {
   const [selectedAspect, setSelectedAspect] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState("");
   const [visibleRows, setVisibleRows] = useState(50);
-
-  // const { posts, loader } = useData();
 
   useEffect(() => {
     setVisibleRows(50);

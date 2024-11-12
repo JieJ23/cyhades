@@ -1,8 +1,6 @@
-import { removeDup } from "../Logic/Method";
-import { hades2d } from "../Data/Hades2NewData";
+import { hades2d } from "../Data/Hades2D";
 import { customOrder } from "../Logic/Method";
 import { ReturnBoonList } from "../Logic/Method";
-import { genBoonString } from "../Logic/Gen";
 import { calculateTime } from "../Logic/Method";
 
 import { defineWeapon } from "../Logic/Gen";
