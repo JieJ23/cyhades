@@ -220,10 +220,7 @@ export default function Hades2() {
                 <th>Item & Boon</th>
                 <th></th>
                 <th>Rating</th>
-                {/* <th>Category</th> */}
-                {/* <th>Ver.</th> */}
                 <th>Link</th>
-                {/* <th>Patch</th> */}
               </tr>
             </thead>
             <tbody>
