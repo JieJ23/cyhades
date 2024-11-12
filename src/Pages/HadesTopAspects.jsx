@@ -11,7 +11,7 @@ import { testReturnBoonFilter } from "../Logic/Method";
 import { hades_WeaponOrder } from "../Logic/Method";
 
 import { removeDup } from "../Logic/Method";
-import { Hades2FullData } from "../Data/Hades2Data";
+import { hades2d } from "../Data/Hades2NewData";
 import { Hades1FullData } from "../Data/Hades1Data";
 
 function findAspectAndRecords(targetAspect, rawData, destination) {
@@ -40,7 +40,7 @@ function findAspectAndRecords(targetAspect, rawData, destination) {
 export default function HadesTopAspect() {
   // const { posts, loader } = useData();
 
-  const targetData = Hades2FullData.slice();
+  const targetData = hades2d.slice();
   const allAspects = [...new Set(targetData.map((obj) => obj.Aspect))].sort(
     (a, b) => hades_WeaponOrder.indexOf(a) - hades_WeaponOrder.indexOf(b)
   );

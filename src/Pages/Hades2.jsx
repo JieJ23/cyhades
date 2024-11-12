@@ -11,7 +11,7 @@ import TopPlayers2 from "../Components/TopPlayers2";
 import AspectSelection from "../Components/Select/Aspect";
 import PlayerSelection from "../Components/Select/Player";
 
-import { hades2FullData } from "../Data/Hades2NewData";
+import { hades2d } from "../Data/Hades2NewData";
 
 import Footer from "../Components/Footer";
 
@@ -52,12 +52,12 @@ export default function Hades2() {
   };
   //
 
-  const rawData = hades2FullData
+  const rawData = hades2d
     .slice()
     .sort((a, b) => b.Fear - a.Fear)
     .sort((a, b) => b.Patch - a.Patch);
   const testingdata = removeDupAspect(
-    hades2FullData
+    hades2d
       .map((item) => ({
         ...item, // Spread the existing properties
         Weapon: `${defineWeapon(item.Aspect)}`, // Add the new "weapon" property
@@ -75,7 +75,7 @@ export default function Hades2() {
       .sort((a, b) => b.Patch - a.Patch)
   );
   const testingdata2 = removeDupNameOnly(
-    hades2FullData
+    hades2d
       .slice()
       .sort(
         (a, b) =>

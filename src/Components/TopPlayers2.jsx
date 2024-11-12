@@ -1,5 +1,5 @@
 import { removeDup } from "../Logic/Method";
-import { hades2FullData } from "../Data/Hades2NewData";
+import { hades2d } from "../Data/Hades2NewData";
 import { customOrder } from "../Logic/Method";
 import { ReturnBoonList } from "../Logic/Method";
 import { genBoonString } from "../Logic/Gen";
@@ -54,7 +54,7 @@ export const weaponGIF = (type) => {
 };
 
 export default function TopPlayers2() {
-  const rawData = hades2FullData
+  const rawData = hades2d
     .map((item) => ({
       ...item, // Spread the existing properties
       Weapon: `${defineWeapon(item.Aspect)}`, // Add the new "weapon" property

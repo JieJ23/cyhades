@@ -1,4 +1,4 @@
-import { hades2FullData } from "../Data/Hades2NewData";
+import { hades2d } from "../Data/Hades2NewData";
 import { defineWeapon } from "../Logic/Gen";
 
 import Header from "../Components/Header";
@@ -24,7 +24,7 @@ export default function BoonSelection() {
 
   const weaponTypes = [
     ...new Set(
-      hades2FullData
+      hades2d
         .map((item) => ({
           ...item, // Spread the existing properties
           Weapon: `${defineWeapon(item.Aspect)}`, // Add the new "weapon" property
@@ -35,7 +35,7 @@ export default function BoonSelection() {
   //
   const displayData = weaponTypes[weapon];
 
-  const targetData = hades2FullData
+  const targetData = hades2d
     .map((item) => ({
       ...item, // Spread the existing properties
       Weapon: `${defineWeapon(item.Aspect)}`, // Add the new "weapon" property

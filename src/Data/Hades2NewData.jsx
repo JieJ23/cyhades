@@ -1,4 +1,4 @@
-export const hades2FullData = [
+export const hades2d = [
   {
     Name: "섀도한",
     Boons_Picked:
