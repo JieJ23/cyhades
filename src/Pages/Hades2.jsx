@@ -2,14 +2,16 @@ import { Link } from "react-router-dom";
 import { removeDup, removeDupAspect, removeDupNameOnly } from "../Logic/Method";
 import { customOrder, calculateTime } from "../Logic/Method";
 
+import { defineWeapon } from "../Logic/Gen";
+
 import Header from "../Components/Header";
 import TopPlayers2 from "../Components/TopPlayers2";
 
 // import { Hades2NewFullData } from "../Data/Hades2NewData";
-import { hades2CN } from "../Data/Hades2NewData";
-
 import AspectSelection from "../Components/Select/Aspect";
 import PlayerSelection from "../Components/Select/Player";
+
+import { hades2FullData } from "../Data/Hades2NewData";
 
 import Footer from "../Components/Footer";
 
@@ -19,8 +21,6 @@ import Footer from "../Components/Footer";
 import { useState, useEffect } from "react";
 
 import { ReturnBoonList } from "../Logic/Method";
-import { testReturnBoonFilter } from "../Logic/Method";
-import { genBoonString } from "../Logic/Gen";
 //
 
 export default function Hades2() {
@@ -52,12 +52,16 @@ export default function Hades2() {
   };
   //
 
-  const rawData = hades2CN
+  const rawData = hades2FullData
     .slice()
     .sort((a, b) => b.Fear - a.Fear)
     .sort((a, b) => b.Patch - a.Patch);
   const testingdata = removeDupAspect(
-    hades2CN
+    hades2FullData
+      .map((item) => ({
+        ...item, // Spread the existing properties
+        Weapon: `${defineWeapon(item.Aspect)}`, // Add the new "weapon" property
+      }))
       .slice()
       .sort(
         (a, b) =>
@@ -71,7 +75,7 @@ export default function Hades2() {
       .sort((a, b) => b.Patch - a.Patch)
   );
   const testingdata2 = removeDupNameOnly(
-    hades2CN
+    hades2FullData
       .slice()
       .sort(
         (a, b) =>
@@ -167,6 +171,21 @@ export default function Hades2() {
             ))}
           </div>
         </section>
+
+        <section className="flex justify-center">
+          <Link to={`/BoonSelection`}>
+            <button
+              className="btn text-white text-[11px] font-customCin"
+              style={{
+                borderImage: `url(/Border/one.png) 32 fill`,
+                borderImageWidth: "10px",
+              }}
+              onClick={() => handleDataChange(2)}
+            >
+              Boon Selection Stats
+            </button>
+          </Link>
+        </section>
         {/*  */}
         {/* <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
           <PlayerSelection
@@ -198,7 +217,7 @@ export default function Hades2() {
                 <th>Direction</th>
                 <th>Fear</th>
                 <th>Time</th>
-                <th>Boon</th>
+                <th>Item & Boon</th>
                 <th></th>
                 <th>Rating</th>
                 {/* <th>Category</th> */}
@@ -211,11 +230,11 @@ export default function Hades2() {
               {displayData.slice(0, visibleRows).map((obj, index) => (
                 <tr className="font-serif">
                   <td className="font-serif">{index + 1}.</td>
-                  <td>{obj.Name}</td>
+                  <td className="whitespace-nowrap">{obj.Name}</td>
                   <td className="whitespace-nowrap">
                     <div>{obj.Aspect}</div>
-                    <div className="text-gray-500 text-[11px]">
-                      {obj.Weapon}
+                    <div className="text-gray-400 text-[11px]">
+                      {defineWeapon(obj.Aspect)}
                     </div>
                   </td>
                   <td
@@ -227,7 +246,17 @@ export default function Hades2() {
                   >
                     {obj.Direction}
                   </td>
-                  <td>{obj.Fear}</td>
+                  <td
+                    className={
+                      obj.Fear > 50
+                        ? `text-[#eddd28]`
+                        : obj.Fear > 45
+                        ? `text-[#fff]`
+                        : `text-[#fff]`
+                    }
+                  >
+                    {obj.Fear}
+                  </td>
                   <td>{obj["Clear Time"]}</td>
                   <td className="flex">
                     <div className="avatar">
@@ -243,7 +272,7 @@ export default function Hades2() {
                         <img src={`/Familiar/${obj.Familiar}.png`} />
                       </div>
                     </div>
-                    {ReturnBoonList(genBoonString()).map((item) => (
+                    {ReturnBoonList(obj.Boons_Picked).map((item) => (
                       <div className="avatar">
                         <div className="mask mask-squircle w-7">
                           <img src={`/Boon/${item}.png`} draggable={false} />
@@ -254,11 +283,11 @@ export default function Hades2() {
                   <td
                     className={`relative
                       ${
-                        obj.Rating === 5
-                          ? "font-serif font-bold text-[12px] text-[#eddd28]"
-                          : obj.Rating === 4
-                          ? "font-serif font-bold text-[12px] text-[#f36e27]"
-                          : "font-serif font-bold text-[12px] text-[white]"
+                        obj["Clear Time"].slice(0, -6) < 10
+                          ? "font-serif text-[13px] text-[#eddd28]"
+                          : obj["Clear Time"].slice(0, -6) < 15
+                          ? "font-serif text-[13px] text-[#ed2828]"
+                          : "font-serif text-[13px] text-[#19df90]"
                       }`}
                   >
                     <div
@@ -268,20 +297,44 @@ export default function Hades2() {
                         borderImageWidth: "30px",
                       }}
                     >
-                      {obj.Rating === 5 ? "S+" : obj.Rating === 4 ? "S" : "A"}
+                      {obj["Clear Time"].slice(0, -6) < 10
+                        ? "S+"
+                        : obj["Clear Time"].slice(0, -6) < 15
+                        ? "S"
+                        : "A"}
                     </div>
                   </td>
                   <td>
                     <section className="flex">
-                      {Array.from({ length: obj.Rating }, (_, ite) => (
-                        <div className="rating rating-sm">
-                          <input
-                            type="radio"
-                            name="rating-4"
-                            className="mask mask-star-2 bg-[#b930ef]"
-                          />
-                        </div>
-                      ))}
+                      {obj["Clear Time"].slice(0, -6) < 10
+                        ? Array.from({ length: 5 }, (_, ite) => (
+                            <div className="rating rating-sm">
+                              <input
+                                type="radio"
+                                name="rating-4"
+                                className="mask mask-star-2 bg-[#c7ef15]"
+                              />
+                            </div>
+                          ))
+                        : obj["Clear Time"].slice(0, -6) < 15
+                        ? Array.from({ length: 4 }, (_, ite) => (
+                            <div className="rating rating-sm">
+                              <input
+                                type="radio"
+                                name="rating-4"
+                                className="mask mask-star-2 bg-[#f02121]"
+                              />
+                            </div>
+                          ))
+                        : Array.from({ length: 3 }, (_, ite) => (
+                            <div className="rating rating-sm">
+                              <input
+                                type="radio"
+                                name="rating-4"
+                                className="mask mask-star-2 bg-[#20ec90]"
+                              />
+                            </div>
+                          ))}
                     </section>
                   </td>
                   <td>

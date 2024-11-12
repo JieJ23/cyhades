@@ -33,8 +33,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Hades2 />} />
         {/* <Route path="/Hades" element={<Hades />} />
         <Route path="/FearCalculator" element={<FearCalculator />} />
-        <Route path="/H2Boons" element={<H2Boons />} />
-        <Route path="/BoonSelection" element={<BoonSelection />} /> */}
+        <Route path="/H2Boons" element={<H2Boons />} /> */}
+        <Route path="/BoonSelection" element={<BoonSelection />} />
 
         {/* <Route path="/Guide" element={<Guide />} /> */}
         {/*  */}

@@ -2,13 +2,42 @@ import Header from "../Components/Header";
 import FooterInfo from "../Components/Footer";
 
 import { Link } from "react-router-dom";
+import { genBoonString } from "../Logic/Gen";
+import { genTime } from "../Logic/Gen";
+
+const randomAspect = [
+  `Melinoe Staff`,
+  `Circe`,
+  `Momus`,
+  `Melinoe Blade`,
+  `Artemis`,
+  `Pan`,
+  `Melinoe Flames`,
+  `Moros`,
+  `Eos`,
+  `Melinoe Axe`,
+  `Charon`,
+  `Thanatos`,
+  `Melinoe Skull`,
+  `Medea`,
+  `Persephone`,
+  `Melinoe Coat`,
+  `Selene`,
+  `Nyx`,
+];
+
+const randomFamiliar = [
+  `Frinos`,
+  `Frinos`,
+  `Toula`,
+  `Hecuba`,
+  `Raki`,
+  `Frinos`,
+];
 
 export default function Guide() {
   return (
-    <div
-      className="h-lvh overflow-x-hidden select-none bg-transparent"
-      data-theme="dark"
-    >
+    <div className="h-lvh overflow-x-hidden bg-transparent" data-theme="dark">
       <div
         className="fixed h-full w-full bg-cover -z-10 bg-center"
         style={{ backgroundImage: "url('/mainBG.png')" }}
@@ -17,7 +46,7 @@ export default function Guide() {
 
       <Header />
 
-      <div className="flex flex-wrap gap-2 justify-center my-16">
+      {/* <div className="flex flex-wrap gap-2 justify-center my-16">
         <button
           className="btn text-white border-white/30 font-customCin"
           disabled
@@ -54,9 +83,9 @@ export default function Guide() {
         >
           Black Coat
         </button>
-      </div>
+      </div> */}
 
-      <div className="my-16 flex flex-wrap gap-4 justify-center xl:justify-start max-w-[1200px] mx-auto">
+      {/* <div className="my-16 flex flex-wrap gap-4 justify-center xl:justify-start max-w-[1200px] mx-auto">
         <Link to={`/ID1`}>
           <div className="bg-black/30 h-full w-96 shadow-xl relative border-[1px] border-white/40 rounded-md group overflow-hidden">
             <div className="p-3 flex flex-col gap-1 group-hover:bg-[#279468] transition-all duration-150 ease-in">
@@ -81,8 +110,13 @@ export default function Guide() {
             </div>
           </div>
         </Link>
-      </div>
+      </div> */}
 
+      <section className="pl-10">
+        {Array.from({ length: 20 }, (_, index) => (
+          <div>{genBoonString()}</div>
+        ))}
+      </section>
       <FooterInfo />
     </div>
   );

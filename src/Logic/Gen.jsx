@@ -2,10 +2,13 @@ export function genNum920() {
   return Math.floor(Math.random() * (20 - 9 + 1)) + 9;
 }
 function genNum060() {
-  return Math.floor(Math.random() * (60 - 0 + 1));
+  const num = Math.floor(Math.random() * 61); // Generates a number between 0 and 60
+  return num < 10 ? `0${num}` : `${num}`;
 }
+
 function genNum099() {
-  return Math.floor(Math.random() * (99 - 0 + 1));
+  const num = Math.floor(Math.random() * 99); // Generates a number between 0 and 60
+  return num < 10 ? `0${num}` : `${num}`;
 }
 
 export function genTime() {
@@ -158,3 +161,37 @@ export function genBoonString() {
   const randomIndex5 = Math.floor(Math.random() * gensprint.length);
   return `${genflour[randomIndex1]},${genring[randomIndex2]},${genstrike[randomIndex3]},${gengain[randomIndex4]},${gensprint[randomIndex5]}`;
 }
+
+export const defineWeapon = (aspect) => {
+  switch (aspect) {
+    case `Melinoe Staff`:
+    case `Circe`:
+    case `Momus`:
+      return `Witch's Staff`;
+
+    case `Melinoe Blade`:
+    case `Artemis`:
+    case `Pan`:
+      return `Sister Blades`;
+
+    case `Melinoe Flames`:
+    case `Moros`:
+    case `Eos`:
+      return `Umbral Flames`;
+
+    case `Melinoe Axe`:
+    case `Charon`:
+    case `Thanatos`:
+      return `Moonstone Axe`;
+
+    case `Melinoe Skull`:
+    case `Medea`:
+    case `Persephone`:
+      return `Argent Skull`;
+
+    case `Melinoe Coat`:
+    case `Selene`:
+    case `Nyx`:
+      return `Black Coat`;
+  }
+};

@@ -1,9 +1,11 @@
 import { removeDup } from "../Logic/Method";
-import { hades2CN } from "../Data/Hades2NewData";
+import { hades2FullData } from "../Data/Hades2NewData";
 import { customOrder } from "../Logic/Method";
 import { ReturnBoonList } from "../Logic/Method";
 import { genBoonString } from "../Logic/Gen";
 import { calculateTime } from "../Logic/Method";
+
+import { defineWeapon } from "../Logic/Gen";
 
 export const weaponColor = (type) => {
   switch (type) {
@@ -51,14 +53,12 @@ export const weaponGIF = (type) => {
   }
 };
 
-import { hades_WeaponOrder } from "../Logic/Method";
-
 export default function TopPlayers2() {
-  const LevelNumbers = [...new Set(hades2CN.map((obj) => obj.Fear))];
-  const highestLevel = Math.max(...LevelNumbers);
-  //
-
-  const rawData = hades2CN
+  const rawData = hades2FullData
+    .map((item) => ({
+      ...item, // Spread the existing properties
+      Weapon: `${defineWeapon(item.Aspect)}`, // Add the new "weapon" property
+    }))
     .slice()
     .sort(
       (a, b) =>
@@ -79,14 +79,6 @@ export default function TopPlayers2() {
     holder.push(pickFirst);
   }
 
-  //
-  const highestEntries = removeDup(
-    hades2CN.filter((obj) => obj.Fear == +highestLevel)
-  ).sort(
-    (a, b) =>
-      hades_WeaponOrder.indexOf(a.Aspect) - hades_WeaponOrder.indexOf(b.Aspect)
-  );
-
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 justify-evenly gap-1 select-none w-full max-w-[1400px] mx-auto px-2 mt-5">
       {holder.map((obj) => (
@@ -105,11 +97,6 @@ export default function TopPlayers2() {
               borderImageWidth: "30px",
             }}
           />
-          {/* <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" /> */}
-          {/* <div
-            className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl bg-top bg-cover bg-no-repeat"
-            style={{ backgroundImage: `url("/${obj.Weapon}.png")` }}
-          /> */}
           <div className="h-full flex flex-col items-center justify-center gap-1 font-customCin">
             <div className="text-white z-20 absolute bottom-3 left-3 text-[10px]">
               Fear {obj.Fear}
@@ -118,7 +105,7 @@ export default function TopPlayers2() {
               {obj["Clear Time"]}
             </div>
             <div className="text-[10px] uppercase text-gray-300 z-20">
-              {obj.Weapon}
+              {defineWeapon(obj.Aspect)}
             </div>
             <div className="text-white text-[15px] z-20">{obj.Name}</div>
             <div className="avatar">
@@ -131,7 +118,7 @@ export default function TopPlayers2() {
               </div>
             </div>
             <div className="mb-2">
-              {ReturnBoonList(genBoonString())
+              {ReturnBoonList(obj.Boons_Picked)
                 .slice(0, 5)
                 .map((item) => (
                   <div className="avatar">

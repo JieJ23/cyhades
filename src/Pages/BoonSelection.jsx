@@ -1,4 +1,5 @@
-import { Hades2FullData } from "../Data/Hades2Data";
+import { hades2FullData } from "../Data/Hades2NewData";
+import { defineWeapon } from "../Logic/Gen";
 
 import Header from "../Components/Header";
 import FooterInfo from "../Components/Footer";
@@ -21,16 +22,28 @@ export default function BoonSelection() {
     setWeapon(num);
   }
 
-  const weaponTypes = [...new Set(Hades2FullData.map((obj) => obj.Weapon))];
+  const weaponTypes = [
+    ...new Set(
+      hades2FullData
+        .map((item) => ({
+          ...item, // Spread the existing properties
+          Weapon: `${defineWeapon(item.Aspect)}`, // Add the new "weapon" property
+        }))
+        .map((obj) => obj.Weapon)
+    ),
+  ];
   //
   const displayData = weaponTypes[weapon];
 
-  const targetData = Hades2FullData.filter((obj) => obj.Weapon === displayData);
+  const targetData = hades2FullData
+    .map((item) => ({
+      ...item, // Spread the existing properties
+      Weapon: `${defineWeapon(item.Aspect)}`, // Add the new "weapon" property
+    }))
+    .filter((obj) => obj.Weapon === displayData);
   //
 
-  let patch5Data = targetData.filter(
-    (obj) => obj.Patch === `5` || obj.Patch === `4`
-  );
+  let patch5Data = targetData.slice();
 
   for (let i = 0; i < patch5Data.length; i++) {
     let temp = genBoonString();
@@ -82,21 +95,21 @@ export default function BoonSelection() {
       {/*  */}
       <Header />
 
-      <section className="flex justify-center gap-2 flex-wrap max-w-[1200px] mx-auto mt-8">
+      <section className="flex justify-center gap-2 flex-wrap max-w-[1200px] mx-auto my-8">
         {weaponTypes.map((ite, index) => (
           <button
-            className={`btn font-serif text-[12px] shadow-[1px_1px_0_teal] ${
-              index === weapon ? `btn-primary text-black` : `text-white`
+            className={`btn font-serif text-[12px] ${
+              index === weapon ? `btn-primary text-[#5cb6e7]` : `text-white`
             }`}
+            style={{
+              borderImage: `url(/Border/one.png) 32 fill`,
+              borderImageWidth: "10px",
+            }}
             onClick={() => handleChangeWeapon(index)}
           >
             {ite}
           </button>
         ))}
-      </section>
-      <section className="font-customCin text-center my-6 underline text-[14px]">
-        *Automatically calculated based on the entries on the board, Patch 5 &
-        6.
       </section>
 
       <div className="overflow-x-auto max-w-[1000px] mx-auto mb-10">
@@ -131,7 +144,7 @@ export default function BoonSelection() {
                     </div>
                   </div>
                 </td>
-                <td className="font-serif text-[12px]">
+                <td className="font-serif text-white text-[12px]">
                   {`${obj.usage} : ${obj.total}`}
                 </td>
                 <td className="font-serif text-[12px] text-[#27c3a9]">{`${(
@@ -160,7 +173,7 @@ export default function BoonSelection() {
                     </div>
                   </div>
                 </td>
-                <td className="font-serif text-[12px]">
+                <td className="font-serif text-white text-[12px]">
                   {`${obj.usage} : ${obj.total}`}
                 </td>
                 <td className="font-serif text-[12px] text-[#d664f2]">{`${(
@@ -189,7 +202,7 @@ export default function BoonSelection() {
                     </div>
                   </div>
                 </td>
-                <td className="font-serif text-[12px]">
+                <td className="font-serif text-white text-[12px]">
                   {`${obj.usage} : ${obj.total}`}
                 </td>
                 <td className="font-serif text-[12px] text-[#91db22]">{`${(
@@ -218,7 +231,7 @@ export default function BoonSelection() {
                     </div>
                   </div>
                 </td>
-                <td className="font-serif text-[12px]">
+                <td className="font-serif text-white text-[12px]">
                   {`${obj.usage} : ${obj.total}`}
                 </td>
                 <td className="font-serif text-[12px] text-[#ea5a66]">{`${(
@@ -247,7 +260,7 @@ export default function BoonSelection() {
                     </div>
                   </div>
                 </td>
-                <td className="font-serif text-[12px]">
+                <td className="font-serif text-white text-[12px]">
                   {`${obj.usage} : ${obj.total}`}
                 </td>
                 <td className="font-serif text-[12px] text-[#ec9c2c]">{`${(
