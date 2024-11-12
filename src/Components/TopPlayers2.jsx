@@ -1,8 +1,7 @@
-import { hades2d } from "../Data/Hades2D";
 import { customOrder } from "../Logic/Method";
 import { ReturnBoonList } from "../Logic/Method";
 import { calculateTime } from "../Logic/Method";
-
+import { hades2d } from "../Data/Hades2NewData";
 import { defineWeapon } from "../Logic/Gen";
 
 export const weaponColor = (type) => {

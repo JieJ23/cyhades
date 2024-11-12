@@ -11,7 +11,7 @@ import { testReturnBoonFilter } from "../Logic/Method";
 import { hades_WeaponOrder } from "../Logic/Method";
 
 import { removeDup } from "../Logic/Method";
-import { hades2d } from "../Data/Hades2D";
+import { hades2d } from "../Data/Hades2NewData";
 
 import { Hades1FullData } from "../Data/Hades1Data";
 

@@ -11,7 +11,7 @@ import TopPlayers2 from "../Components/TopPlayers2";
 // import PlayerSelection from "../Components/Select/Player";
 
 import Footer from "../Components/Footer";
-import { hades2d } from "../Data/Hades2D";
+import { hades2d } from "../Data/Hades2NewData";
 import { useState, useEffect } from "react";
 
 import { ReturnBoonList } from "../Logic/Method";

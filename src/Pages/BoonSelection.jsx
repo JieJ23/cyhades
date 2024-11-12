@@ -1,4 +1,4 @@
-import { hades2d } from "../Data/Hades2D";
+import { hades2d } from "../Data/Hades2NewData";
 import { defineWeapon } from "../Logic/Gen";
 
 import Header from "../Components/Header";
