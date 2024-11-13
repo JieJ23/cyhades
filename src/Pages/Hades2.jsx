@@ -3,12 +3,13 @@ import { removeDupAspect, removeDupNameOnly } from "../Logic/Method";
 import { customOrder, calculateTime } from "../Logic/Method";
 
 import { defineWeapon } from "../Logic/Gen";
+import { weaponColor } from "../Components/TopPlayers2";
 
 import Header from "../Components/Header";
 import TopPlayers2 from "../Components/TopPlayers2";
 
-// import AspectSelection from "../Components/Select/Aspect";
-// import PlayerSelection from "../Components/Select/Player";
+// import AspectSelection: from "../Components/Select/Aspect";
+// import PlayerSelection: from "../Components/Select/Player";
 
 import Footer from "../Components/Footer";
 import { hades2d } from "../Data/Hades2NewData";
@@ -21,10 +22,10 @@ export default function Hades2() {
   const [data, setData] = useState(1);
   const [selectedAspect, setSelectedAspect] = useState("");
   const [selectedPlayer, setSelectedPlayer] = useState("");
-  const [visibleRows, setVisibleRows] = useState(50);
+  const [visibleRows, setVisibleRows] = useState(25);
 
   useEffect(() => {
-    setVisibleRows(50);
+    setVisibleRows(25);
   }, [data]);
 
   //
@@ -32,7 +33,7 @@ export default function Hades2() {
     setData(num);
   };
   const loadMore = () => {
-    setVisibleRows((prevVisibleRows) => prevVisibleRows + 50);
+    setVisibleRows((prevVisibleRows) => prevVisibleRows + 25);
   };
   const handleAspectChange = (newValue) => {
     setSelectedAspect(newValue);
@@ -45,9 +46,14 @@ export default function Hades2() {
   //
 
   const rawData = hades2d
+    .map((item) => ({
+      ...item, // Spread the existing properties
+      Weapon: `${defineWeapon(item.Aspect)}`, // Add the new "weapon" property
+    }))
     .slice()
     .sort((a, b) => b.Fear - a.Fear)
     .sort((a, b) => b.Patch - a.Patch);
+
   const testingdata = removeDupAspect(
     hades2d
       .map((item) => ({
@@ -100,7 +106,49 @@ export default function Hades2() {
   );
 
   const displayData = allAvailableData[data];
+  //
 
+  const holder = [];
+
+  for (let i = 0; i < allWeaponType.length; i++) {
+    let count = 0;
+
+    let temp = rawData.filter((obj) => obj.Weapon === allWeaponType[i]);
+
+    for (let y = 0; y < temp.length; y++) {
+      let tempRun = temp[y].Fear;
+      count += +tempRun;
+    }
+
+    let aspects = [...new Set(temp.map((obj) => obj.Aspect))];
+
+    let aspectCounts = {};
+
+    for (let x = 0; x < aspects.length; x++) {
+      let aspectCount = 0;
+      const aspectOnly = temp.filter((obj) => obj.Aspect === aspects[x]);
+      for (let j = 0; j < aspectOnly.length; j++) {
+        const aspectTotal = aspectOnly[j].Fear;
+        aspectCount += +aspectTotal;
+      }
+      aspectCounts[`aspect${x + 1}`] = {
+        name: aspects[x],
+        count: aspectCount,
+        length: aspectOnly.length,
+      };
+    }
+
+    let pairObj = {
+      weapon: allWeaponType[i],
+      count: temp.length,
+      accu: count,
+      ...aspectCounts,
+    };
+    holder.push(pairObj);
+  }
+
+  console.log(holder);
+  //
   return (
     <div
       className="h-lvh overflow-x-hidden select-none bg-transparent"
@@ -174,9 +222,81 @@ export default function Hades2() {
               }}
               onClick={() => handleDataChange(2)}
             >
-              Boon Selection Stats
+              Boon Selection: Stats
             </button>
           </Link>
+        </section>
+        <section className="flex flex-wrap justify-center place-items-center my-12 gap-10 max-w-[1200px] mx-auto">
+          {holder.map((obj, index) => (
+            <div className="flex flex-col md:flex-row items-center justify-center w-full lg:w-[45%] gap-4">
+              <div className="flex items-center gap-4">
+                <div
+                  className="radial-progress bg-[transparent] text-[14px] text-white font-customCin border-[1px] border-white/20"
+                  style={{
+                    "--value": Math.round(
+                      (obj.count / testingdata.length) * 100
+                    ),
+                    "--size": "80px",
+                    backgroundColor: `${weaponColor(obj.weapon)}99`,
+                  }}
+                  role="progressbar"
+                  key={index}
+                >
+                  {((obj.count / testingdata.length) * 100).toFixed(2)}%
+                </div>
+                <div>
+                  <div className="text-[13px] font-serif text-white">
+                    {obj.weapon}
+                  </div>
+                  <div className="text-[12px] font-serif text-gray-300">
+                    Selection: {obj.count}
+                  </div>
+                  <div className="text-[12px] font-serif text-gray-300">
+                    Total Fear: {obj.accu}
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div>
+                  <div className="text-[13px] font-serif text-gray-300">
+                    {obj.aspect1.name}
+                  </div>
+                  <div className="text-[12px] font-serif text-gray-300">
+                    Selection:{" "}
+                    {`${Math.round((obj.aspect1.length / obj.count) * 100)}%`}
+                  </div>
+                  <div className="text-[12px] font-serif text-gray-300">
+                    Total Fear: {obj.aspect1.count}
+                  </div>
+                </div>
+
+                <div>
+                  <div className="text-[13px] font-serif text-gray-300">
+                    {obj.aspect2.name}
+                  </div>
+                  <div className="text-[12px] font-serif text-gray-300">
+                    Selection:{" "}
+                    {`${Math.round((obj.aspect2.length / obj.count) * 100)}%`}
+                  </div>
+                  <div className="text-[12px] font-serif text-gray-300">
+                    Total Fear: {obj.aspect2.count}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-[13px] font-serif text-gray-300">
+                    {obj.aspect3.name}
+                  </div>
+                  <div className="text-[12px] font-serif text-gray-300">
+                    Selection:{" "}
+                    {`${Math.round((obj.aspect3.length / obj.count) * 100)}%`}
+                  </div>
+                  <div className="text-[12px] font-serif text-gray-300">
+                    Total Fear: {obj.aspect3.count}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </section>
         {/*  */}
         {/* <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
@@ -270,13 +390,13 @@ export default function Hades2() {
                     ))}
                   </td>
                   <td
-                    className={`relative
+                    className={`relative w-[53px] font-serif text-[14px]
                       ${
                         obj["Clear Time"].slice(0, -6) < 10
-                          ? "font-serif text-[13px] text-[#eddd28]"
+                          ? "text-[#eddd28]"
                           : obj["Clear Time"].slice(0, -6) < 15
-                          ? "font-serif text-[13px] text-[#ed2828]"
-                          : "font-serif text-[13px] text-[#19df90]"
+                          ? "text-[#f57a2e]"
+                          : "text-[#fff]"
                       }`}
                   >
                     <div
@@ -311,7 +431,7 @@ export default function Hades2() {
                               <input
                                 type="radio"
                                 name="rating-4"
-                                className="mask mask-star-2 bg-[#f02121]"
+                                className="mask mask-star-2 bg-[#f57a2e]"
                               />
                             </div>
                           ))
@@ -320,7 +440,7 @@ export default function Hades2() {
                               <input
                                 type="radio"
                                 name="rating-4"
-                                className="mask mask-star-2 bg-[#20ec90]"
+                                className="mask mask-star-2 bg-[#fff]"
                               />
                             </div>
                           ))}
