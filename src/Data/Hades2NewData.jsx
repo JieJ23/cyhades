@@ -1031,4 +1031,232 @@ export const hades2d = [
     Aspect: "Medea",
     Familiar: "Frinos",
   },
+  {
+    Name: "Sh4dowSl4y3r",
+    Boons_Picked:
+      "Wave_Flourish,Geyser_Ring,Flutter_Strike,Born_Gain,No_Sprint",
+    Fear: "53",
+    "Clear Time": "14:46.58",
+    Direction: "Olympus",
+    Aspect: "Artemis",
+    Familiar: "Raki",
+  },
+  {
+    Name: "黑暗骑士",
+    Boons_Picked:
+      "No_Flourish,Geyser_Ring,Nimble_Mind,Witty_Retort,Nitro_Boost",
+    Fear: "50",
+    "Clear Time": "16:03.07",
+    Direction: "Olympus",
+    Aspect: "Melinoe Coat",
+    Familiar: "Hecuba",
+  },
+  {
+    Name: "용의 심장",
+    Boons_Picked:
+      "Flame_Flourish,Solar_Ring,Flame_Strike,Born_Gain,Nexus_Sprint",
+    Fear: "45",
+    "Clear Time": "17:41.26",
+    Direction: "Olympus",
+    Aspect: "Melinoe Blade",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "St0rm3reak",
+    Boons_Picked:
+      "Flutter_Flourish,Geyser_Ring,No_Strike,Hearth_Gain,Breaker_Sprint",
+    Fear: "54",
+    "Clear Time": "15:34.54",
+    Direction: "Olympus",
+    Aspect: "Melinoe Staff",
+    Familiar: "Hecuba",
+  },
+  {
+    Name: "火焰幽灵",
+    Boons_Picked:
+      "Volcanic_Flourish,Geyser_Ring,Flutter_Strike,Fluid_Gain,No_Sprint",
+    Fear: "46",
+    "Clear Time": "10:40.26",
+    Direction: "Olympus",
+    Aspect: "Thanatos",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "늑대의 영혼",
+    Boons_Picked:
+      "Heaven_Flourish,Smolder_Ring,Nova_Strike,Glamour_Gain,Thunder_Sprint",
+    Fear: "53",
+    "Clear Time": "9:45.42",
+    Direction: "Olympus",
+    Aspect: "Melinoe Staff",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "Viper",
+    Boons_Picked: "Swift_Flourish,Tidal_Ring,Sworn_Strike,No_Gain,Nitro_Boost",
+    Fear: "48",
+    "Clear Time": "14:26.19",
+    Direction: "Olympus",
+    Aspect: "Melinoe Blade",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "天狼星",
+    Boons_Picked:
+      "Flutter_Flourish,Smolder_Ring,Sworn_Strike,Fixed_Gain,No_Sprint",
+    Fear: "47",
+    "Clear Time": "19:17.77",
+    Direction: "Olympus",
+    Aspect: "Melinoe Coat",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "무사흑표범",
+    Boons_Picked:
+      "Flutter_Flourish,No_Ring,Flame_Strike,Hearth_Gain,Nitro_Boost",
+    Fear: "47",
+    "Clear Time": "9:40.39",
+    Direction: "Olympus",
+    Aspect: "Artemis",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "Sk4Hunte4",
+    Boons_Picked:
+      "Volcanic_Flourish,Prominence_Flare,Nimble_Limbs,Tranquil_Gain,Soot_Sprint",
+    Fear: "49",
+    "Clear Time": "12:50.55",
+    Direction: "Olympus",
+    Aspect: "Persephone",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "龙之魂",
+    Boons_Picked:
+      "Volcanic_Flourish,Engagement_Ring,Flame_Strike,Fluid_Gain,Soot_Sprint",
+    Fear: "47",
+    "Clear Time": "14:04.18",
+    Direction: "Olympus",
+    Aspect: "Nyx",
+    Familiar: "Hecuba",
+  },
+  {
+    Name: "악마의 검",
+    Boons_Picked:
+      "Wave_Flourish,Solar_Ring,Nova_Strike,Witty_Retort,Passion_Rush",
+    Fear: "47",
+    "Clear Time": "16:08.72",
+    Direction: "Olympus",
+    Aspect: "Melinoe Blade",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "Iron",
+    Boons_Picked:
+      "No_Flourish,Prominence_Flare,Sworn_Strike,No_Gain,Passion_Dash",
+    Fear: "47",
+    "Clear Time": "16:36.32",
+    Direction: "Olympus",
+    Aspect: "Medea",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "夜影",
+    Boons_Picked:
+      "Flutter_Flourish,Solar_Ring,Wave_Strike,Witty_Retort,Nexus_Sprint",
+    Fear: "53",
+    "Clear Time": "10:15.08",
+    Direction: "Olympus",
+    Aspect: "Moros",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "화염의 군주",
+    Boons_Picked:
+      "Nova_Flourish,Solar_Ring,Volcanic_Strike,Fixed_Gain,Nitro_Boost",
+    Fear: "50",
+    "Clear Time": "16:60.11",
+    Direction: "Olympus",
+    Aspect: "Thanatos",
+    Familiar: "Raki",
+  },
+  {
+    Name: "T4Strike",
+    Boons_Picked:
+      "No_Flourish,Smolder_Ring,Nova_Strike,Hearth_Gain,Smithy_Sprint",
+    Fear: "51",
+    "Clear Time": "13:35.19",
+    Direction: "Olympus",
+    Aspect: "Persephone",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "光明之翼",
+    Boons_Picked:
+      "Nova_Flourish,Tidal_Ring,No_Strike,Fluid_Gain,Breaker_Sprint",
+    Fear: "48",
+    "Clear Time": "18:44.05",
+    Direction: "Olympus",
+    Aspect: "Nyx",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "검은 태양",
+    Boons_Picked:
+      "Nova_Flourish,Prominence_Flare,Flutter_Strike,Glamour_Gain,Nitro_Boost",
+    Fear: "45",
+    "Clear Time": "16:17.16",
+    Direction: "Olympus",
+    Aspect: "Melinoe Skull",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "Void",
+    Boons_Picked:
+      "Flame_Flourish,Anvil_Ring,Volcanic_Strike,Lucid_Gain,Nitro_Boost",
+    Fear: "47",
+    "Clear Time": "18:04.56",
+    Direction: "Olympus",
+    Aspect: "Artemis",
+    Familiar: "Raki",
+  },
+  {
+    Name: "神秘行者",
+    Boons_Picked: "Wave_Flourish,Geyser_Ring,No_Strike,Born_Gain,No_Sprint",
+    Fear: "52",
+    "Clear Time": "19:15.51",
+    Direction: "Olympus",
+    Aspect: "Melinoe Blade",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "전설의 수호자",
+    Boons_Picked:
+      "Wave_Flourish,Geyser_Ring,Heaven_Strike,Tranquil_Gain,Soot_Sprint",
+    Fear: "46",
+    "Clear Time": "20:48.81",
+    Direction: "Olympus",
+    Aspect: "Medea",
+    Familiar: "Toula",
+  },
+  {
+    Name: "BladeM3",
+    Boons_Picked:
+      "Sworn_Flourish,Engagement_Ring,Heaven_Strike,Ionic_Gain,Nitro_Boost",
+    Fear: "51",
+    "Clear Time": "14:56.48",
+    Direction: "Olympus",
+    Aspect: "Melinoe Skull",
+    Familiar: "Frinos",
+  },
+  {
+    Name: "황금기사",
+    Boons_Picked:
+      "Volcanic_Flourish,Geyser_Spout,Nimble_Mind,Born_Gain,Breaker_Sprint",
+    Fear: "52",
+    "Clear Time": "12:12.68",
+    Direction: "Olympus",
+    Aspect: "Persephone",
+    Familiar: "Frinos",
+  },
 ];

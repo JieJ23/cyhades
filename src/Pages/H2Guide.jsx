@@ -113,8 +113,8 @@ export default function Guide() {
       </div> */}
 
       <section className="pl-10">
-        {Array.from({ length: 20 }, (_, index) => (
-          <div>{genBoonString()}</div>
+        {Array.from({ length: 23 }, (_, index) => (
+          <div>{genTime()}</div>
         ))}
       </section>
       <FooterInfo />
