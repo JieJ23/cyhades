@@ -163,8 +163,7 @@ export default function Hades2() {
       <Header />
       <TopPlayers2 />
 
-      <div className="w-full">
-        {/* <TopPlayers objData={testingdata} level={`Fear`} /> */}
+      {/* <div className="w-full">
         <section>
           <div className="flex flex-wrap justify-center my-2 gap-1 font-customCin">
             <button
@@ -298,27 +297,6 @@ export default function Hades2() {
             </div>
           ))}
         </section>
-        {/*  */}
-        {/* <section className="flex flex-col sm:flex-row gap-1 justify-center w-3/4 mx-auto sm:w-full">
-          <PlayerSelection
-            watch={data}
-            fulldata={allAvailableData}
-            onPlayerChange={handlePlayerChange}
-            allPlayers={testingdata}
-          />
-          <AspectSelection
-            watch={data}
-            fulldata={allAvailableData}
-            onAspectChange={handleAspectChange}
-            allAspect={testingdata}
-          />
-        </section> */}
-        {/* <Link to={`/HadesTopAspect`} className="flex justify-center my-2">
-          <button className="btn btn-neutral text-error font-serif font-semibold shadow-[inset_0_0_15px_black]">
-            Top Aspects
-          </button>
-        </Link> */}
-        {/*  */}
         <div className="overflow-x-auto rounded-md my-4">
           <table className="table table-xs table-zebra-zebra select-none w-full max-w-[1200px] mx-auto text-white">
             <thead>
@@ -448,7 +426,6 @@ export default function Hades2() {
                   </td>
                   <td>
                     <Link
-                      // to={obj["Src"]}
                       target="_blank"
                       className="text-[#979ff5] pointer-events-none"
                     >
@@ -474,8 +451,12 @@ export default function Hades2() {
             </button>
           </div>
         )}
+      </div> */}
+      <div className="my-10 text-center text-[white] font-customCin">
+        <div>*Object 364 is undefined, of 764 objects.</div>
+        <div>Revalidate objects required.</div>
+        <span className="loading loading-dots loading-lg"></span>
       </div>
-
       <Footer />
       {/*  */}
     </div>
